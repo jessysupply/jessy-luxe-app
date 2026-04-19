@@ -605,17 +605,18 @@ fontWeight: 600,
       <div style={{ textAlign: "center", color: "#160e06", fontSize: 9, marginTop: 20, letterSpacing: 3 }}>
         ✦ TAP A SUPPLIER · EXPAND PRODUCTS · WRITE A REVIEW ✦
       </div>
-
-      {reviewTarget && (
-        <ReviewModal
-          supplier={reviewTarget}
-          onClose={() => setReviewTarget(null)}
-          onSubmit={review => {
-            setUserReviews(prev => [...prev, review]);
-            setTimeout(() => setReviewTarget(null), 2000);
-          }}
-        />
-      )}
-    </div>
-)
+  
+  <div>
+    {reviewTarget && (
+      <ReviewModal
+        supplier={reviewTarget}
+        onClose={() => setReviewTarget(null)}
+        onSubmit={(review) => {
+          setUserReviews((prev) => [...prev, review]);
+          setTimeout(() => setReviewTarget(null), 2000);
+        }}
+      />
+    )}
+  </div>
+);
 }
