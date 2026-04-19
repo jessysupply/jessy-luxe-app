@@ -605,7 +605,7 @@ fontWeight: 600,
       <div style={{ textAlign: "center", color: "#160e06", fontSize: 9, marginTop: 20, letterSpacing: 3 }}>
         ✦ TAP A SUPPLIER · EXPAND PRODUCTS · WRITE A REVIEW ✦
       </div>
-  
+      return (
   <div>
     {reviewTarget && (
       <ReviewModal
@@ -618,5 +618,4 @@ fontWeight: 600,
       />
     )}
   </div>
-);
-}
+  );
