@@ -597,20 +597,13 @@ fontWeight: 600,
                     {key === "mixed"     && "— Human & synthetic combined. Mid-range price/quality, blends durability with a natural look."}
                   </span>
                 </div>
-              </div>
+                </div>
             ))}
-          </div>
-        </div>
       </div>
-      
-      return (
-        <div>
-      <div style={{ textAlign: "center", color: "#160e06", fontSize: 9, marginTop: 20, letterSpacing: 3 }}>
-        ✦ TAP A SUPPLIER · EXPAND PRODUCTS · WRITE A REVIEW ✦
-      </div>
-      
-  
     </div>
     </div>
+    </div>
+     </div>
+    )
     );
   }
