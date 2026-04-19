@@ -413,7 +413,7 @@ export default function App() {
 
   const totalBase = INITIAL_SUPPLIERS.reduce((a, s) => a + s.products.reduce((b, p) => b + p.reviews, 0), 0);
 
-  return 
+  return (
     <div style={{ minHeight: "100vh", background: "linear-gradient(180deg, #fffaf5 0%, #f8efe6 45%, #f1e3d3 100%)", color: "#2b2b2b", fontFamily: "'DM Sans', sans-serif", paddingBottom: 60 }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
@@ -601,23 +601,15 @@ fontWeight: 600,
           </div>
         </div>
       </div>
-
+      return (
+        <div>
       <div style={{ textAlign: "center", color: "#160e06", fontSize: 9, marginTop: 20, letterSpacing: 3 }}>
         ✦ TAP A SUPPLIER · EXPAND PRODUCTS · WRITE A REVIEW ✦
       </div>
-      return (
+      
   <div>
-    {reviewTarget && (
-      <ReviewModal
-        supplier={reviewTarget}
-        onClose={() => setReviewTarget(null)}
-        onSubmit={(review) => {
-          setUserReviews((prev) => [...prev, review]);
-          setTimeout(() => setReviewTarget(null), 2000);
-        }}
-        />
-        )}
-      </div>
-      </div>
-}
-    
+    <h1>IT WORKS</h1>
+    </div>
+    </div>
+    </div>
+};
