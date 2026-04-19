@@ -250,9 +250,9 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
 
           <div style={{ padding: "8px 13px 14px" }}>
             <button onClick={e => { e.stopPropagation(); onReviewClick(supplier); }} style={{
-              width: "100%", padding: "11px", borderRadius: 10, cursor: "pointer",
-              background: "linear-gradient(135deg, rgba(200,169,126,0.1), rgba(138,106,64,0.04))",
-              border: "1px solid #c8a97e38", color: "#c8a97e",
+              width: "100%", padding: "11px", borderRadius: 16, cursor: "pointer",
+              background: "linear-gradient(135deg, #e8c7a7, #d4a373)",
+              border: "1px solid rgba(255,255,255,0.08)", color: "#1a1a1a",
               fontSize: 12, fontWeight: 600, letterSpacing: 1, textTransform: "uppercase",
               transition: "background 0.2s",
             }}>&#9997; Write a Review</button>
@@ -413,12 +413,12 @@ export default function App() {
 
   const totalBase = INITIAL_SUPPLIERS.reduce((a, s) => a + s.products.reduce((b, p) => b + p.reviews, 0), 0);
 
-  return (
-    <div style={{ minHeight: "100vh", background: "radial-gradient(ellipse at top, #1a0e0b 0%, #060302 65%)", fontFamily: "'DM Sans', sans-serif", paddingBottom: 60 }}>
+  return 
+    <div style={{ minHeight: "100vh", background: "linear-gradient(180deg, #fffaf5 0%, #f8efe6 45%, #f1e3d3 100%)", color: "#2b2b2b", fontFamily: "'DM Sans', sans-serif", paddingBottom: 60 }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background: #060302; }
+        body { background: #fffaf5; }
         @keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
         @keyframes shimmer { 0%,100% { opacity:0.5; } 50% { opacity:1; } }
         input::placeholder, textarea::placeholder { color: #362518; }
@@ -429,34 +429,69 @@ export default function App() {
 
       {/* Hero */}
       <div style={{
-        textAlign: "center", padding: "42px 22px 30px",
-        background: "linear-gradient(180deg, rgba(200,169,126,0.07) 0%, transparent 100%)",
-        borderBottom: "1px solid #1a0e08",
-      }}>
-        <div style={{ fontSize: 10, letterSpacing: 6, color: "#c8a97e", textTransform: "uppercase", marginBottom: 10, animation: "shimmer 3s ease infinite" }}>
-          ✦ Hair Supplier Intelligence ✦
+  textAlign: "center",
+  padding: "110px 24px 80px",
+  minHeight: "72vh",
+  background: "#fffaf5",
+  
+  backgroundSize: "cover",
+  backgroundPosition: "center",
+  backgroundRepeat: "no-repeat",
+  borderBottom: "1px solid rgba(255,255,255,0.08)"
+}}>
+      
+      <div style={{
+  fontSize: 11,
+  letterSpacing: 6,
+  color: "#d4a373",
+  textTransform: "uppercase",
+  marginBottom: 18
+}}>
+  ✦ Hair Supplier Intelligence ✦
+
         </div>
-        <h1 style={{ fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: "clamp(26px, 7vw, 46px)", color: "#e8d5b8", lineHeight: 1.1, marginBottom: 10 }}>
-          The Hair<br /><span style={{ color: "#c8a97e" }}>Supplier Rater</span>
-        </h1>
-        <p style={{ color: "#503e30", fontSize: 13, maxWidth: 320, margin: "0 auto", lineHeight: 1.6 }}>
-          Compare real hair, synthetic &amp; blends — honest prices, quality ratings &amp; community reviews.
-        </p>
+        <h1 style={{
+  fontFamily: "'Playfair Display', serif",
+  fontWeight: 900,
+  fontSize: "clamp(36px, 6vw, 64px)",
+  textAlign: "center",
+  marginBottom: "10px",
+  color: "#f7eFe8"
+}}>
+  The Hair <br />
+  <span style={{ color: "#e8c7a7" }}>
+    Supplier Rater
+  </span>
+</h1>
+      
+<p style={{
+  color: "#d8cfc7",
+  fontSize: "18px",
+  maxWidth: "620px",
+  margin: "0 auto",
+  lineHeight: 1.8
+}}>
+  Compare real hair, synthetic & blends — honest prices, quality ratings & community reviews.
+</p>
       </div>
 
       {/* Stats Bar */}
-      <div style={{ display: "flex", borderBottom: "1px solid #120a06", background: "#0a0705" }}>
-        {[
-          { n: INITIAL_SUPPLIERS.length, label: "Suppliers" },
-          { n: INITIAL_SUPPLIERS.reduce((a,s) => a + s.products.length, 0), label: "Products" },
-          { n: (totalBase + userReviews.length).toLocaleString(), label: "Reviews" },
-        ].map((s, i) => (
-          <div key={i} style={{ flex: 1, textAlign: "center", padding: "13px 0", borderRight: i < 2 ? "1px solid #120a06" : "none" }}>
-            <div style={{ color: "#c8a97e", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 20 }}>{s.n}</div>
-            <div style={{ color: "#3e2e1e", fontSize: 9, letterSpacing: 2, textTransform: "uppercase" }}>{s.label}</div>
-          </div>
-        ))}
-      </div>
+      <div style={{ marginTop: "28px" }}>
+  <button style={{
+    background: "linear-gradient(135deg, #e8c7a7, #d4a373)",
+    color: "#1a1a1a",
+    padding: "14px 30px",
+    borderRadius: "999px",
+    border: "none",
+    fontWeight: 700,
+    fontSize: "15px",
+    letterSpacing: "0.3px",
+    cursor: "pointer",
+    boxShadow: "0 10px 30px rgba(212,163,115,0.28)"
+  }}>
+    Explore Vendors
+  </button>
+</div>
 
       {/* Controls */}
       <div style={{ padding: "16px 13px 4px", maxWidth: 600, margin: "0 auto" }}>
@@ -467,15 +502,16 @@ export default function App() {
             value={searchQ} onChange={e => setSearchQ(e.target.value)}
             placeholder="Search by supplier name or texture..."
             style={{
-              width: "100%", background: "#0e0a07", border: "1px solid #221408",
-              borderRadius: 10, padding: "10px 12px 10px 32px",
-              color: "#c8a97e", fontSize: 13, outline: "none", fontFamily: "'DM Sans', sans-serif",
+              width: "100%", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.12)",
+              borderRadius: 30, padding: "10px 12px 10px 32px",
+              color: "#f7efe8", fontSize: 13, outline: "none", fontFamily: "'DM Sans', sans-serif",
+              boxShadow: "0 8px 20px rgba(0,0,0,0.25)",
             }}
           />
           {searchQ && (
             <button onClick={() => setSearchQ("")} style={{
               position: "absolute", right: 10, top: "50%", transform: "translateY(-50%)",
-              background: "none", border: "none", color: "#4a3020", fontSize: 16, cursor: "pointer", padding: 0,
+              background: "0f0f10", border: "none", color: "#f7efe8", fontSize: 16, cursor: "pointer", padding: 0,
             }}>&#215;</button>
           )}
         </div>
@@ -484,11 +520,21 @@ export default function App() {
         <div style={{ display: "flex", gap: 7, marginBottom: 10, overflowX: "auto", paddingBottom: 2 }}>
           {filters.map(f => (
             <button key={f.id} onClick={() => setFilter(f.id)} style={{
-              padding: "7px 15px", borderRadius: 30, border: "1px solid",
-              borderColor: filter === f.id ? "#c8a97e" : "#1e1208",
-              background: filter === f.id ? "#c8a97e16" : "transparent",
-              color: filter === f.id ? "#c8a97e" : "#4a3828",
-              fontSize: 12, fontWeight: 600, cursor: "pointer", whiteSpace: "nowrap", transition: "all 0.2s",
+              padding: "8px 16px",
+borderRadius: 30,
+border: "1px solid rgba(255,255,255,0.12)",
+
+background: filter === f.id
+? "linear-gradient(135deg, #e8c7a7, #d4a373)"
+: "rgba(255,255,255,0.04)",
+
+color: filter === f.id
+? "#1a1a1a"
+: "#f7efe8",
+
+fontSize: 12,
+fontWeight: 600,
+              cursor: "pointer", whiteSpace: "nowrap", transition: "all 0.2s",
             }}>{f.label}</button>
           ))}
         </div>
@@ -572,4 +618,4 @@ export default function App() {
       )}
     </div>
   );
-} fix homepage title
+}
