@@ -281,6 +281,7 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
     setSubmitted(true);
   }
 
+
   const inp = {
     width: "100%", background: "#0e0a08", border: "1px solid #251810",
     borderRadius: 9, padding: "10px 12px", color: "#e8d5b8",
@@ -607,9 +608,7 @@ fontWeight: 600,
         ✦ TAP A SUPPLIER · EXPAND PRODUCTS · WRITE A REVIEW ✦
       </div>
       
-  <div>
-    <h1>IT WORKS</h1>
-    </div>
+  
     </div>
     </div>
   );
