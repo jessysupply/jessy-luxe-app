@@ -602,6 +602,7 @@ fontWeight: 600,
           </div>
         </div>
       </div>
+      
       return (
         <div>
       <div style={{ textAlign: "center", color: "#160e06", fontSize: 9, marginTop: 20, letterSpacing: 3 }}>
@@ -611,5 +612,5 @@ fontWeight: 600,
   
     </div>
     </div>
-  );
-}
+    );
+  }
