@@ -572,4 +572,4 @@ export default function App() {
       )}
     </div>
   );
-}
+} fix homepage title
