@@ -615,7 +615,9 @@ fontWeight: 600,
           setUserReviews((prev) => [...prev, review]);
           setTimeout(() => setReviewTarget(null), 2000);
         }}
-      />
-    )}
-  </div>
-  );
+        />
+        )}
+      </div>
+      </div>
+}
+    
