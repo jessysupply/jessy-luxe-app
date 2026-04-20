@@ -659,6 +659,13 @@ fontWeight: 600,
         color: "#8a7060",
         fontSize: 12,
       }}>
+        <div style={{ display: "flex", justifyContent: "center", gap: 20, marginBottom: 16, flexWrap: "wrap" }}>
+  <a href="https://www.instagram.com/jessyluxebeautysupply" target="_blank" rel="noreferrer" style={{ color: "#2a6a2a", fontSize: 13, textDecoration: "none", fontWeight: 600 }}>Instagram</a>
+  <a href="https://www.facebook.com/profile.php?id=61584991686166" target="_blank" rel="noreferrer" style={{ color: "#2a6a2a", fontSize: 13, textDecoration: "none", fontWeight: 600 }}>Facebook</a>
+  <a href="https://www.tiktok.com/@vixen565" target="_blank" rel="noreferrer" style={{ color: "#2a6a2a", fontSize: 13, textDecoration: "none", fontWeight: 600 }}>TikTok</a>
+  <a href="https://www.pinterest.com/jessyluxe303" target="_blank" rel="noreferrer" style={{ color: "#2a6a2a", fontSize: 13, textDecoration: "none", fontWeight: 600 }}>Pinterest</a>
+  <a href="mailto:jessysupply@jessyluxebeauty.com" style={{ color: "#2a6a2a", fontSize: 13, textDecoration: "none", fontWeight: 600 }}>Email Us</a>
+</div>
         <p>© 2025 Jessy Luxe Beauty. All rights reserved.</p>
         <p style={{ marginTop: 8 }}>
           Built for the community · Not affiliated with any brand
