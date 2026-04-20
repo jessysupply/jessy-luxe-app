@@ -477,7 +477,7 @@ export default function App() {
   <img 
     src="/jessylogo.jpg" 
     alt="Jessy Luxe Beauty" 
-    style={{ height: 80, objectFit: "contain" }} 
+    style={{ height: 150, objectFit: "contain" }} 
   />
 </div>
 <div style={{
