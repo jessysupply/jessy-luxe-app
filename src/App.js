@@ -276,6 +276,18 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
               fontSize: 12, fontWeight: 600, letterSpacing: 1, textTransform: "uppercase",
               transition: "background 0.2s",
             }}>&#9997; Write a Review</button>
+            <a href={supplier.website} target="_blank" rel="noreferrer" style={{
+  display: "inline-block", padding: "6px 14px", borderRadius: 8,
+  background: "transparent", border: "1px solid #c8a97e",
+  color: "#c8a97e", fontSize: 11, textDecoration: "none",
+  marginLeft: 8
+}}>Official Site</a>
+<a href={supplier.shopLink} target="_blank" rel="noreferrer" style={{
+  display: "inline-block", padding: "6px 14px", borderRadius: 8,
+  background: "#c8a97e", border: "1px solid #c8a97e",
+  color: "#1a0f0a", fontSize: 11, textDecoration: "none",
+  marginLeft: 8, fontWeight: 600
+}}>Shop Now</a>
           </div>
         </div>
       )}
