@@ -574,13 +574,13 @@ fontWeight: 600,
 
         {/* Sort */}
         <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
-          <span style={{ color: "#2e2010", fontSize: 10, letterSpacing: 1, textTransform: "uppercase" }}>Sort</span>
+          <span style={{ color: "#2a5a2a", fontSize: 10, letterSpacing: 1, textTransform: "uppercase" }}>Sort</span>
           {[["name","Name"],["rating","Top Rated"],["products","Most Products"]].map(([val, lab]) => (
             <button key={val} onClick={() => setSortBy(val)} style={{
               padding: "4px 11px", borderRadius: 20, border: "1px solid",
-              borderColor: sortBy === val ? "#c8a97e45" : "#180e06",
-              background: sortBy === val ? "#c8a97e07" : "transparent",
-              color: sortBy === val ? "#c8a97e" : "#2e2010",
+              borderColor: sortBy === val ? "#2a6a2a" : "#4a8a4a",
+              background: sortBy === val ? "#2a6a2a" : "transparent",
+              color: sortBy === val ? "#ffffff" : "#2a5a2a",
               fontSize: 11, cursor: "pointer", transition: "all 0.2s",
             }}>{lab}</button>
           ))}
