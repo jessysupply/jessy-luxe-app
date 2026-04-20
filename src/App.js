@@ -475,7 +475,7 @@ export default function App() {
    <div style={{ textAlign: "center", marginBottom: 20 }}>
   <div style={{
     fontFamily: "'Playfair Display', serif",
-    fontSize: "42px",
+    fontSize: "62px",
     fontWeight: 900,
     color: "#1a3a1a",
     letterSpacing: 3,
