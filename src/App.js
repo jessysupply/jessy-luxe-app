@@ -473,7 +473,14 @@ export default function App() {
   borderBottom: "1px solid rgba(255,255,255,0.08)"
 }}>
       
-      <div style={{
+      <div style={{ textAlign: "center", paddingTop: 30, marginBottom: 10 }}>
+  <img 
+    src="/jessylogo.jpg" 
+    alt="Jessy Luxe Beauty" 
+    style={{ height: 80, objectFit: "contain" }} 
+  />
+</div>
+<div style={{
   fontSize: 11,
   letterSpacing: 6,
   color: "#2a6a2a",
