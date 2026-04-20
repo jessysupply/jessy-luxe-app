@@ -465,7 +465,7 @@ export default function App() {
   textAlign: "center",
   padding: "110px 24px 80px",
   minHeight: "72vh",
-  background: "#fffaf5",
+  background: "linear-gradient(180deg, #d8ead8 0%, #e8f0e8 100%)",
   
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -493,7 +493,7 @@ export default function App() {
         <h1 style={{
   fontFamily: "'Playfair Display', serif",
   fontWeight: 900,
-  fontSize: "clamp(36px, 6vw, 64px)",
+  fontSize: "clamp(28px, 4vw, 48px)",
   textAlign: "center",
   marginBottom: "10px",
   color: "#1a3a1a"
