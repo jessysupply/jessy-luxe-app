@@ -475,7 +475,7 @@ export default function App() {
    <div style={{ textAlign: "center", marginBottom: 20 }}>
   <div style={{
     fontFamily: "'Playfair Display', serif",
-    fontSize: "62px",
+    fontSize: "72px",
     fontWeight: 900,
     color: "#1a3a1a",
     letterSpacing: 3,
@@ -493,7 +493,7 @@ export default function App() {
         <h1 style={{
   fontFamily: "'Playfair Display', serif",
   fontWeight: 900,
-  fontSize: "clamp(28px, 4vw, 48px)",
+  fontSize: "clamp(22px, 3vw, 36px)",
   textAlign: "center",
   marginBottom: "10px",
   color: "#1a3a1a"
