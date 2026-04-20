@@ -489,16 +489,16 @@ export default function App() {
   fontSize: "clamp(36px, 6vw, 64px)",
   textAlign: "center",
   marginBottom: "10px",
-  color: "#f7eFe8"
+  color: "#1a3a1a"
 }}>
   The Hair <br />
-  <span style={{ color: "#e8c7a7" }}>
+  <span style={{ color: "#2a5a2a" }}>
     Supplier Rater
   </span>
 </h1>
       
 <p style={{
-  color: "#d8cfc7",
+  color: "#3a5a3a",
   fontSize: "18px",
   maxWidth: "620px",
   margin: "0 auto",
@@ -558,12 +558,12 @@ borderRadius: 30,
 border: "1px solid rgba(255,255,255,0.12)",
 
 background: filter === f.id
-? "linear-gradient(135deg, #e8c7a7, #d4a373)"
-: "rgba(255,255,255,0.04)",
+? "linear-gradient(135deg, #4a8a4a, #2a6a2a)"
+: "rgba(255,255,255,0.6)",
 
 color: filter === f.id
-? "#1a1a1a"
-: "#f7efe8",
+? "#ffffff"
+: "#2a5a2a",
 
 fontSize: 12,
 fontWeight: 600,
