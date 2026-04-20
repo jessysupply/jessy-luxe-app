@@ -107,9 +107,9 @@ shopLink: "https://hairtobeauty.com/collections/vivica-a-fox-wigs",
 ];
 
 const CATEGORY_CONFIG = {
-  human:     { label: "100% Human",  color: "#c8a97e", bg: "#2e1f0e" },
-  synthetic: { label: "Synthetic",   color: "#7eb8c8", bg: "#0e1e2e" },
-  mixed:     { label: "Blend",       color: "#b87ec8", bg: "#1e0e2e" },
+  human:     { label: "100% Human",  color: "#2a6a2a", bg: "#d8ead8" },
+  synthetic: { label: "Synthetic",   color: "#2a5a8a", bg: "#d8e8f0" },
+  mixed:     { label: "Blend",       color: "#6a2a8a", bg: "#ead8f0" },
 };
 
 function avgRating(products) {
@@ -171,8 +171,8 @@ function ProductRow({ product, delay }) {
         border: `1px solid ${cfg.color}40`, whiteSpace: "nowrap",
       }}>{cfg.label}</span>
       <div style={{ flex: 1, minWidth: 0 }}>
-        <div style={{ color: "#e8d5b8", fontSize: 13, fontWeight: 600 }}>{product.texture}</div>
-        <div style={{ color: "#7a6050", fontSize: 11 }}>{product.lengths}</div>
+        <div style={{ color: "#1a3a1a", fontSize: 13, fontWeight: 600 }}>{product.texture}</div>
+        <div style={{ color: "##4a7a4a", fontSize: 11 }}>{product.lengths}</div>
       </div>
       <div style={{ textAlign: "right", flexShrink: 0 }}>
         <div><StarRating rating={product.rating} /></div>
@@ -218,9 +218,9 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
       <div onClick={onToggle} style={{ display: "flex", alignItems: "center", gap: 13, padding: "15px 16px", cursor: "pointer" }}>
         <div style={{
           width: 44, height: 44, borderRadius: 10, flexShrink: 0,
-          background: "linear-gradient(135deg, #c8a97e, #7a5a28)",
+          background: "linear-gradient(135deg, #4a8a4a, #2a6a2a)",
           display: "flex", alignItems: "center", justifyContent: "center",
-          fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 12, color: "#08060a",
+          fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 12, color: "#ffffff",
         }}>{supplier.logo}</div>
         <div style={{ flex: 1 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
@@ -242,8 +242,8 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           </div>
         </div>
         <div style={{ textAlign: "center", flexShrink: 0 }}>
-          <div style={{ color: "#8a6a3a", fontSize: 20, fontFamily: "'Playfair Display', serif", fontWeight: 900 }}>{avg}</div>
-          <div style={{ color: "#8a7a70", fontSize: 9, letterSpacing: 1 }}>AVG</div>
+          <div style={{ color: "#2a6a2a", fontSize: 20, fontFamily: "'Playfair Display', serif", fontWeight: 900 }}>{avg}</div>
+          <div style={{ color: "#4a7a4a", fontSize: 9, letterSpacing: 1 }}>AVG</div>
         </div>
         <div style={{ color: "#3a2a20", fontSize: 15, transition: "transform 0.3s", transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)", flexShrink: 0 }}>&#9660;</div>
       </div>
