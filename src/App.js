@@ -104,6 +104,178 @@ shopLink: "https://hairtobeauty.com/collections/vivica-a-fox-wigs",
       { type: "Human/Synthetic Blend", category: "mixed", texture: "Full Wig — Wavy", lengths: "18\"–22\"", price: "$55–$130", rating: 3.9, reviews: 480 },
     ],
   },
+  {
+    id: 11, name: "Outre Hair", logo: "OT", origin: "USA", tags: ["Trendy", "Affordable"],
+    website: "https://www.outre.com",
+    shopLink: "https://ebonyline.com/collections/outre-231",
+    products: [
+      { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "12\"–26\"", price: "$20–$60", rating: 4.2, reviews: 2100 },
+      { type: "100% Human", category: "human", texture: "Remi Weave", lengths: "10\"–30\"", price: "$40–$150", rating: 4.3, reviews: 1500 },
+      { type: "Human/Synthetic Blend", category: "mixed", texture: "HD Lace Wig", lengths: "14\"–24\"", price: "$50–$120", rating: 4.1, reviews: 980 },
+    ],
+  },
+  {
+    id: 12, name: "Shake-N-Go", logo: "SG", origin: "USA", tags: ["Budget", "Wigs"],
+    website: "https://www.shake-n-go.com",
+    shopLink: "https://ebonyline.com/collections/shake-n-go",
+    products: [
+      { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–22\"", price: "$18–$55", rating: 4.0, reviews: 1800 },
+      { type: "Human/Synthetic Blend", category: "mixed", texture: "Half Wig", lengths: "12\"–18\"", price: "$25–$65", rating: 3.9, reviews: 1200 },
+    ],
+  },
+  {
+    id: 13, name: "Freetress", logo: "FT", origin: "USA", tags: ["Braids", "Crochet"],
+    website: "https://www.freetress.com",
+    shopLink: "https://ebonyline.com/collections/freetress",
+    products: [
+      { type: "Synthetic", category: "synthetic", texture: "Crochet Braid", lengths: "10\"–24\"", price: "$8–$25", rating: 4.1, reviews: 2200 },
+      { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "12\"–22\"", price: "$20–$55", rating: 4.0, reviews: 1600 },
+    ],
+  },
+  {
+    id: 14, name: "Model Model", logo: "MM", origin: "USA", tags: ["Affordable", "Wigs"],
+    website: "https://www.modelmodel.com",
+    shopLink: "https://ebonyline.com/collections/model-model",
+    products: [
+      { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–22\"", price: "$20–$60", rating: 4.0, reviews: 1400 },
+      { type: "Human/Synthetic Blend", category: "mixed", texture: "Full Wig", lengths: "12\"–20\"", price: "$30–$80", rating: 3.9, reviews: 900 },
+    ],
+  },
+  {
+    id: 15, name: "Bellami Hair", logo: "BL", origin: "USA", tags: ["Luxury", "Extensions"],
+    website: "https://www.bellamihair.com",
+    shopLink: "https://www.bellamihair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "16\"–24\"", price: "$180–$380", rating: 4.6, reviews: 3200 },
+      { type: "100% Human", category: "human", texture: "Tape-In Extensions", lengths: "14\"–22\"", price: "$160–$320", rating: 4.5, reviews: 2100 },
+    ],
+  },
+  {
+    id: 16, name: "UNice Hair", logo: "UN", origin: "China", tags: ["Affordable", "Human Hair"],
+    website: "https://www.unice.com",
+    shopLink: "https://www.unice.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$55–$200", rating: 4.4, reviews: 4500 },
+      { type: "100% Human", category: "human", texture: "Straight Lace Front", lengths: "12\"–28\"", price: "$60–$220", rating: 4.3, reviews: 3800 },
+    ],
+  },
+  {
+    id: 17, name: "Luvme Hair", logo: "LV", origin: "China", tags: ["Glueless", "Human Hair"],
+    website: "https://luvmehair.com",
+    shopLink: "https://luvmehair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Glueless Wig", lengths: "10\"–30\"", price: "$80–$300", rating: 4.5, reviews: 5200 },
+      { type: "100% Human", category: "human", texture: "HD Lace Front", lengths: "12\"–26\"", price: "$90–$280", rating: 4.4, reviews: 4100 },
+    ],
+  },
+  {
+    id: 18, name: "Private Label Extensions", logo: "PL", origin: "USA", tags: ["Wholesale", "Virgin Hair"],
+    website: "https://www.privatelabelextensions.com",
+    shopLink: "https://www.privatelabelextensions.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Virgin Bundle", lengths: "10\"–30\"", price: "$70–$250", rating: 4.6, reviews: 2800 },
+      { type: "100% Human", category: "human", texture: "Lace Closure", lengths: "12\"–20\"", price: "$60–$180", rating: 4.5, reviews: 1900 },
+    ],
+  },
+  {
+    id: 19, name: "TedHair", logo: "TH", origin: "China", tags: ["Affordable", "Human Hair"],
+    website: "https://www.tedhair.com",
+    shopLink: "https://www.tedhair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "10\"–28\"", price: "$40–$160", rating: 4.3, reviews: 2100 },
+      { type: "100% Human", category: "human", texture: "Straight Wig", lengths: "12\"–26\"", price: "$55–$190", rating: 4.2, reviews: 1700 },
+    ],
+  },
+  {
+    id: 20, name: "Nadula Hair", logo: "ND", origin: "China", tags: ["Human Hair", "Wigs"],
+    website: "https://www.nadula.com",
+    shopLink: "https://www.nadula.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "10\"–30\"", price: "$60–$250", rating: 4.4, reviews: 3600 },
+      { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$45–$180", rating: 4.3, reviews: 2900 },
+    ],
+  },
+  {
+    id: 21, name: "Ballice Hair", logo: "BH", origin: "USA", tags: ["Virgin Hair", "Bundles"],
+    website: "https://ballicevirginhair.com",
+    shopLink: "https://ballicevirginhair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Virgin Bundle", lengths: "10\"–30\"", price: "$80–$280", rating: 4.5, reviews: 1200 },
+      { type: "100% Human", category: "human", texture: "Lace Frontal", lengths: "12\"–22\"", price: "$70–$200", rating: 4.4, reviews: 900 },
+    ],
+  },
+  {
+    id: 22, name: "Rebe Hair", logo: "RB", origin: "China", tags: ["Affordable", "Human Hair"],
+    website: "https://www.rebehair.com",
+    shopLink: "https://www.rebehair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Straight Bundle", lengths: "10\"–28\"", price: "$35–$150", rating: 4.2, reviews: 1500 },
+      { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "12\"–26\"", price: "$55–$200", rating: 4.1, reviews: 1100 },
+    ],
+  },
+  {
+    id: 23, name: "Honest Hair Factory", logo: "HF", origin: "China", tags: ["Wholesale", "Factory Direct"],
+    website: "https://www.honesthairfactory.com",
+    shopLink: "https://www.honesthairfactory.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Virgin Bundle", lengths: "10\"–30\"", price: "$30–$140", rating: 4.3, reviews: 1800 },
+      { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "12\"–28\"", price: "$60–$220", rating: 4.2, reviews: 1400 },
+    ],
+  },
+  {
+    id: 24, name: "Dhwarak Indian Hair", logo: "DI", origin: "India", tags: ["Raw Indian", "Virgin Hair"],
+    website: "https://dhwarakindianhair.com",
+    shopLink: "https://dhwarakindianhair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Raw Indian Bundle", lengths: "10\"–30\"", price: "$60–$220", rating: 4.5, reviews: 800 },
+      { type: "100% Human", category: "human", texture: "Raw Curly Bundle", lengths: "12\"–26\"", price: "$70–$240", rating: 4.4, reviews: 650 },
+    ],
+  },
+  {
+    id: 25, name: "Alibaba", logo: "AB", origin: "China", tags: ["Wholesale", "Budget"],
+    website: "https://www.alibaba.com",
+    shopLink: "https://www.alibaba.com/trade/search?SearchText=human+hair+extensions",
+    products: [
+      { type: "100% Human", category: "human", texture: "Bulk Bundle", lengths: "10\"–30\"", price: "$20–$100", rating: 3.8, reviews: 5000 },
+      { type: "Synthetic", category: "synthetic", texture: "Synthetic Wig", lengths: "10\"–24\"", price: "$10–$50", rating: 3.7, reviews: 4200 },
+    ],
+  },
+  {
+    id: 26, name: "Virgin Hair Vendor", logo: "VV", origin: "China", tags: ["Virgin Hair", "Wholesale"],
+    website: "https://www.virginhairvendor.com",
+    shopLink: "https://www.virginhairvendor.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Virgin Bundle", lengths: "10\"–30\"", price: "$40–$180", rating: 4.3, reviews: 1600 },
+      { type: "100% Human", category: "human", texture: "Lace Front Wig", lengths: "12\"–26\"", price: "$70–$220", rating: 4.2, reviews: 1200 },
+    ],
+  },
+  {
+    id: 27, name: "Indique Hair", logo: "IQ", origin: "India", tags: ["Luxury", "Virgin Hair"],
+    website: "https://www.indiquehair.com",
+    shopLink: "https://www.indiquehair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Virgin Indian Bundle", lengths: "10\"–30\"", price: "$90–$300", rating: 4.6, reviews: 2400 },
+      { type: "100% Human", category: "human", texture: "Lace Closure Wig", lengths: "12\"–26\"", price: "$120–$380", rating: 4.5, reviews: 1800 },
+    ],
+  },
+  {
+    id: 28, name: "New Star Hair", logo: "NS", origin: "China", tags: ["Virgin Hair", "Human Hair"],
+    website: "https://newstarwig.com",
+    shopLink: "https://newstarwig.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$50–$200", rating: 4.3, reviews: 1900 },
+      { type: "100% Human", category: "human", texture: "Straight Bundle", lengths: "12\"–28\"", price: "$40–$160", rating: 4.2, reviews: 1500 },
+    ],
+  },
+  {
+    id: 29, name: "Asteria Hair", logo: "AS", origin: "China", tags: ["Human Hair", "Affordable"],
+    website: "https://www.asteriahair.com",
+    shopLink: "https://www.asteriahair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "10\"–30\"", price: "$55–$220", rating: 4.4, reviews: 2200 },
+      { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$40–$170", rating: 4.3, reviews: 1800 },
+    ],
+  },
 ];
 
 const CATEGORY_CONFIG = {
