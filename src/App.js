@@ -323,7 +323,7 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
 
   return (
     <div style={{
-      position: "fixed", inset: 0, zIndex: 999,
+      position: "fixed", inset: 0, zIndex: zIndex: 99999,
       background: "rgba(3,1,1,0.93)", display: "flex", alignItems: "flex-end",
       animation: "fadeUp 0.2s ease both",
     }} onClick={onClose}>
