@@ -465,7 +465,7 @@ export default function App() {
   textAlign: "center",
   padding: "110px 24px 80px",
   minHeight: "72vh",
-  background: "linear-gradient(180deg, #d8ead8 0%, #e8f0e8 100%)",
+  background: "linear-gradient(180deg, #b8d8b8 0%, #c8e0c8 100%)",
   
   backgroundSize: "cover",
   backgroundPosition: "center",
@@ -474,7 +474,7 @@ export default function App() {
 }}>
       
       <div style={{ textAlign: "center", paddingTop: 20, marginBottom: 10 }}>
-  ✦ Hair Supplier Intelligence ✦
+      ✦ Hair Supplier Intelligence Hub ✦
 </div>
 <div style={{ textAlign: "center", marginBottom: 20 }}>
   <img 
