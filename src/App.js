@@ -476,7 +476,7 @@ export default function App() {
       <div style={{
   fontSize: 11,
   letterSpacing: 6,
-  color: "#d4a373",
+  color: "#2a6a2a",
   textTransform: "uppercase",
   marginBottom: 18
 }}>
