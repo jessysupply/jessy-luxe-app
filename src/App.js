@@ -229,9 +229,9 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           </div>
           <div style={{ display: "flex", gap: 5, marginTop: 5, flexWrap: "wrap" }}>
             {supplier.tags.map(t => (
-              <span key={t} style={{ fontSize: 9, color: "#7a6040", background: "#160e08", border: "1px solid #2a1a0e", borderRadius: 20, padding: "2px 8px" }}>{t}</span>
+              <span key={t} style={{ fontSize: 9, color: "#2a5a2a", background: "#e8f0e8", border: "1px solid #4a8a4a", borderRadius: 20, padding: "2px 8px" }}>{t}</span>
             ))}
-            <span style={{ fontSize: 9, color: "#c8a97e", background: "#1c1006", border: "1px solid #c8a97e28", borderRadius: 20, padding: "2px 8px" }}>
+            <span style={{ fontSize: 9, color: "#2a6a2a", background: "#d8ead8", border: "1px solid #c8a97e28", borderRadius: 20, padding: "2px 8px" }}>
               {supplier.products.length} products
             </span>
             {myReviews.length > 0 && (
