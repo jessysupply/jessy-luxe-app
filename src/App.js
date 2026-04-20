@@ -209,11 +209,11 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
 
   return (
     <div style={{
-      background: "linear-gradient(135deg, #1a1210 0%, #100c0a 100%)",
-      border: `1px solid ${isExpanded ? "#c8a97e45" : "#1e1410"}`,
+      background: "linear-gradient(135deg, #ffffff 0%, #f8f8f6 100%)"
+      border: `1px solid ${isExpanded ? "#c8a97e" : "#e0d8d0"}`
       borderRadius: 16, marginBottom: 11, overflow: "hidden",
       transition: "border-color 0.3s, box-shadow 0.3s",
-      boxShadow: isExpanded ? "0 8px 36px rgba(200,169,126,0.11)" : "0 2px 10px rgba(0,0,0,0.5)",
+      boxShadow: isExpanded ? "0 8px 36px rgba(200,169,126,0.3)" : "0 2px 10px rgba(0,0,0,0.08)"
     }}>
       <div onClick={onToggle} style={{ display: "flex", alignItems: "center", gap: 13, padding: "15px 16px", cursor: "pointer" }}>
         <div style={{
@@ -224,8 +224,8 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
         }}>{supplier.logo}</div>
         <div style={{ flex: 1 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-            <span style={{ color: "#e8d5b8", fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15 }}>{supplier.name}</span>
-            <span style={{ color: "#4a3a30", fontSize: 11 }}>• {supplier.origin}</span>
+            <span style={{ color: "#2a1a10", fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15 }}>{supplier.name}</span>
+            <span style={{ color: "#6a5a50", fontSize: 11 }}>• {supplier.origin}</span>
           </div>
           <div style={{ display: "flex", gap: 5, marginTop: 5, flexWrap: "wrap" }}>
             {supplier.tags.map(t => (
@@ -242,8 +242,8 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           </div>
         </div>
         <div style={{ textAlign: "center", flexShrink: 0 }}>
-          <div style={{ color: "#c8a97e", fontSize: 20, fontFamily: "'Playfair Display', serif", fontWeight: 900 }}>{avg}</div>
-          <div style={{ color: "#4a3a30", fontSize: 9, letterSpacing: 1 }}>AVG</div>
+          <div style={{ color: "#8a6a3a", fontSize: 20, fontFamily: "'Playfair Display', serif", fontWeight: 900 }}>{avg}</div>
+          <div style={{ color: "#8a7a70", fontSize: 9, letterSpacing: 1 }}>AVG</div>
         </div>
         <div style={{ color: "#3a2a20", fontSize: 15, transition: "transform 0.3s", transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)", flexShrink: 0 }}>&#9660;</div>
       </div>
@@ -447,7 +447,7 @@ export default function App() {
   const totalBase = INITIAL_SUPPLIERS.reduce((a, s) => a + s.products.reduce((b, p) => b + p.reviews, 0), 0);
 
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(180deg, #fffaf5 0%, #f8efe6 45%, #f1e3d3 100%)", color: "#2b2b2b", fontFamily: "'DM Sans', sans-serif", paddingBottom: 60 }}>
+    <div style={{ minHeight: "100vh", background: "linear-gradient(180deg, #f0f5f0 0%, #e8f0e8 45%, #dde8dd 100%)", color: "#2b2b2b", fontFamily: "'DM Sans', sans-serif", paddingBottom: 60 }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
