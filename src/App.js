@@ -617,7 +617,7 @@ fontWeight: 600,
             key={s.id} supplier={s}
             isExpanded={expandedId === s.id}
             onToggle={() => setExpandedId(expandedId === s.id ? null : s.id)}
-            onReviewClick={sup => setReviewTarget(sup)}
+            onReviewClick={sup => { console.log("clicked", sup); setReviewTarget(sup); }}
             userReviews={userReviews}
           />
         ))}
