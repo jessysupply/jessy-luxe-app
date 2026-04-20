@@ -209,8 +209,8 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
 
   return (
     <div style={{
-      background: "linear-gradient(135deg, #ffffff 0%, #f8f8f6 100%)"
-      border: `1px solid ${isExpanded ? "#c8a97e" : "#e0d8d0"}`
+      background: "linear-gradient(135deg, #ffffff 0%, #f8f8f6 100%)",
+      border: `1px solid ${isExpanded ? "#c8a97e" : "#e0d8d0"}`,
       borderRadius: 16, marginBottom: 11, overflow: "hidden",
       transition: "border-color 0.3s, box-shadow 0.3s",
       boxShadow: isExpanded ? "0 8px 36px rgba(200,169,126,0.3)" : "0 2px 10px rgba(0,0,0,0.08)"
