@@ -535,9 +535,9 @@ export default function App() {
             value={searchQ} onChange={e => setSearchQ(e.target.value)}
             placeholder="Search by supplier name or texture..."
             style={{
-              width: "100%", background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.12)",
+              width: "100%", background: "rgba(255,255,255,0.9)", border: "1px solid rgba(255,255,255,0.12)",
               borderRadius: 30, padding: "10px 12px 10px 32px",
-              color: "#f7efe8", fontSize: 13, outline: "none", fontFamily: "'DM Sans', sans-serif",
+              color: "#1a0f0a", fontSize: 13, outline: "none", fontFamily: "'DM Sans', sans-serif",
               boxShadow: "0 8px 20px rgba(0,0,0,0.25)",
             }}
           />
