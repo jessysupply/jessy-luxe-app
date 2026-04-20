@@ -348,7 +348,105 @@ shopLink: "https://hairtobeauty.com/collections/vivica-a-fox-wigs",
       { type: "Synthetic", category: "synthetic", texture: "Full Wig", lengths: "10\"–22\"", price: "$20–$60", rating: 4.0, reviews: 1400 },
     ],
   },
-  
+  {
+    id: 38, name: "Ali Grace Hair", logo: "AG", origin: "China", tags: ["Human Hair", "Wigs"],
+    website: "https://www.aligracehairmall.com",
+    shopLink: "https://www.aligracehairmall.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$50–$200", rating: 4.4, reviews: 2600 },
+      { type: "100% Human", category: "human", texture: "Straight Lace Front", lengths: "12\"–28\"", price: "$55–$210", rating: 4.3, reviews: 2100 },
+    ],
+  },
+  {
+    id: 39, name: "She's Happy Hair", logo: "SH", origin: "USA", tags: ["Virgin Hair", "Bundles"],
+    website: "https://www.sheshappyhair.com",
+    shopLink: "https://www.sheshappyhair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Peruvian Body Wave", lengths: "10\"–30\"", price: "$70–$240", rating: 4.5, reviews: 1800 },
+      { type: "100% Human", category: "human", texture: "Boho Braiding Hair", lengths: "12\"–26\"", price: "$60–$200", rating: 4.4, reviews: 1400 },
+    ],
+  },
+  {
+    id: 40, name: "Her Hair Company", logo: "HH", origin: "USA", tags: ["Virgin Hair", "Wholesale"],
+    website: "https://www.herhaircompany.com",
+    shopLink: "https://www.herhaircompany.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Virgin Bundle", lengths: "10\"–30\"", price: "$65–$220", rating: 4.5, reviews: 2100 },
+      { type: "100% Human", category: "human", texture: "Lace Closure Wig", lengths: "12\"–26\"", price: "$90–$280", rating: 4.4, reviews: 1700 },
+    ],
+  },
+  {
+    id: 41, name: "UniWigs", logo: "UW", origin: "USA", tags: ["Wigs", "Hair Toppers"],
+    website: "https://www.uniwigs.com",
+    shopLink: "https://www.uniwigs.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Lace Front Wig", lengths: "10\"–24\"", price: "$80–$350", rating: 4.5, reviews: 2400 },
+      { type: "Synthetic", category: "synthetic", texture: "Hair Topper", lengths: "8\"–18\"", price: "$40–$160", rating: 4.3, reviews: 1800 },
+    ],
+  },
+  {
+    id: 42, name: "Black Show Hair", logo: "BS", origin: "China", tags: ["Virgin Hair", "Wholesale"],
+    website: "https://www.blackshowhair.com",
+    shopLink: "https://www.blackshowhair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Virgin Bundle", lengths: "10\"–30\"", price: "$35–$160", rating: 4.3, reviews: 1600 },
+      { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "12\"–28\"", price: "$55–$200", rating: 4.2, reviews: 1200 },
+    ],
+  },
+  {
+    id: 43, name: "Virgin City Hair", logo: "VC", origin: "USA", tags: ["Virgin Hair", "Wholesale"],
+    website: "https://www.virgincityhair.com",
+    shopLink: "https://www.virgincityhair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Virgin Bundle", lengths: "10\"–30\"", price: "$60–$220", rating: 4.4, reviews: 1400 },
+      { type: "100% Human", category: "human", texture: "Lace Front Wig", lengths: "12\"–26\"", price: "$80–$260", rating: 4.3, reviews: 1100 },
+    ],
+  },
+  {
+    id: 44, name: "Beaudiva Hair", logo: "BD", origin: "China", tags: ["Affordable", "Human Hair"],
+    website: "https://www.beaudivahair.com",
+    shopLink: "https://www.beaudivahair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$45–$180", rating: 4.3, reviews: 2200 },
+      { type: "100% Human", category: "human", texture: "Straight Bundle", lengths: "12\"–28\"", price: "$35–$150", rating: 4.2, reviews: 1800 },
+    ],
+  },
+  {
+    id: 45, name: "Yummi Hair Extensions", logo: "YH", origin: "USA", tags: ["Premium", "Virgin Hair"],
+    website: "https://www.yummihair.com",
+    shopLink: "https://www.yummihair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Virgin Bundle", lengths: "10\"–30\"", price: "$80–$280", rating: 4.6, reviews: 1500 },
+      { type: "100% Human", category: "human", texture: "Lace Front Wig", lengths: "12\"–26\"", price: "$100–$320", rating: 4.5, reviews: 1200 },
+    ],
+  },
+  {
+    id: 46, name: "Govihair", logo: "GV", origin: "Vietnam", tags: ["Vietnamese Hair", "Premium"],
+    website: "https://www.govihair.com",
+    shopLink: "https://www.govihair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Bone Straight Bundle", lengths: "10\"–30\"", price: "$55–$200", rating: 4.5, reviews: 1900 },
+      { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "12\"–28\"", price: "$70–$240", rating: 4.4, reviews: 1500 },
+    ],
+  },
+  {
+    id: 47, name: "Yoghair", logo: "YG", origin: "Vietnam", tags: ["Vietnamese Hair", "Wholesale"],
+    website: "https://www.yoghair.com",
+    shopLink: "https://www.yoghair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Raw Vietnamese Bundle", lengths: "10\"–30\"", price: "$50–$190", rating: 4.5, reviews: 1700 },
+      { type: "100% Human", category: "human", texture: "Bone Straight Wig", lengths: "12\"–28\"", price: "$65–$220", rating: 4.4, reviews: 1300 },
+    ],
+  },
+  {
+    id: 48, name: "Vietnam Remy Hair", logo: "VR", origin: "Vietnam", tags: ["Remy Hair", "Wholesale"],
+    website: "https://www.vietnamremyhair.com",
+    shopLink: "https://www.vietnamremyhair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Remy Bundle", lengths: "10\"–30\"", price: "$45–$180", rating: 4.4, reviews: 1600 },
+      { type: "100% Human", category: "human", texture: "Lace Closure Wig", lengths: "12\"–26\"", price: "$65–$220", rating: 4.3, reviews: 1200 },
+    ],
+  },
 ];
 
 const CATEGORY_CONFIG = {
