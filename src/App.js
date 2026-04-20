@@ -473,23 +473,16 @@ export default function App() {
   borderBottom: "1px solid rgba(255,255,255,0.08)"
 }}>
       
-      <div style={{ textAlign: "center", paddingTop: 0, marginBottom: 10, display: "flex", justifyContent: "center" }}>
+      <div style={{ textAlign: "center", paddingTop: 20, marginBottom: 10 }}>
+  ✦ Hair Supplier Intelligence ✦
+</div>
+<div style={{ textAlign: "center", marginBottom: 20 }}>
   <img 
     src="/jessylogo.jpg" 
     alt="Jessy Luxe Beauty" 
-    style={{ height: 150, objectFit: "contain" }} 
+    style={{ height: 200, objectFit: "contain" }} 
   />
 </div>
-<div style={{
-  fontSize: 11,
-  letterSpacing: 6,
-  color: "#2a6a2a",
-  textTransform: "uppercase",
-  marginBottom: 18
-}}>
-  ✦ Hair Supplier Intelligence ✦
-
-        </div>
         <h1 style={{
   fontFamily: "'Playfair Display', serif",
   fontWeight: 900,
@@ -498,15 +491,15 @@ export default function App() {
   marginBottom: "10px",
   color: "#1a3a1a"
 }}>
-  The Hair <br />
+  Hair Vendor Reviews
   <span style={{ color: "#2a5a2a" }}>
-    Supplier Rater
+    & Ratings
   </span>
 </h1>
       
 <p style={{
-  color: "#7a9a7a",
-  fontSize: "14px",
+  color: "#3a5a3a",
+  fontSize: "18px",
   maxWidth: "620px",
   margin: "0 auto",
   lineHeight: 1.8
