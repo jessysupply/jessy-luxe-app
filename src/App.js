@@ -511,8 +511,8 @@ export default function App() {
       {/* Stats Bar */}
       <div style={{ marginTop: "28px" }}>
   <button style={{
-    background: "linear-gradient(135deg, #e8c7a7, #d4a373)",
-    color: "#1a1a1a",
+    background: "linear-gradient(135deg, #4a8a4a, #2a6a2a)",
+    color: "#ffffff",
     padding: "14px 30px",
     borderRadius: "999px",
     border: "none",
@@ -520,7 +520,7 @@ export default function App() {
     fontSize: "15px",
     letterSpacing: "0.3px",
     cursor: "pointer",
-    boxShadow: "0 10px 30px rgba(212,163,115,0.28)"
+    boxShadow: "0 10px 30px rgba(42,106,42,0.28)"
   }}>
     Explore Vendors
   </button>
