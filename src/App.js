@@ -616,15 +616,15 @@ fontWeight: 600,
 
       {/* Legend */}
       <div style={{ maxWidth: 600, margin: "4px auto 0", padding: "0 13px" }}>
-        <div style={{ borderRadius: 12, background: "#090605", border: "1px solid #140a06", padding: "14px" }}>
-          <div style={{ color: "#2e2010", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", marginBottom: 10 }}>Hair Type Guide</div>
+        <div style={{ borderRadius: 12, background: "#f0f5f0", border: "1px solid #4a8a4a", padding: "14px" }}>
+          <div style={{ color: "#2a6a2a", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", marginBottom: 10 }}>Hair Type Guide</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
             {Object.entries(CATEGORY_CONFIG).map(([key, cfg]) => (
               <div key={key} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                 <span style={{ width: 8, height: 8, borderRadius: "50%", background: cfg.color, flexShrink: 0, marginTop: 4 }} />
                 <div>
                   <span style={{ color: cfg.color, fontSize: 11, fontWeight: 600 }}>{cfg.label}</span>
-                  <span style={{ color: "#2e2010", fontSize: 11, marginLeft: 6 }}>
+                  <span style={{ color: "#2a5a2a", fontSize: 11, marginLeft: 6 }}>
                     {key === "human"     && "— Virgin or Remy from a single donor. Most natural feel, longest lasting, highest cost."}
                     {key === "synthetic" && "— Man-made fibers. Budget-friendly, less heat-versatile, great for protective styles."}
                     {key === "mixed"     && "— Human & synthetic combined. Mid-range price/quality, blends durability with a natural look."}
