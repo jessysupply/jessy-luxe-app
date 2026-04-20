@@ -600,7 +600,19 @@ fontWeight: 600,
                 </div>
             ))}
       </div>
-    </div>
+    </div><div style={{
+        textAlign: "center",
+        padding: "30px 20px",
+        marginTop: 40,
+        borderTop: "1px solid #2a1a10",
+        color: "#8a7060",
+        fontSize: 12,
+      }}>
+        <p>© 2025 Jessy Luxe Beauty. All rights reserved.</p>
+        <p style={{ marginTop: 8 }}>
+          Built for the community · Not affiliated with any brand
+        </p>
+      </div>
     </div>
     </div>
   )}
