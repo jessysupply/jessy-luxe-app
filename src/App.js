@@ -3,6 +3,8 @@ import { useState } from "react";
 const INITIAL_SUPPLIERS = [
   {
     id: 1, name: "Mayvenn Hair", logo: "M", origin: "USA", tags: ["Popular", "Certified"],
+    website: "https://shop.mayvenn.com",
+    shopLink: "https://shop.mayvenn.com/collections/all",
     products: [
       { type: "100% Human (Brazilian)", category: "human", texture: "Body Wave", lengths: "12\"–30\"", price: "$95–$340", rating: 4.7, reviews: 1380 },
       { type: "100% Human (Peruvian)", category: "human", texture: "Straight", lengths: "10\"–28\"", price: "$85–$310", rating: 4.5, reviews: 940 },
@@ -12,6 +14,8 @@ const INITIAL_SUPPLIERS = [
   },
   {
     id: 2, name: "Luxy Hair", logo: "L", origin: "Canada", tags: ["Luxury", "Extensions"],
+    website: "https://www.luxyhair.com",
+shopLink: "https://www.luxyhair.com/collections",
     products: [
       { type: "100% Remy Human", category: "human", texture: "Clip-In Straight", lengths: "16\"–24\"", price: "$159–$419", rating: 4.8, reviews: 2540 },
       { type: "100% Remy Human", category: "human", texture: "Clip-In Wavy", lengths: "18\"–22\"", price: "$179–$399", rating: 4.6, reviews: 1970 },
@@ -20,6 +24,8 @@ const INITIAL_SUPPLIERS = [
   },
   {
     id: 3, name: "Janet Collection", logo: "JC", origin: "USA", tags: ["Budget", "Wide Range"],
+    website: "https://www.janetcollection.com",
+shopLink: "https://ebonyline.com/collections/janet-collection",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Kinky Curly", lengths: "10\"–18\"", price: "$13–$38", rating: 4.0, reviews: 720 },
       { type: "Synthetic", category: "synthetic", texture: "Water Wave", lengths: "12\"–22\"", price: "$16–$44", rating: 3.8, reviews: 560 },
@@ -29,6 +35,8 @@ const INITIAL_SUPPLIERS = [
   },
   {
     id: 4, name: "Sensationnel", logo: "SN", origin: "USA", tags: ["Wigs", "Versatile"],
+    website: "https://www.sensationnel.com",
+shopLink: "https://ebonyline.com/collections/sensationnel",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig — Bob", lengths: "10\"–14\"", price: "$22–$60", rating: 4.1, reviews: 990 },
       { type: "Human/Synthetic Blend", category: "mixed", texture: "Full Wig — Curly", lengths: "16\"–20\"", price: "$55–$145", rating: 3.7, reviews: 455 },
@@ -37,6 +45,8 @@ const INITIAL_SUPPLIERS = [
   },
   {
     id: 5, name: "AliExpress Vendors", logo: "AE", origin: "China", tags: ["Wholesale", "Budget"],
+    website: "https://www.aliexpress.com",
+shopLink: "https://www.aliexpress.com/category/200000456/hair-extensions.html",
     products: [
       { type: "100% Human (Vietnamese)", category: "human", texture: "Raw Straight", lengths: "8\"–32\"", price: "$28–$195", rating: 3.8, reviews: 5800 },
       { type: "Synthetic", category: "synthetic", texture: "Jumbo Braid", lengths: "24\"–36\"", price: "$6–$20", rating: 3.5, reviews: 3400 },
@@ -45,6 +55,8 @@ const INITIAL_SUPPLIERS = [
   },
   {
     id: 6, name: "Bobbi Boss", logo: "BB", origin: "USA", tags: ["Braids", "Protective"],
+    website: "https://www.bobbiboss.com",
+shopLink: "https://ebonyline.com/collections/bobbi-boss",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Pre-Stretched Braid", lengths: "28\"–56\"", price: "$8–$22", rating: 4.3, reviews: 1600 },
       { type: "Synthetic", category: "synthetic", texture: "Knotless Box Braid Wig", lengths: "16\"–30\"", price: "$25–$75", rating: 4.2, reviews: 890 },
@@ -53,6 +65,8 @@ const INITIAL_SUPPLIERS = [
   },
   {
     id: 7, name: "Raw Indian Hair Co.", logo: "RI", origin: "India", tags: ["Raw Virgin", "Ethical"],
+    website: "https://www.rawindianharico.com",
+shopLink: "https://www.divatress.com",
     products: [
       { type: "100% Human (Indian)", category: "human", texture: "Raw Wavy", lengths: "10\"–30\"", price: "$110–$380", rating: 4.9, reviews: 720 },
       { type: "100% Human (Indian)", category: "human", texture: "Raw Curly", lengths: "10\"–24\"", price: "$120–$350", rating: 4.8, reviews: 580 },
@@ -61,6 +75,8 @@ const INITIAL_SUPPLIERS = [
   },
   {
     id: 8, name: "Zury Sis", logo: "ZS", origin: "USA", tags: ["Affordable", "Wigs"],
+    website: "https://www.zury.com",
+shopLink: "https://ebonyline.com/collections/zury-sis",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front — Pixie", lengths: "6\"–12\"", price: "$18–$45", rating: 3.9, reviews: 1100 },
       { type: "Synthetic", category: "synthetic", texture: "Lace Front — Long Straight", lengths: "22\"–28\"", price: "$25–$60", rating: 3.7, reviews: 870 },
@@ -69,6 +85,8 @@ const INITIAL_SUPPLIERS = [
   },
   {
     id: 9, name: "Divatress", logo: "DV", origin: "USA", tags: ["Multi-Brand", "Online"],
+    website: "https://www.divatress.com",
+shopLink: "https://www.divatress.com/collections/all",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Crochet Curl", lengths: "12\"–18\"", price: "$10–$30", rating: 4.0, reviews: 760 },
       { type: "Human/Synthetic Blend", category: "mixed", texture: "Clip-In Curly", lengths: "14\"–20\"", price: "$35–$90", rating: 3.8, reviews: 390 },
@@ -77,6 +95,8 @@ const INITIAL_SUPPLIERS = [
   },
   {
     id: 10, name: "Vivica A. Fox Hair", logo: "VF", origin: "USA", tags: ["Celebrity", "Wigs"],
+    website: "https://www.vivicafox.com",
+shopLink: "https://hairtobeauty.com/collections/vivica-a-fox-wigs",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Full Wig — Glam", lengths: "14\"–20\"", price: "$28–$70", rating: 4.1, reviews: 1300 },
       { type: "Synthetic", category: "synthetic", texture: "Lace Front — Bob", lengths: "10\"–14\"", price: "$35–$80", rating: 4.0, reviews: 980 },
@@ -600,7 +620,8 @@ fontWeight: 600,
                 </div>
             ))}
       </div>
-    </div><div style={{
+    </div>
+    <div style={{
         textAlign: "center",
         padding: "30px 20px",
         marginTop: 40,
