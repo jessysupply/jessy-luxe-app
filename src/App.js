@@ -472,16 +472,23 @@ export default function App() {
   backgroundRepeat: "no-repeat",
   borderBottom: "1px solid rgba(255,255,255,0.08)"
 }}>
-      
-      <div style={{ textAlign: "center", paddingTop: 20, marginBottom: 10 }}>
-      ✦ Hair Supplier Intelligence Hub ✦
-</div>
-<div style={{ textAlign: "center", marginBottom: 20 }}>
-  <img 
-    src="/jessylogo.jpg" 
-    alt="Jessy Luxe Beauty" 
-    style={{ height: 200, objectFit: "contain" }} 
-  />
+   <div style={{ textAlign: "center", marginBottom: 20 }}>
+  <div style={{
+    fontFamily: "'Playfair Display', serif",
+    fontSize: "42px",
+    fontWeight: 900,
+    color: "#1a3a1a",
+    letterSpacing: 3,
+    textTransform: "uppercase"
+  }}>Jessy Luxe</div>
+  <div style={{
+    fontFamily: "'DM Sans', sans-serif",
+    fontSize: "14px",
+    fontWeight: 300,
+    color: "#2a6a2a",
+    letterSpacing: 8,
+    textTransform: "uppercase"
+  }}>Beauty</div>
 </div>
         <h1 style={{
   fontFamily: "'Playfair Display', serif",
