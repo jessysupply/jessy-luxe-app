@@ -601,16 +601,7 @@ fontWeight: 600,
           <div style={{ textAlign: "center", padding: "50px 0", color: "#2e2010" }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>&#128269;</div>
             <div style={{ fontSize: 14 }}>No suppliers match your search.</div>
-            {reviewTarget && (
-  <ReviewModal
-    supplier={reviewTarget}
-    onClose={() => setReviewTarget(null)}
-    onSubmit={(review) => {
-      setUserReviews((prev) => [...prev, review]);
-      setTimeout(() => setReviewTarget(null), 2000);
-    }}
-  />
-)}
+            
           </div>
         ) : filtered.map(s => (
           <SupplierCard
@@ -643,6 +634,16 @@ fontWeight: 600,
             ))}
       </div>
     </div>
+    {reviewTarget && (
+  <ReviewModal
+    supplier={reviewTarget}
+    onClose={() => setReviewTarget(null)}
+    onSubmit={(review) => {
+      setUserReviews((prev) => [...prev, review]);
+      setTimeout(() => setReviewTarget(null), 2000);
+    }}
+  />
+)}
     <div style={{
         textAlign: "center",
         padding: "30px 20px",
