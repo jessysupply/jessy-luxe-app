@@ -473,7 +473,7 @@ export default function App() {
   borderBottom: "1px solid rgba(255,255,255,0.08)"
 }}>
       
-      <div style={{ textAlign: "center", paddingTop: 30, marginBottom: 10 }}>
+      <div style={{ textAlign: "center", paddingTop: 0, marginBottom: 10, display: "flex", justifyContent: "center" }}>
   <img 
     src="/jessylogo.jpg" 
     alt="Jessy Luxe Beauty" 
@@ -505,8 +505,8 @@ export default function App() {
 </h1>
       
 <p style={{
-  color: "#3a5a3a",
-  fontSize: "18px",
+  color: "#7a9a7a",
+  fontSize: "14px",
   maxWidth: "620px",
   margin: "0 auto",
   lineHeight: 1.8
