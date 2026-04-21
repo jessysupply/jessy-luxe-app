@@ -860,7 +860,18 @@ minHeight: isMobile ? "auto" : "72vh",
   backgroundRepeat: "no-repeat",
   borderBottom: "1px solid rgba(255,255,255,0.08)"
 }}>
-   <div style={{ textAlign: "center", marginBottom: 20 }}>
+  <div style={{ textAlign: "center", marginBottom: 10 }}>
+  <div style={{
+    fontSize: isMobile ? 9 : 11,
+    letterSpacing: isMobile ? 3 : 6,
+    color: "#2a6a2a",
+    textTransform: "uppercase",
+    marginBottom: isMobile ? 8 : 18
+  }}>
+    ✦ Hair Supplier Intelligence Hub ✦
+  </div>
+</div>
+   <div style={{ textAlign: "center", marginBottom: isMobile ? 10 : 20 }}>
   <div style={{
     fontFamily: "'Playfair Display', serif",
     fontSize: isMobile ? "42px" : "72px",
