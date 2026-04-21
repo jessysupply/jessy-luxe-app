@@ -542,8 +542,7 @@ function ReviewBubble({ review, delay }) {
     </div>
   );
 }
-
-function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews }) {
+function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite }) {
   const myReviews = userReviews.filter(r => r.supplierId === supplier.id);
   const avg = avgRating(supplier.products).toFixed(1);
   const hasHuman = supplier.products.some(p => p.category === "human");
@@ -554,7 +553,7 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
     <div style={{
       background: "linear-gradient(135deg, #ffffff 0%, #f8f8f6 100%)",
       border: `1px solid ${isExpanded ? "#c8a97e" : "#e0d8d0"}`,
-      borderRadius: 16, marginBottom: 11, overflow: "hidden",
+      borderRadius: 16, marginBottom: 11, position: "relative", overflow: "hidden",
       transition: "border-color 0.3s, box-shadow 0.3s",
       boxShadow: isExpanded ? "0 8px 36px rgba(200,169,126,0.3)" : "0 2px 10px rgba(0,0,0,0.08)"
     }}>
@@ -566,6 +565,13 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 12, color: "#ffffff",
         }}>{supplier.logo}</div>
         <div style={{ flex: 1 }}>
+        <button onClick={e => { e.stopPropagation(); onFavorite(supplier.id); }} style={{
+          position: "absolute", top: 10, right: 10,
+          background: "transparent", border: "none", cursor: "pointer",
+          fontSize: 18, color: favorites.includes(supplier.id) ? "#e8354a" : "#ccc"
+        }}>
+          {favorites.includes(supplier.id) ? "❤️" : "🤍"}
+        </button>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
             <span style={{ color: "#2a1a10", fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15 }}>{supplier.name}</span>
             <span style={{ color: "#6a5a50", fontSize: 11 }}>• {supplier.origin}</span>
@@ -773,6 +779,19 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
 
 export default function App() {
   const [expandedId, setExpandedId]     = useState(null);
+  const [favorites, setFavorites] = useState(() => {
+    try {
+      const saved = localStorage.getItem("jessyluxe_favorites");
+      return saved ? JSON.parse(saved) : [];
+    } catch { return []; }
+  });
+  const toggleFavorite = (id) => {
+    setFavorites(prev => {
+      const updated = prev.includes(id) ? prev.filter(f => f !== id) : [...prev, id];
+      try { localStorage.setItem("jessyluxe_favorites", JSON.stringify(updated)); } catch {}
+      return updated;
+    });
+  };
   const [filter, setFilter]             = useState("all");
   const [sortBy, setSortBy]             = useState("name");
   const [reviewTarget, setReviewTarget] = useState(null);
@@ -789,11 +808,12 @@ export default function App() {
     { id: "human",     label: "100% Human" },
     { id: "synthetic", label: "Synthetic" },
     { id: "mixed",     label: "Blend" },
+    { id: "favorites", label: "❤️ Favorites" },
   ];
 
   const filtered = INITIAL_SUPPLIERS
     .filter(s => {
-      const matchCat    = filter === "all" ? true : s.products.some(p => p.category === filter);
+      const matchCat    = filter === "all" ? true : filter === "favorites" ? favorites.includes(s.id) : s.products.some(p => p.category === filter);
       const matchSearch = searchQ === "" ? true :
         s.name.toLowerCase().includes(searchQ.toLowerCase()) ||
         s.tags.some(t => t.toLowerCase().includes(searchQ.toLowerCase())) ||
@@ -979,6 +999,8 @@ fontWeight: 600,
             onToggle={() => setExpandedId(expandedId === s.id ? null : s.id)}
             onReviewClick={sup => { console.log("clicked", sup); setReviewTarget(sup); }}
             userReviews={userReviews}
+            favorites={favorites}
+onFavorite={toggleFavorite}
           />
         ))}
       </div>
