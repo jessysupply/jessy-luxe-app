@@ -802,7 +802,7 @@ export default function App() {
     } catch { return []; }
   });
   const [searchQ, setSearchQ]           = useState("");
-  const isMobile = window.innerWidth <= 600;
+  const isMobile = window.innerWidth <= 768;
 
   const filters = [
     { id: "all",       label: "All" },
