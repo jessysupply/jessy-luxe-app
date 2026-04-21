@@ -959,12 +959,14 @@ export default function App() {
           scrollbarWidth: "none",
           msOverflowStyle: "none",
           marginBottom: 12,
-          padding: "0 12px",
+          padding: "0 16px 8px",
+          width: "100%",
         }}>
           <div style={{
             display: "flex",
             gap: 8,
             width: "max-content",
+minWidth: "100%",
             padding: "4px 4px 8px",
           }}>
             {filters.map(f => (
