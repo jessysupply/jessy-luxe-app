@@ -838,7 +838,7 @@ export default function App() {
         @keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
         
         @media (max-width: 600px) {
-          .hero-section { padding: 60px 16px 40px !important; min-height: 50vh !important; }
+          .hero-section { padding: 40px 16px 24px !important; min-height: auto !important; }
           .company-name { font-size: 36px !important; }
           .supplier-card { margin: 0 8px 10px !important; }
         }
