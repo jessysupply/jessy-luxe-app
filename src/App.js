@@ -855,9 +855,7 @@ minHeight: isMobile ? "unset" : "72vh",
   minHeight: "72vh",
   background: "linear-gradient(180deg, #b8d8b8 0%, #c8e0c8 100%)",
   
-  backgroundSize: "cover",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
+  
   borderBottom: "1px solid rgba(255,255,255,0.08)"
 }}>
   <div style={{ textAlign: "center", marginBottom: 10 }}>
