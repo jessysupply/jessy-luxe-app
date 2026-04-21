@@ -952,8 +952,8 @@ export default function App() {
         <div style={{ display: "flex", gap: isMobile ? 5 : 7, marginBottom: 10, overflowX: "auto", paddingBottom: 4, flexWrap: isMobile ? "wrap" : "nowrap" }}>
           {filters.map(f => (
             <button key={f.id} onClick={() => setFilter(f.id)} style={{
-              padding: isMobile ? "10px 12px" : "8px 16px",
-              borderRadius: 30, fontSize: isMobile ? 11 : 13,
+              padding: isMobile ? "12px 16px" : "8px 16px",
+borderRadius: 30, fontSize: isMobile ? 14 : 13,
 border: "1px solid rgba(255,255,255,0.12)",
 
 background: filter === f.id
