@@ -802,6 +802,8 @@ export default function App() {
     } catch { return []; }
   });
   const [searchQ, setSearchQ]           = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const suppliersPerPage = 10;
   const isMobile = window.innerWidth <= 768;
 
   const filters = [
@@ -821,11 +823,9 @@ export default function App() {
         s.products.some(p => p.texture.toLowerCase().includes(searchQ.toLowerCase()));
       return matchCat && matchSearch;
     })
-    .sort((a, b) => {
-      if (sortBy === "rating")   return avgRating(b.products) - avgRating(a.products);
-      if (sortBy === "products") return b.products.length - a.products.length;
-      return a.name.localeCompare(b.name);
-    });
+   
+    const totalPages = Math.ceil(filtered.length / suppliersPerPage);
+  const paginatedSuppliers = filtered.slice((currentPage - 1) * suppliersPerPage, currentPage * suppliersPerPage);
 
   const totalBase = INITIAL_SUPPLIERS.reduce((a, s) => a + s.products.reduce((b, p) => b + p.reviews, 0), 0);
 
@@ -1015,7 +1015,7 @@ export default function App() {
             <div style={{ fontSize: 14 }}>No suppliers match your search.</div>
             
           </div>
-        ) : filtered.map(s => (
+        ) : paginatedSuppliers.map(s => (
           <SupplierCard
             key={s.id} supplier={s}
             isExpanded={expandedId === s.id}
@@ -1027,7 +1027,26 @@ onFavorite={toggleFavorite}
           />
         ))}
       </div>
-
+{/* Pagination */}
+{totalPages > 1 && (
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 12, margin: "16px 0", flexWrap: "wrap" }}>
+          <button onClick={() => setCurrentPage(p => Math.max(1, p - 1))} disabled={currentPage === 1} style={{
+            padding: "10px 20px", borderRadius: 30, border: "2px solid #4a8a4a",
+            background: currentPage === 1 ? "#f0f5f0" : "#2a6a2a",
+            color: currentPage === 1 ? "#4a8a4a" : "#ffffff",
+            fontSize: 14, fontWeight: 600, cursor: currentPage === 1 ? "default" : "pointer"
+          }}>← Prev</button>
+          <span style={{ color: "#2a6a2a", fontSize: 14, fontWeight: 600 }}>
+            Page {currentPage} of {totalPages}
+          </span>
+          <button onClick={() => setCurrentPage(p => Math.min(totalPages, p + 1))} disabled={currentPage === totalPages} style={{
+            padding: "10px 20px", borderRadius: 30, border: "2px solid #4a8a4a",
+            background: currentPage === totalPages ? "#f0f5f0" : "#2a6a2a",
+            color: currentPage === totalPages ? "#4a8a4a" : "#ffffff",
+            fontSize: 14, fontWeight: 600, cursor: currentPage === totalPages ? "default" : "pointer"
+          }}>Next →</button>
+        </div>
+      )}
       {/* Legend */}
       <div style={{ maxWidth: 600, margin: "4px auto 0", padding: "0 13px" }}>
         <div style={{ borderRadius: 12, background: "#f0f5f0", border: "1px solid #4a8a4a", padding: "14px" }}>
