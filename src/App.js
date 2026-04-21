@@ -350,8 +350,8 @@ shopLink: "https://shopwigdealer.com/collections/all-wigs",
   },
   {
     id: 38, name: "Ali Grace Hair", logo: "AG", origin: "China", tags: ["Human Hair", "Wigs"],
-    website: "https://www.aligracehairmall.com",
-    shopLink: "https://www.aligracehairmall.com/collections/all",
+    website: "https://www.aligracehair.com",
+shopLink: "https://www.aligracehair.com/collections/all",
     products: [
       { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$50–$200", rating: 4.4, reviews: 2600 },
       { type: "100% Human", category: "human", texture: "Straight Lace Front", lengths: "12\"–28\"", price: "$55–$210", rating: 4.3, reviews: 2100 },
@@ -621,8 +621,8 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
             }}>&#9997; Write a Review</button>
             <a href={supplier.website} target="_blank" rel="noreferrer" style={{
   display: "inline-block", padding: "6px 14px", borderRadius: 8,
-  background: "transparent", border: "1px solid #c8a97e",
-  color: "#c8a97e", fontSize: 11, textDecoration: "none",
+  background: "transparent", border: "1px solid #2a6a2a",
+  color: "#2a6a2a", fontSize: 11, textDecoration: "none",
   marginLeft: 8
 }}>Official Site</a>
 <a href={supplier.shopLink} target="_blank" rel="noreferrer" style={{
