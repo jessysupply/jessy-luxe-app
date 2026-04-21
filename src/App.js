@@ -802,6 +802,7 @@ export default function App() {
     } catch { return []; }
   });
   const [searchQ, setSearchQ]           = useState("");
+  const isMobile = window.innerWidth <= 600;
 
   const filters = [
     { id: "all",       label: "All" },
@@ -835,7 +836,12 @@ export default function App() {
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { background: #fffaf5; }
         @keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
-        @keyframes shimmer { 0%,100% { opacity:0.5; } 50% { opacity:1; } }
+        
+        @media (max-width: 600px) {
+          .hero-section { padding: 60px 16px 40px !important; min-height: 50vh !important; }
+          .company-name { font-size: 36px !important; }
+          .supplier-card { margin: 0 8px 10px !important; }
+        }
         input::placeholder, textarea::placeholder { color: #362518; }
         ::-webkit-scrollbar { width: 4px; }
         ::-webkit-scrollbar-track { background: #070403; }
@@ -844,8 +850,8 @@ export default function App() {
 
       {/* Hero */}
       <div style={{
-  textAlign: "center",
-  padding: "110px 24px 80px",
+ padding: isMobile ? "60px 16px 40px" : "110px 24px 80px",
+ minHeight: isMobile ? "50vh" : "72vh",
   minHeight: "72vh",
   background: "linear-gradient(180deg, #b8d8b8 0%, #c8e0c8 100%)",
   
@@ -857,7 +863,7 @@ export default function App() {
    <div style={{ textAlign: "center", marginBottom: 20 }}>
   <div style={{
     fontFamily: "'Playfair Display', serif",
-    fontSize: "72px",
+    fontSize: isMobile ? "42px" : "72px",
     fontWeight: 900,
     color: "#1a3a1a",
     letterSpacing: 3,
@@ -875,7 +881,7 @@ export default function App() {
         <h1 style={{
   fontFamily: "'Playfair Display', serif",
   fontWeight: 900,
-  fontSize: "clamp(22px, 3vw, 36px)",
+  fontSize: isMobile ? "22px" : "clamp(22px, 3vw, 36px)",
   textAlign: "center",
   marginBottom: "10px",
   color: "#1a3a1a"
@@ -985,7 +991,7 @@ fontWeight: 600,
       </div>
 
       {/* Cards */}
-      <div style={{ maxWidth: 600, margin: "0 auto", padding: "8px 13px" }}>
+      <div style={{ maxWidth: 600, margin: "0 auto", padding: isMobile ? "8px 6px" : "8px 13px" }}>
         {filtered.length === 0 ? (
           <div style={{ textAlign: "center", padding: "50px 0", color: "#2e2010" }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>&#128269;</div>
