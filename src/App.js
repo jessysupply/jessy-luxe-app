@@ -850,8 +850,8 @@ export default function App() {
 
       {/* Hero */}
       <div style={{
-padding: isMobile ? "30px 16px 20px" : "110px 24px 80px",
-minHeight: isMobile ? "auto" : "72vh",
+padding: isMobile ? "20px 16px 15px" : "110px 24px 80px",
+minHeight: isMobile ? "unset" : "72vh",
   minHeight: "72vh",
   background: "linear-gradient(180deg, #b8d8b8 0%, #c8e0c8 100%)",
   
