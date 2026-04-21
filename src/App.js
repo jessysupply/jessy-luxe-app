@@ -965,7 +965,7 @@ export default function App() {
           <div style={{
             display: "flex",
             gap: 8,
-            padding: "0 20px 0 0",
+            padding: "0 40px 0 16px",
             justifyContent: "flex-start",
           }}>
             {filters.map(f => (
