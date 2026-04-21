@@ -710,6 +710,20 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
                     {p.texture} ({CATEGORY_CONFIG[p.category].label})
                   </option>
                 ))}
+                <option disabled>──────────────</option>
+<option value="HD Lace Wig">HD Lace Wig</option>
+<option value="Transparent Lace Wig">Transparent Lace Wig</option>
+<option value="Glueless Wig">Glueless Wig</option>
+<option value="Straight Hair With Closure">Straight Hair With Closure</option>
+<option value="Body Wave With Closure">Body Wave With Closure</option>
+<option value="Loose Wave With Closure">Loose Wave With Closure</option>
+<option value="Deep Wave With Closure">Deep Wave With Closure</option>
+<option value="Kinky Curly With Closure">Kinky Curly With Closure</option>
+<option value="Water Wave With Closure">Water Wave With Closure</option>
+<option value="Straight Bundles">Straight Bundles</option>
+<option value="Body Wave Bundles">Body Wave Bundles</option>
+<option value="Deep Wave Bundles">Deep Wave Bundles</option>
+<option value="Kinky Curly Bundles">Kinky Curly Bundles</option>
               </select>
             </div>
 
