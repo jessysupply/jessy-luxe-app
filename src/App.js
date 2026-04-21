@@ -850,8 +850,8 @@ export default function App() {
 
       {/* Hero */}
       <div style={{
- padding: isMobile ? "60px 16px 40px" : "110px 24px 80px",
- minHeight: isMobile ? "50vh" : "72vh",
+padding: isMobile ? "30px 16px 20px" : "110px 24px 80px",
+minHeight: isMobile ? "auto" : "72vh",
   minHeight: "72vh",
   background: "linear-gradient(180deg, #b8d8b8 0%, #c8e0c8 100%)",
   
@@ -948,8 +948,8 @@ export default function App() {
         <div style={{ display: "flex", gap: 7, marginBottom: 10, overflowX: "auto", paddingBottom: 2 }}>
           {filters.map(f => (
             <button key={f.id} onClick={() => setFilter(f.id)} style={{
-              padding: "8px 16px",
-borderRadius: 30,
+              padding: isMobile ? "8px 10px" : "8px 16px",
+              borderRadius: 30, fontSize: isMobile ? 11 : 13,
 border: "1px solid rgba(255,255,255,0.12)",
 
 background: filter === f.id
@@ -972,7 +972,7 @@ fontWeight: 600,
           <span style={{ color: "#2a5a2a", fontSize: 10, letterSpacing: 1, textTransform: "uppercase" }}>Sort</span>
           {[["name","Name"],["rating","Top Rated"],["products","Most Products"]].map(([val, lab]) => (
             <button key={val} onClick={() => setSortBy(val)} style={{
-              padding: "4px 11px", borderRadius: 20, border: "1px solid",
+              padding: isMobile ? "6px 8px" : "4px 11px", borderRadius: 20, border: "1px solid",
               borderColor: sortBy === val ? "#2a6a2a" : "#4a8a4a",
               background: sortBy === val ? "#2a6a2a" : "transparent",
               color: sortBy === val ? "#ffffff" : "#2a5a2a",
