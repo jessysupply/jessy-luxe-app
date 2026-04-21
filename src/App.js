@@ -966,7 +966,7 @@ color: filter === f.id
 
 fontSize: 12,
 fontWeight: 600,
-              cursor: "pointer", whiteSpace: "nowrap", transition: "all 0.2s",
+fontSize: 12,
             }}>{f.label}</button>
           ))}
         </div>
