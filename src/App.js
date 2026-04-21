@@ -568,7 +568,7 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
         <button onClick={e => { e.stopPropagation(); onFavorite(supplier.id); }} style={{
           position: "absolute", top: 10, right: 10,
           background: "transparent", border: "none", cursor: "pointer",
-          fontSize: 18, color: favorites.includes(supplier.id) ? "#e8354a" : "#4a8a4a"
+          fontSize: 22, color: favorites.includes(supplier.id) ? "#e8354a" : "2a6a2a"
         }}>
           {favorites.includes(supplier.id) ? "❤️" : "🤍"}
         </button>
