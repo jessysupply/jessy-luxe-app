@@ -961,11 +961,13 @@ export default function App() {
           marginBottom: 12,
           padding: "4px 0 8px",
           width: "100%",
+          boxSizing: "border-box",
         }}>
           <div style={{
             display: "flex",
             gap: 8,
-            padding: "0 40px 0 16px",
+            padding: "0 16px",
+            width: "max-content",
             justifyContent: "flex-start",
           }}>
             {filters.map(f => (
