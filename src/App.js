@@ -897,14 +897,13 @@ export default function App() {
       
 <p style={{
   color: "#3a5a3a",
-  fontSize: "18px",
+  fontSize: isMobile ? "15px" : "18px",
   maxWidth: "620px",
   margin: "0 auto",
-  lineHeight: 1.8
+  lineHeight: 1.8,
+  textAlign: "center"
 }}>
-  Compare real hair, synthetic & blends — honest prices, quality ratings &
-  <br />
-  community reviews.
+  Compare real hair, synthetic & blends — honest prices, quality ratings & community reviews.
 </p>
       </div>
 
