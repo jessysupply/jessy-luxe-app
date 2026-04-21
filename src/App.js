@@ -658,8 +658,8 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
 
 
   const inp = {
-    width: "100%", background: "#0e0a08", border: "1px solid #251810",
-    borderRadius: 9, padding: "10px 12px", color: "#e8d5b8",
+    width: "100%", background: "#ffffff", border: "1px solid #4a8a4a",
+    borderRadius: 9, padding: "10px 12px", color: "#1a3a1a",
     fontSize: 13, outline: "none", fontFamily: "'DM Sans', sans-serif",
     transition: "border-color 0.2s",
   };
@@ -672,8 +672,8 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
     }} onClick={onClose}>
       <div onClick={e => e.stopPropagation()} style={{
         width: "100%", maxWidth: 600, margin: "0 auto",
-        background: "linear-gradient(160deg, #1c1410, #100c08)",
-        border: "1px solid #2a1a10", borderRadius: "20px 20px 0 0",
+        background: "linear-gradient(160deg, #ffffff, #f0f5f0)",
+        border: "1px solid #4a8a4a", borderRadius: "20px 20px 0 0",
         padding: "24px 18px 38px", maxHeight: "92vh", overflowY: "auto",
       }}>
         <div style={{ width: 36, height: 3, background: "#2a1a10", borderRadius: 2, margin: "0 auto 20px" }} />
@@ -681,9 +681,9 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
         {submitted ? (
           <div style={{ textAlign: "center", padding: "28px 0" }}>
             <div style={{ fontSize: 44, marginBottom: 14 }}>&#10024;</div>
-            <div style={{ color: "#c8a97e", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 22, marginBottom: 8 }}>Thank You!</div>
-            <div style={{ color: "#5a4a40", fontSize: 14, marginBottom: 24, lineHeight: 1.6 }}>
-              Your review for <strong style={{ color: "#e8d5b8" }}>{supplier.name}</strong> has been added.
+            <div style={{ color: "#2a6a2a", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 22, marginBottom: 8 }}>Thank You!</div>
+            <div style={{ color: "#2a3a2a", fontSize: 14, marginBottom: 24, lineHeight: 1.6 }}>
+              Your review for <strong style={{ color: "#2a6a2a" }}>{supplier.name}</strong> has been added.
             </div>
             <button onClick={onClose} style={{
               padding: "12px 32px", borderRadius: 30, border: "1px solid #c8a97e50",
@@ -693,17 +693,17 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
         ) : (
           <>
             <div style={{ marginBottom: 20 }}>
-              <div style={{ color: "#5a4030", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", marginBottom: 4 }}>Reviewing</div>
-              <div style={{ color: "#e8d5b8", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 20 }}>{supplier.name}</div>
+              <div style={{ color: "#2a6a2a", fontSize: 9, letterSpacing: 3, textTransform: "uppercase", marginBottom: 4 }}>Reviewing</div>
+              <div style={{ color: "#1a3a1a", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: 20 }}>{supplier.name}</div>
             </div>
 
             <div style={{ marginBottom: 14 }}>
-              <label style={{ color: "#6a5040", fontSize: 10, letterSpacing: 1, textTransform: "uppercase", display: "block", marginBottom: 6 }}>Your Name</label>
+              <label style={{ color: "#2a6a2a", fontSize: 10, letterSpacing: 1, textTransform: "uppercase", display: "block", marginBottom: 6 }}>Your Name</label>
               <input value={name} onChange={e => setName(e.target.value)} placeholder="e.g. Jasmine T." style={inp} />
             </div>
 
             <div style={{ marginBottom: 14 }}>
-              <label style={{ color: "#6a5040", fontSize: 10, letterSpacing: 1, textTransform: "uppercase", display: "block", marginBottom: 6 }}>Product</label>
+              <label style={{ color: "#2a6a2a", fontSize: 10, letterSpacing: 1, textTransform: "uppercase", display: "block", marginBottom: 6 }}>Product</label>
               <select value={product} onChange={e => setProduct(e.target.value)} style={{ ...inp, cursor: "pointer" }}>
                 {supplier.products.map((p, i) => (
                   <option key={i} value={p.texture} style={{ background: "#140f0c" }}>
@@ -714,7 +714,7 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
             </div>
 
             <div style={{ marginBottom: 14 }}>
-              <label style={{ color: "#6a5040", fontSize: 10, letterSpacing: 1, textTransform: "uppercase", display: "block", marginBottom: 8 }}>Your Rating</label>
+              <label style={{ color: "#2a6a2a", fontSize: 10, letterSpacing: 1, textTransform: "uppercase", display: "block", marginBottom: 8 }}>Your Rating</label>
               <InteractiveStars value={rating} onChange={setRating} />
               {rating > 0 && (
                 <div style={{ color: "#6a5a50", fontSize: 12, marginTop: 5 }}>
@@ -724,7 +724,7 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
             </div>
 
             <div style={{ marginBottom: 16 }}>
-              <label style={{ color: "#6a5040", fontSize: 10, letterSpacing: 1, textTransform: "uppercase", display: "block", marginBottom: 6 }}>Your Review</label>
+              <label style={{ color: "2a6a2a", fontSize: 10, letterSpacing: 1, textTransform: "uppercase", display: "block", marginBottom: 6 }}>Your Review</label>
               <textarea
                 value={text} onChange={e => setText(e.target.value.slice(0, 300))}
                 placeholder="Share your experience — quality, shedding, shipping, customer service..."
@@ -999,7 +999,7 @@ fontWeight: 600,
         padding: "30px 20px",
         marginTop: 40,
         borderTop: "1px solid #2a1a10",
-        color: "#8a7060",
+        color: "#2a5a2a",
         fontSize: 12,
       }}>
         <div style={{ display: "flex", justifyContent: "center", gap: 20, marginBottom: 16, flexWrap: "wrap" }}>
