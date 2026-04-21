@@ -824,9 +824,13 @@ export default function App() {
       return matchCat && matchSearch;
     })
    
-    const totalPages = Math.ceil(filtered.length / suppliersPerPage);
-  const paginatedSuppliers = filtered.slice((currentPage - 1) * suppliersPerPage, currentPage * suppliersPerPage);
-
+    const sorted = [...filtered].sort((a, b) => {
+      if (sortBy === "rating") return avgRating(b.products) - avgRating(a.products);
+      if (sortBy === "products") return b.products.length - a.products.length;
+      return a.name.localeCompare(b.name);
+    });
+    const totalPages = Math.ceil(sorted.length / suppliersPerPage);
+    const paginatedSuppliers = sorted.slice((currentPage - 1) * suppliersPerPage, currentPage * suppliersPerPage);
   const totalBase = INITIAL_SUPPLIERS.reduce((a, s) => a + s.products.reduce((b, p) => b + p.reviews, 0), 0);
 
   return (
