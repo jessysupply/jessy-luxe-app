@@ -931,7 +931,7 @@ export default function App() {
         <div style={{ position: "relative", marginBottom: 11 }}>
           <span style={{ position: "absolute", left: 11, top: "50%", transform: "translateY(-50%)", color: "#3a2a18", fontSize: 13 }}>&#128269;</span>
           <input
-            value={searchQ} onChange={e => setSearchQ(e.target.value)}
+            value={searchQ} onChange={e => { setSearchQ(e.target.value); setCurrentPage(1); }}
             placeholder="Search by supplier name or texture..."
             style={{
               width: "100%", background: "rgba(255,255,255,0.9)", border: "1px solid rgba(255,255,255,0.12)",
@@ -964,7 +964,7 @@ export default function App() {
             padding: "4px 4px 8px",
           }}>
             {filters.map(f => (
-              <button key={f.id} onClick={() => setFilter(f.id)} style={{
+              <button key={f.id} onClick={() => { setFilter(f.id); setCurrentPage(1); }} style={{
                 padding: "12px 22px",
                 borderRadius: 30,
                 fontSize: 14,
