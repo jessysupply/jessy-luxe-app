@@ -65,8 +65,8 @@ shopLink: "https://ebonyline.com/collections/bobbi-boss",
   },
   {
     id: 7, name: "Raw Indian Hair Co.", logo: "RI", origin: "India", tags: ["Raw Virgin", "Ethical"],
-    website: "https://www.rawindianharico.com",
-shopLink: "https://www.divatress.com",
+    website: "https://www.indianhairgiant.com",
+shopLink: "https://www.indianhairgiant.com/collections/all",
     products: [
       { type: "100% Human (Indian)", category: "human", texture: "Raw Wavy", lengths: "10\"–30\"", price: "$110–$380", rating: 4.9, reviews: 720 },
       { type: "100% Human (Indian)", category: "human", texture: "Raw Curly", lengths: "10\"–24\"", price: "$120–$350", rating: 4.8, reviews: 580 },
@@ -75,8 +75,8 @@ shopLink: "https://www.divatress.com",
   },
   {
     id: 8, name: "Zury Sis", logo: "ZS", origin: "USA", tags: ["Affordable", "Wigs"],
-    website: "https://www.zury.com",
-shopLink: "https://ebonyline.com/collections/zury-sis",
+    website: "https://www.divatress.com/collections/synthetic-wigs/zury",
+shopLink: "https://www.divatress.com/collections/synthetic-wigs/zury",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front — Pixie", lengths: "6\"–12\"", price: "$18–$45", rating: 3.9, reviews: 1100 },
       { type: "Synthetic", category: "synthetic", texture: "Lace Front — Long Straight", lengths: "22\"–28\"", price: "$25–$60", rating: 3.7, reviews: 870 },
@@ -134,8 +134,8 @@ shopLink: "https://hairtobeauty.com/collections/vivica-a-fox-wigs",
   },
   {
     id: 14, name: "Model Model", logo: "MM", origin: "USA", tags: ["Affordable", "Wigs"],
-    website: "https://www.modelmodel.com",
-    shopLink: "https://ebonyline.com/collections/model-model",
+    website: "https://ebonyline.com/collections/model-model",
+shopLink: "https://ebonyline.com/collections/model-model",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–22\"", price: "$20–$60", rating: 4.0, reviews: 1400 },
       { type: "Human/Synthetic Blend", category: "mixed", texture: "Full Wig", lengths: "12\"–20\"", price: "$30–$80", rating: 3.9, reviews: 900 },
@@ -341,8 +341,8 @@ shopLink: "https://hairtobeauty.com/collections/vivica-a-fox-wigs",
   },
   {
     id: 37, name: "WigDealer", logo: "WD", origin: "USA", tags: ["Wigs", "Affordable"],
-    website: "https://www.wigdealer.com",
-    shopLink: "https://www.wigdealer.com/collections/all",
+    website: "https://shopwigdealer.com",
+shopLink: "https://shopwigdealer.com/collections/all-wigs",
     products: [
       { type: "100% Human", category: "human", texture: "Lace Front Wig", lengths: "12\"–26\"", price: "$60–$220", rating: 4.3, reviews: 1800 },
       { type: "Synthetic", category: "synthetic", texture: "Full Wig", lengths: "10\"–22\"", price: "$20–$60", rating: 4.0, reviews: 1400 },
