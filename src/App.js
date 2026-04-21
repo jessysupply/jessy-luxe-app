@@ -762,7 +762,12 @@ export default function App() {
   const [filter, setFilter]             = useState("all");
   const [sortBy, setSortBy]             = useState("name");
   const [reviewTarget, setReviewTarget] = useState(null);
-  const [userReviews, setUserReviews]   = useState([]);
+  const [userReviews, setUserReviews]   = useState(() => {
+    try {
+      const saved = localStorage.getItem("jessyluxe_reviews");
+      return saved ? JSON.parse(saved) : [];
+    } catch { return []; }
+  });
   const [searchQ, setSearchQ]           = useState("");
 
   const filters = [
@@ -989,7 +994,11 @@ fontWeight: 600,
     supplier={reviewTarget}
     onClose={() => setReviewTarget(null)}
     onSubmit={(review) => {
-      setUserReviews((prev) => [...prev, review]);
+      setUserReviews((prev) => {
+        const updated = [...prev, review];
+        try { localStorage.setItem("jessyluxe_reviews", JSON.stringify(updated)); } catch {}
+        return updated;
+      });
       setTimeout(() => setReviewTarget(null), 2000);
     }}
   />
