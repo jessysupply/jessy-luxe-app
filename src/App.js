@@ -954,20 +954,18 @@ export default function App() {
 
         {/* Filter */}
         <div style={{
-          overflowX: "auto",
+          overflowX: "scroll",
           WebkitOverflowScrolling: "touch",
           scrollbarWidth: "none",
           msOverflowStyle: "none",
           marginBottom: 12,
-          padding: "0 16px 8px",
+          padding: "4px 0 8px",
           width: "100%",
         }}>
           <div style={{
-            display: "flex",
+            display: "inline-flex",
             gap: 8,
-            width: "max-content",
-minWidth: "100%",
-            padding: "4px 4px 8px",
+            padding: "0 16px",
           }}>
             {filters.map(f => (
               <button key={f.id} onClick={() => { setFilter(f.id); setCurrentPage(1); }} style={{
@@ -1006,7 +1004,7 @@ minWidth: "100%",
       </div>
 
       {/* Count */}
-      <div style={{ maxWidth: 600, margin: "6px auto 0", padding: "0 13px" }}>
+      <div style={{  maxWidth: 600, margin: "6px auto 0", padding: "0 13px" }}>
         <span style={{ color: "#251808", fontSize: 11 }}>
           {filtered.length} supplier{filtered.length !== 1 ? "s" : ""}
           {searchQ && <span> matching "<span style={{ color: "#4a3020" }}>{searchQ}</span>"</span>}
