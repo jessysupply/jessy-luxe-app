@@ -838,7 +838,7 @@ export default function App() {
         @keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
         
         @media (max-width: 600px) {
-          .hero-section { padding: 40px 16px 24px !important; min-height: auto !important; }
+          .hero-section { padding: 40px 16px 24px !important; min-height: auto !important; }g
           .company-name { font-size: 36px !important; }
           .supplier-card { margin: 0 8px 10px !important; }
         }
@@ -850,12 +850,9 @@ export default function App() {
 
       {/* Hero */}
       <div style={{
-padding: isMobile ? "20px 16px 15px" : "110px 24px 80px",
-
-  minHeight: "72vh",
+  padding: isMobile ? "20px 16px 15px" : "110px 24px 80px",
+  minHeight: "auto",
   background: "linear-gradient(180deg, #b8d8b8 0%, #c8e0c8 100%)",
-  
-  
   borderBottom: "1px solid rgba(255,255,255,0.08)"
 }}>
   <div style={{ textAlign: "center", marginBottom: 10 }}>
