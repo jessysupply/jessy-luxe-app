@@ -949,24 +949,30 @@ export default function App() {
         </div>
 
         {/* Filter */}
-        <div style={{ display: "flex", gap: isMobile ? 5 : 7, marginBottom: 10, overflowX: "auto", paddingBottom: 4, flexWrap: isMobile ? "wrap" : "nowrap" }}>
+        <div style={{ 
+          display: "flex", 
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: 8,
+          marginBottom: 12,
+          padding: "0 12px"
+        }}>
           {filters.map(f => (
             <button key={f.id} onClick={() => setFilter(f.id)} style={{
-              padding: isMobile ? "12px 16px" : "8px 16px",
-borderRadius: 30, fontSize: isMobile ? 14 : 13,
-border: "1px solid rgba(255,255,255,0.12)",
-
-background: filter === f.id
-? "linear-gradient(135deg, #4a8a4a, #2a6a2a)"
-: "rgba(255,255,255,0.6)",
-
-color: filter === f.id
-? "#ffffff"
-: "#2a5a2a",
-
-fontSize: 12,
-fontWeight: 600,
-fontSize: 12,
+              padding: "10px 18px",
+              borderRadius: 30,
+              fontSize: isMobile ? 13 : 12,
+              fontWeight: 600,
+              border: "1px solid",
+              borderColor: filter === f.id ? "#2a6a2a" : "#4a8a4a",
+              background: filter === f.id
+                ? "linear-gradient(135deg, #4a8a4a, #2a6a2a)"
+                : "rgba(255,255,255,0.6)",
+              color: filter === f.id ? "#ffffff" : "#2a5a2a",
+              cursor: "pointer",
+              whiteSpace: "nowrap",
+              transition: "all 0.2s",
+              minWidth: isMobile ? "80px" : "auto",
             }}>{f.label}</button>
           ))}
         </div>
