@@ -963,9 +963,10 @@ export default function App() {
           width: "100%",
         }}>
           <div style={{
-            display: "inline-flex",
+            display: "flex",
             gap: 8,
-            padding: "0 16px",
+            padding: "0",
+            justifyContent: "flex-start",
           }}>
             {filters.map(f => (
               <button key={f.id} onClick={() => { setFilter(f.id); setCurrentPage(1); }} style={{
