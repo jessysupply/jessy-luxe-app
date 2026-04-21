@@ -902,7 +902,9 @@ export default function App() {
   margin: "0 auto",
   lineHeight: 1.8
 }}>
-  Compare real hair, synthetic & blends — honest prices, quality ratings & community reviews.
+  Compare real hair, synthetic & blends — honest prices, quality ratings &
+  <br />
+  community reviews.
 </p>
       </div>
 
