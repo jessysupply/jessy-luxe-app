@@ -966,13 +966,14 @@ export default function App() {
           <div style={{
             display: "flex",
             gap: 8,
-            padding: "0 16px",
+            padding: "0 8px",
             width: "max-content",
             justifyContent: "flex-start",
           }}>
             {filters.map(f => (
               <button key={f.id} onClick={() => { setFilter(f.id); setCurrentPage(1); }} style={{
-                padding: "12px 22px",
+                padding: isMobile ? "10px 14px" : "12px 22px",
+fontSize: isMobile ? 12 : 14,
                 borderRadius: 30,
                 fontSize: 14,
                 fontWeight: 600,
