@@ -949,10 +949,10 @@ export default function App() {
         </div>
 
         {/* Filter */}
-        <div style={{ display: "flex", gap: 7, marginBottom: 10, overflowX: "auto", paddingBottom: 2 }}>
+        <div style={{ display: "flex", gap: isMobile ? 5 : 7, marginBottom: 10, overflowX: "auto", paddingBottom: 4, flexWrap: isMobile ? "wrap" : "nowrap" }}>
           {filters.map(f => (
             <button key={f.id} onClick={() => setFilter(f.id)} style={{
-              padding: isMobile ? "8px 10px" : "8px 16px",
+              padding: isMobile ? "10px 12px" : "8px 16px",
               borderRadius: 30, fontSize: isMobile ? 11 : 13,
 border: "1px solid rgba(255,255,255,0.12)",
 
