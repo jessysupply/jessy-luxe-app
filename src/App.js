@@ -892,10 +892,7 @@ export default function App() {
   marginBottom: "10px",
   color: "#1a3a1a"
 }}>
-  Hair Vendor Reviews
-  <span style={{ color: "#2a5a2a" }}>
-    & Ratings
-  </span>
+  Hair Vendor Reviews <span style={{ color: "#2a5a2a" }}>&</span> Ratings
 </h1>
       
 <p style={{
