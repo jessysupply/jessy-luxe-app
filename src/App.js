@@ -848,8 +848,23 @@ export default function App() {
   inset: 0,
   pointerEvents: "none",
   zIndex: 0
-  }}>
-    </div>
+}}>
+{Array.from({ length: 40 }).map((_, i) => (
+  <div key={i} style={{
+    position: "absolute",
+    top: `${Math.floor(i / 5) * 20}%`,
+    left: `${(i % 5) * 20}%`,
+    transform: "rotate(-30deg)",
+    fontSize: isMobile ? 12 : 16,
+    fontFamily: "'Playfair Display', serif",
+    fontWeight: 900,
+    color: "rgba(42,106,42,0.06)",
+    whiteSpace: "nowrap",
+    userSelect: "none",
+    letterSpacing: 2,
+  }}>JESSY LUXE BEAUTY</div>
+))}
+</div>
     <div style={{ position: "relative", zIndex: 1 }}>
   
  
@@ -889,7 +904,16 @@ export default function App() {
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { background: #fffaf5; }
+        body { 
+          background: #f0f5f0;
+          background-image: repeating-linear-gradient(
+            45deg,
+            transparent,
+            transparent 100px,
+            rgba(42,106,42,0.03) 100px,
+            rgba(42,106,42,0.03) 200px
+          );
+        }
         @keyframes fadeUp { from { opacity:0; transform:translateY(10px); } to { opacity:1; transform:translateY(0); } }
         
         @media (max-width: 600px) {
