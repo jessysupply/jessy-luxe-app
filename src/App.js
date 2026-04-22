@@ -912,7 +912,9 @@ export default function App() {
       </div>
 
       {/* Stats Bar */}
-      <div style={{ marginTop: "28px" }}>
+      <div style={{ marginTop: "28px",
+  display: "flex",
+  justifyContent: "center" }}>
   <button style={{
     background: "linear-gradient(135deg, #4a8a4a, #2a6a2a)",
     color: "#ffffff",
