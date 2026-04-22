@@ -543,7 +543,7 @@ function ReviewBubble({ review, delay }) {
   );
 }
 function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite }) {
-  const myReviews = userReviews.filter(r => r.supplierId === supplier.id);
+  function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile }) {
   const avg = avgRating(supplier.products).toFixed(1);
   const hasHuman = supplier.products.some(p => p.category === "human");
   const hasSynth  = supplier.products.some(p => p.category === "synthetic");
@@ -1112,7 +1112,7 @@ borderRadius: "999px",
             
           </div>
         ) : paginatedSuppliers.map(s => (
-          <SupplierCard
+          <SupplierCard isMobile={isMobile}
             key={s.id} supplier={s}
             isExpanded={expandedId === s.id}
             onToggle={() => setExpandedId(expandedId === s.id ? null : s.id)}
