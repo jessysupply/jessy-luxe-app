@@ -848,7 +848,11 @@ export default function App() {
   inset: 0,
   pointerEvents: "none",
   zIndex: 0
-}}>
+  }}>
+    </div>
+    <div style={{ position: "relative", zIndex: 1 }}>
+  
+ 
   <div style={{
     position: "absolute",
     top: "-80px",
