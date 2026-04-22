@@ -553,7 +553,7 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
     <div style={{
       background: "linear-gradient(135deg, #ffffff 0%, #f8f8f6 100%)",
       border: `1px solid ${isExpanded ? "#c8a97e" : "#e0d8d0"}`,
-      borderRadius: 16, marginBottom: 11, position: "relative", overflow: "hidden",
+      borderRadius: 16, marginBottom: isMobile ? 14 : 11, position: "relative", overflow: "hidden",
       transition: "border-color 0.3s, box-shadow 0.3s",
       boxShadow: isExpanded ? "0 8px 36px rgba(200,169,126,0.3)" : "0 2px 10px rgba(0,0,0,0.08)"
     }}>
@@ -573,8 +573,8 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           {favorites.includes(supplier.id) ? "❤️" : "🤍"}
         </button>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
-            <span style={{ color: "#2a1a10", fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15 }}>{supplier.name}</span>
-            <span style={{ color: "#6a5a50", fontSize: 11 }}>• {supplier.origin}</span>
+          <span style={{ color: "#1a3a1a", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: isMobile ? 17 : 16 }}>{supplier.name}</span>
+          <span style={{ color: "#4a7a4a", fontSize: isMobile ? 12 : 11, fontWeight: 500 }}>• {supplier.origin}</span>
           </div>
           <div style={{ display: "flex", gap: 5, marginTop: 5, flexWrap: "wrap" }}>
             {supplier.tags.map(t => (
@@ -591,7 +591,7 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           </div>
         </div>
         <div style={{ textAlign: "center", flexShrink: 0 }}>
-          <div style={{ color: "#2a6a2a", fontSize: 20, fontFamily: "'Playfair Display', serif", fontWeight: 900 }}>{avg}</div>
+        <div style={{ color: "#2a6a2a", fontSize: isMobile ? 24 : 22, fontFamily: "'Playfair Display', serif", fontWeight: 900 }}>{avg}</div>
           <div style={{ color: "#4a7a4a", fontSize: 9, letterSpacing: 1 }}>AVG</div>
         </div>
         <div style={{ color: "#3a2a20", fontSize: 15, transition: "transform 0.3s", transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)", flexShrink: 0 }}>&#9660;</div>
@@ -986,17 +986,21 @@ export default function App() {
 </p>
       </div>
 
-      {/* Stats Bar */}
-      <div style={{ marginTop: "28px",
-  display: "flex",
-  justifyContent: "center" }}>
+     {/* Stats Bar */}
+     <div style={{ 
+        marginTop: isMobile ? "16px" : "28px",
+        display: "flex",
+        justifyContent: "center",
+        padding: "0 16px"
+      }}>
   <button style={{
     background: "linear-gradient(135deg, #4a8a4a, #2a6a2a)",
     color: "#ffffff",
-    padding: "14px 30px",
+    padding: isMobile ? "14px 40px" : "14px 30px",
     borderRadius: "999px",
     border: "none",
     fontWeight: 700,
+    fontSize: isMobile ? "16px" : "15px",
     fontSize: "15px",
     letterSpacing: "0.3px",
     cursor: "pointer",
@@ -1100,7 +1104,7 @@ borderRadius: "999px",
       </div>
 
       {/* Cards */}
-      <div style={{ maxWidth: 600, margin: "0 auto", padding: isMobile ? "8px 6px" : "8px 13px" }}>
+      <div style={{ maxWidth: 600, margin: "0 auto", padding: isMobile ? "8px 10px" : "8px 13px" }}>
         {filtered.length === 0 ? (
           <div style={{ textAlign: "center", padding: "50px 0", color: "#2e2010" }}>
             <div style={{ fontSize: 32, marginBottom: 10 }}>&#128269;</div>
