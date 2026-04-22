@@ -988,13 +988,14 @@ borderRadius: "999px",
                 fontWeight: 600,
                 border: "1px solid rgba(0,0,0,0.08)",
                 
-                background: filter === f.id
-                  ? "linear-gradient(135deg, #4a8a4a, #2a6a2a)"
-                  : "#ffffff",
-                color: filter === f.id ? "#ffffff" : "#2a5a2a",
+                background: filter === f.id ? "#2a6a2a" : "#ffffff",
+                color: filter === f.id ? "#ffffff" : "#2a2a2a",
                 cursor: "pointer",
                 whiteSpace: "nowrap",
-                transition: "all 0.2s",
+                transition: "all 0.2s ease",
+boxShadow: filter === f.id
+  ? "0 4px 12px rgba(42,106,42,0.25)"
+  : "0 2px 6px rgba(0,0,0,0.08)",
                 boxShadow: filter === f.id ? "0 4px 12px rgba(42,106,42,0.3)" : "0 2px 6px rgba(0,0,0,0.08)",
               }}>{f.label}</button>
             ))}
