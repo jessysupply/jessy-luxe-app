@@ -834,7 +834,54 @@ export default function App() {
   const totalBase = INITIAL_SUPPLIERS.reduce((a, s) => a + s.products.reduce((b, p) => b + p.reviews, 0), 0);
 
   return (
-    <div style={{ minHeight: "100vh", background: "linear-gradient(180deg, #f0f5f0 0%, #e8f0e8 45%, #dde8dd 100%)", color: "#2b2b2b", fontFamily: "'DM Sans', sans-serif", paddingBottom: 60 }}>
+    <div style={{
+      minHeight: "100vh",
+      background: "linear-gradient(180deg, #f0f5f0 0%, #e8f0e8 45%, #dde8dd 100%)",
+      color: "#2b2b2b",
+      fontFamily: "'DM Sans', sans-serif",
+      paddingBottom: 60,
+      position: "relative",
+      overflow: "hidden"
+    }}>
+      <div style={{
+  position: "absolute",
+  inset: 0,
+  pointerEvents: "none",
+  zIndex: 0
+}}>
+  <div style={{
+    position: "absolute",
+    top: "-80px",
+    left: "-60px",
+    width: "220px",
+    height: "220px",
+    borderRadius: "50%",
+    background: "rgba(74,138,74,0.10)",
+    filter: "blur(10px)"
+  }} />
+  <div style={{
+    position: "absolute",
+    top: "180px",
+    right: "-70px",
+    width: "240px",
+    height: "240px",
+    borderRadius: "50%",
+    background: "rgba(42,106,42,0.10)",
+    filter: "blur(14px)"
+  }} />
+  <div style={{
+    position: "absolute",
+    bottom: "120px",
+    left: "20%",
+    width: "180px",
+    height: "180px",
+    borderRadius: "50%",
+    background: "rgba(200,169,126,0.10)",
+    filter: "blur(12px)"
+  }} />
+</div>
+<div style={{ position: "relative", zIndex: 1 }}></div>
+
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap');
         * { box-sizing: border-box; margin: 0; padding: 0; }
