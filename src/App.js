@@ -930,7 +930,13 @@ export default function App() {
 </div>
 
       {/* Controls */}
-      <div style={{ padding: "16px 13px 4px", maxWidth: 600, margin: "0 auto" }}>
+      <div style={{
+  width: "100%",
+  maxWidth: isMobile ? "100%" : "900px",
+  margin: "0 auto",
+  padding: isMobile ? "0 10px" : "0 24px",
+  boxSizing: "border-box"
+}}>
         {/* Search */}
         <div style={{ position: "relative", marginBottom: 11 }}>
           <span style={{ position: "absolute", left: 11, top: "50%", transform: "translateY(-50%)", color: "#3a2a18", fontSize: 13 }}>&#128269;</span>
