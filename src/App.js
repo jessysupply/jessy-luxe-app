@@ -936,7 +936,8 @@ export default function App() {
   width: "100%",
   maxWidth: isMobile ? "100%" : "900px",
   margin: "0 auto",
-  padding: isMobile ? "0 10px" : "0 24px",
+  padding: isMobile ? "12px 14px 12px 36px" : "10px 12px 10px 32px",
+  margin: "0 auto",
   boxSizing: "border-box"
 }}>
         {/* Search */}
