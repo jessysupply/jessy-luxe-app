@@ -572,47 +572,17 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
         }}>
           {favorites.includes(supplier.id) ? "❤️" : "🤍"}
         </button>
-        <div style={{ 
-  display: "flex", 
-  alignItems: "center", 
-  gap: 8, 
-  flexWrap: "wrap",
-  marginBottom: 6
-}}>
-          <span style={{ color: "#1f140c", fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: isMobile ? 16 : 17, lineHeight: 1.2 }}>{supplier.name}</span>
-          <span style={{ color: "#6a5a50", fontSize: isMobile ? 12 : 11, fontWeight: 500 }}>• {supplier.origin}</span>
-          <span style={{ color: "#6a5a50", fontSize: isMobile ? 12 : 11, fontWeight: 500 }}>
-  • {supplier.origin}
-</span>
-<div style={{ display: "flex", alignItems: "center", gap: 6, marginTop: 4 }}>
-  <span style={{ color: "#f5b301", fontSize: isMobile ? 14 : 13 }}>
-    ★★★★☆
-  </span>
-  <span style={{ fontSize: isMobile ? 12 : 11, color: "#6a5a50" }}>
-    4.0 rating
-  </span>
-</div>
+          <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
+            <span style={{ color: "#2a1a10", fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 15 }}>{supplier.name}</span>
+            <span style={{ color: "#6a5a50", fontSize: 11 }}>• {supplier.origin}</span>
           </div>
-          <div style={{ 
-  display: "flex", 
-  gap: 6, 
-  marginTop: 8, 
-  flexWrap: "wrap" 
-}}>
+          <div style={{ display: "flex", gap: 5, marginTop: 5, flexWrap: "wrap" }}>
             {supplier.tags.map(t => (
               <span key={t} style={{ fontSize: 9, color: "#2a5a2a", background: "#e8f0e8", border: "1px solid #4a8a4a", borderRadius: 20, padding: "2px 8px" }}>{t}</span>
             ))}
-            <span key={t} style={{
-  fontSize: isMobile ? 10 : 9,
-  color: "#2a5a2a",
-  background: "#f0f6f0",
-  border: "1px solid rgba(42,106,42,0.2)",
-  borderRadius: "999px",
-  padding: isMobile ? "4px 10px" : "2px 8px",
-  fontWeight: 500
-}}>
-  {t}
-</span>
+            <span style={{ fontSize: 9, color: "#2a6a2a", background: "#d8ead8", border: "1px solid #c8a97e28", borderRadius: 20, padding: "2px 8px" }}>
+              {supplier.products.length} products
+            </span>
             {myReviews.length > 0 && (
               <span style={{ fontSize: 9, color: "#7ec87e", background: "#081408", border: "1px solid #7ec87e28", borderRadius: 20, padding: "2px 8px" }}>
                 {myReviews.length} review{myReviews.length > 1 ? "s" : ""} ✓
@@ -712,14 +682,7 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
         border: "1px solid #4a8a4a", borderRadius: "20px 20px 0 0",
         padding: "24px 18px 38px", maxHeight: "92vh", overflowY: "auto",
       }}>
-        <div style={{
-  background: "#ffffff",
-  borderRadius: "16px",
-  padding: isMobile ? "14px" : "16px",
-  marginBottom: "12px",
-  boxShadow: "0 6px 20px rgba(0,0,0,0.08)",
-  border: "1px solid rgba(0,0,0,0.04)"
-}} />
+        <div style={{ width: 36, height: 3, background: "#2a1a10", borderRadius: 2, margin: "0 auto 20px" }} />
 
         {submitted ? (
           <div style={{ textAlign: "center", padding: "28px 0" }}>
@@ -1019,20 +982,19 @@ export default function App() {
             {filters.map(f => (
               <button key={f.id} onClick={() => { setFilter(f.id); setCurrentPage(1); }} style={{
                 padding: isMobile ? "10px 16px" : "8px 14px",
-                fontSize: isMobile ? 14 : 13,
+fontSize: isMobile ? 12 : 14,
 borderRadius: "999px",
-                
+                fontSize: 14,
                 fontWeight: 600,
-                border: "1px solid rgba(0,0,0,0.08)",
-                
-                background: filter === f.id ? "#2a6a2a" : "#ffffff",
-                color: filter === f.id ? "#ffffff" : "#2a2a2a",
+                border: "2px solid",
+                borderColor: filter === f.id ? "#2a6a2a" : "#4a8a4a",
+                background: filter === f.id
+                  ? "linear-gradient(135deg, #4a8a4a, #2a6a2a)"
+                  : "#ffffff",
+                color: filter === f.id ? "#ffffff" : "#2a5a2a",
                 cursor: "pointer",
                 whiteSpace: "nowrap",
-                transition: "all 0.2s ease",
-boxShadow: filter === f.id
-  ? "0 4px 12px rgba(42,106,42,0.25)"
-  : "0 2px 6px rgba(0,0,0,0.08)",
+                transition: "all 0.2s",
                 boxShadow: filter === f.id ? "0 4px 12px rgba(42,106,42,0.3)" : "0 2px 6px rgba(0,0,0,0.08)",
               }}>{f.label}</button>
             ))}
