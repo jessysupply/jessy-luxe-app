@@ -1,4 +1,5 @@
 import { useState } from "react";
+const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
 
 const INITIAL_SUPPLIERS = [
   {
@@ -542,7 +543,7 @@ function ReviewBubble({ review, delay }) {
     </div>
   );
 }
-function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite }) {
+function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile }) {}
   function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile }) {
   const avg = avgRating(supplier.products).toFixed(1);
   const hasHuman = supplier.products.some(p => p.category === "human");
