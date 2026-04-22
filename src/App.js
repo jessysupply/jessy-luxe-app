@@ -936,10 +936,10 @@ export default function App() {
   width: "100%",
   maxWidth: isMobile ? "100%" : "900px",
   margin: "0 auto",
-  padding: isMobile ? "12px 14px 12px 36px" : "10px 12px 10px 32px",
-  margin: "0 auto",
+  padding: isMobile ? "0 10px" : "0 24px",
   boxSizing: "border-box"
 }}>
+
         {/* Search */}
         <div style={{ position: "relative", marginBottom: 11 }}>
           <span style={{ position: "absolute", left: 11, top: "50%", transform: "translateY(-50%)", color: "#3a2a18", fontSize: 13 }}>&#128269;</span>
@@ -948,7 +948,7 @@ export default function App() {
             placeholder="Search by supplier name or texture..."
             style={{
               width: "100%", background: "rgba(255,255,255,0.9)", border: "1px solid rgba(255,255,255,0.12)",
-              borderRadius: 30, padding: "10px 12px 10px 32px",
+              borderRadius: 30, padding: isMobile ? "12px 14px 12px 36px" : "10px 12px 10px 32px",
               color: "#1a0f0a", fontSize: 13, outline: "none", fontFamily: "'DM Sans', sans-serif",
               boxShadow: "0 8px 20px rgba(0,0,0,0.25)",
             }}
@@ -981,13 +981,13 @@ export default function App() {
           }}>
             {filters.map(f => (
               <button key={f.id} onClick={() => { setFilter(f.id); setCurrentPage(1); }} style={{
-                padding: isMobile ? "10px 14px" : "12px 22px",
-fontSize: isMobile ? 12 : 14,
-                borderRadius: 30,
-                fontSize: 14,
+                padding: isMobile ? "10px 16px" : "8px 14px",
+                fontSize: isMobile ? 14 : 13,
+borderRadius: "999px",
+                
                 fontWeight: 600,
-                border: "2px solid",
-                borderColor: filter === f.id ? "#2a6a2a" : "#4a8a4a",
+                border: "1px solid rgba(0,0,0,0.08)",
+                
                 background: filter === f.id
                   ? "linear-gradient(135deg, #4a8a4a, #2a6a2a)"
                   : "#ffffff",
@@ -1017,7 +1017,7 @@ fontSize: isMobile ? 12 : 14,
       </div>
 
       {/* Count */}
-      <div style={{  maxWidth: 600, margin: "6px auto 0", padding: "0 13px" }}>
+      <div style={{ width: "100%", maxWidth: isMobile ? "100%" : 900, margin: "0 auto", padding: isMobile ? "8px 10px" : "8px 20px", boxSizing: "border-box" }}>
         <span style={{ color: "#251808", fontSize: 11 }}>
           {filtered.length} supplier{filtered.length !== 1 ? "s" : ""}
           {searchQ && <span> matching "<span style={{ color: "#4a3020" }}>{searchQ}</span>"</span>}
