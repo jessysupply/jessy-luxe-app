@@ -5,7 +5,7 @@ const INITIAL_SUPPLIERS = [
   {
     id: 1, name: "Mayvenn Hair", logo: "M", origin: "USA", tags: ["Popular", "Certified"],
     website: "https://shop.mayvenn.com",
-    shopLink: "https://shop.mayvenn.com/collections/all",
+    shopLink: "https://www.mayvenn.com/jessyluxebeauty",
     products: [
       { type: "100% Human (Brazilian)", category: "human", texture: "Body Wave", lengths: "12\"–30\"", price: "$95–$340", rating: 4.7, reviews: 1380 },
       { type: "100% Human (Peruvian)", category: "human", texture: "Straight", lengths: "10\"–28\"", price: "$85–$310", rating: 4.5, reviews: 940 },
