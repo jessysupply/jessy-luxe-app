@@ -1041,7 +1041,32 @@ export default function App() {
             }}>&#215;</button>
           )}
         </div>
-
+{/* Hair Texture Gallery */}
+<div style={{ maxWidth: 600, margin: "0 auto 20px", padding: "0 13px" }}>
+          <div style={{ color: "#2a6a2a", fontSize: 10, letterSpacing: 2, textTransform: "uppercase", marginBottom: 12, textAlign: "center" }}>Browse by Hair Texture</div>
+          <div style={{ display: "flex", gap: 8, overflowX: "auto", paddingBottom: 8, WebkitOverflowScrolling: "touch", scrollbarWidth: "none" }}>
+            {[
+              { name: "Body Wave", img: "/bodywave.jpg" },
+              { name: "Deep Wave", img: "/deepwave.jpg" },
+              { name: "Straight", img: "/straight.jpg" },
+              { name: "Kinky Curly", img: "/kinkycurly.jpg" },
+              { name: "Water Wave", img: "/waterwave.jpg" },
+              { name: "Loose Wave", img: "/loosewave.jpg" },
+            ].map((texture) => (
+              <div key={texture.name} onClick={() => { setSearchQ(texture.name); setCurrentPage(1); }} style={{
+                flexShrink: 0, cursor: "pointer", textAlign: "center", width: isMobile ? 90 : 100,
+              }}>
+                <div style={{
+                  width: isMobile ? 90 : 100, height: isMobile ? 90 : 100, borderRadius: 12,
+                  overflow: "hidden", border: "2px solid #4a8a4a", marginBottom: 6,
+                }}>
+                  <img src={texture.img} alt={texture.name} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                </div>
+                <div style={{ fontSize: 10, color: "#2a6a2a", fontWeight: 600 }}>{texture.name}</div>
+              </div>
+            ))}
+          </div>
+        </div>
         {/* Filter */}
         <div style={{
           overflowX: "scroll",
