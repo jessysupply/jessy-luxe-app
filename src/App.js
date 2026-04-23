@@ -1194,7 +1194,7 @@ onFavorite={toggleFavorite}
   <a href="https://www.pinterest.com/jessyluxe303" target="_blank" rel="noreferrer" style={{ color: "#2a6a2a", fontSize: 13, textDecoration: "none", fontWeight: 600 }}>Pinterest</a>
   <a href="mailto:jessysupply@jessyluxebeauty.com" style={{ color: "#2a6a2a", fontSize: 13, textDecoration: "none", fontWeight: 600 }}>Email Us</a>
 </div>
-        <p>© 2025 Jessy Luxe Beauty. All rights reserved.</p>
+        <p>© 2026 Jessy Luxe Beauty. All rights reserved.</p>
         <p style={{ marginTop: 8 }}>
           Built for the community · Not affiliated with any brand
         </p>
