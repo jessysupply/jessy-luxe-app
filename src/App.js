@@ -933,7 +933,7 @@ export default function App() {
       <div style={{
   padding: isMobile ? "20px 16px 15px" : "110px 24px 80px",
   minHeight: "auto",
-  background: "linear-gradient(180deg, rgba(184,216,184,0.7) 0%, rgba(200,224,200,0.7) 100%), url('/headerwave.jpg') center/cover no-repeat",
+  background: "linear-gradient(180deg, rgba(184,216,184,0.7) 0%, rgba(200,224,200,0.7) 100%), url('/headerwave.jpg') center top/cover no-repeat",
   borderBottom: "1px solid rgba(255,255,255,0.08)"
 }}>
   <div style={{ textAlign: "center", marginBottom: 10 }}>
