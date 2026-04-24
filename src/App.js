@@ -894,7 +894,7 @@ export default function App() {
       const matchSearch = searchQ === "" ? true :
         s.name.toLowerCase().includes(searchQ.toLowerCase()) ||
         s.tags.some(t => t.toLowerCase().includes(searchQ.toLowerCase())) ||
-        s.products.some(p => p.texture.toLowerCase().includes(searchQ.toLowerCase()));
+        s.products.some(p => p.texture && p.texture.toLowerCase().includes(searchQ.toLowerCase()));
       return matchCat && matchSearch;
     })
    
