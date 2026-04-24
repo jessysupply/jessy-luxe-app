@@ -404,6 +404,60 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
+    id: 51, name: "Julia Hair", logo: "JH", origin: "China", tags: ["Human Hair", "Wigs"],
+    website: "https://www.juliahair.com",
+    shopLink: "https://www.juliahair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "10\"–30\"", price: "$55–$220", rating: 4.4, reviews: 3200 },
+      { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$40–$170", rating: 4.3, reviews: 2600 },
+    ],
+  },
+  {
+    id: 52, name: "Recool Hair", logo: "RC", origin: "China", tags: ["Human Hair", "Glueless"],
+    website: "https://www.recoolhair.com",
+    shopLink: "https://www.recoolhair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Glueless Wig", lengths: "10\"–30\"", price: "$60–$240", rating: 4.4, reviews: 1900 },
+      { type: "100% Human", category: "human", texture: "HD Lace Front", lengths: "12\"–28\"", price: "$70–$260", rating: 4.3, reviews: 1500 },
+    ],
+  },
+  {
+    id: 53, name: "Celie Hair", logo: "CH", origin: "China", tags: ["Human Hair", "Affordable"],
+    website: "https://www.celiehair.com",
+    shopLink: "https://www.celiehair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "10\"–30\"", price: "$55–$220", rating: 4.4, reviews: 2400 },
+      { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$40–$160", rating: 4.3, reviews: 1900 },
+    ],
+  },
+  {
+    id: 54, name: "Sunber Hair", logo: "SB", origin: "China", tags: ["Human Hair", "Wigs"],
+    website: "https://www.sunberhair.com",
+    shopLink: "https://www.sunberhair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "HD Lace Front Wig", lengths: "10\"–30\"", price: "$60–$250", rating: 4.5, reviews: 3100 },
+      { type: "100% Human", category: "human", texture: "Straight Bundle", lengths: "12\"–28\"", price: "$40–$170", rating: 4.3, reviews: 2400 },
+    ],
+  },
+  {
+    id: 55, name: "Klaiyi Hair", logo: "KL", origin: "China", tags: ["Human Hair", "Glueless"],
+    website: "https://www.klaiyihair.com",
+    shopLink: "https://www.klaiyihair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Glueless Lace Wig", lengths: "10\"–30\"", price: "$65–$260", rating: 4.5, reviews: 2700 },
+      { type: "100% Human", category: "human", texture: "HD Lace Front", lengths: "12\"–28\"", price: "$75–$280", rating: 4.4, reviews: 2100 },
+    ],
+  },
+  {
+    id: 56, name: "Beautyforever", logo: "BF", origin: "China", tags: ["Human Hair", "Affordable"],
+    website: "https://www.beautyforever.com",
+    shopLink: "https://www.beautyforever.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$50–$200", rating: 4.3, reviews: 2900 },
+      { type: "100% Human", category: "human", texture: "Straight Lace Front", lengths: "12\"–28\"", price: "$55–$210", rating: 4.2, reviews: 2300 },
+    ],
+  },
+  {
     id: 44, name: "Beaudiva Hair", logo: "BD", origin: "China", tags: ["Affordable", "Human Hair"],
     website: "https://www.beaudivahair.com",
     shopLink: "https://www.beaudivahair.com/collections/all",
