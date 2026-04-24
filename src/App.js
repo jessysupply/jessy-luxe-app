@@ -456,6 +456,16 @@ shopLink: "https://www.aligracehair.com/collections/all",
       { type: "100% Human", category: "human", texture: "HD Lace Front Wig", lengths: "10\"–30\"", price: "$80–$350", rating: 4.5, reviews: 2800 },
       { type: "100% Human", category: "human", texture: "Glueless Wig", lengths: "12\"–28\"", price: "$90–$320", rating: 4.4, reviews: 2200 },
     ],
+    
+  },
+  {
+    id: 50, name: "West Kiss Hair", logo: "WK", origin: "China", tags: ["Affordable", "Human Hair"],
+    website: "https://www.westkisshair.com",
+    shopLink: "https://www.westkisshair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$45–$180", rating: 4.3, reviews: 2100 },
+      { type: "100% Human", category: "human", texture: "Straight Bundle", lengths: "12\"–28\"", price: "$35–$150", rating: 4.2, reviews: 1800 },
+    ],
   },
 ];
  
