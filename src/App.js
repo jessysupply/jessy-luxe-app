@@ -439,6 +439,24 @@ shopLink: "https://www.aligracehair.com/collections/all",
       { type: "100% Human", category: "human", texture: "Bone Straight Wig", lengths: "12\"–28\"", price: "$65–$220", rating: 4.4, reviews: 1300 },
     ],
   },
+  {
+    id: 48, name: "Vietnam Remy Hair", logo: "VR", origin: "Vietnam", tags: ["Remy Hair", "Wholesale"],
+    website: "https://www.vietnamremyhair.com",
+    shopLink: "https://www.vietnamremyhair.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Remy Bundle", lengths: "10\"–30\"", price: "$45–$180", rating: 4.4, reviews: 1600 },
+      { type: "100% Human", category: "human", texture: "Lace Closure Wig", lengths: "12\"–26\"", price: "$65–$220", rating: 4.3, reviews: 1200 },
+    ],
+  },
+  {
+    id: 49, name: "RPGShow", logo: "RP", origin: "China", tags: ["HD Lace", "Wigs"],
+    website: "https://www.rpgshow.com",
+    shopLink: "https://www.rpgshow.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "HD Lace Front Wig", lengths: "10\"–30\"", price: "$80–$350", rating: 4.5, reviews: 2800 },
+      { type: "100% Human", category: "human", texture: "Glueless Wig", lengths: "12\"–28\"", price: "$90–$320", rating: 4.4, reviews: 2200 },
+    ],
+  },
 ];
  
 
