@@ -154,7 +154,7 @@ shopLink: "https://ebonyline.com/collections/model-model",
   {
     id: 16, name: "UNice Hair", logo: "UN", origin: "China", tags: ["Affordable", "Human Hair"],
     website: "https://www.unice.com",
-    shopLink: "https://www.unice.com/collections/all",
+    shopLink: "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=2866481",
     products: [
       { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$55–$200", rating: 4.4, reviews: 4500 },
       { type: "100% Human", category: "human", texture: "Straight Lace Front", lengths: "12\"–28\"", price: "$60–$220", rating: 4.3, reviews: 3800 },
