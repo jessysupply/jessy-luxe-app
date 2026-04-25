@@ -458,6 +458,16 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
+    id: 57, name: "Ulta Beauty", logo: "UB", origin: "USA", tags: ["Retail", "Multi-Brand"],
+    website: "https://www.ulta.com",
+    shopLink: "https://www.ulta.com/hair-extensions-wigs",
+    products: [
+      { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "12\"–24\"", price: "$30–$300", rating: 4.3, reviews: 5200 },
+      { type: "Synthetic", category: "synthetic", texture: "Synthetic Wigs", lengths: "10\"–22\"", price: "$20–$150", rating: 4.1, reviews: 3800 },
+      { type: "Human/Synthetic Blend", category: "mixed", texture: "Blend Extensions", lengths: "12\"–20\"", price: "$25–$200", rating: 4.0, reviews: 2900 },
+    ],
+  },
+  {
     id: 44, name: "Beaudiva Hair", logo: "BD", origin: "China", tags: ["Affordable", "Human Hair"],
     website: "https://www.beaudivahair.com",
     shopLink: "https://www.beaudivahair.com/collections/all",
