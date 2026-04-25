@@ -1176,9 +1176,9 @@ export default function App() {
               { name: "Loose Wave", img: "/loosewave.jpg" },
               { name: "Tape-In", img: "/tapein.jpg" },
 { name: "Weft", img: "/weft.jpg" },
-{ name: "Micro Bead", img: "/microbead.jpg" },
+
 { name: "Clip-In", img: "/clipin.jpg" },
-{ name: "Tape-In Style 2", img: "/1tapin.jpg" },
+
 { name: "Weft Style 2", img: "/1weft.jpg" },
 { name: "Micro Bead Style 2", img: "/1microbead.jpg" },
             ].map((texture) => (
