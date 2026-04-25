@@ -145,7 +145,7 @@ shopLink: "https://ebonyline.com/collections/model-model",
   {
     id: 15, name: "Bellami Hair", logo: "BL", origin: "USA", tags: ["Luxury", "Extensions"],
     website: "https://www.bellamihair.com",
-    shopLink: "https://www.bellamihair.com/collections/all",
+   shopLink: "https://go.shopmy.us/p-54647534",
     products: [
       { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "16\"–24\"", price: "$180–$380", rating: 4.6, reviews: 3200 },
       { type: "100% Human", category: "human", texture: "Tape-In Extensions", lengths: "14\"–22\"", price: "$160–$320", rating: 4.5, reviews: 2100 },
