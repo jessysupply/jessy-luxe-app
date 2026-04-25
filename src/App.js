@@ -440,9 +440,28 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
+    id: 60, name: "Babe Hair Extensions", logo: "BH", origin: "USA", tags: ["Salon Professional", "Remy Hair"],
+    website: "https://babehairextensions.com",
+    shopLink: "https://go.shopmy.us/p-54647534",
+    products: [
+      { type: "100% Human", category: "human", texture: "Tape-In Extensions", lengths: "14\"–22\"", price: "$150–$300", rating: 4.6, reviews: 2100 },
+      { type: "100% Human", category: "human", texture: "Hand-Tied Weft", lengths: "18\"–22\"", price: "$200–$400", rating: 4.7, reviews: 1800 },
+      { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "16\"–20\"", price: "$135–$200", rating: 4.5, reviews: 1500 },
+    ],
+  },
+  {
+    id: 61, name: "Show Pony Hair Extensions", logo: "SP", origin: "Australia", tags: ["Premium", "Extensions"],
+    website: "https://www.showponyhairextensions.com",
+    shopLink: "https://www.showponyhairextensions.com",
+    products: [
+      { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "14\"–22\"", price: "$150–$350", rating: 4.6, reviews: 1200 },
+      { type: "100% Human", category: "human", texture: "Tape-In Extensions", lengths: "16\"–22\"", price: "$180–$380", rating: 4.5, reviews: 900 },
+    ],
+  },
+  {
     id: 55, name: "Klaiyi Hair", logo: "KL", origin: "China", tags: ["Human Hair", "Glueless"],
     website: "https://www.klaiyihair.com",
-    shopLink: "https://www.klaiyihair.com/collections/all",
+    shopLink: "https://go.shopmy.us/p-54647534",
     products: [
       { type: "100% Human", category: "human", texture: "Glueless Lace Wig", lengths: "10\"–30\"", price: "$65–$260", rating: 4.5, reviews: 2700 },
       { type: "100% Human", category: "human", texture: "HD Lace Front", lengths: "12\"–28\"", price: "$75–$280", rating: 4.4, reviews: 2100 },
@@ -460,11 +479,30 @@ shopLink: "https://www.aligracehair.com/collections/all",
   {
     id: 57, name: "Ulta Beauty", logo: "UB", origin: "USA", tags: ["Retail", "Multi-Brand"],
     website: "https://www.ulta.com",
-    shopLink: "https://www.ulta.com/hair-extensions-wigs",
+    shopLink: "https://go.shopmy.us/p-54647534",
     products: [
       { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "12\"–24\"", price: "$30–$300", rating: 4.3, reviews: 5200 },
       { type: "Synthetic", category: "synthetic", texture: "Synthetic Wigs", lengths: "10\"–22\"", price: "$20–$150", rating: 4.1, reviews: 3800 },
       { type: "Human/Synthetic Blend", category: "mixed", texture: "Blend Extensions", lengths: "12\"–20\"", price: "$25–$200", rating: 4.0, reviews: 2900 },
+    ],
+  },
+  {
+    id: 58, name: "Locks & Mane", logo: "LM", origin: "USA", tags: ["Clip-In", "Remy Hair"],
+    website: "https://www.locksandmane.com",
+    shopLink: "https://go.shopmy.us/p-54647534",
+    products: [
+      { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "12\"–20\"", price: "$72–$295", rating: 4.4, reviews: 1200 },
+      { type: "100% Human", category: "human", texture: "Human Hair Ponytail", lengths: "18\"–22\"", price: "$185–$250", rating: 4.5, reviews: 800 },
+    ],
+  },
+  {
+    id: 59, name: "True & Pure Texture", logo: "TP", origin: "USA", tags: ["Natural Texture", "Curly"],
+    website: "https://www.trueandpuretexture.com",
+    shopLink: "https://go.shopmy.us/p-54647534",
+    products: [
+      { type: "100% Human", category: "human", texture: "Curly Coily Clip-Ins", lengths: "10\"–22\"", price: "$120–$350", rating: 4.6, reviews: 980 },
+      { type: "100% Human", category: "human", texture: "HD Lace Front Wig", lengths: "12\"–24\"", price: "$200–$450", rating: 4.7, reviews: 750 },
+      { type: "100% Human", category: "human", texture: "Virgin Bundles", lengths: "10\"–26\"", price: "$150–$380", rating: 4.5, reviews: 620 },
     ],
   },
   {
