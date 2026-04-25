@@ -495,6 +495,15 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
+    id: 66, name: "FD Jewish Wigs", logo: "FD", origin: "China", tags: ["Sheitel", "Factory Direct"],
+    website: "https://jewish-wigs.com",
+    shopLink: "https://jewish-wigs.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "Silk Top Sheitel", lengths: "10\"–24\"", price: "$300–$1500", rating: 4.5, reviews: 460 },
+      { type: "100% Human", category: "human", texture: "Lace Top Sheitel", lengths: "12\"–22\"", price: "$250–$1200", rating: 4.4, reviews: 380 },
+    ],
+  },
+  {
     id: 55, name: "Klaiyi Hair", logo: "KL", origin: "China", tags: ["Human Hair", "Glueless"],
     website: "https://www.klaiyihair.com",
     shopLink: "https://go.shopmy.us/p-54647534",
@@ -1217,6 +1226,8 @@ export default function App() {
 
 { name: "Weft Style 2", img: "/1weft.jpg" },
 { name: "Micro Bead", img: "/1microbead.jpg" },
+{ name: "Sheitel Wig", img: "/sheitel.jpg" },
+{ name: "European Wig", img: "/europeanwig.jpg" },
             ].map((texture) => (
               <div key={texture.name} onClick={() => { setSearchQ(texture.name); setCurrentPage(1); }} style={{
                 flexShrink: 0, cursor: "pointer", textAlign: "center", width: isMobile ? 90 : 100,
