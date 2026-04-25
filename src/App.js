@@ -459,6 +459,42 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
+    id: 62, name: "Shuly Wigs", logo: "SW", origin: "USA", tags: ["Sheitel", "Jewish Wig"],
+    website: "https://shulywigs.com",
+    shopLink: "https://shulywigs.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "European Hair Sheitel", lengths: "10\"–24\"", price: "$800–$3000", rating: 4.7, reviews: 580 },
+      { type: "100% Human", category: "human", texture: "Lace Front Sheitel", lengths: "12\"–22\"", price: "$600–$2500", rating: 4.6, reviews: 420 },
+    ],
+  },
+  {
+    id: 63, name: "BeeWigs", logo: "BW", origin: "China", tags: ["Sheitel", "Kosher Wig"],
+    website: "https://beewigs.com",
+    shopLink: "https://beewigs.com/collections/jewish-wigs",
+    products: [
+      { type: "100% Human", category: "human", texture: "Silk Top Sheitel", lengths: "10\"–24\"", price: "$400–$1800", rating: 4.5, reviews: 680 },
+      { type: "100% Human", category: "human", texture: "Lace Top Sheitel", lengths: "12\"–22\"", price: "$350–$1500", rating: 4.4, reviews: 520 },
+    ],
+  },
+  {
+    id: 64, name: "Sherogaga", logo: "SG", origin: "USA", tags: ["Sheitel", "Kosher Wig"],
+    website: "https://sherogagashop.com",
+    shopLink: "https://sherogagashop.com/collections/all",
+    products: [
+      { type: "100% Human", category: "human", texture: "European Hair Sheitel", lengths: "10\"–22\"", price: "$500–$2000", rating: 4.6, reviews: 420 },
+      { type: "100% Human", category: "human", texture: "Lace Top Sheitel", lengths: "12\"–20\"", price: "$400–$1800", rating: 4.5, reviews: 350 },
+    ],
+  },
+  {
+    id: 65, name: "Shani Wigs", logo: "SW", origin: "USA", tags: ["Sheitel", "Bespoke Wig"],
+    website: "https://shaniwigs.com",
+    shopLink: "https://shaniwigs.com/collections/sheitels",
+    products: [
+      { type: "100% Human", category: "human", texture: "Custom Sheitel", lengths: "10\"–24\"", price: "$600–$2500", rating: 4.7, reviews: 380 },
+      { type: "100% Human", category: "human", texture: "Virgin Hair Sheitel", lengths: "12\"–22\"", price: "$500–$2000", rating: 4.6, reviews: 290 },
+    ],
+  },
+  {
     id: 55, name: "Klaiyi Hair", logo: "KL", origin: "China", tags: ["Human Hair", "Glueless"],
     website: "https://www.klaiyihair.com",
     shopLink: "https://go.shopmy.us/p-54647534",
