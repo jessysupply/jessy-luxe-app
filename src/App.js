@@ -1180,7 +1180,7 @@ export default function App() {
 { name: "Clip-In", img: "/clipin.jpg" },
 
 { name: "Weft Style 2", img: "/1weft.jpg" },
-{ name: "Micro Bead Style 2", img: "/1microbead.jpg" },
+{ name: "Micro Bead Style", img: "/microbead.jpg" },
             ].map((texture) => (
               <div key={texture.name} onClick={() => { setSearchQ(texture.name); setCurrentPage(1); }} style={{
                 flexShrink: 0, cursor: "pointer", textAlign: "center", width: isMobile ? 90 : 100,
