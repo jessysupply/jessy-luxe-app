@@ -743,9 +743,9 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           <button onClick={e => { e.stopPropagation(); onCompare(supplier); }} style={{
           position: "absolute", top: 10, right: 35,
           background: "transparent", border: "none", cursor: "pointer",
-          fontSize: 16, color: compareList.find(s => s.id === supplier.id) ? "#2a6a2a" : "#aaa"
+          fontSize: 16, color: compareList && compareList.find(s => s.id === supplier.id) ? "#2a6a2a" : "#aaa"
         }}>
-          {compareList.find(s => s.id === supplier.id) ? "☑️" : "☐"}
+          {compareList && compareList.find(s => s.id === supplier.id) ? "☑️" : "☐"}
         </button>
         </button>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
