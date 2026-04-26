@@ -4,7 +4,7 @@ const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
 const INITIAL_SUPPLIERS = [
   {
     id: 1, name: "Mayvenn Hair", logo: "M", origin: "USA", tags: ["Popular", "Certified"],
-    website: "https://shop.mayvenn.com",
+    website: "https://www.mayvenn.com/jessyluxebeauty",
     shopLink: "https://www.mayvenn.com/jessyluxebeauty",
     products: [
       { type: "100% Human (Brazilian)", category: "human", texture: "Body Wave", lengths: "12\"–30\"", price: "$95–$340", rating: 4.7, reviews: 1380 },
@@ -144,7 +144,7 @@ shopLink: "https://ebonyline.com/collections/model-model",
   },
   {
     id: 15, name: "Bellami Hair", logo: "BL", origin: "USA", tags: ["Luxury", "Extensions"],
-    website: "https://www.bellamihair.com",
+    website: "https://go.shopmy.us/p-54647534",
    shopLink: "https://go.shopmy.us/p-54647534",
     products: [
       { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "16\"–24\"", price: "$180–$380", rating: 4.6, reviews: 3200 },
@@ -153,7 +153,7 @@ shopLink: "https://ebonyline.com/collections/model-model",
   },
   {
     id: 16, name: "UNice Hair", logo: "UN", origin: "China", tags: ["Affordable", "Human Hair"],
-    website: "https://www.unice.com",
+    website: "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=2866481",
     shopLink: "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=2866481",
     products: [
       { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$55–$200", rating: 4.4, reviews: 4500 },
