@@ -442,7 +442,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
   {
     id: 60, name: "Babe Hair Extensions", logo: "BH", origin: "USA", tags: ["Salon Professional", "Remy Hair"],
     website: "https://babehairextensions.com",
-    shopLink: "https://go.shopmy.us/p-54647534",
+    shopLink: "https://babehairextensions.com/collections/all",
     products: [
       { type: "100% Human", category: "human", texture: "Tape-In Extensions", lengths: "14\"–22\"", price: "$150–$300", rating: 4.6, reviews: 2100 },
       { type: "100% Human", category: "human", texture: "Hand-Tied Weft", lengths: "18\"–22\"", price: "$200–$400", rating: 4.7, reviews: 1800 },
@@ -506,7 +506,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
   {
     id: 55, name: "Klaiyi Hair", logo: "KL", origin: "China", tags: ["Human Hair", "Glueless"],
     website: "https://www.klaiyihair.com",
-    shopLink: "https://go.shopmy.us/p-54647534",
+    shopLink: "https://klaiyihair.com/collections/all",
     products: [
       { type: "100% Human", category: "human", texture: "Glueless Lace Wig", lengths: "10\"–30\"", price: "$65–$260", rating: 4.5, reviews: 2700 },
       { type: "100% Human", category: "human", texture: "HD Lace Front", lengths: "12\"–28\"", price: "$75–$280", rating: 4.4, reviews: 2100 },
@@ -523,7 +523,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
   },
   {
     id: 57, name: "Ulta Beauty", logo: "UB", origin: "USA", tags: ["Retail", "Multi-Brand"],
-    website: "https://www.ulta.com",
+    website: "https://go.shopmy.us/p-54647534",
     shopLink: "https://go.shopmy.us/p-54647534",
     products: [
       { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "12\"–24\"", price: "$30–$300", rating: 4.3, reviews: 5200 },
