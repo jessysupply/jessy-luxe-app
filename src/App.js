@@ -459,7 +459,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
-    id: 62, name: "Shuly Wigs", logo: "SW", origin: "USA", tags: ["Sheitel", "Jewish Wig"],
+    id: 62, name: "Shuly Wigs", logo: "SW", origin: "USA", tags: ["Sheitel", "Jewish Wig", "Kosher Wig", "European Hair", "Wig"],
     website: "https://shulywigs.com",
     shopLink: "https://shulywigs.com/collections/all",
     products: [
@@ -468,7 +468,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
-    id: 63, name: "BeeWigs", logo: "BW", origin: "China", tags: ["Sheitel", "Kosher Wig"],
+    id: 63, name: "BeeWigs", logo: "BW", origin: "China", tags: ["Sheitel", "Kosher Wig", "Jewish Wig", "European Hair", "Wig"],
     website: "https://beewigs.com",
     shopLink: "https://beewigs.com/collections/jewish-wigs",
     products: [
@@ -486,7 +486,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
-    id: 65, name: "Shani Wigs", logo: "SW", origin: "USA", tags: ["Sheitel", "Bespoke Wig"],
+    id: 65, name: "Shani Wigs", logo: "SW", origin: "USA", tags: ["Sheitel", "Bespoke Wig", "Jewish Wig", "Kosher Wig", "European Hair", "Wig"],
     website: "https://shaniwigs.com",
     shopLink: "https://shaniwigs.com/collections/sheitels",
     products: [
@@ -495,7 +495,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
-    id: 66, name: "FD Jewish Wigs", logo: "FD", origin: "China", tags: ["Sheitel", "Factory Direct"],
+    id: 66, name: "FD Jewish Wigs", logo: "FD", origin: "China", tags: ["Sheitel", "Factory Direct", "Jewish Wig", "Kosher Wig", "European Hair", "Wig"],
     website: "https://jewish-wigs.com",
     shopLink: "https://jewish-wigs.com/collections/all",
     products: [
