@@ -740,13 +740,7 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           fontSize: 16, color: favorites.includes(supplier.id) ? "#e8354a" : "2a6a2a"
         }}>
           {favorites.includes(supplier.id) ? "❤️" : "🤍"}
-          <button onClick={e => { e.stopPropagation(); onCompare(supplier); }} style={{
-          position: "absolute", top: 10, right: 35,
-          background: "transparent", border: "none", cursor: "pointer",
-          fontSize: 16, color: compareList && compareList.find(s => s.id === supplier.id) ? "#2a6a2a" : "#aaa"
-        }}>
-          {compareList && compareList.find(s => s.id === supplier.id) ? "☑️" : "☐"}
-        </button>
+          
         </button>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
           <span style={{ color: "#1a3a1a", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: isMobile ? 17 : 16 }}>{supplier.name}</span>
@@ -956,20 +950,6 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
 export default function App() {
   const [expandedId, setExpandedId]     = useState(null);
   const [favorites, setFavorites] = useState(() => {
-    const [compareList, setCompareList] = useState([]);
-
-  const toggleCompare = (supplier) => {
-    setCompareList(prev => {
-      if (prev.find(s => s.id === supplier.id)) {
-        return prev.filter(s => s.id !== supplier.id);
-      }
-      if (prev.length >= 3) {
-        alert("You can only compare up to 3 vendors at a time!");
-        return prev;
-      }
-      return [...prev, supplier];
-    });
-  };
     try {
       const saved = localStorage.getItem("jessyluxe_favorites");
       return saved ? JSON.parse(saved) : [];
@@ -1344,8 +1324,7 @@ borderRadius: "999px",
             userReviews={userReviews}
             favorites={favorites}
 onFavorite={toggleFavorite}
-compareList={compareList}
-onCompare={toggleCompare}
+
           />
         ))}
       </div>
