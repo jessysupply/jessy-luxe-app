@@ -1354,36 +1354,7 @@ onFavorite={toggleFavorite}
           }}>Next →</button>
         </div>
       )}
-      {/* Compare Panel */}
-      {compareList.length >= 2 && (
-        <div style={{
-          position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 9999,
-          background: "#ffffff", borderTop: "3px solid #2a6a2a",
-          padding: "16px", boxShadow: "0 -4px 20px rgba(0,0,0,0.15)"
-        }}>
-          <div style={{ maxWidth: 600, margin: "0 auto" }}>
-            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
-              <div style={{ color: "#2a6a2a", fontWeight: 700, fontSize: 14 }}>Comparing {compareList.length} Vendors</div>
-              <button onClick={() => setCompareList([])} style={{ background: "transparent", border: "none", color: "#e8354a", cursor: "pointer", fontSize: 13, fontWeight: 600 }}>Clear All</button>
-            </div>
-            <div style={{ display: "flex", gap: 8, overflowX: "auto" }}>
-              {compareList.map(s => (
-                <div key={s.id} style={{ flex: 1, minWidth: 140, background: "#f0f5f0", borderRadius: 12, padding: 12, border: "1px solid #4a8a4a" }}>
-                  <div style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 13, color: "#1a3a1a", marginBottom: 6 }}>{s.name}</div>
-                  <div style={{ fontSize: 11, color: "#2a6a2a", marginBottom: 4 }}>⭐ {avgRating(s.products).toFixed(1)} rating</div>
-                  <div style={{ fontSize: 11, color: "#4a7a4a", marginBottom: 4 }}>📍 {s.origin}</div>
-                  <div style={{ fontSize: 11, color: "#4a7a4a", marginBottom: 8 }}>💰 {s.products[0].price}</div>
-                  <a href={s.shopLink} target="_blank" rel="noreferrer" style={{
-                    display: "block", textAlign: "center", padding: "6px", borderRadius: 8,
-                    background: "#2a6a2a", color: "#ffffff", fontSize: 11, textDecoration: "none", fontWeight: 600
-                  }}>Shop Now</a>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      )}
-      {/* Legend */}
+     
       <div style={{ maxWidth: 600, margin: "4px auto 0", padding: "0 13px" }}>
         <div style={{ borderRadius: 12, background: "#f0f5f0", border: "1px solid #4a8a4a", padding: "14px" }}>
           <div style={{ color: "#2a6a2a", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", marginBottom: 10 }}>Hair Type Guide</div>
