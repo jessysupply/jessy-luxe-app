@@ -948,12 +948,19 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
 }
 
 export default function App() {
-  const [expandedId, setExpandedId]     = useState(null);
-  const [favorites, setFavorites] = useState(() => {
+  const [expandedId, setExpandedId] = useState(null);
   const [filter, setFilter] = useState("all");
   const [sortBy, setSortBy] = useState("name");
   const [reviewTarget, setReviewTarget] = useState(null);
-  const [userReviews, setUserReviews] = useState([]);
+  const [userReviews, setUserReviews] = useState(() => {
+    try {
+      const saved = localStorage.getItem("jessyluxe_reviews");
+      return saved ? JSON.parse(saved) : [];
+    } catch { return []; }
+  });
+  const [searchQ, setSearchQ] = useState("");
+  const [currentPage, setCurrentPage] = useState(1);
+  const suppliersPerPage = 10;
   const [favorites, setFavorites] = useState(() => {
     try {
       const saved = localStorage.getItem("jessyluxe_favorites");
@@ -961,27 +968,14 @@ export default function App() {
     } catch { return []; }
   });
   const [compareList, setCompareList] = useState([]);
- const isMobile = window.innerWidth <= 768;
+  const isMobile = window.innerWidth <= 768;
+  const toggleFavorite = (id) => {
     setFavorites(prev => {
       const updated = prev.includes(id) ? prev.filter(f => f !== id) : [...prev, id];
       try { localStorage.setItem("jessyluxe_favorites", JSON.stringify(updated)); } catch {}
       return updated;
     });
   };
-  const [filter, setFilter]             = useState("all");
-  const [sortBy, setSortBy]             = useState("name");
-  const [reviewTarget, setReviewTarget] = useState(null);
-  const [userReviews, setUserReviews]   = useState(() => {
-    try {
-      const saved = localStorage.getItem("jessyluxe_reviews");
-      return saved ? JSON.parse(saved) : [];
-    } catch { return []; }
-  });
-  const [searchQ, setSearchQ]           = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const suppliersPerPage = 10;
-  const isMobile = window.innerWidth <= 768;
-
   const filters = [
     { id: "all",       label: "All" },
     { id: "human",     label: "100% Human" },
