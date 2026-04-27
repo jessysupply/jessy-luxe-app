@@ -711,7 +711,7 @@ function ReviewBubble({ review, delay }) {
   );
 }
 
-function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile, compareList = [], onCompare }) {
+function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile, onCompare }) {
   const myReviews = userReviews.filter(r => r.supplierId === supplier.id);
   const avg = avgRating(supplier.products).toFixed(1);
   const hasHuman = supplier.products.some(p => p.category === "human");
@@ -950,12 +950,18 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
 export default function App() {
   const [expandedId, setExpandedId]     = useState(null);
   const [favorites, setFavorites] = useState(() => {
+  const [filter, setFilter] = useState("all");
+  const [sortBy, setSortBy] = useState("name");
+  const [reviewTarget, setReviewTarget] = useState(null);
+  const [userReviews, setUserReviews] = useState([]);
+  const [favorites, setFavorites] = useState(() => {
     try {
       const saved = localStorage.getItem("jessyluxe_favorites");
       return saved ? JSON.parse(saved) : [];
     } catch { return []; }
   });
-  const toggleFavorite = (id) => {
+  const [compareList, setCompareList] = useState([]);
+ const isMobile = window.innerWidth <= 768;
     setFavorites(prev => {
       const updated = prev.includes(id) ? prev.filter(f => f !== id) : [...prev, id];
       try { localStorage.setItem("jessyluxe_favorites", JSON.stringify(updated)); } catch {}
