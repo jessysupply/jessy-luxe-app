@@ -1433,5 +1433,6 @@ onFavorite={toggleFavorite}
       </div>
     </div>
     </div>
-  }
+  );
+    }
             
