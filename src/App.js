@@ -761,7 +761,7 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           <button onClick={e => { e.stopPropagation(); onCompare(supplier); }} style={{
         position: "absolute",
         top: "50%",
-        left: "50%",
+        left: "70%",
         transform: "translate(-50%, -50%)",
         zIndex: 10,
           background: compareList && compareList.find(s => s.id === supplier.id) ? "#2a6a2a" : "#ffffff",
