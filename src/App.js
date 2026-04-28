@@ -757,15 +757,18 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           fontSize: 16, color: favorites.includes(supplier.id) ? "#e8354a" : "2a6a2a"
         }}>
           {favorites.includes(supplier.id) ? "❤️" : "🤍"}
+          </button>
           <button onClick={e => { e.stopPropagation(); onCompare(supplier); }} style={{
-          position: "absolute", top: 10, right: 36,
-          background: "transparent", border: "none", cursor: "pointer",
-          fontSize: 16, color: compareList && compareList.find(s => s.id === supplier.id) ? "#2a6a2a" : "#aaa"
+          position: "absolute", top: 8, left: 8,
+          background: compareList && compareList.find(s => s.id === supplier.id) ? "#2a6a2a" : "#ffffff",
+          border: "2px solid #2a6a2a", borderRadius: 6, cursor: "pointer",
+          fontSize: 10, color: compareList && compareList.find(s => s.id === supplier.id) ? "#ffffff" : "#2a6a2a",
+          padding: "3px 6px", fontWeight: 700
         }}>
-          {compareList && compareList.find(s => s.id === supplier.id) ? "☑️" : "☐"}
+          {compareList && compareList.find(s => s.id === supplier.id) ? "✓ Compare" : "+ Compare"}
         </button>
           
-        </button>
+        
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
           <span style={{ color: "#1a3a1a", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: isMobile ? 17 : 16 }}>{supplier.name}</span>
           <span style={{ color: "#4a7a4a", fontSize: isMobile ? 12 : 11, fontWeight: 500 }}>• {supplier.origin}</span>
@@ -1389,7 +1392,7 @@ onCompare={toggleCompare}
      
       <div style={{ maxWidth: 600, margin: "4px auto 0", padding: "0 13px" }}>
         <div style={{ borderRadius: 12, background: "#f0f5f0", border: "1px solid #4a8a4a", padding: "14px" }}>
-        {compareList.length >= 2 && (
+          {compareList.length >= 2 && (
         <div style={{
           position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 9999,
           background: "#ffffff", borderTop: "3px solid #2a6a2a",
