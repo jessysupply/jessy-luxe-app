@@ -728,8 +728,7 @@ function ReviewBubble({ review, delay }) {
     </div>
   );
 }
-
-function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile, onCompare }) {
+function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile, compareList = [], onCompare }) {
   const myReviews = userReviews.filter(r => r.supplierId === supplier.id);
   const avg = avgRating(supplier.products).toFixed(1);
   const hasHuman = supplier.products.some(p => p.category === "human");
@@ -758,6 +757,13 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           fontSize: 16, color: favorites.includes(supplier.id) ? "#e8354a" : "2a6a2a"
         }}>
           {favorites.includes(supplier.id) ? "❤️" : "🤍"}
+          <button onClick={e => { e.stopPropagation(); onCompare(supplier); }} style={{
+          position: "absolute", top: 10, right: 36,
+          background: "transparent", border: "none", cursor: "pointer",
+          fontSize: 16, color: compareList && compareList.find(s => s.id === supplier.id) ? "#2a6a2a" : "#aaa"
+        }}>
+          {compareList && compareList.find(s => s.id === supplier.id) ? "☑️" : "☐"}
+        </button>
           
         </button>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
@@ -992,6 +998,18 @@ export default function App() {
       const updated = prev.includes(id) ? prev.filter(f => f !== id) : [...prev, id];
       try { localStorage.setItem("jessyluxe_favorites", JSON.stringify(updated)); } catch {}
       return updated;
+    });
+  };
+  const toggleCompare = (supplier) => {
+    setCompareList(prev => {
+      if (prev.find(s => s.id === supplier.id)) {
+        return prev.filter(s => s.id !== supplier.id);
+      }
+      if (prev.length >= 3) {
+        alert("You can only compare up to 3 vendors at a time!");
+        return prev;
+      }
+      return [...prev, supplier];
     });
   };
   const filters = [
@@ -1342,6 +1360,8 @@ borderRadius: "999px",
             userReviews={userReviews}
             favorites={favorites}
 onFavorite={toggleFavorite}
+compareList={compareList}
+onCompare={toggleCompare}
 
           />
         ))}
@@ -1369,6 +1389,34 @@ onFavorite={toggleFavorite}
      
       <div style={{ maxWidth: 600, margin: "4px auto 0", padding: "0 13px" }}>
         <div style={{ borderRadius: 12, background: "#f0f5f0", border: "1px solid #4a8a4a", padding: "14px" }}>
+        {compareList.length >= 2 && (
+        <div style={{
+          position: "fixed", bottom: 0, left: 0, right: 0, zIndex: 9999,
+          background: "#ffffff", borderTop: "3px solid #2a6a2a",
+          padding: "16px", boxShadow: "0 -4px 20px rgba(0,0,0,0.15)"
+        }}>
+          <div style={{ maxWidth: 600, margin: "0 auto" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 12 }}>
+              <div style={{ color: "#2a6a2a", fontWeight: 700, fontSize: 14 }}>Comparing {compareList.length} Vendors</div>
+              <button onClick={() => setCompareList([])} style={{ background: "transparent", border: "none", color: "#e8354a", cursor: "pointer", fontSize: 13, fontWeight: 600 }}>Clear All ✕</button>
+            </div>
+            <div style={{ display: "flex", gap: 8, overflowX: "auto" }}>
+              {compareList.map(s => (
+                <div key={s.id} style={{ flex: 1, minWidth: 140, background: "#f0f5f0", borderRadius: 12, padding: 12, border: "1px solid #4a8a4a" }}>
+                  <div style={{ fontFamily: "'Playfair Display', serif", fontWeight: 700, fontSize: 13, color: "#1a3a1a", marginBottom: 6 }}>{s.name}</div>
+                  <div style={{ fontSize: 11, color: "#2a6a2a", marginBottom: 4 }}>⭐ {avgRating(s.products).toFixed(1)} rating</div>
+                  <div style={{ fontSize: 11, color: "#4a7a4a", marginBottom: 4 }}>📍 {s.origin}</div>
+                  <div style={{ fontSize: 11, color: "#4a7a4a", marginBottom: 8 }}>💰 {s.products[0].price}</div>
+                  <a href={s.shopLink} target="_blank" rel="noreferrer" style={{
+                    display: "block", textAlign: "center", padding: "6px", borderRadius: 8,
+                    background: "#2a6a2a", color: "#ffffff", fontSize: 11, textDecoration: "none", fontWeight: 600
+                  }}>Shop Now</a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )}
           <div style={{ color: "#2a6a2a", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", marginBottom: 10 }}>Hair Type Guide</div>
           <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
             {Object.entries(CATEGORY_CONFIG).map(([key, cfg]) => (
