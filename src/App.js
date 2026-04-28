@@ -504,6 +504,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
+    
     id: 55, name: "Klaiyi Hair", logo: "KL", origin: "China", tags: ["Human Hair", "Glueless"],
     website: "https://www.klaiyihair.com",
     shopLink: "https://klaiyihair.com/collections/all",
@@ -614,9 +615,26 @@ shopLink: "https://www.aligracehair.com/collections/all",
       { type: "100% Human", category: "human", texture: "Straight Bundle", lengths: "12\"–28\"", price: "$35–$150", rating: 4.2, reviews: 1800 },
     ],
   },
+  {
+      id: 67, name: "Zlike Hair", logo: "ZL", origin: "China", tags: ["HD Lace", "300% Density", "Human Hair"],
+      website: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
+      shopLink: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
+      products: [
+        { type: "100% Human", category: "human", texture: "300% Density Lace Wig", lengths: "10\"–36\"", price: "$80–$350", rating: 4.6, reviews: 2800 },
+        { type: "100% Human", category: "human", texture: "Glueless Lace Front Wig", lengths: "12\"–30\"", price: "$90–$320", rating: 4.5, reviews: 2200 },
+        { type: "100% Human", category: "human", texture: "Water Wave Wig", lengths: "10\"–28\"", price: "$75–$280", rating: 4.4, reviews: 1900 },
+      ],
+    },
+    {
+      id: 68, name: "Wig Fever", logo: "WF", origin: "China", tags: ["Wigs", "Affordable", "Human Hair"],
+      website: "https://jessyluxebeauty.com",
+      shopLink: "https://jessyluxebeauty.com",
+      products: [
+        { type: "100% Human", category: "human", texture: "Lace Front Wig", lengths: "10\"–30\"", price: "$50–$250", rating: 4.4, reviews: 1800 },
+        { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "12\"–28\"", price: "$60–$280", rating: 4.3, reviews: 1500 },
+      ],
+    },
 ];
- 
-
 const CATEGORY_CONFIG = {
   human:     { label: "100% Human",  color: "#2a6a2a", bg: "#d8ead8" },
   synthetic: { label: "Synthetic",   color: "#2a5a8a", bg: "#d8e8f0" },
