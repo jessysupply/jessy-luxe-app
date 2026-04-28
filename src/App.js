@@ -324,8 +324,8 @@ shopLink: "https://ebonyline.com/collections/model-model",
   },
   {
     id: 35, name: "ISEE Hair", logo: "IS", origin: "China", tags: ["Human Hair", "Affordable"],
-    website: "https://www.iseehair.com",
-    shopLink: "https://www.iseehair.com/collections/all",
+    website: "https://www.awin1.com/cread.php?awinmid=44521&awinaffid=2866481",
+shopLink: "https://www.awin1.com/cread.php?awinmid=44521&awinaffid=2866481",
     products: [
       { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "10\"–30\"", price: "$55–$220", rating: 4.4, reviews: 3800 },
       { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$40–$160", rating: 4.3, reviews: 3200 },
