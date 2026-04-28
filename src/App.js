@@ -759,7 +759,11 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           {favorites.includes(supplier.id) ? "❤️" : "🤍"}
           </button>
           <button onClick={e => { e.stopPropagation(); onCompare(supplier); }} style={{
-          position: "absolute", top: 8, left: 8,
+        position: "absolute",
+        top: "50%",
+        left: "50%",
+        transform: "translate(-50%, -50%)",
+        zIndex: 10,
           background: compareList && compareList.find(s => s.id === supplier.id) ? "#2a6a2a" : "#ffffff",
           border: "2px solid #2a6a2a", borderRadius: 6, cursor: "pointer",
           fontSize: 10, color: compareList && compareList.find(s => s.id === supplier.id) ? "#ffffff" : "#2a6a2a",
