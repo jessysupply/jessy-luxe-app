@@ -760,7 +760,7 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           </button>
           <button onClick={e => { e.stopPropagation(); onCompare(supplier); }} style={{
         position: "absolute",
-        top: "65%",
+        top: "70%",
         left: "70%",
         transform: "translate(-50%, -50%)",
         zIndex: 10,
