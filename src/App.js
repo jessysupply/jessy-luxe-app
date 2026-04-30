@@ -1195,7 +1195,7 @@ export default function App() {
   marginBottom: "10px",
   color: "#1a3a1a"
 }}>
-Stop Getting Scammed
+Stop Getting Scammed<br />
   <span style={{ color: "#2a5a2a" }}>
     Buying Hair Online
   </span>
