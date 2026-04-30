@@ -624,6 +624,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
         { type: "100% Human", category: "human", texture: "Glueless Lace Front Wig", lengths: "12\"–30\"", price: "$90–$320", rating: 4.5, reviews: 2200 },
         { type: "100% Human", category: "human", texture: "Water Wave Wig", lengths: "10\"–28\"", price: "$75–$280", rating: 4.4, reviews: 1900 },
       ],
+      
     },
     {
       id: 68, name: "Wig Fever", logo: "WF", origin: "China", tags: ["Wigs", "Affordable", "Human Hair"],
@@ -632,6 +633,16 @@ shopLink: "https://www.aligracehair.com/collections/all",
       products: [
         { type: "100% Human", category: "human", texture: "Lace Front Wig", lengths: "10\"–30\"", price: "$50–$250", rating: 4.4, reviews: 1800 },
         { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "12\"–28\"", price: "$60–$280", rating: 4.3, reviews: 1500 },
+      ],
+    },
+    {
+      id: 69, name: "Wavymyhair", logo: "WM", origin: "China", tags: ["Wavy Hair", "Human Hair", "HD Lace"],
+      website: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
+      shopLink: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
+      products: [
+        { type: "100% Human", category: "human", texture: "Water Wave Wig", lengths: "10\"–30\"", price: "$60–$250", rating: 4.5, reviews: 1800 },
+        { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$45–$180", rating: 4.4, reviews: 1500 },
+        { type: "100% Human", category: "human", texture: "HD Lace Front Wig", lengths: "10\"–26\"", price: "$70–$280", rating: 4.3, reviews: 1200 },
       ],
     },
 ];
