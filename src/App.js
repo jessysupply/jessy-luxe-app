@@ -636,15 +636,15 @@ shopLink: "https://www.aligracehair.com/collections/all",
       ],
     },
     {
-      id: 69, name: "Wavymyhair", logo: "WM", origin: "China", tags: ["Wavy Hair", "Human Hair", "HD Lace"],
-      website: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
-      shopLink: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
-      products: [
-        { type: "100% Human", category: "human", texture: "Water Wave Wig", lengths: "10\"–30\"", price: "$60–$250", rating: 4.5, reviews: 1800 },
-        { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$45–$180", rating: 4.4, reviews: 1500 },
-        { type: "100% Human", category: "human", texture: "HD Lace Front Wig", lengths: "10\"–26\"", price: "$70–$280", rating: 4.3, reviews: 1200 },
-      ],
-    },
+    id: 69, name: "Wavymyhair", logo: "WM", origin: "China", tags: ["Wavy Hair", "Human Hair", "HD Lace"],
+    website: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
+    shopLink: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
+    products: [
+      { type: "100% Human", category: "human", texture: "Water Wave Wig", lengths: "10\"–30\"", price: "$60–$250", rating: 4.5, reviews: 1800 },
+      { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$45–$180", rating: 4.4, reviews: 1500 },
+      { type: "100% Human", category: "human", texture: "HD Lace Front Wig", lengths: "10\"–26\"", price: "$70–$280", rating: 4.3, reviews: 1200 },
+    ],
+  },
 ];
 const CATEGORY_CONFIG = {
   human:     { label: "100% Human",  color: "#2a6a2a", bg: "#d8ead8" },
@@ -1195,7 +1195,10 @@ export default function App() {
   marginBottom: "10px",
   color: "#1a3a1a"
 }}>
-  Hair Vendor Reviews <span style={{ color: "#2a5a2a" }}>&</span> Ratings
+Stop Getting Scammed
+  <span style={{ color: "#2a5a2a" }}>
+    Buying Hair Online
+  </span>
 </h1>
       
 <p style={{
@@ -1206,7 +1209,7 @@ export default function App() {
   lineHeight: 1.8,
   textAlign: "center"
 }}>
-  Compare real hair, synthetic & blends — honest prices, quality ratings & community reviews.
+ Compare 60+ Hair Vendors, See Real Reviews & Find Trusted Hair in Seconds.
 </p>
       </div>
 
@@ -1230,7 +1233,7 @@ export default function App() {
     cursor: "pointer",
     boxShadow: "0 10px 30px rgba(42,106,42,0.28)"
   }}>
-    Explore Vendors
+  Compare Vendors Now
   </button>
 </div>
 
