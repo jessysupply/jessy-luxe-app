@@ -1047,7 +1047,21 @@ export default function App() {
         s.products.some(p => p.texture.toLowerCase().includes(searchQ.toLowerCase()));
       return matchCat && matchSearch;
     })
-   
+    const displaySuppliers =
+    filtered.length === 0 && searchQ !== ""
+      ? INITIAL_SUPPLIERS.filter(s => {
+          const matchCat =
+            filter === "all"
+              ? true
+              : filter === "favorites"
+              ? favorites.includes(s.id)
+              : s.products.some(p => p.category === filter);
+  
+          return matchCat;
+        })
+      : filtered;
+  
+  const noExactMatch = filtered.length === 0 && searchQ !== "";
     const sorted = [...filtered].sort((a, b) => {
       if (sortBy === "rating") return avgRating(b.products) - avgRating(a.products);
       if (sortBy === "products") return b.products.length - a.products.length;
@@ -1364,12 +1378,15 @@ borderRadius: "999px",
         </span>
       </div>
 
-      {/* Cards */}
-      <div style={{ maxWidth: 600, margin: "0 auto", padding: isMobile ? "8px 10px" : "8px 13px" }}>
-        {filtered.length === 0 ? (
-          <div style={{ textAlign: "center", padding: "50px 0", color: "#2e2010" }}>
-            <div style={{ fontSize: 32, marginBottom: 10 }}>&#128269;</div>
-            <div style={{ fontSize: 14 }}>No suppliers match your search.</div>
+     {/* Cards */}
+<div style={{ maxWidth: 600, margin: "0 auto", padding: isMobile ? "8px 10px" : "8px 13px" }}>
+  {filtered.length === 0 ? (
+    <div style={{ textAlign: "center", padding: "50px 0", color: "#2e2010" }}>
+      <div style={{ fontSize: 32, marginBottom: 10 }}>&#128269;</div>
+      <div style={{ fontSize: 14 }}>
+        No exact match — try another keyword like “Body Wave” or “Straight.”
+      </div>
+    
             
           </div>
         ) : paginatedSuppliers.map(s => (
