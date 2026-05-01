@@ -707,12 +707,16 @@ function DealOfTheWeek() {
 function avgRating(products) {
   return products.reduce((a, p) => a + p.rating, 0) / products.length;
 }
+function StarRating({ rating, size = 13 }) {
+  return (
     <span style={{ letterSpacing: 1 }}>
       {[1,2,3,4,5].map(s => (
         <span key={s} style={{ color: s <= Math.round(rating) ? "#c8a97e" : "#3a2e2e", fontSize: size }}>&#9733;</span>
       ))}
       <span style={{ color: "#a08060", fontSize: size - 1, marginLeft: 4 }}>{rating.toFixed(1)}</span>
     </span>
+    );
+  }
 function InteractiveStars({ value, onChange }) {
   const [hover, setHover] = useState(0);
   return (
