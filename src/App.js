@@ -1350,22 +1350,24 @@ Stop Getting Scammed<br />
     boxShadow: "0 10px 30px rgba(42,106,42,0.28)"
   }}>
   Compare Vendors Now
+  </button>
   <button onClick={() => setShowQuiz(true)} style={{
-    background: "transparent",
-    color: "#2a6a2a",
+    background: "#2a6a2a",
+    color: "#ffffff",
     padding: "14px 30px",
     borderRadius: "999px",
-    border: "2px solid #2a6a2a",
+    border: "none",
     fontWeight: 700,
     fontSize: "15px",
     letterSpacing: "0.3px",
     cursor: "pointer",
     marginLeft: 12,
-    boxShadow: "0 4px 12px rgba(42,106,42,0.15)"
+    boxShadow: "0 4px 12px rgba(42,106,42,0.3)"
   }}>
     💆🏽‍♀️ Take Hair Quiz
   </button>
-  </button>
+  
+  
 </div>
 
       {/* Controls */}
