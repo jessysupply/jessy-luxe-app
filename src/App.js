@@ -1077,7 +1077,39 @@ export default function App() {
     } catch { return []; }
   });
   const [compareList, setCompareList] = useState([]);
+  const [showQuiz, setShowQuiz] = useState(false);
+  const [quizStep, setQuizStep] = useState(0);
+  const [quizAnswers, setQuizAnswers] = useState({});
+  const [quizResult, setQuizResult] = useState(null);
   const isMobile = window.innerWidth <= 768;
+  const quizQuestions = [
+    { id: "budget", question: "What's your budget for hair?", options: ["Under $50", "$50-$150", "$150-$300", "$300+"] },
+    { id: "type", question: "What type of hair do you prefer?", options: ["100% Human Hair", "Synthetic Hair", "Human/Synthetic Blend", "No Preference"] },
+    { id: "texture", question: "What texture are you looking for?", options: ["Straight", "Body Wave", "Deep Wave", "Kinky Curly"] },
+    { id: "origin", question: "Do you prefer hair from a specific origin?", options: ["USA Brand", "Indian Hair", "Vietnamese Hair", "No Preference"] },
+    { id: "purpose", question: "What's the hair for?", options: ["Everyday Wear", "Special Occasion", "Protective Style", "Cosplay/Fun"] },
+  ];
+  const getQuizResult = (answers) => {
+    if (answers.type === "100% Human Hair" && answers.budget === "$300+") {
+      return INITIAL_SUPPLIERS.find(s => s.name === "Indique Hair") || INITIAL_SUPPLIERS[0];
+    }
+    if (answers.type === "Synthetic Hair" && answers.budget === "Under $50") {
+      return INITIAL_SUPPLIERS.find(s => s.name === "Freetress") || INITIAL_SUPPLIERS[0];
+    }
+    if (answers.budget === "$50-$150" && answers.origin === "Vietnamese Hair") {
+      return INITIAL_SUPPLIERS.find(s => s.name === "Govihair") || INITIAL_SUPPLIERS[0];
+    }
+    if (answers.type === "100% Human Hair" && answers.budget === "$150-$300") {
+      return INITIAL_SUPPLIERS.find(s => s.name === "UNice Hair") || INITIAL_SUPPLIERS[0];
+    }
+    if (answers.origin === "Indian Hair") {
+      return INITIAL_SUPPLIERS.find(s => s.name === "Indique Hair") || INITIAL_SUPPLIERS[0];
+    }
+    if (answers.budget === "Under $50") {
+      return INITIAL_SUPPLIERS.find(s => s.name === "Shake-N-Go") || INITIAL_SUPPLIERS[0];
+    }
+    return INITIAL_SUPPLIERS.find(s => s.name === "Mayvenn Hair") || INITIAL_SUPPLIERS[0];
+  };
   const toggleFavorite = (id) => {
     setFavorites(prev => {
       const updated = prev.includes(id) ? prev.filter(f => f !== id) : [...prev, id];
@@ -1318,6 +1350,21 @@ Stop Getting Scammed<br />
     boxShadow: "0 10px 30px rgba(42,106,42,0.28)"
   }}>
   Compare Vendors Now
+  <button onClick={() => setShowQuiz(true)} style={{
+    background: "transparent",
+    color: "#2a6a2a",
+    padding: "14px 30px",
+    borderRadius: "999px",
+    border: "2px solid #2a6a2a",
+    fontWeight: 700,
+    fontSize: "15px",
+    letterSpacing: "0.3px",
+    cursor: "pointer",
+    marginLeft: 12,
+    boxShadow: "0 4px 12px rgba(42,106,42,0.15)"
+  }}>
+    💆🏽‍♀️ Take Hair Quiz
+  </button>
   </button>
 </div>
 
@@ -1543,6 +1590,67 @@ onCompare={toggleCompare}
             ))}
       </div>
     </div>
+    {showQuiz && (
+        <div style={{
+          position: "fixed", inset: 0, zIndex: 99999,
+          background: "rgba(0,0,0,0.85)", display: "flex", alignItems: "center", justifyContent: "center",
+          padding: 16
+        }} onClick={() => setShowQuiz(false)}>
+          <div onClick={e => e.stopPropagation()} style={{
+            background: "#ffffff", borderRadius: 20, padding: 28,
+            maxWidth: 500, width: "100%", maxHeight: "90vh", overflowY: "auto"
+          }}>
+            {quizResult ? (
+              <div style={{ textAlign: "center" }}>
+                <div style={{ fontSize: 40, marginBottom: 12 }}>🎉</div>
+                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 22, fontWeight: 900, color: "#1a3a1a", marginBottom: 8 }}>Your Perfect Match!</div>
+                <div style={{ fontSize: 16, color: "#2a6a2a", fontWeight: 700, marginBottom: 16 }}>{quizResult.name}</div>
+                <div style={{ fontSize: 13, color: "#4a7a4a", marginBottom: 20 }}>Based on your answers, we think {quizResult.name} is the perfect vendor for you!</div>
+                <a href={quizResult.shopLink} target="_blank" rel="noreferrer" style={{
+                  display: "inline-block", padding: "12px 28px", borderRadius: 30,
+                  background: "#2a6a2a", color: "#ffffff", fontWeight: 700, textDecoration: "none", fontSize: 14
+                }}>Shop Now →</a>
+                <button onClick={() => { setQuizResult(null); setQuizStep(0); setQuizAnswers({}); }} style={{
+                  display: "block", margin: "12px auto 0", background: "transparent", border: "none",
+                  color: "#4a7a4a", cursor: "pointer", fontSize: 13
+                }}>Take Quiz Again</button>
+              </div>
+            ) : (
+              <div>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 20 }}>
+                  <div style={{ fontFamily: "'Playfair Display', serif", fontSize: 18, fontWeight: 900, color: "#1a3a1a" }}>Find Your Perfect Hair</div>
+                  <button onClick={() => setShowQuiz(false)} style={{ background: "transparent", border: "none", fontSize: 20, cursor: "pointer" }}>✕</button>
+                </div>
+                <div style={{ fontSize: 11, color: "#4a8a4a", marginBottom: 16 }}>Question {quizStep + 1} of {quizQuestions.length}</div>
+                <div style={{ fontSize: 16, fontWeight: 700, color: "#1a3a1a", marginBottom: 16 }}>{quizQuestions[quizStep].question}</div>
+                <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+                  {quizQuestions[quizStep].options.map(option => (
+                    <button key={option} onClick={() => {
+                      const newAnswers = { ...quizAnswers, [quizQuestions[quizStep].id]: option };
+                      setQuizAnswers(newAnswers);
+                      if (quizStep < quizQuestions.length - 1) {
+                        setQuizStep(quizStep + 1);
+                      } else {
+                        setQuizResult(getQuizResult(newAnswers));
+                      }
+                    }} style={{
+                      padding: "12px 16px", borderRadius: 12, border: "2px solid #4a8a4a",
+                      background: "#f0f5f0", color: "#2a5a2a", fontWeight: 600, fontSize: 14,
+                      cursor: "pointer", textAlign: "left", transition: "all 0.2s"
+                    }}>{option}</button>
+                  ))}
+                </div>
+                {quizStep > 0 && (
+                  <button onClick={() => setQuizStep(quizStep - 1)} style={{
+                    marginTop: 16, background: "transparent", border: "none",
+                    color: "#4a7a4a", cursor: "pointer", fontSize: 13
+                  }}>← Back</button>
+                )}
+              </div>
+            )}
+          </div>
+        </div>
+      )}
     {reviewTarget && (
   <ReviewModal
     supplier={reviewTarget}
