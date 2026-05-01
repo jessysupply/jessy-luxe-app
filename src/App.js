@@ -117,8 +117,8 @@ shopLink: "https://www.amazon.com/s?k=outre+hair&tag=jessyluxebeau-20",
   },
   {
     id: 13, name: "Freetress", logo: "FT", origin: "USA", tags: ["Braids", "Crochet"],
-    website: "https://www.amazon.com/s?k=freetress+hair&tag=jessyluxebeau-20",
-    shopLink: "https://www.amazon.com/s?k=freetress+hair&tag=jessyluxebeau-20",
+    website: "https://www.amazon.com/stores/Freetress/page/6E5B3C61-6D5E-4C59-9A6C-9B4D6C1F2F2A?tag=jessyluxebeau-20",
+shopLink: "https://www.amazon.com/stores/Freetress/page/6E5B3C61-6D5E-4C59-9A6C-9B4D6C1F2F2A?tag=jessyluxebeau-20",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Crochet Braid", lengths: "10\"–24\"", price: "$8–$25", rating: 4.1, reviews: 2200 },
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "12\"–22\"", price: "$20–$55", rating: 4.0, reviews: 1600 },
@@ -387,8 +387,8 @@ shopLink: "https://shopwigdealer.com/collections/all-wigs",
   },
   {
     id: 43, name: "Virgin City Hair", logo: "VC", origin: "USA", tags: ["Virgin Hair", "Wholesale"],
-    website: "https://membership.virgincityhair.com",
-    shopLink: "https://membership.virgincityhair.com/shop/",
+    website: "https://www.virgincityhair.com",
+shopLink: "https://www.virgincityhair.com/shop",
     products: [
       { type: "100% Human", category: "human", texture: "Virgin Bundle", lengths: "10\"–30\"", price: "$60–$220", rating: 4.4, reviews: 1400 },
       { type: "100% Human", category: "human", texture: "Lace Front Wig", lengths: "12\"–26\"", price: "$80–$260", rating: 4.3, reviews: 1100 },
