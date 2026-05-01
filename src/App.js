@@ -791,6 +791,16 @@ function ReviewBubble({ review, delay }) {
 }
 function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile, compareList = [], onCompare }) {
   const myReviews = userReviews.filter(r => r.supplierId === supplier.id);
+  const getBadge = () => {
+    const avg = avgRating(supplier.products);
+    const totalReviews = supplier.products.reduce((a, p) => a + p.reviews, 0);
+    if (avg >= 4.6) return { label: "⭐ Most Trusted", color: "#2a6a2a", bg: "#d8ead8" };
+    if (supplier.tags.some(t => ["Budget", "Affordable"].includes(t))) return { label: "💰 Best Value", color: "#1a5a8a", bg: "#d8eaf0" };
+    if (totalReviews >= 5000) return { label: "❤️ Community Favorite", color: "#8a1a2a", bg: "#f0d8da" };
+    if (supplier.id >= 60) return { label: "🆕 New Vendor", color: "#6a2a8a", bg: "#ead8f0" };
+    return null;
+  };
+  const badge = getBadge();
   const avg = avgRating(supplier.products).toFixed(1);
   const hasHuman = supplier.products.some(p => p.category === "human");
   const hasSynth  = supplier.products.some(p => p.category === "synthetic");
@@ -836,6 +846,13 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
         
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
           <span style={{ color: "#1a3a1a", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: isMobile ? 17 : 16 }}>{supplier.name}</span>
+          {badge && (
+              <span style={{
+                fontSize: 9, fontWeight: 700, padding: "2px 8px",
+                borderRadius: 20, background: badge.bg, color: badge.color,
+                letterSpacing: 1, textTransform: "uppercase"
+              }}>{badge.label}</span>
+            )}
           <span style={{ color: "#4a7a4a", fontSize: isMobile ? 12 : 11, fontWeight: 500 }}>• {supplier.origin}</span>
           </div>
           <div style={{ display: "flex", gap: 5, marginTop: 5, flexWrap: "wrap" }}>
