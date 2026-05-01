@@ -646,12 +646,27 @@ shopLink: "https://shopwigdealer.com/collections/all-wigs",
     ],
   },
 ];
+// ADD THIS 👇
+const DEAL_OF_THE_WEEK = {
+  vendorName: "Luxy Hair",
+  deal: "20% off all bundles",
+  description: "Top-rated 100% human hair extensions at an unbeatable price this week only!",
+  shopLink: "https://www.amazon.com/s?k=luxy+hair+extensions&tag=jessyluxebeau-20",
+  endDate: new Date("2026-05-04"),
+};
+
+// EXISTING CODE 👇
 const CATEGORY_CONFIG = {
   human:     { label: "100% Human",  color: "#2a6a2a", bg: "#d8ead8" },
   synthetic: { label: "Synthetic",   color: "#2a5a8a", bg: "#d8e8f0" },
   mixed:     { label: "Blend",       color: "#6a2a8a", bg: "#ead8f0" },
 };
+// ADD THIS 👇
+function DealOfTheWeek() {
+  // ... (the full component code from Step 2)
+}
 
+// EXISTING CODE 👇
 function avgRating(products) {
   return products.reduce((a, p) => a + p.rating, 0) / products.length;
 }
@@ -1081,6 +1096,7 @@ export default function App() {
       position: "relative",
       overflow: "hidden"
     }}>
+      
       <div style={{
   position: "absolute",
   inset: 0,
@@ -1105,7 +1121,9 @@ export default function App() {
 </div>
     <div style={{ position: "relative", zIndex: 1 }}>
   
- 
+ {/* ADD THIS RIGHT HERE 👇 */}
+ <DealOfTheWeek />
+
   <div style={{
     position: "absolute",
     top: "-80px",
