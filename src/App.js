@@ -637,8 +637,8 @@ shopLink: "https://shopwigdealer.com/collections/all-wigs",
     },
     {
     id: 69, name: "Wavymyhair", logo: "WM", origin: "China", tags: ["Wavy Hair", "Human Hair", "HD Lace"],
-    website: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
-    shopLink: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
+    website: "https://www.awin1.com/cread.php?awinmid=73814&awinaffid=2866481",
+    shopLink: "https://www.awin1.com/cread.php?awinmid=73814&awinaffid=2866481",
     products: [
       { type: "100% Human", category: "human", texture: "Water Wave Wig", lengths: "10\"–30\"", price: "$60–$250", rating: 4.5, reviews: 1800 },
       { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$45–$180", rating: 4.4, reviews: 1500 },
