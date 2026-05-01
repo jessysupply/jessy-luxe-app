@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
 
 const INITIAL_SUPPLIERS = [
