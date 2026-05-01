@@ -15,8 +15,8 @@ const INITIAL_SUPPLIERS = [
   },
   {
     id: 2, name: "Luxy Hair", logo: "L", origin: "Canada", tags: ["Luxury", "Extensions"],
-    website: "https://www.amazon.com/s?k=luxy+hair+extensions&tag=jessyluxebeau-20",
-    shopLink: "https://www.amazon.com/s?k=luxy+hair+extensions&tag=jessyluxebeau-20",
+    website: "https://www.amazon.com/stores/Luxy/page/5C04C0E5-FE91-4C5F-88D5-518C08D2C93D?lp_asin=B0D892CW8M&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
+    shopLink: "https://www.amazon.com/stores/Luxy/page/5C04C0E5-FE91-4C5F-88D5-518C08D2C93D?lp_asin=B0D892CW8M&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
     products: [
       { type: "100% Remy Human", category: "human", texture: "Clip-In Straight", lengths: "16\"–24\"", price: "$159–$419", rating: 4.8, reviews: 2540 },
       { type: "100% Remy Human", category: "human", texture: "Clip-In Wavy", lengths: "18\"–22\"", price: "$179–$399", rating: 4.6, reviews: 1970 },
@@ -36,8 +36,8 @@ const INITIAL_SUPPLIERS = [
   },
   {
     id: 4, name: "Sensationnel", logo: "SN", origin: "USA", tags: ["Wigs", "Versatile"],
-    website: "https://www.amazon.com/s?k=sensationnel+hair&tag=jessyluxebeau-20",
-    shopLink: "https://www.amazon.com/s?k=sensationnel+hair&tag=jessyluxebeau-20",
+    website: "https://www.amazon.com/stores/Sensationnel/page/580439EC-6AE8-44C4-95EE-E80CB635EAEF?lp_asin=B08BG9X1V1&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
+shopLink: "https://www.amazon.com/stores/Sensationnel/page/580439EC-6AE8-44C4-95EE-E80CB635EAEF?lp_asin=B08BG9X1V1&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig — Bob", lengths: "10\"–14\"", price: "$22–$60", rating: 4.1, reviews: 990 },
       { type: "Human/Synthetic Blend", category: "mixed", texture: "Full Wig — Curly", lengths: "16\"–20\"", price: "$55–$145", rating: 3.7, reviews: 455 },
@@ -96,8 +96,8 @@ shopLink: "https://www.indianhairgiant.com/collections/all",
   },
   {
     id: 10, name: "Vivica A. Fox Hair", logo: "VF", origin: "USA", tags: ["Celebrity", "Wigs"],
-    website: "https://www.amazon.com/s?k=vivica+fox+hair&tag=jessyluxebeau-20",
-    shopLink: "https://www.amazon.com/s?k=vivica+fox+hair&tag=jessyluxebeau-20",
+    website: "https://www.amazon.com/stores/VivicaAFoxHairCollection/page/34F7191C-11E3-426C-B7EF-C7FDB47C54E8?lp_asin=B0DWCV8RP2&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
+shopLink: "https://www.amazon.com/stores/VivicaAFoxHairCollection/page/34F7191C-11E3-426C-B7EF-C7FDB47C54E8?lp_asin=B0DWCV8RP2&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Full Wig — Glam", lengths: "14\"–20\"", price: "$28–$70", rating: 4.1, reviews: 1300 },
       { type: "Synthetic", category: "synthetic", texture: "Lace Front — Bob", lengths: "10\"–14\"", price: "$35–$80", rating: 4.0, reviews: 980 },
@@ -113,15 +113,6 @@ shopLink: "https://www.amazon.com/s?k=outre+hair&tag=jessyluxebeau-20",
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "12\"–26\"", price: "$20–$60", rating: 4.2, reviews: 2100 },
       { type: "100% Human", category: "human", texture: "Remi Weave", lengths: "10\"–30\"", price: "$40–$150", rating: 4.3, reviews: 1500 },
       { type: "Human/Synthetic Blend", category: "mixed", texture: "HD Lace Wig", lengths: "14\"–24\"", price: "$50–$120", rating: 4.1, reviews: 980 },
-    ],
-  },
-  {
-    id: 12, name: "Shake-N-Go", logo: "SG", origin: "USA", tags: ["Budget", "Wigs"],
-    website: "https://www.shake-n-go.com",
-    shopLink: "https://ebonyline.com/collections/shake-n-go",
-    products: [
-      { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–22\"", price: "$18–$55", rating: 4.0, reviews: 1800 },
-      { type: "Human/Synthetic Blend", category: "mixed", texture: "Half Wig", lengths: "12\"–18\"", price: "$25–$65", rating: 3.9, reviews: 1200 },
     ],
   },
   {
@@ -154,7 +145,7 @@ shopLink: "https://www.amazon.com/s?k=outre+hair&tag=jessyluxebeau-20",
   {
     id: 16, name: "UNice Hair", logo: "UN", origin: "China", tags: ["Affordable", "Human Hair"],
     website: "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=2866481",
-    shopLink: "https://www.amazon.com/s?k=model+model+hair&tag=jessyluxebeau-20",
+    shopLink: "https://www.amazon.com/stores/UNICE/page/7C67BE80-C2EB-4DD5-8E25-CC8BBCB7C189?lp_asin=B0FVLWRQ39&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto",
     products: [
       { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$55–$200", rating: 4.4, reviews: 4500 },
       { type: "100% Human", category: "human", texture: "Straight Lace Front", lengths: "12\"–28\"", price: "$60–$220", rating: 4.3, reviews: 3800 },
@@ -252,8 +243,8 @@ shopLink: "https://www.amazon.com/s?k=outre+hair&tag=jessyluxebeau-20",
   },
   {
     id: 27, name: "Indique Hair", logo: "IQ", origin: "India", tags: ["Luxury", "Virgin Hair"],
-    website: "https://www.amazon.com/s?k=indique+hair&tag=jessyluxebeau-20",
-    shopLink: "https://www.amazon.com/s?k=indique+hair&tag=jessyluxebeau-20",
+    website: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-95FF5A0AE88A?lp_asin=B07YVLNNN9&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
+    shopLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-95FF5A0AE88A?lp_asin=B07YVLNNN9&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "Virgin Indian Bundle", lengths: "10\"–30\"", price: "$90–$300", rating: 4.6, reviews: 2400 },
       { type: "100% Human", category: "human", texture: "Lace Closure Wig", lengths: "12\"–26\"", price: "$120–$380", rating: 4.5, reviews: 1800 },
@@ -271,7 +262,7 @@ shopLink: "https://www.amazon.com/s?k=outre+hair&tag=jessyluxebeau-20",
   {
     id: 29, name: "Asteria Hair", logo: "AS", origin: "China", tags: ["Human Hair", "Affordable"],
     website: "https://www.asteriahair.com",
-    shopLink:  "https://www.amazon.com/s?k=indique+hair&tag=jessyluxebeau-20",
+    shopLink: "https://www.amazon.com/stores/Asteria/page/983B2B43-F68A-492E-8179-2E3E3E8BF1B3?lp_asin=B0DGGFYMB2&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "10\"–30\"", price: "$55–$220", rating: 4.4, reviews: 2200 },
       { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$40–$170", rating: 4.3, reviews: 1800 },
@@ -325,7 +316,7 @@ shopLink: "https://www.amazon.com/s?k=outre+hair&tag=jessyluxebeau-20",
   {
     id: 35, name: "ISEE Hair", logo: "IS", origin: "China", tags: ["Human Hair", "Affordable"],
     website: "https://www.awin1.com/cread.php?awinmid=44521&awinaffid=2866481",
-shopLink: "https://www.amazon.com/s?k=indique+hair&tag=jessyluxebeau-20",
+    shopLink: "https://www.amazon.com/stores/ISEE/page/D53DF7A6-2DF1-4512-9798-0CFF91515876?lp_asin=B0FNMMLL6H&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "10\"–30\"", price: "$55–$220", rating: 4.4, reviews: 3800 },
       { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$40–$160", rating: 4.3, reviews: 3200 },
@@ -553,8 +544,8 @@ shopLink: "https://shopwigdealer.com/collections/all-wigs",
   },
   {
     id: 44, name: "Beaudiva Hair", logo: "BD", origin: "China", tags: ["Affordable", "Human Hair"],
-    website: "https://www.beaudivahair.com",
-    shopLink: "https://www.beaudivahair.com/collections/all",
+    website: "https://www.amazon.com/stores/Specializingin100humanhaironlyNaturalvariedstylesthatblendseamlesslycraftedforyouruniquelookandlastingquality/page/D809946D-D044-433F-A225-4CBCA2E9F0B9?lp_asin=B0B3QZPCTM&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
+shopLink: "https://www.amazon.com/stores/Specializingin100humanhaironlyNaturalvariedstylesthatblendseamlesslycraftedforyouruniquelookandlastingquality/page/D809946D-D044-433F-A225-4CBCA2E9F0B9?lp_asin=B0B3QZPCTM&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$45–$180", rating: 4.3, reviews: 2200 },
       { type: "100% Human", category: "human", texture: "Straight Bundle", lengths: "12\"–28\"", price: "$35–$150", rating: 4.2, reviews: 1800 },
@@ -562,8 +553,8 @@ shopLink: "https://shopwigdealer.com/collections/all-wigs",
   },
   {
     id: 45, name: "Yummi Hair Extensions", logo: "YH", origin: "USA", tags: ["Premium", "Virgin Hair"],
-    website: "https://www.yummihair.com",
-    shopLink: "https://www.yummihair.com/collections/all",
+    website: "https://www.yummyextensions.com",
+shopLink: "https://www.yummyextensions.com/collections/all",
     products: [
       { type: "100% Human", category: "human", texture: "Virgin Bundle", lengths: "10\"–30\"", price: "$80–$280", rating: 4.6, reviews: 1500 },
       { type: "100% Human", category: "human", texture: "Lace Front Wig", lengths: "12\"–26\"", price: "$100–$320", rating: 4.5, reviews: 1200 },
@@ -571,8 +562,8 @@ shopLink: "https://shopwigdealer.com/collections/all-wigs",
   },
   {
     id: 46, name: "Govihair", logo: "GV", origin: "Vietnam", tags: ["Vietnamese Hair", "Premium"],
-    website: "https://www.govihair.com",
-    shopLink: "https://www.govihair.com/collections/all",
+    website: "https://govihair.com",
+shopLink: "https://govihair.com/collections/all",
     products: [
       { type: "100% Human", category: "human", texture: "Bone Straight Bundle", lengths: "10\"–30\"", price: "$55–$200", rating: 4.5, reviews: 1900 },
       { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "12\"–28\"", price: "$70–$240", rating: 4.4, reviews: 1500 },
@@ -629,7 +620,7 @@ shopLink: "https://shopwigdealer.com/collections/all-wigs",
     {
       id: 68, name: "Wig Fever", logo: "WF", origin: "China", tags: ["Wigs", "Affordable", "Human Hair"],
       website: "https://www.wigforever.com",
-      shopLink: "https://www.wigforever.com/collections/all",
+shopLink: "https://www.wigforever.com/collections/all",
       products: [
         { type: "100% Human", category: "human", texture: "Lace Front Wig", lengths: "10\"–30\"", price: "$50–$250", rating: 4.4, reviews: 1800 },
         { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "12\"–28\"", price: "$60–$280", rating: 4.3, reviews: 1500 },
@@ -651,7 +642,7 @@ const DEAL_OF_THE_WEEK = {
   vendorName: "Luxy Hair",
   deal: "20% off all bundles",
   description: "Top-rated 100% human hair extensions at an unbeatable price this week only!",
-  shopLink: "https://www.amazon.com/s?k=luxy+hair+extensions&tag=jessyluxebeau-20",
+  shopLink: "https://www.amazon.com/stores/Luxy/page/5C04C0E5-FE91-4C5F-88D5-518C08D2C93D?lp_asin=B0D892CW8M&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
   endDate: new Date("2026-05-04"),
 };
 
