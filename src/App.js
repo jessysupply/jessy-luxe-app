@@ -1157,7 +1157,7 @@ export default function App() {
     <div style={{ position: "relative", zIndex: 1 }}>
   
  {/* ADD THIS RIGHT HERE 👇 */}
- <DealOfTheWeek />
+
 
   <div style={{
     position: "absolute",
@@ -1368,6 +1368,7 @@ Stop Getting Scammed<br />
             ))}
           </div>
         </div>
+        <DealOfTheWeek />
         {/* Filter */}
         <div style={{
           overflowX: "scroll",
