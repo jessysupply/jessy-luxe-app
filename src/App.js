@@ -662,12 +662,50 @@ const CATEGORY_CONFIG = {
   mixed:     { label: "Blend",       color: "#6a2a8a", bg: "#ead8f0" },
 };
 // ADD THIS 👇
-function DealOfTheWeek() {
-  // ... (the full component code from Step 2)
-}
+
 
 // EXISTING CODE 👇
 function avgRating(products) {
+  function DealOfTheWeek() {
+    const deal = DEAL_OF_THE_WEEK;
+    const [timeLeft, setTimeLeft] = React.useState({});
+    React.useEffect(() => {
+      function calcTime() {
+        const diff = deal.endDate - new Date();
+        if (diff <= 0) return setTimeLeft({ expired: true });
+        setTimeLeft({
+          days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((diff / (1000 * 60)) % 60),
+          seconds: Math.floor((diff / 1000) % 60),
+        });
+      }
+      calcTime();
+      const timer = setInterval(calcTime, 1000);
+      return () => clearInterval(timer);
+    }, []);
+    return (
+      <div style={{ background: "linear-gradient(135deg, #2a6a2a, #1a4a1a)", borderRadius: 16, padding: "32px 24px", margin: "24px 0", textAlign: "center", boxShadow: "0 4px 20px rgba(42,106,42,0.3)" }}>
+        <div style={{ display: "inline-block", background: "#c8a97e", color: "#1a1a1a", fontFamily: "Playfair Display, serif", fontWeight: "bold", fontSize: 13, letterSpacing: 3, padding: "6px 18px", borderRadius: 20, marginBottom: 16, textTransform: "uppercase" }}>🔥 Deal of the Week</div>
+        <div style={{ fontFamily: "Playfair Display, serif", fontSize: 28, fontWeight: "bold", color: "#fff", marginBottom: 8 }}>{deal.vendorName}</div>
+        <div style={{ fontSize: 20, color: "#c8a97e", fontWeight: "bold", marginBottom: 8 }}>{deal.deal}</div>
+        <div style={{ color: "#d4e8d4", fontSize: 14, maxWidth: 400, margin: "0 auto 24px" }}>{deal.description}</div>
+        {!timeLeft.expired ? (
+          <div style={{ display: "flex", justifyContent: "center", gap: 12, marginBottom: 24 }}>
+            {[{label:"Days",value:timeLeft.days},{label:"Hours",value:timeLeft.hours},{label:"Mins",value:timeLeft.minutes},{label:"Secs",value:timeLeft.seconds}].map(({label,value}) => (
+              <div key={label} style={{ background: "rgba(255,255,255,0.15)", borderRadius: 10, padding: "10px 16px", minWidth: 60 }}>
+                <div style={{ fontSize: 24, fontWeight: "bold", color: "#fff" }}>{String(value).padStart(2,"0")}</div>
+                <div style={{ fontSize: 11, color: "#a8d8a8", textTransform: "uppercase" }}>{label}</div>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div style={{ color: "#c8a97e", marginBottom: 24 }}>Deal has ended — check back soon!</div>
+        )}
+        <a href={deal.shopLink} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#c8a97e", color: "#1a1a1a", fontWeight: "bold", fontSize: 15, padding: "12px 32px", borderRadius: 30, textDecoration: "none", letterSpacing: 1 }}>Shop This Deal →</a>
+      </div>
+    );
+  }
   return products.reduce((a, p) => a + p.rating, 0) / products.length;
 }
 
