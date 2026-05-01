@@ -665,7 +665,7 @@ const CATEGORY_CONFIG = {
 
 function DealOfTheWeek() {
   const deal = DEAL_OF_THE_WEEK;
-  const [timeLeft, setTimeLeft] = React.useState({});
+  const [timeLeft, setTimeLeft] = React.useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
   React.useEffect(() => {
     function calcTime() {
       const diff = deal.endDate - new Date();
