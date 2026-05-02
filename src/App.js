@@ -782,15 +782,6 @@ shopLink: "https://www.irresistibleme.com/collections/hair-extensions",
     { type: "100% Human", category: "human", texture: "HD Lace Front Wig", lengths: "14\"–22\"", price: "$250–$900", rating: 4.6, reviews: 520 },
   ],
 },
-{
-  id: 88, name: "Finding Dream", logo: "FD", origin: "China", tags: ["Sheitel", "Jewish Wig", "Caucasian"],
-  website: "https://www.amazon.com/s?k=finding+dream+hair&tag=jessyluxebeau-20",
-shopLink: "https://www.amazon.com/s?k=finding+dream+hair&tag=jessyluxebeau-20",
-  products: [
-    { type: "100% Human", category: "human", texture: "European Hair Sheitel", lengths: "10\"–24\"", price: "$300–$1500", rating: 4.5, reviews: 820 },
-    { type: "100% Human", category: "human", texture: "Silk Top Sheitel", lengths: "12\"–22\"", price: "$250–$1200", rating: 4.4, reviews: 650 },
-  ],
-},
   {
     id: 86, name: "Headcovers", logo: "HC", origin: "USA", tags: ["Medical", "Wigs", "Caucasian"],
     website: "https://www.amazon.com/s?k=headcovers+wigs&tag=jessyluxebeau-20",
