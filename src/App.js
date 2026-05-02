@@ -638,8 +638,8 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 70, name: "Stephen Wigs", logo: "SW", origin: "USA", tags: ["Synthetic", "Lace Front", "Affordable"],
-    website: "https://stephenwigs.com",
-    shopLink: "https://stephenwigs.com/collections/all",
+    website: "https://www.awin1.com/cread.php?awinmid=115585&awinaffid=2866481",
+    shopLink: "https://www.awin1.com/cread.php?awinmid=115585&awinaffid=2866481",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–22\"", price: "$50–$200", rating: 4.3, reviews: 980 },
       { type: "Synthetic", category: "synthetic", texture: "Monofilament Wig", lengths: "10\"–18\"", price: "$139–$312", rating: 4.4, reviews: 750 },
@@ -747,8 +747,8 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 71, name: "Best Wig Outlet", logo: "BW", origin: "USA", tags: ["Multi-Brand", "Affordable", "Wigs"],
-    website: "https://www.bestwigoutlet.com",
-    shopLink: "https://www.bestwigoutlet.com/collections/all",
+    website: "https://www.awin1.com/cread.php?awinmid=115597&awinaffid=2866481",
+    shopLink: "https://www.awin1.com/cread.php?awinmid=115597&awinaffid=2866481",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–24\"", price: "$30–$300", rating: 4.3, reviews: 2800 },
       { type: "100% Human", category: "human", texture: "Human Hair Wig", lengths: "12\"–26\"", price: "$100–$500", rating: 4.4, reviews: 1900 },
