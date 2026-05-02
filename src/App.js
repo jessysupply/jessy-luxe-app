@@ -639,11 +639,11 @@ shopLink: "https://www.wigforever.com/collections/all",
 ];
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
-  vendorName: "Luxy Hair",
-  deal: "20% off all bundles",
-  description: "Top-rated 100% human hair extensions at an unbeatable price this week only!",
-  shopLink: "https://www.amazon.com/stores/Luxy/page/5C04C0E5-FE91-4C5F-88D5-518C08D2C93D?lp_asin=B0D892CW8M&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
-  endDate: new Date("2026-05-04"),
+  vendorName: "UNice Hair",
+  deal: "Up to 30% off Human Hair Wigs",
+  description: "Premium 100% human hair wigs at unbeatable prices this week only! HD lace fronts, body wave, straight and more!",
+  shopLink: "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=2866481",
+  endDate: new Date("2026-05-11"),
 };
 
 // EXISTING CODE 👇
