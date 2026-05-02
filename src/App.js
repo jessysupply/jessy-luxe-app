@@ -726,6 +726,7 @@ shopLink: "https://www.wigforever.com/collections/all",
       { type: "100% Human", category: "human", texture: "Tape-In Extensions", lengths: "16\"–22\"", price: "$50–$200", rating: 4.4, reviews: 4200 },
     ],
   },
+  
   {
     id: 81, name: "Full Shine Hair", logo: "FS", origin: "China", tags: ["Tape-In", "Remy Hair", "Extensions"],
     website: "https://www.amazon.com/s?k=full+shine+hair+extensions&tag=jessyluxebeau-20",
@@ -754,6 +755,61 @@ shopLink: "https://www.wigforever.com/collections/all",
       { type: "Human/Synthetic Blend", category: "mixed", texture: "Blend Wig", lengths: "10\"–22\"", price: "$50–$200", rating: 4.2, reviews: 1500 },
     ],
   },
+  {
+    id: 83, name: "Perfect Locks", logo: "PL", origin: "USA", tags: ["Caucasian", "Extensions", "Remy Hair"],
+    website:"https://www.amazon.com/s?k=perfect+locks+hair+extensions&tag=jessyluxebeau-20",
+    shopLink: "https://www.amazon.com/s?k=perfect+locks+hair+extensions&tag=jessyluxebeau-20",
+    products: [
+      { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "14\"–22\"", price: "$150–$350", rating: 4.6, reviews: 2800 },
+      { type: "100% Human", category: "human", texture: "Tape-In Extensions", lengths: "16\"–22\"", price: "$180–$380", rating: 4.5, reviews: 2100 },
+    ],
+  },
+  {
+    id: 84, name: "Heavenly Tresses", logo: "HT", origin: "USA", tags: ["Caucasian", "Blonde Wigs", "HD Lace"],
+    website:  "https://www.amazon.com/s?k=heavenly+tresses+wigs&tag=jessyluxebeau-20",
+    shopLink: "https://www.amazon.com/s?k=heavenly+tresses+wigs&tag=jessyluxebeau-20",
+    products: [
+      { type: "100% Human", category: "human", texture: "Blonde HD Lace Wig", lengths: "12\"–24\"", price: "$200–$600", rating: 4.7, reviews: 980 },
+      { type: "100% Human", category: "human", texture: "Glueless Lace Wig", lengths: "14\"–22\"", price: "$180–$550", rating: 4.6, reviews: 750 },
+    ],
+  },
+  {
+    id: 85, name: "Irresistible Me", logo: "IM", origin: "USA", tags: ["Caucasian", "Extensions", "Affordable"],
+    website: "https://www.amazon.com/s?k=irresistible+me+hair+extensions&tag=jessyluxebeau-20",
+    shopLink: "https://www.amazon.com/s?k=irresistible+me+hair+extensions&tag=jessyluxebeau-20",
+    products: [
+      { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "14\"–24\"", price: "$80–$280", rating: 4.5, reviews: 3200 },
+      { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–22\"", price: "$40–$150", rating: 4.3, reviews: 2400 },
+    ],
+  },
+  {
+    id: 87, name: "Fine Lace Wigs", logo: "FL", origin: "USA", tags: ["Caucasian", "European Hair", "Luxury"],
+  website:  "https://www.amazon.com/s?k=fine+lace+wigs+caucasian&tag=jessyluxebeau-20",
+  shopLink: "https://www.amazon.com/s?k=fine+lace+wigs+caucasian&tag=jessyluxebeau-20",
+  products: [
+    { type: "100% Human", category: "human", texture: "European Hair Wig", lengths: "12\"–24\"", price: "$300–$1200", rating: 4.7, reviews: 680 },
+    { type: "100% Human", category: "human", texture: "HD Lace Front Wig", lengths: "14\"–22\"", price: "$250–$900", rating: 4.6, reviews: 520 },
+  ],
+},
+{
+  id: 88, name: "Findingdream Hair", logo: "FD", origin: "China", tags: ["Sheitel", "Jewish Wig", "Caucasian"],
+  website: "https://www.amazon.com/s?k=findingdream+hair+jewish+wig&tag=jessyluxebeau-20",
+  shopLink: "https://www.amazon.com/s?k=findingdream+hair+jewish+wig&tag=jessyluxebeau-20",
+  products: [
+    { type: "100% Human", category: "human", texture: "European Hair Sheitel", lengths: "10\"–24\"", price: "$300–$1500", rating: 4.5, reviews: 820 },
+    { type: "100% Human", category: "human", texture: "Silk Top Sheitel", lengths: "12\"–22\"", price: "$250–$1200", rating: 4.4, reviews: 650 },
+  ],
+},
+  {
+    id: 86, name: "Headcovers", logo: "HC", origin: "USA", tags: ["Medical", "Wigs", "Caucasian"],
+    website: "https://www.amazon.com/s?k=headcovers+wigs&tag=jessyluxebeau-20",
+    shopLink: "https://www.amazon.com/s?k=headcovers+wigs&tag=jessyluxebeau-20",
+    products: [
+      { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–22\"", price: "$30–$300", rating: 4.5, reviews: 4200 },
+      { type: "100% Human", category: "human", texture: "Remy Human Hair Wig", lengths: "12\"–24\"", price: "$150–$600", rating: 4.6, reviews: 3100 },
+    ],
+  },
+  
 ];
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
