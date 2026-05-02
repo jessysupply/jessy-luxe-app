@@ -647,7 +647,7 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 72, name: "Arabella Hair", logo: "AR", origin: "China", tags: ["Human Hair", "Glueless", "HD Lace"],
-    website: "https://www.arabellahair.com",
+    website: "https://www.amazon.com/stores/ArabellaHair/page/082B806E-D96A-45B0-A3E1-F54186E88330?tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/stores/ArabellaHair/page/082B806E-D96A-45B0-A3E1-F54186E88330?tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "Glueless HD Lace Wig", lengths: "10\"–30\"", price: "$60–$280", rating: 4.6, reviews: 4500 },
@@ -656,7 +656,7 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 73, name: "Donna Bella Hair", logo: "DB", origin: "USA", tags: ["Extensions", "Remy Hair", "Salon"],
-    website: "https://www.donnabellahair.com",
+    website: "https://www.amazon.com/s?k=donna+bella+hair+extensions&tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/s?k=donna+bella+hair+extensions&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "Tape-In Extensions", lengths: "14\"–22\"", price: "$120–$350", rating: 4.6, reviews: 3200 },
@@ -665,7 +665,7 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 74, name: "Great Lengths", logo: "GL", origin: "Italy", tags: ["Luxury", "Professional", "Extensions"],
-    website: "https://www.greatlengthsusa.com",
+    website: "https://www.amazon.com/s?k=great+lengths+hair+extensions&tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/s?k=great+lengths+hair+extensions&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "Pre-Bonded Extensions", lengths: "14\"–24\"", price: "$200–$600", rating: 4.7, reviews: 1800 },
@@ -674,7 +674,7 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 75, name: "Wigs.com", logo: "WC", origin: "USA", tags: ["Multi-Brand", "Wigs", "Synthetic"],
-    website: "https://www.wigs.com",
+    website: "https://www.amazon.com/s?k=wigs+lace+front+human+hair&tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/s?k=wigs+lace+front+human+hair&tag=jessyluxebeau-20",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–24\"", price: "$30–$400", rating: 4.4, reviews: 5200 },
@@ -683,7 +683,7 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 76, name: "The Wig Company", logo: "TW", origin: "USA", tags: ["Affordable", "Wigs", "Extensions"],
-    website: "https://www.thewigcompany.com",
+    website: "https://www.amazon.com/s?k=the+wig+company+hair+extensions&tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/s?k=the+wig+company+hair+extensions&tag=jessyluxebeau-20",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–22\"", price: "$20–$150", rating: 4.3, reviews: 2900 },
@@ -692,7 +692,7 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 77, name: "Ellen Wille", logo: "EW", origin: "Germany", tags: ["Luxury", "European", "Wigs"],
-    website: "https://www.ellenwille.com",
+    website: "https://www.amazon.com/s?k=ellen+wille+wigs&tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/s?k=ellen+wille+wigs&tag=jessyluxebeau-20",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–20\"", price: "$200–$500", rating: 4.7, reviews: 1500 },
@@ -701,7 +701,7 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 78, name: "Raquel Welch Wigs", logo: "RW", origin: "USA", tags: ["Celebrity", "Wigs", "Synthetic"],
-    website: "https://www.raquelwelchhair.com",
+    website: "https://www.amazon.com/s?k=raquel+welch+wigs&tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/s?k=raquel+welch+wigs&tag=jessyluxebeau-20",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–22\"", price: "$150–$400", rating: 4.6, reviews: 2200 },
@@ -710,7 +710,7 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 79, name: "Jon Renau", logo: "JR", origin: "USA", tags: ["Medical", "Wigs", "Alopecia"],
-    website: "https://www.jonrenau.com",
+    website: "https://www.amazon.com/s?k=jon+renau+wigs&tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/s?k=jon+renau+wigs&tag=jessyluxebeau-20",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Lace Front Wig", lengths: "10\"–22\"", price: "$150–$450", rating: 4.7, reviews: 2800 },
@@ -719,7 +719,7 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 80, name: "Sunny Hair", logo: "SH", origin: "China", tags: ["Clip-In", "Remy Hair", "Affordable"],
-    website: "https://www.sunnyhair.com",
+    website: "https://www.amazon.com/s?k=sunny+hair+extensions&tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/s?k=sunny+hair+extensions&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "14\"–24\"", price: "$40–$180", rating: 4.5, reviews: 5800 },
@@ -728,7 +728,7 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 81, name: "Full Shine Hair", logo: "FS", origin: "China", tags: ["Tape-In", "Remy Hair", "Extensions"],
-    website: "https://www.fullshinehair.com",
+    website: "https://www.amazon.com/s?k=full+shine+hair+extensions&tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/s?k=full+shine+hair+extensions&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "Tape-In Extensions", lengths: "14\"–22\"", price: "$45–$180", rating: 4.6, reviews: 6200 },
@@ -737,7 +737,7 @@ shopLink: "https://www.wigforever.com/collections/all",
   },
   {
     id: 82, name: "Lemiva Hair", logo: "LV", origin: "China", tags: ["Glueless", "HD Lace", "Human Hair"],
-    website: "https://www.lemivahair.com",
+    website: "https://www.amazon.com/s?k=lemiva+hair+wigs&tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/s?k=lemiva+hair+wigs&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "7x5 Glueless HD Lace Wig", lengths: "10\"–30\"", price: "$65–$260", rating: 4.6, reviews: 3800 },
