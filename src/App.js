@@ -1023,8 +1023,6 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
     {compareList?.find(s => s.id === supplier.id) ? "✓ Compare" : "+ Compare"}
   </button>
 </div>
-          
-        
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
           <span style={{ color: "#1a3a1a", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: isMobile ? 17 : 16 }}>{supplier.name}</span>
           {badge && (
