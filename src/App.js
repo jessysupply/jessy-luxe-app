@@ -978,51 +978,54 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
         }}>
           {favorites.includes(supplier.id) ? "❤️" : "🤍"}
           </button>
-          <div style={{
-  position: "absolute",
-  bottom: 12,
-  right: 12,
-  display: "flex",
-  gap: 8
-}}>
-  <button
-    onClick={e => {
-      e.stopPropagation();
-      window.open(supplier.shopLink, "_blank");
-    }}
-    style={{
-      background: "#2a6a2a",
-      border: "none",
-      borderRadius: 8,
-      cursor: "pointer",
-      fontSize: 11,
-      color: "#ffffff",
-      padding: "6px 12px",
-      fontWeight: 800
-    }}
-  >
-    Shop Now
-  </button>
+          
+          {!isExpanded && (
+  <div style={{
+    position: "absolute",
+    bottom: 12,
+    right: 12,
+    display: "flex",
+    gap: 8
+  }}>
+    <button
+      onClick={e => {
+        e.stopPropagation();
+        window.open(supplier.shopLink, "_blank");
+      }}
+      style={{
+        background: "#2a6a2a",
+        border: "none",
+        borderRadius: 8,
+        cursor: "pointer",
+        fontSize: 11,
+        color: "#ffffff",
+        padding: "6px 12px",
+        fontWeight: 800
+      }}
+    >
+      Shop Now
+    </button>
 
-  <button
-    onClick={e => {
-      e.stopPropagation();
-      onCompare(supplier);
-    }}
-    style={{
-      background: compareList?.find(s => s.id === supplier.id) ? "#2a6a2a" : "#ffffff",
-      border: "2px solid #2a6a2a",
-      borderRadius: 8,
-      cursor: "pointer",
-      fontSize: 11,
-      color: compareList?.find(s => s.id === supplier.id) ? "#ffffff" : "#2a6a2a",
-      padding: "5px 12px",
-      fontWeight: 800
-    }}
-  >
-    {compareList?.find(s => s.id === supplier.id) ? "✓ Compare" : "+ Compare"}
-  </button>
-</div>
+    <button
+      onClick={e => {
+        e.stopPropagation();
+        onCompare(supplier);
+      }}
+      style={{
+        background: compareList?.find(s => s.id === supplier.id) ? "#2a6a2a" : "#ffffff",
+        border: "2px solid #2a6a2a",
+        borderRadius: 8,
+        cursor: "pointer",
+        fontSize: 11,
+        color: compareList?.find(s => s.id === supplier.id) ? "#ffffff" : "#2a6a2a",
+        padding: "5px 12px",
+        fontWeight: 800
+      }}
+    >
+      {compareList?.find(s => s.id === supplier.id) ? "✓ Compare" : "+ Compare"}
+    </button>
+  </div>
+)}
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
           <span style={{ color: "#1a3a1a", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: isMobile ? 17 : 16 }}>{supplier.name}</span>
           {badge && (
