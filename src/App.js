@@ -866,7 +866,60 @@ products: [
 ],
 },
 {
-    id: 94, name: "Headcovers", logo: "HC", origin: "USA", tags: ["Medical", "Wigs", "Caucasian"],
+  id: 94, name: "Wiggins Hair", logo: "WG", origin: "China", tags: ["Human Hair", "Affordable"],
+website: "https://www.amazon.com/s?k=wiggins+hair&tag=jessyluxebeau-20",
+shopLink: "https://www.amazon.com/s?k=wiggins+hair&tag=jessyluxebeau-20",
+products: [
+  { type: "100% Human", category: "human", texture: "Curly Wig", lengths: "10\"–30\"", price: "$60–$220", rating: 4.4, reviews: 7200 },
+  { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$45–$170", rating: 4.3, reviews: 6800 },
+],
+},
+{
+  id: 95, name: "Ishow Hair", logo: "IH", origin: "China", tags: ["Human Hair", "Trending"],
+website: "https://www.amazon.com/s?k=ishow+hair&tag=jessyluxebeau-20",
+shopLink: "https://www.amazon.com/s?k=ishow+hair&tag=jessyluxebeau-20",
+products: [
+  { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "10\"–30\"", price: "$65–$240", rating: 4.4, reviews: 8900 },
+  { type: "100% Human", category: "human", texture: "Deep Wave Bundle", lengths: "12\"–28\"", price: "$50–$180", rating: 4.3, reviews: 7500 },
+],
+},
+{
+  id: 96, name: "Eunice Hair", logo: "EU", origin: "China", tags: ["Human Hair", "Affordable"],
+website: "https://www.amazon.com/s?k=eunice+hair&tag=jessyluxebeau-20",
+shopLink: "https://www.amazon.com/s?k=eunice+hair&tag=jessyluxebeau-20",
+products: [
+  { type: "100% Human", category: "human", texture: "Straight Lace Wig", lengths: "10\"–30\"", price: "$60–$230", rating: 4.4, reviews: 8100 },
+  { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$45–$170", rating: 4.3, reviews: 7000 },
+],
+},
+{
+  id: 97, name: "Hairvivi", logo: "HV", origin: "USA", tags: ["Glueless", "Luxury", "Wigs"],
+website: "https://www.hairvivi.com",
+shopLink: "https://www.hairvivi.com/collections/all",
+products: [
+  { type: "100% Human", category: "human", texture: "Glueless Wig", lengths: "10\"–30\"", price: "$150–$400", rating: 4.6, reviews: 5200 },
+  { type: "100% Human", category: "human", texture: "Pre-Plucked Lace Wig", lengths: "12\"–28\"", price: "$180–$450", rating: 4.7, reviews: 4300 },
+],
+},
+{
+  id: 98, name: "Tinashe Hair", logo: "TH", origin: "China", tags: ["Human Hair", "Trending", "Amazon"],
+website: "https://www.amazon.com/s?k=tinashe+hair&tag=jessyluxebeau-20",
+shopLink: "https://www.amazon.com/s?k=tinashe+hair&tag=jessyluxebeau-20",
+products: [
+  { type: "100% Human", category: "human", texture: "HD Lace Wig", lengths: "10\"–30\"", price: "$65–$240", rating: 4.4, reviews: 7600 },
+  { type: "100% Human", category: "human", texture: "Body Wave Bundle", lengths: "12\"–28\"", price: "$50–$180", rating: 4.3, reviews: 6900 },
+],
+},
+{id: 99, name: "Karida Hair", logo: "KH", origin: "China", tags: ["Human Hair", "Affordable", "Amazon"],
+website: "https://www.amazon.com/s?k=karida+hair&tag=jessyluxebeau-20",
+shopLink: "https://www.amazon.com/s?k=karida+hair&tag=jessyluxebeau-20",
+products: [
+  { type: "100% Human", category: "human", texture: "Straight Lace Wig", lengths: "10\"–30\"", price: "$60–$220", rating: 4.4, reviews: 8200 },
+  { type: "100% Human", category: "human", texture: "Deep Wave Bundle", lengths: "12\"–28\"", price: "$50–$170", rating: 4.3, reviews: 7100 },
+],
+},
+{
+    id: 100, name: "Headcovers", logo: "HC", origin: "USA", tags: ["Medical", "Wigs", "Caucasian"],
     website: "https://www.headcovers.com",
 shopLink: "https://www.headcovers.com/wigs-hair",
     products: [
@@ -1071,6 +1124,15 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
     <button
       onClick={e => {
         e.stopPropagation();
+      
+        // Track click
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: "vendor_click",
+          vendor: supplier.name,
+          id: supplier.id
+        });
+      
         window.open(supplier.shopLink, "_blank");
       }}
       style={{
