@@ -244,8 +244,8 @@ shopLink: "https://www.nadula.com/collections/all",
   },
   {
     id: 27, name: "Indique Hair", logo: "IQ", origin: "India", tags: ["Luxury", "Virgin Hair"],
-    website: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-95FF5A0AE88A?tag=jessyluxebeau-20",
-shopLink: "https://www.indiquehair.com/collections/all",
+    website: "https://www.indiquehair.com/collections/all", 
+shopLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-95FF5A0AE88A?tag=jessyluxebeau-20",
 amazonLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-95FF5A0AE88A?tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "Virgin Indian Bundle", lengths: "10\"–30\"", price: "$90–$300", rating: 4.6, reviews: 2400 },
@@ -425,8 +425,8 @@ shopLink:"https://www.virgincityhair.com/collections/all",
   },
   {
     id: 54, name: "Sunber Hair", logo: "SB", origin: "China", tags: ["Human Hair", "Wigs"],
-    website: "https://www.amazon.com/s?k=sunber+hair&tag=jessyluxebeau-20",
-    shopLink: "https://www.sunberhair.com/collections/all",
+    website: "https://www.sunberhair.com/collections/all",
+    shopLink: "https://www.amazon.com/s?k=sunber+hair&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "HD Lace Front Wig", lengths: "10\"–30\"", price: "$60–$250", rating: 4.5, reviews: 3100 },
       { type: "100% Human", category: "human", texture: "Straight Bundle", lengths: "12\"–28\"", price: "$40–$170", rating: 4.3, reviews: 2400 },
@@ -499,8 +499,8 @@ shopLink:"https://www.virgincityhair.com/collections/all",
   {
     
     id: 55, name: "Klaiyi Hair", logo: "KL", origin: "China", tags: ["Human Hair", "Glueless"],
-    website: "https://www.amazon.com/s?k=klaiyi+hair&tag=jessyluxebeau-20",
-    shopLink:  "https://www.klaiyihair.com/collections/all",
+    website: "https://www.klaiyihair.com/collections/all", 
+    shopLink: "https://www.amazon.com/s?k=klaiyi+hair&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "Glueless Lace Wig", lengths: "10\"–30\"", price: "$65–$260", rating: 4.5, reviews: 2700 },
       { type: "100% Human", category: "human", texture: "HD Lace Front", lengths: "12\"–28\"", price: "$75–$280", rating: 4.4, reviews: 2100 },
@@ -508,8 +508,8 @@ shopLink:"https://www.virgincityhair.com/collections/all",
   },
   {
     id: 56, name: "Beautyforever", logo: "BF", origin: "China", tags: ["Human Hair", "Affordable"],
-    website: "https://www.amazon.com/s?k=beauty+forever+hair&tag=jessyluxebeau-20",
-    shopLink:  "https://www.beautyforever.com/collections/all",
+    website: "https://www.beautyforever.com/collections/all",
+    shopLink:   "https://www.amazon.com/s?k=beauty+forever+hair&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "Body Wave Wig", lengths: "10\"–30\"", price: "$50–$200", rating: 4.3, reviews: 2900 },
       { type: "100% Human", category: "human", texture: "Straight Lace Front", lengths: "12\"–28\"", price: "$55–$210", rating: 4.2, reviews: 2300 },
