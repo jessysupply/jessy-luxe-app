@@ -978,51 +978,6 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
         }}>
           {favorites.includes(supplier.id) ? "❤️" : "🤍"}
           </button>
-          <div style={{
-  display: "flex",
-  justifyContent: "flex-end",
-  gap: 8,
-  marginTop: 10,
-  paddingTop: 8
-}}>
-  <button
-    onClick={e => {
-      e.stopPropagation();
-      window.open(supplier.shopLink, "_blank");
-    }}
-    style={{
-      background: "#2a6a2a",
-      border: "none",
-      borderRadius: 8,
-      cursor: "pointer",
-      fontSize: 11,
-      color: "#ffffff",
-      padding: "6px 12px",
-      fontWeight: 800
-    }}
-  >
-    Shop Now
-  </button>
-
-  <button
-    onClick={e => {
-      e.stopPropagation();
-      onCompare(supplier);
-    }}
-    style={{
-      background: compareList?.find(s => s.id === supplier.id) ? "#2a6a2a" : "#ffffff",
-      border: "2px solid #2a6a2a",
-      borderRadius: 8,
-      cursor: "pointer",
-      fontSize: 11,
-      color: compareList?.find(s => s.id === supplier.id) ? "#ffffff" : "#2a6a2a",
-      padding: "5px 12px",
-      fontWeight: 800
-    }}
-  >
-    {compareList?.find(s => s.id === supplier.id) ? "✓ Compare" : "+ Compare"}
-  </button>
-</div>
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
           <span style={{ color: "#1a3a1a", fontFamily: "'Playfair Display', serif", fontWeight: 900, fontSize: isMobile ? 17 : 16 }}>{supplier.name}</span>
           {badge && (
@@ -1048,6 +1003,7 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
             )}
           </div>
         </div>
+        
         <div style={{ textAlign: "center", flexShrink: 0 }}>
         <div style={{ color: "#2a6a2a", fontSize: isMobile ? 24 : 22, fontFamily: "'Playfair Display', serif", fontWeight: 900 }}>{avg}</div>
           <div style={{ color: "#4a7a4a", fontSize: 9, letterSpacing: 1 }}>AVG</div>
@@ -1149,6 +1105,51 @@ function ReviewModal({ supplier, onClose, onSubmit }) {
             <div style={{ color: "#2a3a2a", fontSize: 14, marginBottom: 24, lineHeight: 1.6 }}>
               Your review for <strong style={{ color: "#2a6a2a" }}>{supplier.name}</strong> has been added.
             </div>
+            {/* Shop + Compare buttons */}
+<div style={{
+  display: "flex",
+  justifyContent: "flex-end",
+  gap: 8,
+  marginTop: 12
+}}>
+  <button
+    onClick={e => {
+      e.stopPropagation();
+      window.open(supplier.shopLink, "_blank");
+    }}
+    style={{
+      background: "#2a6a2a",
+      border: "none",
+      borderRadius: 8,
+      cursor: "pointer",
+      fontSize: 11,
+      color: "#ffffff",
+      padding: "6px 12px",
+      fontWeight: 800
+    }}
+  >
+    Shop Now
+  </button>
+
+  <button
+    onClick={e => {
+      e.stopPropagation();
+      onCompare(supplier);
+    }}
+    style={{
+      background: compareList?.find(s => s.id === supplier.id) ? "#2a6a2a" : "#ffffff",
+      border: "2px solid #2a6a2a",
+      borderRadius: 8,
+      cursor: "pointer",
+      fontSize: 11,
+      color: compareList?.find(s => s.id === supplier.id) ? "#ffffff" : "#2a6a2a",
+      padding: "5px 12px",
+      fontWeight: 800
+    }}
+  >
+    {compareList?.find(s => s.id === supplier.id) ? "✓ Compare" : "+ Compare"}
+  </button>
+</div>
             <button onClick={onClose} style={{
               padding: "12px 32px", borderRadius: 30, border: "1px solid #c8a97e50",
               background: "#c8a97e12", color: "#c8a97e", fontSize: 13, fontWeight: 600, cursor: "pointer",
