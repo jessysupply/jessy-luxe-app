@@ -116,7 +116,7 @@ shopLink: "https://www.amazon.com/stores/VivicaAFoxHairCollection/page/34F7191C-
     ],
   },
   {
-    id: 13, name: "Freetress", logo: "FT", origin: "USA", tags: ["Braids", "Crochet"],
+    id: 12, name: "Freetress", logo: "FT", origin: "USA", tags: ["Braids", "Crochet"],
     website: "https://www.amazon.com/stores/Freetress/page/6E5B3C61-6D5E-4C59-9A6C-9B4D6C1F2F2A?tag=jessyluxebeau-20",
 shopLink: "https://www.amazon.com/stores/Freetress/page/6E5B3C61-6D5E-4C59-9A6C-9B4D6C1F2F2A?tag=jessyluxebeau-20",
     products: [
@@ -125,7 +125,7 @@ shopLink: "https://www.amazon.com/stores/Freetress/page/6E5B3C61-6D5E-4C59-9A6C-
     ],
   },
   {
-    id: 14, name: "Model Model", logo: "MM", origin: "USA", tags: ["Affordable", "Wigs"],
+    id: 13, name: "Model Model", logo: "MM", origin: "USA", tags: ["Affordable", "Wigs"],
     website: "https://modelmodelhair.com",
 shopLink: "https://modelmodelhair.com/collections/all",
     products: [
@@ -134,7 +134,7 @@ shopLink: "https://modelmodelhair.com/collections/all",
     ],
   },
   {
-    id: 15, name: "Bellami Hair", logo: "BL", origin: "USA", tags: ["Luxury", "Extensions"],
+    id: 14, name: "Bellami Hair", logo: "BL", origin: "USA", tags: ["Luxury", "Extensions"],
     website: "https://go.shopmy.us/p-54647534",
    shopLink: "https://go.shopmy.us/p-54647534",
     products: [
@@ -143,7 +143,7 @@ shopLink: "https://modelmodelhair.com/collections/all",
     ],
   },
   {
-    id: 16, name: "UNice Hair", logo: "UN", origin: "China", tags: ["Affordable", "Human Hair"],
+    id: 15, name: "UNice Hair", logo: "UN", origin: "China", tags: ["Affordable", "Human Hair"],
     website:"https://www.awin1.com/cread.php?awinmid=39912&awinaffid=2866481",
 shopLink: "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=2866481",
 amazonLink: "https://www.amazon.com/stores/UNICE/page/7C67BE80-C2EB-4DD5-8E25-CC8BBCB7C189?tag=jessyluxebeau-20",
@@ -153,7 +153,7 @@ amazonLink: "https://www.amazon.com/stores/UNICE/page/7C67BE80-C2EB-4DD5-8E25-CC
     ],
   },
   {
-    id: 17, name: "Luvme Hair", logo: "LV", origin: "China", tags: ["Glueless", "Human Hair"],
+    id: 16, name: "Luvme Hair", logo: "LV", origin: "China", tags: ["Glueless", "Human Hair"],
     website: "https://www.luvmehair.com",
     shopLink: "https://www.luvmehair.com/collections/wigs",
     products: [
@@ -162,7 +162,7 @@ amazonLink: "https://www.amazon.com/stores/UNICE/page/7C67BE80-C2EB-4DD5-8E25-CC
     ],
   },
   {
-    id: 18, name: "Private Label Extensions", logo: "PL", origin: "USA", tags: ["Wholesale", "Virgin Hair"],
+    id: 17, name: "Private Label Extensions", logo: "PL", origin: "USA", tags: ["Wholesale", "Virgin Hair"],
     website: "https://www.privatelabelextensions.com",
     shopLink: "https://www.privatelabelextensions.com/collections/all",
     products: [
@@ -171,7 +171,7 @@ amazonLink: "https://www.amazon.com/stores/UNICE/page/7C67BE80-C2EB-4DD5-8E25-CC
     ],
   },
   {
-    id: 19, name: "TedHair", logo: "TH", origin: "China", tags: ["Affordable", "Human Hair"],
+    id: 18, name: "TedHair", logo: "TH", origin: "China", tags: ["Affordable", "Human Hair"],
     website: "https://www.tedhair.com",
     shopLink: "https://www.tedhair.com/collections/all",
     products: [
@@ -180,7 +180,7 @@ amazonLink: "https://www.amazon.com/stores/UNICE/page/7C67BE80-C2EB-4DD5-8E25-CC
     ],
   },
   {
-    id: 20, name: "Nadula Hair", logo: "ND", origin: "China", tags: ["Human Hair", "Wigs"],
+    id: 19, name: "Nadula Hair", logo: "ND", origin: "China", tags: ["Human Hair", "Wigs"],
     website: "https://www.nadula.com",
 shopLink: "https://www.nadula.com/collections/all",
     products: [
@@ -189,7 +189,7 @@ shopLink: "https://www.nadula.com/collections/all",
     ],
   },
   {
-    id: 21, name: "Ballice Hair", logo: "BH", origin: "USA", tags: ["Virgin Hair", "Bundles"],
+    id: 20, name: "Ballice Hair", logo: "BH", origin: "USA", tags: ["Virgin Hair", "Bundles"],
     website: "https://ballicevirginhair.com",
     shopLink: "https://ballicevirginhair.com/collections/all",
     products: [
@@ -198,7 +198,7 @@ shopLink: "https://www.nadula.com/collections/all",
     ],
   },
   {
-    id: 22, name: "Rebe Hair", logo: "RB", origin: "China", tags: ["Affordable", "Human Hair"],
+    id: 21, name: "Rebe Hair", logo: "RB", origin: "China", tags: ["Affordable", "Human Hair"],
     website: "https://www.rebehair.com",
     shopLink: "https://www.rebehair.com/collections/all",
     products: [
@@ -207,7 +207,7 @@ shopLink: "https://www.nadula.com/collections/all",
     ],
   },
   {
-    id: 23, name: "Honest Hair Factory", logo: "HF", origin: "China", tags: ["Wholesale", "Factory Direct"],
+    id: 22, name: "Honest Hair Factory", logo: "HF", origin: "China", tags: ["Wholesale", "Factory Direct"],
     website: "https://www.honesthairfactory.com",
     shopLink: "https://www.honesthairfactory.com/collections/all",
     products: [
@@ -216,7 +216,7 @@ shopLink: "https://www.nadula.com/collections/all",
     ],
   },
   {
-    id: 24, name: "Dhwarak Indian Hair", logo: "DI", origin: "India", tags: ["Raw Indian", "Virgin Hair"],
+    id: 23, name: "Dhwarak Indian Hair", logo: "DI", origin: "India", tags: ["Raw Indian", "Virgin Hair"],
     website: "https://dhwarakindianhair.com",
     shopLink: "https://dhwarakindianhair.com/collections/all",
     products: [
@@ -225,7 +225,7 @@ shopLink: "https://www.nadula.com/collections/all",
     ],
   },
   {
-    id: 25, name: "Alibaba", logo: "AB", origin: "China", tags: ["Wholesale", "Budget"],
+    id: 24, name: "Alibaba", logo: "AB", origin: "China", tags: ["Wholesale", "Budget"],
     website: "https://www.alibaba.com",
     shopLink: "https://www.alibaba.com/trade/search?SearchText=human+hair+extensions",
     products: [
@@ -234,7 +234,7 @@ shopLink: "https://www.nadula.com/collections/all",
     ],
   },
   {
-    id: 26, name: "Virgin Hair Vendor", logo: "VV", origin: "China", tags: ["Virgin Hair", "Wholesale"],
+    id: 25, name: "Virgin Hair Vendor", logo: "VV", origin: "China", tags: ["Virgin Hair", "Wholesale"],
     website: "https://www.virginhairvendor.com",
     shopLink: "https://www.virginhairvendor.com/collections/all",
     products: [
@@ -243,7 +243,7 @@ shopLink: "https://www.nadula.com/collections/all",
     ],
   },
   {
-    id: 27, name: "Indique Hair", logo: "IQ", origin: "India", tags: ["Luxury", "Virgin Hair"],
+    id: 26, name: "Indique Hair", logo: "IQ", origin: "India", tags: ["Luxury", "Virgin Hair"],
     website: "https://www.indiquehair.com/collections/all", 
 shopLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-95FF5A0AE88A?tag=jessyluxebeau-20",
 amazonLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-95FF5A0AE88A?tag=jessyluxebeau-20",
@@ -253,7 +253,7 @@ amazonLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-
     ],
   },
   {
-    id: 28, name: "New Star Hair", logo: "NS", origin: "China", tags: ["Virgin Hair", "Human Hair"],
+    id: 27, name: "New Star Hair", logo: "NS", origin: "China", tags: ["Virgin Hair", "Human Hair"],
     website: "https://newstarwig.com",
     shopLink: "https://newstarwig.com/collections/all",
     products: [
@@ -262,7 +262,7 @@ amazonLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-
     ],
   },
   {
-    id: 29, name: "Asteria Hair", logo: "AS", origin: "China", tags: ["Human Hair", "Affordable"],
+    id: 28, name: "Asteria Hair", logo: "AS", origin: "China", tags: ["Human Hair", "Affordable"],
     website: "https://www.asteriahair.com",
     shopLink: "https://www.amazon.com/stores/Asteria/page/983B2B43-F68A-492E-8179-2E3E3E8BF1B3?lp_asin=B0DGGFYMB2&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
     products: [
@@ -271,7 +271,7 @@ amazonLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-
     ],
   },
   {
-    id: 30, name: "Hair Couture", logo: "HC", origin: "USA", tags: ["Luxury", "Extensions"],
+    id: 29, name: "Hair Couture", logo: "HC", origin: "USA", tags: ["Luxury", "Extensions"],
     website: "https://www.haircouture.com",
     shopLink: "https://www.haircouture.com/collections/all",
     products: [
@@ -280,7 +280,7 @@ amazonLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-
     ],
   },
   {
-    id: 31, name: "Hair Compounds", logo: "CP", origin: "USA", tags: ["Wholesale", "Extensions"],
+    id: 30, name: "Hair Compounds", logo: "CP", origin: "USA", tags: ["Wholesale", "Extensions"],
     website: "https://www.haircompounds.com",
     shopLink: "https://www.haircompounds.com/collections/all",
     products: [
@@ -289,7 +289,7 @@ amazonLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-
     ],
   },
   {
-    id: 32, name: "Hibiscus Hair", logo: "HB", origin: "USA", tags: ["Virgin Hair", "Bundles"],
+    id: 31, name: "Hibiscus Hair", logo: "HB", origin: "USA", tags: ["Virgin Hair", "Bundles"],
     website: "https://www.hibiscushair.com",
     shopLink: "https://www.hibiscushair.com/collections/all",
     products: [
@@ -298,7 +298,7 @@ amazonLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-
     ],
   },
   {
-    id: 33, name: "Thanh An Hair", logo: "TA", origin: "Vietnam", tags: ["Raw Hair", "Wholesale"],
+    id: 32, name: "Thanh An Hair", logo: "TA", origin: "Vietnam", tags: ["Raw Hair", "Wholesale"],
     website: "https://www.thanhanhair.com",
     shopLink: "https://www.thanhanhair.com/collections/all",
     products: [
@@ -307,7 +307,7 @@ amazonLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-
     ],
   },
   {
-    id: 34, name: "True Glory Hair", logo: "TG", origin: "USA", tags: ["Virgin Hair", "Bundles"],
+    id: 33, name: "True Glory Hair", logo: "TG", origin: "USA", tags: ["Virgin Hair", "Bundles"],
     website: "https://www.truegloryhair.com",
     shopLink: "https://www.truegloryhair.com/collections/all",
     products: [
@@ -316,7 +316,7 @@ amazonLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-
     ],
   },
   {
-    id: 35, name: "ISEE Hair", logo: "IS", origin: "China", tags: ["Human Hair", "Affordable"],
+    id: 34, name: "ISEE Hair", logo: "IS", origin: "China", tags: ["Human Hair", "Affordable"],
     website: "https://www.awin1.com/cread.php?awinmid=44521&awinaffid=2866481",
     shopLink: "https://www.amazon.com/stores/ISEE/page/D53DF7A6-2DF1-4512-9798-0CFF91515876?lp_asin=B0FNMMLL6H&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
     products: [
@@ -325,7 +325,7 @@ amazonLink: "https://www.amazon.com/stores/Indique/page/1E76CCB8-313E-4F2F-877B-
     ],
   },
   {
-    id: 36, name: "Hermosa Hair", logo: "HM", origin: "China", tags: ["Human Hair", "Glueless"],
+    id: 35, name: "Hermosa Hair", logo: "HM", origin: "China", tags: ["Human Hair", "Glueless"],
     website: "https://www.hermosahair.com",
 shopLink: "https://www.hermosahair.com/collections/all",
     products: [
@@ -334,7 +334,7 @@ shopLink: "https://www.hermosahair.com/collections/all",
     ],
   },
   {
-    id: 37, name: "WigDealer", logo: "WD", origin: "USA", tags: ["Wigs", "Affordable"],
+    id: 36, name: "WigDealer", logo: "WD", origin: "USA", tags: ["Wigs", "Affordable"],
     website: "https://shopwigdealer.com",
 shopLink: "https://shopwigdealer.com/collections/all-wigs",
     products: [
@@ -343,7 +343,7 @@ shopLink: "https://shopwigdealer.com/collections/all-wigs",
     ],
   },
   {
-    id: 38, name: "Ali Grace Hair", logo: "AG", origin: "China", tags: ["Human Hair", "Wigs"],
+    id: 37, name: "Ali Grace Hair", logo: "AG", origin: "China", tags: ["Human Hair", "Wigs"],
     website: "https://www.aligracehair.com",
 shopLink: "https://www.aligracehair.com/collections/all",
     products: [
@@ -352,7 +352,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
-    id: 39, name: "She's Happy Hair", logo: "SH", origin: "USA", tags: ["Virgin Hair", "Bundles"],
+    id: 38, name: "She's Happy Hair", logo: "SH", origin: "USA", tags: ["Virgin Hair", "Bundles"],
     website: "https://www.sheshappyhair.com",
     shopLink: "https://www.sheshappyhair.com/collections/all",
     products: [
@@ -361,7 +361,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
-    id: 40, name: "Her Hair Company", logo: "HH", origin: "USA", tags: ["Virgin Hair", "Wholesale"],
+    id: 39, name: "Her Hair Company", logo: "HH", origin: "USA", tags: ["Virgin Hair", "Wholesale"],
     website: "https://www.herhaircompany.com",
     shopLink: "https://www.herhaircompany.com/collections/all",
     products: [
@@ -370,7 +370,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
-    id: 41, name: "UniWigs", logo: "UW", origin: "USA", tags: ["Wigs", "Hair Toppers"],
+    id: 40, name: "UniWigs", logo: "UW", origin: "USA", tags: ["Wigs", "Hair Toppers"],
     website: "https://www.uniwigs.com",
     shopLink: "https://www.uniwigs.com/collections/all",
     products: [
@@ -379,7 +379,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
-    id: 42, name: "Black Show Hair", logo: "BS", origin: "China", tags: ["Virgin Hair", "Wholesale"],
+    id: 41, name: "Black Show Hair", logo: "BS", origin: "China", tags: ["Virgin Hair", "Wholesale"],
     website: "https://www.blackshowhair.com",
     shopLink: "https://www.blackshowhair.com/collections/all",
     products: [
@@ -388,7 +388,7 @@ shopLink: "https://www.aligracehair.com/collections/all",
     ],
   },
   {
-    id: 43, name: "Virgin City Hair", logo: "VC", origin: "USA", tags: ["Virgin Hair", "Wholesale"],
+    id: 42, name: "Virgin City Hair", logo: "VC", origin: "USA", tags: ["Virgin Hair", "Wholesale"],
     website: "https://www.virgincityhair.com",
 shopLink:"https://www.virgincityhair.com/collections/all",
     products: [
@@ -397,7 +397,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 51, name: "Julia Hair", logo: "JH", origin: "China", tags: ["Human Hair", "Wigs"],
+    id: 43, name: "Julia Hair", logo: "JH", origin: "China", tags: ["Human Hair", "Wigs"],
     website: "https://www.juliahair.com",
     shopLink: "https://www.juliahair.com/collections/all",
     products: [
@@ -406,7 +406,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 52, name: "Recool Hair", logo: "RC", origin: "China", tags: ["Human Hair", "Glueless"],
+    id: 44, name: "Recool Hair", logo: "RC", origin: "China", tags: ["Human Hair", "Glueless"],
     website: "https://www.recoolhair.com",
     shopLink: "https://www.recoolhair.com/collections/all",
     products: [
@@ -415,7 +415,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 53, name: "Celie Hair", logo: "CH", origin: "China", tags: ["Human Hair", "Affordable"],
+    id: 45, name: "Celie Hair", logo: "CH", origin: "China", tags: ["Human Hair", "Affordable"],
     website: "https://www.celiehair.com",
     shopLink: "https://www.celiehair.com/collections/all",
     products: [
@@ -424,7 +424,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 54, name: "Sunber Hair", logo: "SB", origin: "China", tags: ["Human Hair", "Wigs"],
+    id: 46, name: "Sunber Hair", logo: "SB", origin: "China", tags: ["Human Hair", "Wigs"],
     website: "https://www.sunberhair.com/collections/all",
     shopLink: "https://www.amazon.com/s?k=sunber+hair&tag=jessyluxebeau-20",
     products: [
@@ -433,7 +433,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 60, name: "Babe Hair Extensions", logo: "BH", origin: "USA", tags: ["Salon Professional", "Remy Hair"],
+    id: 47, name: "Babe Hair Extensions", logo: "BH", origin: "USA", tags: ["Salon Professional", "Remy Hair"],
     website: "https://babehairextensions.com",
     shopLink: "https://babehairextensions.com/collections/all",
     products: [
@@ -443,7 +443,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 61, name: "Show Pony Hair Extensions", logo: "SP", origin: "Australia", tags: ["Premium", "Extensions"],
+    id: 48, name: "Show Pony Hair Extensions", logo: "SP", origin: "Australia", tags: ["Premium", "Extensions"],
     website: "https://www.showponyhairextensions.com",
     shopLink: "https://www.showponyhairextensions.com/collections",
     products: [
@@ -452,7 +452,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 62, name: "Shuly Wigs", logo: "SW", origin: "USA", tags: ["Sheitel", "Jewish Wig", "Kosher Wig", "European Hair", "Wig"],
+    id: 49, name: "Shuly Wigs", logo: "SW", origin: "USA", tags: ["Sheitel", "Jewish Wig", "Kosher Wig", "European Hair", "Wig"],
     website: "https://shulywigs.com",
     shopLink: "https://shulywigs.com/collections/all",
     products: [
@@ -461,7 +461,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 63, name: "BeeWigs", logo: "BW", origin: "China", tags: ["Sheitel", "Kosher Wig", "Jewish Wig", "European Hair", "Wig"],
+    id: 50, name: "BeeWigs", logo: "BW", origin: "China", tags: ["Sheitel", "Kosher Wig", "Jewish Wig", "European Hair", "Wig"],
     website: "https://beewigs.com",
     shopLink: "https://beewigs.com/collections/jewish-wigs",
     products: [
@@ -470,7 +470,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 64, name: "Sherogaga", logo: "SG", origin: "USA", tags: ["Sheitel", "Kosher Wig"],
+    id: 51, name: "Sherogaga", logo: "SG", origin: "USA", tags: ["Sheitel", "Kosher Wig"],
     website: "https://sherogagashop.com",
     shopLink: "https://sherogagashop.com/collections/all",
     products: [
@@ -479,7 +479,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 65, name: "Shani Wigs", logo: "SW", origin: "USA", tags: ["Sheitel", "Bespoke Wig", "Jewish Wig", "Kosher Wig", "European Hair", "Wig"],
+    id: 52, name: "Shani Wigs", logo: "SW", origin: "USA", tags: ["Sheitel", "Bespoke Wig", "Jewish Wig", "Kosher Wig", "European Hair", "Wig"],
     website: "https://shaniwigs.com",
     shopLink: "https://shaniwigs.com/collections/sheitels",
     products: [
@@ -488,7 +488,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 66, name: "FD Jewish Wigs", logo: "FD", origin: "China", tags: ["Sheitel", "Factory Direct", "Jewish Wig", "Kosher Wig", "European Hair", "Wig"],
+    id: 53, name: "FD Jewish Wigs", logo: "FD", origin: "China", tags: ["Sheitel", "Factory Direct", "Jewish Wig", "Kosher Wig", "European Hair", "Wig"],
     website: "https://jewish-wigs.com",
     shopLink: "https://jewish-wigs.com/collections/all",
     products: [
@@ -498,7 +498,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
   },
   {
     
-    id: 55, name: "Klaiyi Hair", logo: "KL", origin: "China", tags: ["Human Hair", "Glueless"],
+    id: 54, name: "Klaiyi Hair", logo: "KL", origin: "China", tags: ["Human Hair", "Glueless"],
     website: "https://www.klaiyihair.com/collections/all", 
     shopLink: "https://www.amazon.com/s?k=klaiyi+hair&tag=jessyluxebeau-20",
     products: [
@@ -507,7 +507,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 56, name: "Beautyforever", logo: "BF", origin: "China", tags: ["Human Hair", "Affordable"],
+    id: 55, name: "Beautyforever", logo: "BF", origin: "China", tags: ["Human Hair", "Affordable"],
     website: "https://www.beautyforever.com/collections/all",
     shopLink:   "https://www.amazon.com/s?k=beauty+forever+hair&tag=jessyluxebeau-20",
     products: [
@@ -516,7 +516,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 57, name: "Ulta Beauty", logo: "UB", origin: "USA", tags: ["Retail", "Multi-Brand"],
+    id: 56, name: "Ulta Beauty", logo: "UB", origin: "USA", tags: ["Retail", "Multi-Brand"],
     website: "https://go.shopmy.us/p-54648752",
     shopLink: "https://www.ulta.com",
     products: [
@@ -526,7 +526,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
     ],
   },
   {
-    id: 58, name: "Locks & Mane", logo: "LM", origin: "USA", tags: ["Clip-In", "Remy Hair"],
+    id: 57, name: "Locks & Mane", logo: "LM", origin: "USA", tags: ["Clip-In", "Remy Hair"],
     website: "https://www.locksandmane.com",
 shopLink: "https://www.locksandmane.com/collections/all",
     products: [
@@ -535,7 +535,7 @@ shopLink: "https://www.locksandmane.com/collections/all",
     ],
   },
   {
-    id: 59, name: "True & Pure Texture", logo: "TP", origin: "USA", tags: ["Natural Texture", "Curly"],
+    id: 58, name: "True & Pure Texture", logo: "TP", origin: "USA", tags: ["Natural Texture", "Curly"],
     website: "https://www.trueandpuretexture.com",
 shopLink: "https://www.trueandpuretexture.com/collections/all",
     products: [
@@ -545,7 +545,7 @@ shopLink: "https://www.trueandpuretexture.com/collections/all",
     ],
   },
   {
-    id: 44, name: "Beaudiva Hair", logo: "BD", origin: "China", tags: ["Affordable", "Human Hair"],
+    id: 59, name: "Beaudiva Hair", logo: "BD", origin: "China", tags: ["Affordable", "Human Hair"],
     website: "https://www.amazon.com/stores/Specializingin100humanhaironlyNaturalvariedstylesthatblendseamlesslycraftedforyouruniquelookandlastingquality/page/D809946D-D044-433F-A225-4CBCA2E9F0B9?lp_asin=B0B3QZPCTM&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
 shopLink: "https://www.amazon.com/stores/Specializingin100humanhaironlyNaturalvariedstylesthatblendseamlesslycraftedforyouruniquelookandlastingquality/page/D809946D-D044-433F-A225-4CBCA2E9F0B9?lp_asin=B0B3QZPCTM&ref_=ast_bln&store_ref=bl_ast_dp_brandlogo_sto&tag=jessyluxebeau-20",
     products: [
@@ -554,7 +554,7 @@ shopLink: "https://www.amazon.com/stores/Specializingin100humanhaironlyNaturalva
     ],
   },
   {
-    id: 45, name: "Yummi Hair Extensions", logo: "YH", origin: "USA", tags: ["Premium", "Virgin Hair"],
+    id: 60, name: "Yummi Hair Extensions", logo: "YH", origin: "USA", tags: ["Premium", "Virgin Hair"],
     website: "https://www.yummyextensions.com",
 shopLink: "https://www.yummyextensions.com/collections/all",
     products: [
@@ -563,7 +563,7 @@ shopLink: "https://www.yummyextensions.com/collections/all",
     ],
   },
   {
-    id: 46, name: "Govihair", logo: "GV", origin: "Vietnam", tags: ["Vietnamese Hair", "Premium"],
+    id: 61, name: "Govihair", logo: "GV", origin: "Vietnam", tags: ["Vietnamese Hair", "Premium"],
     website: "https://govihair.com",
 shopLink: "https://govihair.com/collections/all",
     products: [
@@ -572,7 +572,7 @@ shopLink: "https://govihair.com/collections/all",
     ],
   },
   {
-    id: 47, name: "Yoghair", logo: "YG", origin: "Vietnam", tags: ["Vietnamese Hair", "Wholesale"],
+    id: 62, name: "Yoghair", logo: "YG", origin: "Vietnam", tags: ["Vietnamese Hair", "Wholesale"],
     website: "https://www.yoghair.com",
     shopLink: "https://www.yoghair.com/collections/all",
     products: [
@@ -581,7 +581,7 @@ shopLink: "https://govihair.com/collections/all",
     ],
   },
   {
-    id: 48, name: "Heat Free Hair", logo: "HF", origin: "USA", tags: ["Natural Hair", "Textured", "No Heat"],
+    id: 63, name: "Heat Free Hair", logo: "HF", origin: "USA", tags: ["Natural Hair", "Textured", "No Heat"],
 website: "https://www.heatfreehair.com",
 shopLink: "https://www.heatfreehair.com/collections/all",
 products: [
@@ -590,7 +590,7 @@ products: [
 ],
 },
 {
-  id: 49, name: "HerGivenHair", logo: "HG", origin: "China", tags: ["Coily", "Natural Texture", "4C Friendly"],
+  id: 64, name: "HerGivenHair", logo: "HG", origin: "China", tags: ["Coily", "Natural Texture", "4C Friendly"],
 website: "https://www.hergivenhair.com",
 shopLink: "https://www.hergivenhair.com/collections/all",
 products: [
@@ -599,7 +599,7 @@ products: [
 ],
 },
 {
-    id: 48, name: "Vietnam Remy Hair", logo: "VR", origin: "Vietnam", tags: ["Remy Hair", "Wholesale"],
+    id: 65, name: "Vietnam Remy Hair", logo: "VR", origin: "Vietnam", tags: ["Remy Hair", "Wholesale"],
     website: "https://hair68.com",
     shopLink: "https://hair68.com/collections/all",
     products: [
@@ -608,7 +608,7 @@ products: [
     ],
   },
   {
-    id: 49, name: "RPGShow", logo: "RP", origin: "China", tags: ["HD Lace", "Wigs"],
+    id: 66, name: "RPGShow", logo: "RP", origin: "China", tags: ["HD Lace", "Wigs"],
     website: "https://www.rpgshow.com",
     shopLink: "https://www.rpgshow.com/collections/all",
     products: [
@@ -618,7 +618,7 @@ products: [
     
   },
   {
-    id: 50, name: "West Kiss Hair", logo: "WK", origin: "China", tags: ["Affordable", "Human Hair"],
+    id: 67, name: "West Kiss Hair", logo: "WK", origin: "China", tags: ["Affordable", "Human Hair"],
     website: "https://www.westkisshair.com",
     shopLink: "https://www.westkisshair.com/collections/all",
     products: [
@@ -627,7 +627,7 @@ products: [
     ],
   },
   {
-      id: 67, name: "Zlike Hair", logo: "ZL", origin: "China", tags: ["HD Lace", "300% Density", "Human Hair"],
+      id: 68, name: "Zlike Hair", logo: "ZL", origin: "China", tags: ["HD Lace", "300% Density", "Human Hair"],
       website: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
       shopLink: "https://www.awin1.com/cread.php?awinmid=102013&awinaffid=2866481",
       products: [
@@ -638,7 +638,7 @@ products: [
       
     },
     {
-      id: 68, name: "Wig Fever", logo: "WF", origin: "China", tags: ["Wigs", "Affordable", "Human Hair"],
+      id: 69, name: "Wig Fever", logo: "WF", origin: "China", tags: ["Wigs", "Affordable", "Human Hair"],
       website: "https://www.wigforever.com",
 shopLink: "https://www.wigforever.com/collections/all",
       products: [
@@ -647,7 +647,7 @@ shopLink: "https://www.wigforever.com/collections/all",
       ],
     },
     {
-    id: 69, name: "Wavymyhair", logo: "WM", origin: "China", tags: ["Wavy Hair", "Human Hair", "HD Lace"],
+    id: 70, name: "Wavymyhair", logo: "WM", origin: "China", tags: ["Wavy Hair", "Human Hair", "HD Lace"],
     website: "https://www.awin1.com/cread.php?awinmid=73814&awinaffid=2866481",
     shopLink: "https://www.awin1.com/cread.php?awinmid=73814&awinaffid=2866481",
     products: [
@@ -657,7 +657,7 @@ shopLink: "https://www.wigforever.com/collections/all",
     ],
   },
   {
-    id: 70, name: "Stephen Wigs", logo: "SW", origin: "USA", tags: ["Synthetic", "Lace Front", "Affordable"],
+    id: 71, name: "Stephen Wigs", logo: "SW", origin: "USA", tags: ["Synthetic", "Lace Front", "Affordable"],
     website: "https://www.awin1.com/cread.php?awinmid=115585&awinaffid=2866481",
     shopLink: "https://www.awin1.com/cread.php?awinmid=115585&awinaffid=2866481",
     products: [
@@ -693,7 +693,7 @@ shopLink: "https://www.greatlengths.com/salon-finder",
     ],
   },
   {
-    id: 76, name: "The Wig Company", logo: "TW", origin: "USA", tags: ["Affordable", "Wigs", "Extensions"],
+    id: 75, name: "The Wig Company", logo: "TW", origin: "USA", tags: ["Affordable", "Wigs", "Extensions"],
     website: "https://www.thewigcompany.com",
 shopLink: "https://www.thewigcompany.com/collections/all",
     products: [
@@ -702,7 +702,7 @@ shopLink: "https://www.thewigcompany.com/collections/all",
     ],
   },
   {
-    id: 77, name: "Ellen Wille", logo: "EW", origin: "Germany", tags: ["Luxury", "European", "Wigs"],
+    id: 76, name: "Ellen Wille", logo: "EW", origin: "Germany", tags: ["Luxury", "European", "Wigs"],
     website: "https://www.ellenwille.com",
     shopLink: "https://www.ellenwille.com/collections/ellen-wille-wigs",
     products: [
@@ -711,7 +711,7 @@ shopLink: "https://www.thewigcompany.com/collections/all",
     ],
   },
   {
-    id: 78, name: "Raquel Welch Wigs", logo: "RW", origin: "USA", tags: ["Celebrity", "Wigs", "Synthetic"],
+    id: 77, name: "Raquel Welch Wigs", logo: "RW", origin: "USA", tags: ["Celebrity", "Wigs", "Synthetic"],
     website: "https://www.hairuwear.com/brands/raquel-welch",
 shopLink: "https://www.hairuwear.com/collections/raquel-welch-wigs",
     products: [
@@ -720,7 +720,7 @@ shopLink: "https://www.hairuwear.com/collections/raquel-welch-wigs",
     ],
   },
   {
-    id: 79, name: "Jon Renau", logo: "JR", origin: "USA", tags: ["Medical", "Wigs", "Alopecia"],
+    id: 78, name: "Jon Renau", logo: "JR", origin: "USA", tags: ["Medical", "Wigs", "Alopecia"],
     website: "https://www.jonrenau.com",
     shopLink: "https://www.jonrenau.com/collections/all",
     products: [
@@ -729,7 +729,7 @@ shopLink: "https://www.hairuwear.com/collections/raquel-welch-wigs",
     ],
   },
   {
-    id: 80, name: "Sunny Hair", logo: "SH", origin: "China", tags: ["Clip-In", "Remy Hair", "Affordable"],
+    id: 79, name: "Sunny Hair", logo: "SH", origin: "China", tags: ["Clip-In", "Remy Hair", "Affordable"],
     website: "https://www.sunnyhair.com",
 shopLink: "https://www.sunnyhair.com/collections/all",
     products: [
@@ -739,7 +739,7 @@ shopLink: "https://www.sunnyhair.com/collections/all",
   },
   
   {
-    id: 81, name: "Full Shine Hair", logo: "FS", origin: "China", tags: ["Tape-In", "Remy Hair", "Extensions"],
+    id: 80, name: "Full Shine Hair", logo: "FS", origin: "China", tags: ["Tape-In", "Remy Hair", "Extensions"],
     website: "https://www.fullshine.net",
     shopLink: "https://www.fullshine.net/collections/all",
     products: [
@@ -748,7 +748,7 @@ shopLink: "https://www.sunnyhair.com/collections/all",
     ],
   },
   {
-    id: 82, name: "Lemiva Hair", logo: "LV", origin: "China", tags: ["Glueless", "HD Lace", "Human Hair"],
+    id: 81, name: "Lemiva Hair", logo: "LV", origin: "China", tags: ["Glueless", "HD Lace", "Human Hair"],
     website: "https://www.amazon.com/stores/Lemiva/page/XXXXXXXX?tag=jessyluxebeau-20",
     shopLink: "https://www.amazon.com/stores/Lemiva/page/XXXXXXXX?tag=jessyluxebeau-20",
     products: [
@@ -757,7 +757,7 @@ shopLink: "https://www.sunnyhair.com/collections/all",
     ],
   },
   {
-    id: 71, name: "Best Wig Outlet", logo: "BW", origin: "USA", tags: ["Multi-Brand", "Affordable", "Wigs"],
+    id: 82, name: "Best Wig Outlet", logo: "BW", origin: "USA", tags: ["Multi-Brand", "Affordable", "Wigs"],
     website: "https://www.awin1.com/cread.php?awinmid=115597&awinaffid=2866481",
     shopLink: "https://www.awin1.com/cread.php?awinmid=115597&awinaffid=2866481",
     products: [
@@ -794,7 +794,7 @@ shopLink: "https://www.irresistibleme.com/collections/hair-extensions",
     ],
   },
   {
-    id: 87, name: "Fine Lace Wigs", logo: "FL", origin: "USA", tags: ["Caucasian", "European Hair", "Luxury"],
+    id: 86, name: "Fine Lace Wigs", logo: "FL", origin: "USA", tags: ["Caucasian", "European Hair", "Luxury"],
     website: "https://www.finelacewigs.com",
     shopLink: "https://www.finelacewigs.com/collections/all",
   products: [
@@ -803,7 +803,7 @@ shopLink: "https://www.irresistibleme.com/collections/hair-extensions",
   ],
 },
   {
-    id: 49, name: "HerGivenHair", logo: "HG", origin: "China", tags: ["Coily", "Natural Texture", "4C Friendly"],
+    id: 87, name: "HerGivenHair", logo: "HG", origin: "China", tags: ["Coily", "Natural Texture", "4C Friendly"],
 website: "https://www.hergivenhair.com",
 shopLink: "https://www.hergivenhair.com/collections/all",
 products: [
@@ -812,7 +812,7 @@ products: [
 ],
 },
 {
-  id: 50, name: "BetterLength", logo: "BL", origin: "USA", tags: ["Clip-In", "4C", "Natural Hair"],
+  id: 88, name: "BetterLength", logo: "BL", origin: "USA", tags: ["Clip-In", "4C", "Natural Hair"],
 website: "https://www.betterlength.com",
 shopLink: "https://www.betterlength.com/collections/all",
 products: [
@@ -821,7 +821,7 @@ products: [
 ],
 },
 {
-  id: 51, name: "Zala Hair Extensions", logo: "ZH", origin: "Australia", tags: ["Extensions", "Luxury"],
+  id: 89, name: "Zala Hair Extensions", logo: "ZH", origin: "Australia", tags: ["Extensions", "Luxury"],
 website: "https://www.zalahairextensions.com",
 shopLink: "https://www.zalahairextensions.com/collections/all",
 products: [
@@ -830,7 +830,7 @@ products: [
 ],
 },
 {
-  id: 52, name: "Milk + Blush", logo: "MB", origin: "UK", tags: ["Luxury", "Clip-In"],
+  id: 90, name: "Milk + Blush", logo: "MB", origin: "UK", tags: ["Luxury", "Clip-In"],
 website: "https://www.milkandblush.com",
 shopLink: "https://www.milkandblush.com/collections/all",
 products: [
@@ -839,7 +839,7 @@ products: [
 ],
 },
 {
-  id: 53, name: "Freeda Wigs", logo: "FW", origin: "USA", tags: ["Sheitel", "Luxury", "Jewish Wig"],
+  id: 91, name: "Freeda Wigs", logo: "FW", origin: "USA", tags: ["Sheitel", "Luxury", "Jewish Wig"],
 website: "https://freedawigs.com",
 shopLink: "https://freedawigs.com/collections/all",
 products: [
@@ -848,7 +848,7 @@ products: [
 ],
 },
 {
-  id: 54, name: "Rivka's Wigs", logo: "RW", origin: "USA", tags: ["Sheitel", "Custom", "European Hair"],
+  id: 92, name: "Rivka's Wigs", logo: "RW", origin: "USA", tags: ["Sheitel", "Custom", "European Hair"],
 website: "https://rivkawigs.com",
 shopLink: "https://rivkawigs.com/collections/all",
 products: [
@@ -857,7 +857,7 @@ products: [
 ],
 },
 {
-  id: 55, name: "K-Hair Factory", logo: "KH", origin: "Vietnam", tags: ["Wholesale", "Raw Hair"],
+  id: 93, name: "K-Hair Factory", logo: "KH", origin: "Vietnam", tags: ["Wholesale", "Raw Hair"],
 website: "https://k-hair.com",
 shopLink: "https://k-hair.com",
 products: [
@@ -866,7 +866,7 @@ products: [
 ],
 },
 {
-    id: 86, name: "Headcovers", logo: "HC", origin: "USA", tags: ["Medical", "Wigs", "Caucasian"],
+    id: 94, name: "Headcovers", logo: "HC", origin: "USA", tags: ["Medical", "Wigs", "Caucasian"],
     website: "https://www.headcovers.com",
 shopLink: "https://www.headcovers.com/wigs-hair",
     products: [
