@@ -581,6 +581,24 @@ shopLink: "https://govihair.com/collections/all",
     ],
   },
   {
+    id: 48, name: "Heat Free Hair", logo: "HF", origin: "USA", tags: ["Natural Hair", "Textured", "No Heat"],
+website: "https://www.heatfreehair.com",
+shopLink: "https://www.heatfreehair.com/collections/all",
+products: [
+  { type: "100% Human", category: "human", texture: "Kinky Straight Bundle", lengths: "10\"–28\"", price: "$80–$260", rating: 4.6, reviews: 2100 },
+  { type: "100% Human", category: "human", texture: "Curly Clip-Ins", lengths: "12\"–24\"", price: "$90–$280", rating: 4.5, reviews: 1800 },
+],
+},
+{
+  id: 49, name: "HerGivenHair", logo: "HG", origin: "China", tags: ["Coily", "Natural Texture", "4C Friendly"],
+website: "https://www.hergivenhair.com",
+shopLink: "https://www.hergivenhair.com/collections/all",
+products: [
+  { type: "100% Human", category: "human", texture: "4C Coily Wig", lengths: "10\"–24\"", price: "$120–$300", rating: 4.6, reviews: 2500 },
+  { type: "100% Human", category: "human", texture: "Kinky Curly Bundle", lengths: "12\"–26\"", price: "$70–$220", rating: 4.5, reviews: 2000 },
+],
+},
+{
     id: 48, name: "Vietnam Remy Hair", logo: "VR", origin: "Vietnam", tags: ["Remy Hair", "Wholesale"],
     website: "https://hair68.com",
     shopLink: "https://hair68.com/collections/all",
@@ -785,6 +803,69 @@ shopLink: "https://www.irresistibleme.com/collections/hair-extensions",
   ],
 },
   {
+    id: 49, name: "HerGivenHair", logo: "HG", origin: "China", tags: ["Coily", "Natural Texture", "4C Friendly"],
+website: "https://www.hergivenhair.com",
+shopLink: "https://www.hergivenhair.com/collections/all",
+products: [
+  { type: "100% Human", category: "human", texture: "4C Coily Wig", lengths: "10\"–24\"", price: "$120–$300", rating: 4.6, reviews: 2500 },
+  { type: "100% Human", category: "human", texture: "Kinky Curly Bundle", lengths: "12\"–26\"", price: "$70–$220", rating: 4.5, reviews: 2000 },
+],
+},
+{
+  id: 50, name: "BetterLength", logo: "BL", origin: "USA", tags: ["Clip-In", "4C", "Natural Hair"],
+website: "https://www.betterlength.com",
+shopLink: "https://www.betterlength.com/collections/all",
+products: [
+  { type: "100% Human", category: "human", texture: "4C Clip-In Extensions", lengths: "10\"–22\"", price: "$90–$260", rating: 4.5, reviews: 1900 },
+  { type: "100% Human", category: "human", texture: "Kinky Straight Clip-Ins", lengths: "12\"–24\"", price: "$100–$280", rating: 4.4, reviews: 1500 },
+],
+},
+{
+  id: 51, name: "Zala Hair Extensions", logo: "ZH", origin: "Australia", tags: ["Extensions", "Luxury"],
+website: "https://www.zalahairextensions.com",
+shopLink: "https://www.zalahairextensions.com/collections/all",
+products: [
+  { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "14\"–24\"", price: "$120–$320", rating: 4.6, reviews: 3200 },
+  { type: "100% Human", category: "human", texture: "Tape-In Extensions", lengths: "16\"–22\"", price: "$140–$300", rating: 4.5, reviews: 2800 },
+],
+},
+{
+  id: 52, name: "Milk + Blush", logo: "MB", origin: "UK", tags: ["Luxury", "Clip-In"],
+website: "https://www.milkandblush.com",
+shopLink: "https://www.milkandblush.com/collections/all",
+products: [
+  { type: "100% Human", category: "human", texture: "Clip-In Extensions", lengths: "14\"–24\"", price: "$130–$350", rating: 4.6, reviews: 2400 },
+  { type: "100% Human", category: "human", texture: "Ponytail Extensions", lengths: "16\"–24\"", price: "$110–$280", rating: 4.5, reviews: 1800 },
+],
+},
+{
+  id: 53, name: "Freeda Wigs", logo: "FW", origin: "USA", tags: ["Sheitel", "Luxury", "Jewish Wig"],
+website: "https://freedawigs.com",
+shopLink: "https://freedawigs.com/collections/all",
+products: [
+  { type: "100% Human", category: "human", texture: "European Hair Sheitel", lengths: "10\"–22\"", price: "$800–$3000", rating: 4.7, reviews: 900 },
+  { type: "100% Human", category: "human", texture: "Silk Top Wig", lengths: "12\"–24\"", price: "$900–$3200", rating: 4.8, reviews: 750 },
+],
+},
+{
+  id: 54, name: "Rivka's Wigs", logo: "RW", origin: "USA", tags: ["Sheitel", "Custom", "European Hair"],
+website: "https://rivkawigs.com",
+shopLink: "https://rivkawigs.com/collections/all",
+products: [
+  { type: "100% Human", category: "human", texture: "Custom Sheitel", lengths: "10\"–24\"", price: "$700–$2800", rating: 4.7, reviews: 600 },
+  { type: "100% Human", category: "human", texture: "Lace Front Sheitel", lengths: "12\"–22\"", price: "$600–$2500", rating: 4.6, reviews: 450 },
+],
+},
+{
+  id: 55, name: "K-Hair Factory", logo: "KH", origin: "Vietnam", tags: ["Wholesale", "Raw Hair"],
+website: "https://k-hair.com",
+shopLink: "https://k-hair.com",
+products: [
+  { type: "100% Human", category: "human", texture: "Raw Vietnamese Bundle", lengths: "10\"–30\"", price: "$40–$180", rating: 4.4, reviews: 1200 },
+  { type: "100% Human", category: "human", texture: "Straight Wig", lengths: "12\"–28\"", price: "$60–$220", rating: 4.3, reviews: 900 },
+],
+},
+{
     id: 86, name: "Headcovers", logo: "HC", origin: "USA", tags: ["Medical", "Wigs", "Caucasian"],
     website: "https://www.headcovers.com",
 shopLink: "https://www.headcovers.com/wigs-hair",
