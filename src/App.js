@@ -979,12 +979,10 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           {favorites.includes(supplier.id) ? "❤️" : "🤍"}
           </button>
           <button onClick={e => { e.stopPropagation(); onCompare(supplier); }} style={{
-            
-        position: "absolute",
-        top: 10,
-        right: 45,
-        transform: "none",
-        zIndex: 10,
+            display: "flex",
+            gap: 6,
+            marginTop: 6,
+            justifyContent: "flex-end",
           background: compareList && compareList.find(s => s.id === supplier.id) ? "#2a6a2a" : "#ffffff",
           border: "2px solid #2a6a2a", borderRadius: 6, cursor: "pointer",
           fontSize: 10, color: compareList && compareList.find(s => s.id === supplier.id) ? "#ffffff" : "#2a6a2a",
@@ -998,10 +996,6 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
     window.open(supplier.shopLink, "_blank");
   }}
   style={{
-    position: "absolute",
-    top: 10,
-    right: 110, // sits next to Compare
-    zIndex: 10,
     background: "#2a6a2a",
     border: "none",
     borderRadius: 6,
