@@ -974,15 +974,16 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
         <button onClick={e => { e.stopPropagation(); onFavorite(supplier.id); }} style={{
           position: "absolute", top: 10, right: 10,
           background: "transparent", border: "none", cursor: "pointer",
-          fontSize: 16, color: favorites.includes(supplier.id) ? "#e8354a" : "2a6a2a"
+          fontSize: 16, color: favorites.includes(supplier.id) ? "#e8354a" : "#2a6a2a"
         }}>
           {favorites.includes(supplier.id) ? "❤️" : "🤍"}
           </button>
           <button onClick={e => { e.stopPropagation(); onCompare(supplier); }} style={{
+            
         position: "absolute",
-        top: "70%",
-        left: "70%",
-        transform: "translate(-50%, -50%)",
+        top: 10,
+        right: 45,
+        transform: "none",
         zIndex: 10,
           background: compareList && compareList.find(s => s.id === supplier.id) ? "#2a6a2a" : "#ffffff",
           border: "2px solid #2a6a2a", borderRadius: 6, cursor: "pointer",
@@ -991,6 +992,28 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
         }}>
           {compareList && compareList.find(s => s.id === supplier.id) ? "✓ Compare" : "+ Compare"}
         </button>
+        <button
+  onClick={e => {
+    e.stopPropagation();
+    window.open(supplier.shopLink, "_blank");
+  }}
+  style={{
+    position: "absolute",
+    top: 10,
+    right: 110, // sits next to Compare
+    zIndex: 10,
+    background: "#2a6a2a",
+    border: "none",
+    borderRadius: 6,
+    cursor: "pointer",
+    fontSize: 10,
+    color: "#ffffff",
+    padding: "4px 8px",
+    fontWeight: 700
+  }}
+>
+  Shop Now
+</button>
           
         
           <div style={{ display: "flex", alignItems: "center", gap: 8, flexWrap: "wrap" }}>
