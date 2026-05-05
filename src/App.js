@@ -1653,51 +1653,6 @@ export default function App() {
   }}>
     ✦ Hair Supplier Intelligence Hub ✦
   </div>
-  {/* Wig Size Chart */}
-<div style={{
-  maxWidth: 650,
-  margin: "30px auto",
-  padding: "20px",
-  background: "#fffaf5",
-  borderRadius: "18px",
-  border: "1px solid #e6d2bd",
-  textAlign: "center"
-}}>
-  <h2 style={{ fontSize: 26, marginBottom: 10, color: "#2e2010" }}>
-    Wig Size Chart
-  </h2>
-
-  <p style={{ fontSize: 14, color: "#5c4632", marginBottom: 18 }}>
-    Measure around your head, starting at your hairline, going behind your ears,
-    around the nape of your neck, and back to the front.
-  </p>
-
-  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
-    <thead>
-      <tr style={{ background: "#2e2010", color: "#fff" }}>
-        <th style={{ padding: 10 }}>Cap Size</th>
-        <th style={{ padding: 10 }}>Head Measurement</th>
-      </tr>
-    </thead>
-    <tbody>
-      {[
-        ["Small", "21 – 21.5 inches"],
-        ["Medium", "22 – 22.5 inches"],
-        ["Large", "23 – 23.5 inches"],
-        ["XL", "24 inches+"]
-      ].map(([size, measurement]) => (
-        <tr key={size} style={{ borderBottom: "1px solid #e6d2bd" }}>
-          <td style={{ padding: 10, fontWeight: "bold", color: "#2e2010" }}>{size}</td>
-          <td style={{ padding: 10, color: "#5c4632" }}>{measurement}</td>
-        </tr>
-      ))}
-    </tbody>
-  </table>
-
-  <p style={{ fontSize: 12, color: "#7a5a3a", marginTop: 14 }}>
-    Tip: If you are between sizes, choose the larger size for a more comfortable fit.
-  </p>
-</div>
 </div>
    <div style={{ textAlign: "center", marginBottom: isMobile ? 10 : 20 }}>
   <div style={{
@@ -1742,7 +1697,72 @@ Stop Getting Scammed<br />
  Compare 60+ Hair Vendors, See Real Reviews & Find Trusted Hair in Seconds.
 </p>
       </div>
+      {/* Hero */}
+<div style={{
+  padding: isMobile ? "20px 16px 15px" : "110px 24px 80px",
+  minHeight: "auto",
+  background: "linear-gradient(180deg, rgba(184,216,184,0.7) 0%, rgba(200,224,200,0.7) 100%), url('/headerwave.jpg') 50% 20%/cover no-repeat",
+  borderBottom: "1px solid rgba(255,255,255,0.08)"
+}}>
+  {/* your hero content */}
+</div>
 
+{/* ✅ ADD WIG SIZE CHART HERE */}
+<div style={{
+  maxWidth: 650,
+  margin: "30px auto",
+  padding: "20px",
+  background: "#fffaf5",
+  borderRadius: "18px",
+  border: "1px solid #e6d2bd",
+  textAlign: "center"
+}}>
+  <h2 style={{ fontSize: 26, marginBottom: 10, color: "#2e2010" }}>
+    Wig Size Chart
+  </h2>
+
+  <p style={{ fontSize: 14, color: "#5c4632", marginBottom: 18 }}>
+    Measure around your head, starting at your hairline, behind your ears, around the nape, and back to the front.
+  </p>
+
+  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
+    <thead>
+      <tr style={{ background: "#2e2010", color: "#fff" }}>
+        <th style={{ padding: 10 }}>Cap Size</th>
+        <th style={{ padding: 10 }}>Head Measurement</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        ["Small", "21 – 21.5 inches"],
+        ["Medium", "22 – 22.5 inches"],
+        ["Large", "23 – 23.5 inches"],
+        ["XL", "24 inches+"]
+      ].map(([size, measurement]) => (
+        <tr key={size} style={{ borderBottom: "1px solid #e6d2bd" }}>
+          <td style={{ padding: 10, fontWeight: "bold", color: "#2e2010" }}>{size}</td>
+          <td style={{ padding: 10, color: "#5c4632" }}>{measurement}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  {/* 🔥 CTA BUTTON */}
+  <button
+    onClick={() => window.location.href = "/vendors"}
+    style={{
+      marginTop: 15,
+      padding: "10px 18px",
+      background: "#2e2010",
+      color: "#fff",
+      borderRadius: 8,
+      border: "none",
+      cursor: "pointer"
+    }}
+  >
+    Find Your Perfect Wig →
+  </button>
+</div>
      {/* Stats Bar */}
      <div style={{ 
         marginTop: isMobile ? "16px" : "28px",
