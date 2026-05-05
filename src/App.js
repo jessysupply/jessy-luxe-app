@@ -1131,6 +1131,7 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           vendor: supplier.name,
           id: supplier.id
         });
+
         window.open(supplier.shopLink, "_blank");
       }}
       style={{
@@ -1697,18 +1698,7 @@ Stop Getting Scammed<br />
  Compare 60+ Hair Vendors, See Real Reviews & Find Trusted Hair in Seconds.
 </p>
       </div>
-      {/* Hero */}
-<div style={{
-  padding: isMobile ? "20px 16px 15px" : "110px 24px 80px",
-  minHeight: "auto",
-  background: "linear-gradient(180deg, rgba(184,216,184,0.7) 0%, rgba(200,224,200,0.7) 100%), url('/headerwave.jpg') 50% 20%/cover no-repeat",
-  borderBottom: "1px solid rgba(255,255,255,0.08)"
-}}>
-  {/* your hero content */}
-</div>
-
-{/* ✅ ADD WIG SIZE CHART HERE */}
-<div style={{
+      <div style={{
   maxWidth: 650,
   margin: "30px auto",
   padding: "20px",
@@ -1763,6 +1753,7 @@ Stop Getting Scammed<br />
     Find Your Perfect Wig →
   </button>
 </div>
+
      {/* Stats Bar */}
      <div style={{ 
         marginTop: isMobile ? "16px" : "28px",
