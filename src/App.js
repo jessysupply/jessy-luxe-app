@@ -1124,7 +1124,6 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
     <button
       onClick={e => {
         e.stopPropagation();
-      
         // Track click
         window.dataLayer = window.dataLayer || [];
         window.dataLayer.push({
@@ -1132,7 +1131,6 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
           vendor: supplier.name,
           id: supplier.id
         });
-      
         window.open(supplier.shopLink, "_blank");
       }}
       style={{
@@ -1655,6 +1653,51 @@ export default function App() {
   }}>
     ✦ Hair Supplier Intelligence Hub ✦
   </div>
+  {/* Wig Size Chart */}
+<div style={{
+  maxWidth: 650,
+  margin: "30px auto",
+  padding: "20px",
+  background: "#fffaf5",
+  borderRadius: "18px",
+  border: "1px solid #e6d2bd",
+  textAlign: "center"
+}}>
+  <h2 style={{ fontSize: 26, marginBottom: 10, color: "#2e2010" }}>
+    Wig Size Chart
+  </h2>
+
+  <p style={{ fontSize: 14, color: "#5c4632", marginBottom: 18 }}>
+    Measure around your head, starting at your hairline, going behind your ears,
+    around the nape of your neck, and back to the front.
+  </p>
+
+  <table style={{ width: "100%", borderCollapse: "collapse", fontSize: 14 }}>
+    <thead>
+      <tr style={{ background: "#2e2010", color: "#fff" }}>
+        <th style={{ padding: 10 }}>Cap Size</th>
+        <th style={{ padding: 10 }}>Head Measurement</th>
+      </tr>
+    </thead>
+    <tbody>
+      {[
+        ["Small", "21 – 21.5 inches"],
+        ["Medium", "22 – 22.5 inches"],
+        ["Large", "23 – 23.5 inches"],
+        ["XL", "24 inches+"]
+      ].map(([size, measurement]) => (
+        <tr key={size} style={{ borderBottom: "1px solid #e6d2bd" }}>
+          <td style={{ padding: 10, fontWeight: "bold", color: "#2e2010" }}>{size}</td>
+          <td style={{ padding: 10, color: "#5c4632" }}>{measurement}</td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+
+  <p style={{ fontSize: 12, color: "#7a5a3a", marginTop: 14 }}>
+    Tip: If you are between sizes, choose the larger size for a more comfortable fit.
+  </p>
+</div>
 </div>
    <div style={{ textAlign: "center", marginBottom: isMobile ? 10 : 20 }}>
   <div style={{
