@@ -1753,6 +1753,43 @@ Stop Getting Scammed<br />
     Find Your Perfect Wig →
   </button>
 </div>
+{/* Shipping Information */}
+<div style={{
+  maxWidth: 650,
+  margin: "20px auto",
+  padding: "18px",
+  background: "#f8f8f8",
+  borderRadius: "18px",
+  border: "1px solid #ddd",
+  textAlign: "left"
+}}>
+  <h3 style={{
+    fontSize: 22,
+    marginBottom: 10,
+    color: "#2e2010"
+  }}>
+    Shipping Information
+  </h3>
+
+  <p style={{ color: "#5c4632", lineHeight: 1.6, fontSize: 14 }}>
+    Estimated delivery times may vary depending on the vendor and shipping method selected at checkout.
+  </p>
+
+  <ul style={{
+    color: "#5c4632",
+    paddingLeft: 20,
+    lineHeight: 1.8,
+    fontSize: 14
+  }}>
+    <li><strong>Standard Shipping:</strong> 5–10 business days</li>
+    <li><strong>Express Shipping:</strong> 2–5 business days</li>
+    <li><strong>Custom/Pre-Order Wigs:</strong> 10–21 business days</li>
+  </ul>
+
+  <p style={{ color: "#7a5a3a", fontSize: 12, marginTop: 10 }}>
+    Please note: Delivery times may vary during holidays, sales, or high-demand periods.
+  </p>
+</div>
 
      {/* Stats Bar */}
      <div style={{ 
