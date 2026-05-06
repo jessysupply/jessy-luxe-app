@@ -927,6 +927,35 @@ shopLink: "https://www.headcovers.com/wigs-hair",
       { type: "100% Human", category: "human", texture: "Remy Human Hair Wig", lengths: "12\"–24\"", price: "$150–$600", rating: 4.6, reviews: 3100 },
     ],
   },
+  {
+    id: 101,
+    name: "BGMgirl Hair",
+    logo: "BG",
+    origin: "China",
+    tags: ["Affordable", "Human Hair", "Wigs"],
+    website: "https://www.bgmgirl.com",
+    shopLink: "https://www.awin1.com/cread.php?awinmid=49209&awinaffid=2866481",
+    products: [
+      {
+        type: "100% Human",
+        category: "human",
+        texture: "Body Wave Wig",
+        lengths: "12\"–30\"",
+        price: "$89–$260",
+        rating: 4.4,
+        reviews: 4200
+      },
+      {
+        type: "100% Human",
+        category: "human",
+        texture: "HD Lace Straight Wig",
+        lengths: "10\"–28\"",
+        price: "$95–$280",
+        rating: 4.5,
+        reviews: 3900
+      }
+    ]
+  },
   
 ];
 // ADD THIS 👇
