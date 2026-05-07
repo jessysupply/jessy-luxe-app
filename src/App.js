@@ -1788,7 +1788,11 @@ Stop Getting Scammed<br />
       🔥 Featured Partner Deal
     </div>
     <div style={{ fontSize: 13, color: "#4a3a2a" }}>
-      ISEE HAIR — Use code <strong>JESSY</strong> for an extra 12% OFF
+    🔥 VIP Members Only
+
+Unlock hidden vendor discount codes,
+exclusive partner deals, and premium
+hair savings after joining VIP.
     </div>
   </div>
 
