@@ -1736,6 +1736,82 @@ Stop Getting Scammed<br />
   border: "1px solid #e6d2bd",
   textAlign: "center"
 }}>
+  {/* VIP Section */}
+<div style={{
+  maxWidth: 650,
+  margin: "24px auto",
+  padding: "24px",
+  background: "linear-gradient(135deg, #fff8ee 0%, #f3e2c8 100%)",
+  border: "1px solid #d8b98c",
+  borderRadius: 22,
+  textAlign: "center",
+  boxShadow: "0 8px 24px rgba(0,0,0,0.08)"
+}}>
+  <div style={{
+    fontSize: 11,
+    letterSpacing: 2,
+    textTransform: "uppercase",
+    color: "#8a5a2a",
+    fontWeight: 900,
+    marginBottom: 8
+  }}>
+    Jessy Luxe VIP
+  </div>
+
+  <h2 style={{
+    fontFamily: "'Playfair Display', serif",
+    fontSize: isMobile ? 28 : 36,
+    color: "#1a3a1a",
+    margin: "0 0 10px"
+  }}>
+    Unlock Exclusive Hair Deals
+  </h2>
+
+  <p style={{
+    fontSize: 14,
+    color: "#4a3a2a",
+    lineHeight: 1.6,
+    margin: "0 auto 16px",
+    maxWidth: 520
+  }}>
+    Start your FREE 5-day trial. Then only $3.99/month. VIP members get exclusive vendor discounts, private beauty rewards, early access to deals, and special partner codes.
+  </p>
+
+  <div style={{
+    background: "#ffffff",
+    border: "1px solid #d8b98c",
+    borderRadius: 16,
+    padding: "14px",
+    marginBottom: 18
+  }}>
+    <div style={{ fontSize: 13, fontWeight: 900, color: "#1a3a1a", marginBottom: 6 }}>
+      🔥 Featured Partner Deal
+    </div>
+    <div style={{ fontSize: 13, color: "#4a3a2a" }}>
+      ISEE HAIR — Use code <strong>JESSY</strong> for an extra 12% OFF
+    </div>
+  </div>
+
+  <button
+    onClick={() => window.open("https://buy.stripe.com/test_28EaEZfoR0Sd6fk5xe4ow00", "_blank")}
+    style={{
+      background: "#2a6a2a",
+      color: "#ffffff",
+      border: "none",
+      borderRadius: 30,
+      padding: "12px 26px",
+      fontWeight: 900,
+      fontSize: 14,
+      cursor: "pointer"
+    }}
+  >
+    Start Free Trial
+  </button>
+
+  <div style={{ fontSize: 11, color: "#7a6a5a", marginTop: 10 }}>
+    5-day free trial • $3.99/month after • Cancel anytime
+  </div>
+</div>
   <h2 style={{ fontSize: 26, marginBottom: 10, color: "#2e2010" }}>
     Wig Size Chart
   </h2>
