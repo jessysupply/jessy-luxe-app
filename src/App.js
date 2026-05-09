@@ -956,6 +956,35 @@ shopLink: "https://www.headcovers.com/wigs-hair",
       }
     ]
   },
+  {
+    id: 103,
+    name: "Lolly Hair",
+    logo: "LH",
+    origin: "China",
+    tags: ["Luxury", "Human Hair", "Wigs"],
+    website: "https://www.lollyhair.com",
+    shopLink: "https://www.awin1.com/cread.php?awinmid=49731&awinaffid=2866481",
+    products: [
+      {
+        type: "100% Human",
+        category: "human",
+        texture: "Glueless Lace Wig",
+        lengths: "12\"–30\"",
+        price: "$120–$350",
+        rating: 4.5,
+        reviews: 3100
+      },
+      {
+        type: "100% Human",
+        category: "human",
+        texture: "Body Wave Bundles",
+        lengths: "14\"–32\"",
+        price: "$95–$300",
+        rating: 4.4,
+        reviews: 2700
+      }
+    ]
+  },
   
 ];
 // ADD THIS 👇
