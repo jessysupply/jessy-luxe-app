@@ -993,7 +993,7 @@ const DEAL_OF_THE_WEEK = {
   deal: "Exclusive VIP Savings Available",
   description: "Top-rated 100% human hair extensions trusted by the Jessy Luxe Beauty community. Jessy Luxe VIP members unlock an extra exclusive discount.",
   shopLink: "PASTE_YOUR_ISEE_AFFILIATE_LINK_HERE",
-  endDate: new Date("2026-05-08T23:59:59"),
+  endDate: new Date("2026-05-12T23:59:59"),
 };
 
 // EXISTING CODE 👇
