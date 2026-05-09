@@ -989,11 +989,11 @@ shopLink: "https://www.headcovers.com/wigs-hair",
 ];
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
-  vendorName: "UNice Hair",
-  deal: "Up to 30% off Human Hair Wigs",
-  description: "Premium 100% human hair wigs at unbeatable prices this week only! HD lace fronts, body wave, straight and more!",
-  shopLink: "https://www.awin1.com/cread.php?awinmid=39912&awinaffid=2866481",
-  endDate: new Date("2026-05-11"),
+  vendorName: "ISEE Hair",
+  deal: "Exclusive VIP Savings Available",
+  description: "Top-rated 100% human hair extensions trusted by the Jessy Luxe Beauty community. Jessy Luxe VIP members unlock an extra exclusive discount.",
+  shopLink: "PASTE_YOUR_ISEE_AFFILIATE_LINK_HERE",
+  endDate: new Date("2026-05-08T23:59:59"),
 };
 
 // EXISTING CODE 👇
@@ -1040,7 +1040,7 @@ function DealOfTheWeek() {
       ) : (
         <div style={{ color: "#c8a97e", marginBottom: 24 }}>Deal has ended — check back soon!</div>
       )}
-      <a href={deal.shopLink} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#c8a97e", color: "#1a1a1a", fontWeight: "bold", fontSize: 15, padding: "12px 32px", borderRadius: 30, textDecoration: "none", letterSpacing: 1 }}>Shop This Deal →</a>
+      <a href={deal.shopLink} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#c8a97e", color: "#1a1a1a", fontWeight: "bold", fontSize: 15, padding: "12px 32px", borderRadius: 30, textDecoration: "none", letterSpacing: 1 }}>Unlock VIP Deal→</a>
     </div>
   );
 }
