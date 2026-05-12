@@ -1731,7 +1731,7 @@ export default function App() {
     textTransform: "uppercase"
   }}>Beauty</div>
 </div>
-        <h1 style={{
+<h1 style={{
   fontFamily: "'Playfair Display', serif",
   fontWeight: 900,
   fontSize: isMobile ? "22px" : "clamp(22px, 3vw, 36px)",
@@ -1739,21 +1739,17 @@ export default function App() {
   marginBottom: "10px",
   color: "#1a3a1a"
 }}>
-Stop Getting Scammed<br />
-  <span style={{ color: "#2a5a2a" }}>
-    Buying Hair Online
-  </span>
+  Your One-Stop Hair Vendor Marketplace
 </h1>
-      
+
 <p style={{
-  color: "#3a5a3a",
-  fontSize: isMobile ? "15px" : "18px",
-  maxWidth: "620px",
+  fontSize: isMobile ? "16px" : "22px",
+  opacity: 0.9,
+  maxWidth: "700px",
   margin: "0 auto",
-  lineHeight: 1.8,
   textAlign: "center"
 }}>
- Compare 60+ Hair Vendors, See Real Reviews & Find Trusted Hair in Seconds.
+  Different Vendors. Different Textures. Endless Styles.
 </p>
       </div>
       <div style={{
