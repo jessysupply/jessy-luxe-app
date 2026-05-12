@@ -1028,17 +1028,23 @@ shopLink: "https://www.headcovers.com/wigs-hair",
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
   title: "Graduation Season Sale 🎓",
-  vendor: "ZLIKE Hair",
-  description: "Celebrate Your Big Moment ✨",
-  
-  deals: [
-    "12% OFF Sitewide — Code: GS12",
-    "EXTRA $30 OFF Over $220 — Code: GS30",
-    "EXTRA $60 OFF Over $420 — Code: GS60",
-    "Prom Queen Must-Have 👑",
-    "300% Density Wigs — 50% OFF + Extra 25%",
-    "Next-Level 360 Wig — Starting at $88"
-  ],
+vendor: "ZLIKE Hair",
+description: "Celebrate Your Big Moment ✨",
+
+deals: [
+  "🔥 12% OFF Sitewide",
+  "💸 EXTRA $30 OFF Orders Over $220",
+  "💎 EXTRA $60 OFF Orders Over $420",
+  "👑 Prom Queen Must-Have",
+  "✨ 300% Density Wigs — 50% OFF + Extra 25%",
+  "💖 Next-Level 360 Wig — Starting at $88"
+],
+
+discountCodes: [
+  "Use Code: GS12",
+  "Use Code: GS30",
+  "Use Code: GS60"
+],
 
   website: "https://zlikehair.com/collections/best-sellers",
 
