@@ -425,7 +425,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
   },
   {
     id: 46, name: "Sunber Hair", logo: "SB", origin: "China", tags: ["Human Hair", "Wigs"],
-    website: "https://www.sunberhair.com/collections/all",
+    website: "https://www.awin1.com/cread.php?awinmid=30171&awinaffid=2866481",
     shopLink: "https://www.amazon.com/s?k=sunber+hair&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "HD Lace Front Wig", lengths: "10\"–30\"", price: "$60–$250", rating: 4.5, reviews: 3100 },
@@ -499,7 +499,7 @@ shopLink:"https://www.virgincityhair.com/collections/all",
   {
     
     id: 54, name: "Klaiyi Hair", logo: "KL", origin: "China", tags: ["Human Hair", "Glueless"],
-    website: "https://www.klaiyihair.com/collections/all", 
+    website: "https://www.awin1.com/cread.php?awinmid=30175&awinaffid=2866481",
     shopLink: "https://www.amazon.com/s?k=klaiyi+hair&tag=jessyluxebeau-20",
     products: [
       { type: "100% Human", category: "human", texture: "Glueless Lace Wig", lengths: "10\"–30\"", price: "$65–$260", rating: 4.5, reviews: 2700 },
@@ -982,6 +982,44 @@ shopLink: "https://www.headcovers.com/wigs-hair",
         price: "$95–$300",
         rating: 4.4,
         reviews: 2700
+      }
+    ]
+  },
+  {
+    id: 104,
+    name: "Amanda Hair",
+    logo: "AH",
+    origin: "China",
+    tags: ["Human Hair", "Wigs", "Bundles", "Closures", "Frontal"],
+    website: "https://www.awin1.com/cread.php?awinmid=98061&awinaffid=2866481",
+    shopLink: "https://www.awin1.com/cread.php?awinmid=98061&awinaffid=2866481",
+    products: [
+      {
+        type: "Wig",
+        texture: "Body Wave",
+        lengths: "16-30 inches",
+        price: "$$$",
+        rating: 4.7,
+        reviews: 120
+      }
+    ]
+  },
+  {
+    id: 105,
+    name: "OQ Hair",
+    logo: "OQ",
+    origin: "China",
+    tags: ["Human Hair", "Wigs", "Bundles", "Straight", "Body Wave"],
+    website: "https://oqhair.com",
+    shopLink: "https://oqhair.com",
+    products: [
+      {
+        type: "Wig",
+        texture: "Straight",
+        lengths: "14-32 inches",
+        price: "$$$",
+        rating: 4.6,
+        reviews: 95
       }
     ]
   },
