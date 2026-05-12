@@ -1027,11 +1027,37 @@ shopLink: "https://www.headcovers.com/wigs-hair",
 ];
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
-  vendorName: "ISEE Hair",
-  deal: "Exclusive VIP Savings Available",
-  description: "Top-rated 100% human hair extensions trusted by the Jessy Luxe Beauty community. Jessy Luxe VIP members unlock an extra exclusive discount.",
-  shopLink: "PASTE_YOUR_ISEE_AFFILIATE_LINK_HERE",
-  endDate: new Date("2026-05-12T23:59:59"),
+  title: "Graduation Season Sale 🎓",
+  vendor: "ZLIKE Hair",
+  description: "Celebrate Your Big Moment ✨",
+  
+  deals: [
+    "12% OFF Sitewide — Code: GS12",
+    "EXTRA $30 OFF Over $220 — Code: GS30",
+    "EXTRA $60 OFF Over $420 — Code: GS60",
+    "Prom Queen Must-Have 👑",
+    "300% Density Wigs — 50% OFF + Extra 25%",
+    "Next-Level 360 Wig — Starting at $88"
+  ],
+
+  website: "https://zlikehair.com/collections/best-sellers",
+
+  links: [
+    {
+      label: "Best Sellers",
+      url: "https://zlikehair.com/collections/best-sellers"
+    },
+    {
+      label: "300% Density Wigs",
+      url: "https://zlikehair.com/pages/email-exclusive-offer"
+    },
+    {
+      label: "360 Lace Wigs",
+      url: "https://zlikehair.com/collections/360-lace-wigs?sort_by=water-wave-invisi-band-360-lace-frontal-wigs-pre-cut-human-hair-wigs-bleached-knots-1"
+    }
+  ],
+
+  endDate: new Date("2026-05-16T23:59:59")
 };
 
 // EXISTING CODE 👇
