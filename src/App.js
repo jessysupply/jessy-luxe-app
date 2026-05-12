@@ -1026,117 +1026,93 @@ shopLink: "https://www.headcovers.com/wigs-hair",
   
 ];
 // ADD THIS 👇
-<div style={{
-  background: "linear-gradient(135deg, #063b12, #0b5c22)",
-  padding: isMobile ? "35px 16px" : "50px 24px",
-  textAlign: "center",
-  color: "white"
-}}>
+const DEAL_OF_THE_WEEK = {
+  title: "Graduation Season Sale 🎓",
+vendor: "ZLIKE Hair",
+description: "Celebrate Your Big Moment ✨",
 
-  <div style={{
-    display: "inline-block",
-    background: "#f7d98b",
-    color: "#111",
-    padding: "10px 28px",
-    borderRadius: "30px",
-    fontWeight: 900,
-    letterSpacing: "3px",
-    marginBottom: "20px"
-  }}>
-    🔥 DEAL OF THE WEEK
-  </div>
+deals: [
+  "🔥 12% OFF Sitewide",
+  "💸 EXTRA $30 OFF Orders Over $220",
+  "💎 EXTRA $60 OFF Orders Over $420",
+  "👑 Prom Queen Must-Have",
+  "✨ 300% Density Wigs — 50% OFF + Extra 25%",
+  "💖 Next-Level 360 Wig — Starting at $88"
+],
 
-  <h2 style={{
-    fontFamily: "'Playfair Display', serif",
-    fontSize: isMobile ? "32px" : "58px",
-    margin: "10px 0",
-    color: "#f7d98b"
-  }}>
-    Graduation Season Sale 🎓
-  </h2>
+discountCodes: [
+  "Use Code: GS12",
+  "Use Code: GS30",
+  "Use Code: GS60"
+],
 
-  <h3 style={{
-    fontSize: isMobile ? "18px" : "26px",
-    marginBottom: "25px",
-    color: "#ffffff"
-  }}>
-    Celebrate Your Big Moment ✨
-  </h3>
+  website: "https://zlikehair.com/collections/best-sellers",
 
-  <div style={{
-    maxWidth: "900px",
-    margin: "0 auto 30px",
-    background: "#fffaf0",
-    color: "#063b12",
-    borderRadius: "22px",
-    overflow: "hidden",
-    border: "2px solid #f7d98b"
-  }}>
+  links: [
+    {
+      label: "Best Sellers",
+      url: "https://zlikehair.com/collections/best-sellers"
+    },
+    {
+      label: "300% Density Wigs",
+      url: "https://zlikehair.com/pages/email-exclusive-offer"
+    },
+    {
+      label: "360 Lace Wigs",
+      url: "https://zlikehair.com/collections/360-lace-wigs?sort_by=water-wave-invisi-band-360-lace-frontal-wigs-pre-cut-human-hair-wigs-bleached-knots-1"
+    }
+  ],
 
-    {[
-      "🔥 12% OFF Sitewide — Code: GS12",
-      "💸 EXTRA $30 OFF Orders Over $220 — Code: GS30",
-      "💎 EXTRA $60 OFF Orders Over $420 — Code: GS60",
-      "👑 Prom Queen Must-Have",
-      "✨ 300% Density Wigs — 50% OFF + Extra 25%",
-      "💖 Next-Level 360 Wig — Invisible Lace Breathable Wear — Starting at $88"
-    ].map((deal, index) => (
-      <div key={index} style={{
-        padding: isMobile ? "14px 16px" : "18px 28px",
-        borderBottom: index === 5 ? "none" : "1px solid #e0c36a",
-        fontSize: isMobile ? "16px" : "22px",
-        fontWeight: 800,
-        textAlign: "left"
-      }}>
-        {deal}
-      </div>
-    ))}
-  </div>
+  endDate: new Date("2026-05-16T23:59:59")
+};
 
-  <p style={{
-    fontSize: "18px",
-    fontWeight: 700,
-    marginBottom: "15px"
-  }}>
-    Hurry! This Deal Ends In:
-  </p>
-
-  <div style={{
-    display: "flex",
-    justifyContent: "center",
-    gap: isMobile ? "8px" : "16px",
-    flexWrap: "wrap"
-  }}>
-    {[
-      { label: "DAYS", value: timeLeft.days },
-      { label: "HOURS", value: timeLeft.hours },
-      { label: "MINS", value: timeLeft.minutes },
-      { label: "SECS", value: timeLeft.seconds }
-    ].map((item, index) => (
-      <div key={index} style={{
-        background: "rgba(255,255,255,0.15)",
-        border: "1px solid #f7d98b",
-        borderRadius: "14px",
-        padding: isMobile ? "10px 14px" : "14px 24px",
-        minWidth: isMobile ? "65px" : "90px"
-      }}>
-        <div style={{
-          fontSize: isMobile ? "26px" : "42px",
-          fontWeight: 900
-        }}>
-          {String(item.value).padStart(2, "0")}
+// EXISTING CODE 👇
+const CATEGORY_CONFIG = {
+  human:     { label: "100% Human",  color: "#2a6a2a", bg: "#d8ead8" },
+  synthetic: { label: "Synthetic",   color: "#2a5a8a", bg: "#d8e8f0" },
+  mixed:     { label: "Blend",       color: "#6a2a8a", bg: "#ead8f0" },
+};
+// ADD THIS 👇
+function DealOfTheWeek() {
+  const deal = DEAL_OF_THE_WEEK;
+  const [timeLeft, setTimeLeft] = React.useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  React.useEffect(() => {
+    function calcTime() {
+      const diff = deal.endDate - new Date();
+      if (diff <= 0) return setTimeLeft({ expired: true });
+      setTimeLeft({
+        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
+        minutes: Math.floor((diff / (1000 * 60)) % 60),
+        seconds: Math.floor((diff / 1000) % 60),
+      });
+    }
+    calcTime();
+    const timer = setInterval(calcTime, 1000);
+    return () => clearInterval(timer);
+  }, []);
+  return (
+    <div style={{ background: "linear-gradient(135deg, #2a6a2a, #1a4a1a)", borderRadius: 16, padding: "32px 24px", margin: "24px 0", textAlign: "center", boxShadow: "0 4px 20px rgba(42,106,42,0.3)" }}>
+      <div style={{ display: "inline-block", background: "#c8a97e", color: "#1a1a1a", fontFamily: "Playfair Display, serif", fontWeight: "bold", fontSize: 13, letterSpacing: 3, padding: "6px 18px", borderRadius: 20, marginBottom: 16, textTransform: "uppercase" }}>🔥 Deal of the Week</div>
+      <div style={{ fontFamily: "Playfair Display, serif", fontSize: 28, fontWeight: "bold", color: "#fff", marginBottom: 8 }}>{deal.vendorName}</div>
+      <div style={{ fontSize: 20, color: "#c8a97e", fontWeight: "bold", marginBottom: 8 }}>{deal.deal}</div>
+      <div style={{ color: "#d4e8d4", fontSize: 14, maxWidth: 400, margin: "0 auto 24px" }}>{deal.description}</div>
+      {!timeLeft.expired ? (
+        <div style={{ display: "flex", justifyContent: "center", gap: 12, marginBottom: 24 }}>
+          {[{label:"Days",value:timeLeft.days},{label:"Hours",value:timeLeft.hours},{label:"Mins",value:timeLeft.minutes},{label:"Secs",value:timeLeft.seconds}].map(({label,value}) => (
+            <div key={label} style={{ background: "rgba(255,255,255,0.15)", borderRadius: 10, padding: "10px 16px", minWidth: 60 }}>
+              <div style={{ fontSize: 24, fontWeight: "bold", color: "#fff" }}>{String(value).padStart(2,"0")}</div>
+              <div style={{ fontSize: 11, color: "#a8d8a8", textTransform: "uppercase" }}>{label}</div>
+            </div>
+          ))}
         </div>
-        <div style={{
-          fontSize: "13px",
-          fontWeight: 700
-        }}>
-          {item.label}
-        </div>
-      </div>
-    ))}
-  </div>
-</div>
-  
+      ) : (
+        <div style={{ color: "#c8a97e", marginBottom: 24 }}>Deal has ended — check back soon!</div>
+      )}
+      <a href={deal.shopLink} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#c8a97e", color: "#1a1a1a", fontWeight: "bold", fontSize: 15, padding: "12px 32px", borderRadius: 30, textDecoration: "none", letterSpacing: 1 }}>Unlock VIP Deal→</a>
+    </div>
+  );
+}
 
 function avgRating(products) {
   return products.reduce((a, p) => a + p.rating, 0) / products.length;
