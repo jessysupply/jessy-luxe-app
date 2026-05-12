@@ -1076,10 +1076,16 @@ const CATEGORY_CONFIG = {
 function DealOfTheWeek() {
   const deal = DEAL_OF_THE_WEEK;
   const [timeLeft, setTimeLeft] = React.useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
   React.useEffect(() => {
     function calcTime() {
       const diff = deal.endDate - new Date();
-      if (diff <= 0) return setTimeLeft({ expired: true });
+
+      if (diff <= 0) {
+        setTimeLeft({ expired: true, days: 0, hours: 0, minutes: 0, seconds: 0 });
+        return;
+      }
+
       setTimeLeft({
         days: Math.floor(diff / (1000 * 60 * 60 * 24)),
         hours: Math.floor((diff / (1000 * 60 * 60)) % 24),
@@ -1087,65 +1093,123 @@ function DealOfTheWeek() {
         seconds: Math.floor((diff / 1000) % 60),
       });
     }
+
     calcTime();
     const timer = setInterval(calcTime, 1000);
     return () => clearInterval(timer);
-  }, []);
-  return (
-    <div style={{ background: "linear-gradient(135deg, #2a6a2a, #1a4a1a)", borderRadius: 16, padding: "32px 24px", margin: "24px 0", textAlign: "center", boxShadow: "0 4px 20px rgba(42,106,42,0.3)" }}>
-      <div style={{ display: "inline-block", background: "#c8a97e", color: "#1a1a1a", fontFamily: "Playfair Display, serif", fontWeight: "bold", fontSize: 13, letterSpacing: 3, padding: "6px 18px", borderRadius: 20, marginBottom: 16, textTransform: "uppercase" }}>🔥 Deal of the Week</div>
-      <div style={{ fontFamily: "Playfair Display, serif", fontSize: 28, fontWeight: "bold", color: "#fff", marginBottom: 8 }}>{deal.vendorName}</div>
-      <div style={{ fontSize: 20, color: "#c8a97e", fontWeight: "bold", marginBottom: 8 }}>{deal.deal}</div>
-      <div style={{ color: "#d4e8d4", fontSize: 14, maxWidth: 400, margin: "0 auto 24px" }}>{deal.description}</div>
-      {!timeLeft.expired ? (
-        <div style={{ display: "flex", justifyContent: "center", gap: 12, marginBottom: 24 }}>
-          {[{label:"Days",value:timeLeft.days},{label:"Hours",value:timeLeft.hours},{label:"Mins",value:timeLeft.minutes},{label:"Secs",value:timeLeft.seconds}].map(({label,value}) => (
-            <div key={label} style={{ background: "rgba(255,255,255,0.15)", borderRadius: 10, padding: "10px 16px", minWidth: 60 }}>
-              <div style={{ fontSize: 24, fontWeight: "bold", color: "#fff" }}>{String(value).padStart(2,"0")}</div>
-              <div style={{ fontSize: 11, color: "#a8d8a8", textTransform: "uppercase" }}>{label}</div>
-            </div>
-          ))}
-        </div>
-      ) : (
-        <div style={{ color: "#c8a97e", marginBottom: 24 }}>Deal has ended — check back soon!</div>
-      )}
-      <a href={deal.shopLink} target="_blank" rel="noopener noreferrer" style={{ display: "inline-block", background: "#c8a97e", color: "#1a1a1a", fontWeight: "bold", fontSize: 15, padding: "12px 32px", borderRadius: 30, textDecoration: "none", letterSpacing: 1 }}>Unlock VIP Deal→</a>
-    </div>
-  );
-}
+  }, [deal.endDate]);
 
-function avgRating(products) {
-  return products.reduce((a, p) => a + p.rating, 0) / products.length;
-}
-function StarRating({ rating, size = 13 }) {
   return (
-    <span style={{ letterSpacing: 1 }}>
-      {[1,2,3,4,5].map(s => (
-        <span key={s} style={{ color: s <= Math.round(rating) ? "#c8a97e" : "#3a2e2e", fontSize: size }}>&#9733;</span>
-      ))}
-      <span style={{ color: "#a08060", fontSize: size - 1, marginLeft: 4 }}>{rating.toFixed(1)}</span>
-    </span>
-    );
-  }
-function InteractiveStars({ value, onChange }) {
-  const [hover, setHover] = useState(0);
-  return (
-    <div style={{ display: "flex", gap: 6 }}>
-      {[1,2,3,4,5].map(s => (
-        <span
-          key={s}
-          onClick={() => onChange(s)}
-          onMouseEnter={() => setHover(s)}
-          onMouseLeave={() => setHover(0)}
-          style={{
-            fontSize: 30, cursor: "pointer",
-            color: s <= (hover || value) ? "#c8a97e" : "#2a1f1a",
-            transition: "color 0.12s, transform 0.12s",
-            transform: s <= (hover || value) ? "scale(1.25)" : "scale(1)",
-            display: "inline-block", userSelect: "none",
-          }}
-        >&#9733;</span>
-      ))}
+    <div style={{
+      background: "linear-gradient(135deg, #063b12, #0b5c22)",
+      borderRadius: 16,
+      padding: "32px 24px",
+      margin: "24px 0",
+      textAlign: "center",
+      boxShadow: "0 4px 20px rgba(42,106,42,0.3)"
+    }}>
+      <div style={{
+        display: "inline-block",
+        background: "#f7d98b",
+        color: "#1a1a1a",
+        fontFamily: "Playfair Display, serif",
+        fontWeight: "bold",
+        fontSize: 13,
+        letterSpacing: 3,
+        padding: "6px 18px",
+        borderRadius: 20,
+        marginBottom: 16,
+        textTransform: "uppercase"
+      }}>
+        🔥 Deal of the Week
+      </div>
+
+      <h2 style={{
+        fontFamily: "Playfair Display, serif",
+        fontSize: 34,
+        fontWeight: "bold",
+        color: "#f7d98b",
+        margin: "0 0 8px"
+      }}>
+        {deal.title}
+      </h2>
+
+      <div style={{
+        fontSize: 18,
+        color: "#ffffff",
+        fontWeight: "bold",
+        marginBottom: 8
+      }}>
+        {deal.vendor}
+      </div>
+
+      <div style={{
+        color: "#d4e8d4",
+        fontSize: 16,
+        maxWidth: 500,
+        margin: "0 auto 22px"
+      }}>
+        {deal.description}
+      </div>
+
+      <div style={{
+        maxWidth: 720,
+        margin: "0 auto 24px",
+        background: "#fffaf0",
+        color: "#063b12",
+        borderRadius: 18,
+        overflow: "hidden",
+        border: "2px solid #f7d98b"
+      }}>
+        {deal.deals.map((item, index) => (
+          <div key={index} style={{
+            padding: "14px 18px",
+            borderBottom: index === deal.deals.length - 1 ? "none" : "1px solid #e0c36a",
+            fontSize: 16,
+            fontWeight: 800,
+            textAlign: "left"
+          }}>
+            {item}
+          </div>
+        ))}
+      </div>
+
+      <div style={{
+        color: "#ffffff",
+        fontWeight: "bold",
+        marginBottom: 12
+      }}>
+        Hurry! This Deal Ends In:
+      </div>
+
+      <div style={{
+        display: "flex",
+        justifyContent: "center",
+        gap: 12,
+        flexWrap: "wrap"
+      }}>
+        {[
+          { label: "Days", value: timeLeft.days || 0 },
+          { label: "Hours", value: timeLeft.hours || 0 },
+          { label: "Mins", value: timeLeft.minutes || 0 },
+          { label: "Secs", value: timeLeft.seconds || 0 }
+        ].map(({ label, value }) => (
+          <div key={label} style={{
+            background: "rgba(255,255,255,0.15)",
+            border: "1px solid #f7d98b",
+            borderRadius: 10,
+            padding: "10px 16px",
+            minWidth: 60
+          }}>
+            <div style={{ fontSize: 24, fontWeight: "bold", color: "#fff" }}>
+              {String(value).padStart(2, "0")}
+            </div>
+            <div style={{ fontSize: 11, color: "#a8d8a8", textTransform: "uppercase" }}>
+              {label}
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
