@@ -1391,7 +1391,7 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
         </div>
         
         <div style={{ textAlign: "center", flexShrink: 0 }}>
-        <div style={{ color: "#2a6a2a", fontSize: isMobile ? 24 : 22, fontFamily: "'Playfair Display', serif", fontWeight: 900 }}>{avg}</div>
+        <div style={{ color: "#2a6a2a", fontSize: isMobile ? 24 : 22, fontFamily: "'Playfair Display', serif", fontWeight: 900 }}>{avgDisplay}</div>
           <div style={{ color: "#4a7a4a", fontSize: 9, letterSpacing: 1 }}>AVG</div>
         </div>
         <div style={{ color: "#3a2a20", fontSize: 15, transition: "transform 0.3s", transform: isExpanded ? "rotate(180deg)" : "rotate(0deg)", flexShrink: 0 }}>&#9660;</div>
