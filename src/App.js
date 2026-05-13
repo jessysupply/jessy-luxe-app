@@ -1265,11 +1265,7 @@ function ReviewBubble({ review, delay }) {
 
 function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile, compareList = [], onCompare }) {
   
-  function avgRating(products) {
-    if (!products || products.length === 0) return 0;
-    const total = products.reduce((sum, p) => sum + (p.rating || 0), 0);
-    return total / products.length;
-  }
+
   const myReviews = userReviews.filter(r => r.supplierId === supplier.id);
   const getBadge = () => {
     const avg = avgRating(supplier.products);
