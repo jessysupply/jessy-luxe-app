@@ -1123,7 +1123,6 @@ function DealOfTheWeek() {
       }}>
         🔥 Deal of the Week
       </div>
-
       <h2 style={{
         fontFamily: "Playfair Display, serif",
         fontSize: 34,
@@ -1263,7 +1262,14 @@ function ReviewBubble({ review, delay }) {
     </div>
   );
 }
+
 function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile, compareList = [], onCompare }) {
+  
+  function avgRating(products) {
+    if (!products || products.length === 0) return 0;
+    const total = products.reduce((sum, p) => sum + (p.rating || 0), 0);
+    return total / products.length;
+  }
   const myReviews = userReviews.filter(r => r.supplierId === supplier.id);
   const getBadge = () => {
     const avg = avgRating(supplier.products);
@@ -1275,7 +1281,7 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
     return null;
   };
   const badge = getBadge();
-  const avg = avgRating(supplier.products).toFixed(1);
+  const avgDisplay = avgRating(supplier.products).toFixed(1);
   const hasHuman = supplier.products.some(p => p.category === "human");
   const hasSynth  = supplier.products.some(p => p.category === "synthetic");
   const hasMixed  = supplier.products.some(p => p.category === "mixed");
@@ -1637,6 +1643,13 @@ export default function App() {
       return saved ? JSON.parse(saved) : [];
     } catch { return []; }
   });
+  const avgRating = (products = []) => {
+    if (!Array.isArray(products) || products.length === 0) return 0;
+
+    return products.reduce((sum, product) => {
+      return sum + (product.rating || 0);
+    }, 0) / products.length;
+  };
   const [compareList, setCompareList] = useState([]);
   const [showQuiz, setShowQuiz] = useState(false);
   const [quizStep, setQuizStep] = useState(0);
