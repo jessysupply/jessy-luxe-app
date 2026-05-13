@@ -1262,7 +1262,10 @@ function ReviewBubble({ review, delay }) {
     </div>
   );
 }
-
+function avgRating(products = []) {
+  if (!Array.isArray(products) || products.length === 0) return 0;
+  return products.reduce((sum, p) => sum + (p.rating || 0), 0) / products.length;
+}
 function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile, compareList = [], onCompare }) {
   
 
