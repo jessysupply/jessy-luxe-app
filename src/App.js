@@ -1023,6 +1023,25 @@ shopLink: "https://www.headcovers.com/wigs-hair",
       }
     ]
   },
+  {
+    id: 1001,
+    name: "MegaLook Hair",
+    logo: "ML",
+    origin: "China",
+    tags: ["Human Hair", "Wigs", "Bundles", "Closures", "Frontals"],
+    website: "https://www.awin1.com/cread.php?awinmid=35697&awinaffid=2866481&ued=https%3A%2F%2Fjessyluxebeauty.com%2F",
+    shopLink: "https://www.awin1.com/cread.php?awinmid=35697&awinaffid=2866481&ued=https%3A%2F%2Fjessyluxebeauty.com%2F",
+    products: [
+      {
+        type: "Wig",
+        texture: "Body Wave",
+        lengths: "16-32 inches",
+        price: "$$$",
+        rating: 4.7,
+        reviews: 150
+      }
+    ]
+  },
   
 ];
 // ADD THIS 👇
