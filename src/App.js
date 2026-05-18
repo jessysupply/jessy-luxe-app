@@ -1529,46 +1529,38 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
   const getBadge = () => {
     const avg = avgRating(supplier.products);
     const totalReviews = supplier.products.reduce((a, p) => a + p.reviews, 0);
-  
-    if (avg >= 4.8)
+     if (avg >= 4.8)
       return {
         label: "👑 Elite Vendor",
         color: "#8a6a2a",
         bg: "#f3ead8"
       };
-  
-    if (avg >= 4.6)
+     if (avg >= 4.6)
       return {
         label: "⭐ Most Trusted",
         color: "#2a6a2a",
         bg: "#d8ead8"
       };
-  
     if (totalReviews >= 5000)
       return {
         label: "🔥 Viral Favorite",
         color: "#8a2a2a",
         bg: "#f0d8d8"
       };
-  
     if (supplier.tags.includes("Luxury"))
       return {
         label: "💎 Luxury Pick",
         color: "#5a2a8a",
         bg: "#ead8f0"
       };
-  
-    return null;
+   return null;
   };
   
   const badge = getBadge();
-  
   const avgDisplay = avgRating(supplier.products).toFixed(1);
-  
   const hasHuman = supplier.products.some(p => p.category === "human");
   const hasSynth = supplier.products.some(p => p.category === "synthetic");
   const hasMixed = supplier.products.some(p => p.category === "mixed");
-  
   return (
     <div style={{
       background: "linear-gradient(135deg, #ffffff 0%, #f8f8f6 100%)",
@@ -2531,9 +2523,47 @@ borderRadius: "999px",
       <div style={{ fontSize: 14 }}>
         No exact match — try another keyword like “Body Wave” or “Straight.”
       </div>
-  
-            
-          </div>
+      <div style={{
+  margin: "34px 0 20px"
+}}>
+  <div style={{
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 10
+  }}>
+    <h2 style={{
+      fontSize: isMobile ? 24 : 30,
+      fontWeight: 900,
+      color: "#1a3a1a",
+      margin: 0,
+      fontFamily: "'Playfair Display', serif"
+    }}>
+      🔥 Trending Right Now
+    </h2>
+
+    <span style={{
+      background: "#d8ead8",
+      color: "#2a6a2a",
+      padding: "6px 12px",
+      borderRadius: 30,
+      fontSize: 11,
+      fontWeight: 700
+    }}>
+      Updated Daily
+    </span>
+  </div>
+
+  <p style={{
+    color: "#5a4a40",
+    fontSize: 14,
+    lineHeight: 1.6,
+    marginBottom: 22
+  }}>
+    Most viewed, highest-rated, and viral hair vendors trending this week 👀✨
+  </p>
+</div>
+     </div>
         ) : paginatedSuppliers.map(s => (
           <SupplierCard isMobile={isMobile}
             key={s.id} supplier={s}
