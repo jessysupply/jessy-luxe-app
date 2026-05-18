@@ -1276,8 +1276,50 @@ const CATEGORY_CONFIG = {
     label: "Wigs",
     color: "#2a3a8a",
     bg: "#d8def0"
-  }
+  },
 };
+const TEXTURE_GUIDE = [
+  {
+    name: "Straight",
+    description: "Smooth sleek texture with little to no wave."
+  },
+  {
+    name: "Body Wave",
+    description: "Soft loose S-pattern waves. One of the most popular textures."
+  },
+  {
+    name: "Deep Wave",
+    description: "Defined deep curls with lots of volume and texture."
+  },
+  {
+    name: "Water Wave",
+    description: "Lightweight wet-look curls with a soft natural finish."
+  },
+  {
+    name: "Curly",
+    description: "Classic full curls with bounce and movement."
+  },
+  {
+    name: "Kinky Curly",
+    description: "Tighter curls that closely match natural textured hair."
+  },
+  {
+    name: "Yaki Straight",
+    description: "Straight texture designed to mimic relaxed natural hair."
+  },
+  {
+    name: "Bone Straight",
+    description: "Ultra sleek pin-straight texture with a silky finish."
+  },
+  {
+    name: "Loose Wave",
+    description: "Relaxed flowing waves with a soft glam appearance."
+  },
+  {
+    name: "Afro Kinky",
+    description: "Dense textured coils inspired by natural afro hair."
+  }
+];
 // ADD THIS 👇
 function DealOfTheWeek() {
   const deal = DEAL_OF_THE_WEEK;
@@ -2591,6 +2633,33 @@ onCompare={toggleCompare}
   <span style={{ color: "#2a3a8a", fontWeight: 700 }}>● Wigs</span>
   <span style={{ marginLeft: 10 }}>
     — Full hair units available in lace front, glueless, HD lace, and ready-to-wear styles.
+  </span>
+</div>
+<div>
+  <span style={{ color: "#7a4b2a", fontWeight: 700 }}>● Weft Hair</span>
+  <span style={{ marginLeft: 10 }}>
+    — Hair sewn onto a track used for sew-ins, custom wigs, and extension installs.
+  </span>
+</div>
+
+<div>
+  <span style={{ color: "#2a7a6a", fontWeight: 700 }}>● Tape-In Extensions</span>
+  <span style={{ marginLeft: 10 }}>
+    — Semi-permanent extensions attached with adhesive tape for a lightweight natural blend.
+  </span>
+</div>
+
+<div>
+  <span style={{ color: "#7a2a5a", fontWeight: 700 }}>● Micro Bead Extensions</span>
+  <span style={{ marginLeft: 10 }}>
+    — Individual extensions attached using tiny silicone-lined beads without glue or heat.
+  </span>
+</div>
+
+<div>
+  <span style={{ color: "#5a2a7a", fontWeight: 700 }}>● Sheitel Wigs</span>
+  <span style={{ marginLeft: 10 }}>
+    — Premium wigs traditionally worn by Orthodox Jewish women, often featuring high-end European human hair.
   </span>
 </div>
 </div>
