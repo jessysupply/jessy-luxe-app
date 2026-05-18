@@ -57,7 +57,7 @@ shopLink: "https://www.aliexpress.com/category/200000456/hair-extensions.html",
   {
     id: 6, name: "Bobbi Boss", logo: "BB", origin: "USA", tags: ["Braids", "Protective"],
     website: "https://bobbiboss.com",
-shopLink: "https://bobbiboss.com/collections/all",
+shopLink: "https://bobbiboss.com",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Pre-Stretched Braid", lengths: "28\"–56\"", price: "$8–$22", rating: 4.3, reviews: 1600 },
       { type: "Synthetic", category: "synthetic", texture: "Knotless Box Braid Wig", lengths: "16\"–30\"", price: "$25–$75", rating: 4.2, reviews: 890 },
