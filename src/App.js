@@ -1131,6 +1131,65 @@ shopLink: "https://www.headcovers.com/wigs-hair",
       }
     ]
   },
+  {
+    id: 108,
+    name: "The Hair Shop",
+    logo: "TH",
+    origin: "USA",
+    tags: ["Clip-Ins", "Salon Quality", "Extensions"],
+    website: "https://thehairshop.com",
+    shopLink: "https://thehairshop.com/collections/clip-in-extensions",
+    products: [
+      {
+        type: "Clip-In Extensions",
+        category: "clipins",
+        texture: "Remy Clip-In Extensions",
+        lengths: "14\"–24\"",
+        price: "$120–$450",
+        rating: 4.6,
+        reviews: 2100
+      },
+      {
+        type: "Clip-In Extensions",
+        category: "clipins",
+        texture: "Volumizer Clip-Ins",
+        lengths: "16\"–26\"",
+        price: "$140–$500",
+        rating: 4.5,
+        reviews: 1800
+      }
+    ]
+  },
+  
+  {
+    id: 109,
+    name: "Heat Free Hair",
+    logo: "HF",
+    origin: "USA",
+    tags: ["Natural Hair", "Clip-Ins", "Textured Hair"],
+    website: "https://heatfreehair.com",
+    shopLink: "https://heatfreehair.com/collections/all",
+    products: [
+      {
+        type: "Clip-In Extensions",
+        category: "clipins",
+        texture: "Kinky Curly Clip-Ins",
+        lengths: "12\"–24\"",
+        price: "$90–$320",
+        rating: 4.7,
+        reviews: 2600
+      },
+      {
+        type: "Clip-In Extensions",
+        category: "clipins",
+        texture: "Coily Natural Clip-Ins",
+        lengths: "14\"–26\"",
+        price: "$110–$360",
+        rating: 4.6,
+        reviews: 2200
+      }
+    ]
+  },
   
 ];
 // ADD THIS 👇
