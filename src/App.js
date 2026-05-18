@@ -2530,21 +2530,70 @@ onCompare={toggleCompare}
           </div>
         </div>
       )}
-          <div style={{ color: "#2a6a2a", fontSize: 9, letterSpacing: 2, textTransform: "uppercase", marginBottom: 10 }}>Hair Type Guide</div>
-          <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
-            {Object.entries(CATEGORY_CONFIG).map(([key, cfg]) => (
-              <div key={key} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
-                <span style={{ width: 8, height: 8, borderRadius: "50%", background: cfg.color, flexShrink: 0, marginTop: 4 }} />
-                <div>
-                  <span style={{ color: cfg.color, fontSize: 11, fontWeight: 600 }}>{cfg.label}</span>
-                  <span style={{ color: "#2a5a2a", fontSize: 11, marginLeft: 6 }}>
-                    {key === "human"     && "— Virgin or Remy from a single donor. Most natural feel, longest lasting, highest cost."}
-                    {key === "synthetic" && "— Man-made fibers. Budget-friendly, less heat-versatile, great for protective styles."}
-                    {key === "mixed"     && "— Human & synthetic combined. Mid-range price/quality, blends durability with a natural look."}
-                  </span>
-                </div>
-                </div>
-            ))}
+        <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+
+<div>
+  <span style={{ color: "#2a6a2a", fontWeight: 700 }}>● 100% Human</span>
+  <span style={{ marginLeft: 10 }}>
+    — Virgin or Remy from a single donor. Most natural feel, longest lasting, highest cost.
+  </span>
+</div>
+
+<div>
+  <span style={{ color: "#2a5a8a", fontWeight: 700 }}>● Synthetic</span>
+  <span style={{ marginLeft: 10 }}>
+    — Man-made fibers. Budget-friendly, less heat-versatile, great for protective styles.
+  </span>
+</div>
+
+<div>
+  <span style={{ color: "#6a2a8a", fontWeight: 700 }}>● Blend</span>
+  <span style={{ marginLeft: 10 }}>
+    — Human & synthetic combined. Mid-range price/quality with a natural appearance.
+  </span>
+</div>
+
+<div>
+  <span style={{ color: "#8a5a2a", fontWeight: 700 }}>● Braiding Hair</span>
+  <span style={{ marginLeft: 10 }}>
+    — Hair designed for braids, twists, and protective styles. Available in synthetic, human, and plant-based options.
+  </span>
+</div>
+
+<div>
+  <span style={{ color: "#8a2a5a", fontWeight: 700 }}>● Clip-Ins</span>
+  <span style={{ marginLeft: 10 }}>
+    — Temporary extensions that clip into natural hair for instant length and volume.
+  </span>
+</div>
+
+<div>
+  <span style={{ color: "#2a8a6a", fontWeight: 700 }}>● Crochet Hair</span>
+  <span style={{ marginLeft: 10 }}>
+    — Pre-looped hair installed using a crochet method. Lightweight and great for protective styles.
+  </span>
+</div>
+
+<div>
+  <span style={{ color: "#8a6a2a", fontWeight: 700 }}>● Ponytails</span>
+  <span style={{ marginLeft: 10 }}>
+    — Quick attach hairpieces used to create fuller or longer ponytail styles instantly.
+  </span>
+</div>
+
+<div>
+  <span style={{ color: "#5a2a8a", fontWeight: 700 }}>● Bundles</span>
+  <span style={{ marginLeft: 10 }}>
+    — Loose human or synthetic hair wefts used for sew-ins, wigs, or custom installs.
+  </span>
+</div>
+<div>
+  <span style={{ color: "#2a3a8a", fontWeight: 700 }}>● Wigs</span>
+  <span style={{ marginLeft: 10 }}>
+    — Full hair units available in lace front, glueless, HD lace, and ready-to-wear styles.
+  </span>
+</div>
+</div>
       </div>
     </div>
     {showQuiz && (
@@ -2643,7 +2692,5 @@ onCompare={toggleCompare}
         </p>
       </div>
     </div>
-    </div>
   );
-    }
-            
+}
