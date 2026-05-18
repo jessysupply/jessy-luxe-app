@@ -1024,7 +1024,7 @@ shopLink: "https://www.headcovers.com/wigs-hair",
     ]
   },
   {
-    id: 1001,
+    id: 106,
     name: "MegaLook Hair",
     logo: "ML",
     origin: "China",
@@ -1046,44 +1046,14 @@ shopLink: "https://www.headcovers.com/wigs-hair",
 ];
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
-  title: "Graduation Season Sale 🎓",
-vendor: "ZLIKE Hair",
-description: "Celebrate Your Big Moment ✨",
-
-deals: [
-  "🔥 12% OFF Sitewide",
-  "💸 EXTRA $30 OFF Orders Over $220",
-  "💎 EXTRA $60 OFF Orders Over $420",
-  "👑 Prom Queen Must-Have",
-  "✨ 300% Density Wigs — 50% OFF + Extra 25%",
-  "💖 Next-Level 360 Wig — Starting at $88"
-],
-
-discountCodes: [
-  "Use Code: GS12",
-  "Use Code: GS30",
-  "Use Code: GS60"
-],
-
-  website: "https://zlikehair.com/collections/best-sellers",
-
-  links: [
-    {
-      label: "Best Sellers",
-      url: "https://zlikehair.com/collections/best-sellers"
-    },
-    {
-      label: "300% Density Wigs",
-      url: "https://zlikehair.com/pages/email-exclusive-offer"
-    },
-    {
-      label: "360 Lace Wigs",
-      url: "https://zlikehair.com/collections/360-lace-wigs?sort_by=water-wave-invisi-band-360-lace-frontal-wigs-pre-cut-human-hair-wigs-bleached-knots-1"
-    }
-  ],
-
-  endDate: new Date("2026-05-16T23:59:59")
-};
+    name: "Amanda Hair",
+    discount: "Extra $100 OFF Premium Human Hair",
+    code: "Gold Wednesday Sale",
+    endDate: new Date("2026-05-28T23:59:59"),
+    link: "https://www.amandahair.com",
+    image: "https://www.amandahair.com/cdn/shop/files/logo.png",
+    description: "The Gold Wednesday Sale is live ✨ Save an extra $100 on premium human hair wigs, HD lace styles, bundles, and trending installs this week only."
+  };
 
 // EXISTING CODE 👇
 const CATEGORY_CONFIG = {
