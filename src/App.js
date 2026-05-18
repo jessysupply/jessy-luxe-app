@@ -1226,7 +1226,15 @@ function PriceBadge({ price }) {
   const tier = low < 25 ? "💰" : low < 80 ? "💰💰" : "💰💰💰";
   return <span style={{ fontSize: 11, color: "#a08060" }}>{tier} {price}</span>;
 }
-
+function StarRating({ rating, size = 13 }) {
+  return (
+    <span>
+      {[1,2,3,4,5].map(i => (
+        <span key={i} style={{ color: i <= Math.round(rating) ? "#c8a97e" : "#e0d0c0", fontSize: size }}>★</span>
+      ))}
+    </span>
+  );
+}
 function ProductRow({ product, delay }) {
   const cfg = CATEGORY_CONFIG[product.category];
   return (
