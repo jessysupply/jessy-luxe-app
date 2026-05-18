@@ -2521,64 +2521,38 @@ borderRadius: "999px",
     <div style={{ textAlign: "center", padding: "50px 0", color: "#2e2010" }}>
       <div style={{ fontSize: 32, marginBottom: 10 }}>&#128269;</div>
       <div style={{ fontSize: 14 }}>
-        No exact match — try another keyword like “Body Wave” or “Straight.”
+        No exact match — try another keyword like "Body Wave" or "Straight."
       </div>
-      <div style={{
-  margin: "34px 0 20px"
-}}>
-  <div style={{
-    display: "flex",
-    justifyContent: "space-between",
-    alignItems: "center",
-    marginBottom: 10
-  }}>
-    <h2 style={{
-      fontSize: isMobile ? 24 : 30,
-      fontWeight: 900,
-      color: "#1a3a1a",
-      margin: 0,
-      fontFamily: "'Playfair Display', serif"
-    }}>
+    </div>
+  ) : paginatedSuppliers.map(s => (
+    <SupplierCard isMobile={isMobile}
+      key={s.id} supplier={s}
+      isExpanded={expandedId === s.id}
+      onToggle={() => setExpandedId(expandedId === s.id ? null : s.id)}
+      onReviewClick={sup => { console.log("clicked", sup); setReviewTarget(sup); }}
+      userReviews={userReviews}
+      favorites={favorites}
+      onFavorite={toggleFavorite}
+      compareList={compareList}
+      onCompare={toggleCompare}
+    />
+  ))}
+</div>
+
+{/* Trending Right Now */}
+<div style={{ margin: "34px 0 20px" }}>
+  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
+    <h2 style={{ fontSize: isMobile ? 24 : 30, fontWeight: 900, color: "#1a3a1a", margin: 0, fontFamily: "'Playfair Display', serif" }}>
       🔥 Trending Right Now
     </h2>
-
-    <span style={{
-      background: "#d8ead8",
-      color: "#2a6a2a",
-      padding: "6px 12px",
-      borderRadius: 30,
-      fontSize: 11,
-      fontWeight: 700
-    }}>
+    <span style={{ background: "#d8ead8", color: "#2a6a2a", padding: "6px 12px", borderRadius: 30, fontSize: 11, fontWeight: 700 }}>
       Updated Daily
     </span>
   </div>
-
-  <p style={{
-    color: "#5a4a40",
-    fontSize: 14,
-    lineHeight: 1.6,
-    marginBottom: 22
-  }}>
+  <p style={{ color: "#5a4a40", fontSize: 14, lineHeight: 1.6, marginBottom: 22 }}>
     Most viewed, highest-rated, and viral hair vendors trending this week 👀✨
   </p>
 </div>
-     </div>
-        ) : paginatedSuppliers.map(s => (
-          <SupplierCard isMobile={isMobile}
-            key={s.id} supplier={s}
-            isExpanded={expandedId === s.id}
-            onToggle={() => setExpandedId(expandedId === s.id ? null : s.id)}
-            onReviewClick={sup => { console.log("clicked", sup); setReviewTarget(sup); }}
-            userReviews={userReviews}
-            favorites={favorites}
-onFavorite={toggleFavorite}
-compareList={compareList}
-onCompare={toggleCompare}
-
-          />
-        ))}
-      </div>
 {/* Pagination */}
 {totalPages > 1 && (
         <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 12, margin: "16px 0", flexWrap: "wrap" }}>
