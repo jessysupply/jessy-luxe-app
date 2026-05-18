@@ -2515,7 +2515,7 @@ borderRadius: "999px",
         </span>
       </div>
 
-     {/* Cards */}
+  {/* Cards */}
 <div style={{ maxWidth: 600, margin: "0 auto", padding: isMobile ? "8px 10px" : "8px 13px" }}>
   {filtered.length === 0 ? (
     <div style={{ textAlign: "center", padding: "50px 0", color: "#2e2010" }}>
@@ -2540,17 +2540,66 @@ borderRadius: "999px",
 </div>
 
 {/* Trending Right Now */}
-<div style={{ margin: "34px 0 20px" }}>
-  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 10 }}>
-    <h2 style={{ fontSize: isMobile ? 24 : 30, fontWeight: 900, color: "#1a3a1a", margin: 0, fontFamily: "'Playfair Display', serif" }}>
-      🔥 Trending Right Now
-    </h2>
-    <span style={{ background: "#d8ead8", color: "#2a6a2a", padding: "6px 12px", borderRadius: 30, fontSize: 11, fontWeight: 700 }}>
+<div style={{
+  margin: "34px auto 26px",
+  maxWidth: 1200,
+  background: "linear-gradient(135deg, #fffdf8, #f6f3ea)",
+  border: "1px solid #e6dccd",
+  borderRadius: 28,
+  padding: isMobile ? "24px" : "34px",
+  boxShadow: "0 8px 24px rgba(0,0,0,0.06)"
+}}>
+  <div style={{
+    display: "flex",
+    justifyContent: "space-between",
+    alignItems: isMobile ? "flex-start" : "center",
+    flexDirection: isMobile ? "column" : "row",
+    gap: 14,
+    marginBottom: 14
+  }}>
+    <div>
+      <div style={{
+        fontSize: 12,
+        fontWeight: 700,
+        letterSpacing: 2,
+        textTransform: "uppercase",
+        color: "#7a6a55",
+        marginBottom: 8
+      }}>
+        Weekly Vendor Picks
+      </div>
+      <h2 style={{
+        fontSize: isMobile ? 32 : 42,
+        lineHeight: 1.1,
+        fontWeight: 900,
+        color: "#1f2e1f",
+        margin: 0,
+        fontFamily: "'Playfair Display', serif"
+      }}>
+        🔥 Trending Right Now
+      </h2>
+    </div>
+    <div style={{
+      background: "#d8ead8",
+      color: "#2a6a2a",
+      padding: "8px 16px",
+      borderRadius: 999,
+      fontSize: 12,
+      fontWeight: 700,
+      whiteSpace: "nowrap"
+    }}>
       Updated Daily
-    </span>
+    </div>
   </div>
-  <p style={{ color: "#5a4a40", fontSize: 14, lineHeight: 1.6, marginBottom: 22 }}>
-    Most viewed, highest-rated, and viral hair vendors trending this week 👀✨
+  <p style={{
+    color: "#5f5648",
+    fontSize: isMobile ? 15 : 17,
+    lineHeight: 1.7,
+    margin: 0,
+    maxWidth: 760
+  }}>
+    Most viewed, highest-rated, and viral hair vendors trending this week. 
+    Discover luxury wigs, bundles, braiding hair, and beginner-friendly installs loved by the community 👀✨
   </p>
 </div>
 {/* Pagination */}
