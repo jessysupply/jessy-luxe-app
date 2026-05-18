@@ -2538,7 +2538,6 @@ borderRadius: "999px",
     />
   ))}
 </div>
-
 {/* Trending Right Now */}
 <div style={{
   margin: "34px auto 26px",
@@ -2558,49 +2557,44 @@ borderRadius: "999px",
     marginBottom: 14
   }}>
     <div>
-      <div style={{
-        fontSize: 12,
-        fontWeight: 700,
-        letterSpacing: 2,
-        textTransform: "uppercase",
-        color: "#7a6a55",
-        marginBottom: 8
-      }}>
+      <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "#7a6a55", marginBottom: 8 }}>
         Weekly Vendor Picks
       </div>
-      <h2 style={{
-        fontSize: isMobile ? 32 : 42,
-        lineHeight: 1.1,
-        fontWeight: 900,
-        color: "#1f2e1f",
-        margin: 0,
-        fontFamily: "'Playfair Display', serif"
-      }}>
+      <h2 style={{ fontSize: isMobile ? 32 : 42, lineHeight: 1.1, fontWeight: 900, color: "#1f2e1f", margin: 0, fontFamily: "'Playfair Display', serif" }}>
         🔥 Trending Right Now
       </h2>
     </div>
-    <div style={{
-      background: "#d8ead8",
-      color: "#2a6a2a",
-      padding: "8px 16px",
-      borderRadius: 999,
-      fontSize: 12,
-      fontWeight: 700,
-      whiteSpace: "nowrap"
-    }}>
+    <div style={{ background: "#d8ead8", color: "#2a6a2a", padding: "8px 16px", borderRadius: 999, fontSize: 12, fontWeight: 700, whiteSpace: "nowrap" }}>
       Updated Daily
     </div>
   </div>
-  <p style={{
-    color: "#5f5648",
-    fontSize: isMobile ? 15 : 17,
-    lineHeight: 1.7,
-    margin: 0,
-    maxWidth: 760
-  }}>
+
+  <p style={{ color: "#5f5648", fontSize: isMobile ? 15 : 17, lineHeight: 1.7, marginBottom: 20, maxWidth: 760 }}>
     Most viewed, highest-rated, and viral hair vendors trending this week. 
     Discover luxury wigs, bundles, braiding hair, and beginner-friendly installs loved by the community 👀✨
   </p>
+
+  <div style={{ marginBottom: 20 }}>
+    <div style={{ fontWeight: 700, color: "#3a2818", marginBottom: 10, fontSize: 14 }}>🔎 What's Trending:</div>
+    <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+      {["Glueless Wigs", "HD Lace Wigs", "Pre-bleached Knots", "Beginner-friendly Installs"].map(tag => (
+        <span key={tag} style={{ background: "#f0e8d8", color: "#5a3a1a", padding: "5px 12px", borderRadius: 20, fontSize: 12, fontWeight: 600 }}>
+          {tag}
+        </span>
+      ))}
+    </div>
+  </div>
+
+  <div>
+    <div style={{ fontWeight: 700, color: "#3a2818", marginBottom: 10, fontSize: 14 }}>🏆 Top Vendors This Week:</div>
+    <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+      {["ISEE Hair", "Arabella Hair", "UNice Hair", "Luvme Hair", "Alipearl Hair", "BGMgirl Hair", "Lolly Hair", "Asteria Hair"].map(vendor => (
+        <span key={vendor} style={{ background: "#d8ead8", color: "#2a6a2a", padding: "5px 12px", borderRadius: 20, fontSize: 12, fontWeight: 600, border: "1px solid #b8d8b8" }}>
+          ⭐ {vendor}
+        </span>
+      ))}
+    </div>
+  </div>
 </div>
 {/* Pagination */}
 {totalPages > 1 && (
