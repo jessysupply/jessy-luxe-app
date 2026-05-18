@@ -1529,18 +1529,46 @@ function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userRevie
   const getBadge = () => {
     const avg = avgRating(supplier.products);
     const totalReviews = supplier.products.reduce((a, p) => a + p.reviews, 0);
-    if (avg >= 4.6) return { label: "⭐ Most Trusted", color: "#2a6a2a", bg: "#d8ead8" };
-    if (supplier.tags.some(t => ["Budget", "Affordable"].includes(t))) return { label: "💰 Best Value", color: "#1a5a8a", bg: "#d8eaf0" };
-    if (totalReviews >= 5000) return { label: "❤️ Community Favorite", color: "#8a1a2a", bg: "#f0d8da" };
-    if (supplier.id >= 60) return { label: "🆕 New Vendor", color: "#6a2a8a", bg: "#ead8f0" };
+  
+    if (avg >= 4.8)
+      return {
+        label: "👑 Elite Vendor",
+        color: "#8a6a2a",
+        bg: "#f3ead8"
+      };
+  
+    if (avg >= 4.6)
+      return {
+        label: "⭐ Most Trusted",
+        color: "#2a6a2a",
+        bg: "#d8ead8"
+      };
+  
+    if (totalReviews >= 5000)
+      return {
+        label: "🔥 Viral Favorite",
+        color: "#8a2a2a",
+        bg: "#f0d8d8"
+      };
+  
+    if (supplier.tags.includes("Luxury"))
+      return {
+        label: "💎 Luxury Pick",
+        color: "#5a2a8a",
+        bg: "#ead8f0"
+      };
+  
     return null;
   };
+  
   const badge = getBadge();
+  
   const avgDisplay = avgRating(supplier.products).toFixed(1);
+  
   const hasHuman = supplier.products.some(p => p.category === "human");
-  const hasSynth  = supplier.products.some(p => p.category === "synthetic");
-  const hasMixed  = supplier.products.some(p => p.category === "mixed");
-
+  const hasSynth = supplier.products.some(p => p.category === "synthetic");
+  const hasMixed = supplier.products.some(p => p.category === "mixed");
+  
   return (
     <div style={{
       background: "linear-gradient(135deg, #ffffff 0%, #f8f8f6 100%)",
