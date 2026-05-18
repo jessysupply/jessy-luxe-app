@@ -57,7 +57,7 @@ shopLink: "https://www.aliexpress.com/category/200000456/hair-extensions.html",
   {
     id: 6, name: "Bobbi Boss", logo: "BB", origin: "USA", tags: ["Braids", "Protective"],
     website: "https://bobbiboss.com",
-shopLink: "https://bobbiboss.com",
+    shopLink: "https://product.bobbiboss.com/",
     products: [
       { type: "Synthetic", category: "synthetic", texture: "Pre-Stretched Braid", lengths: "28\"–56\"", price: "$8–$22", rating: 4.3, reviews: 1600 },
       { type: "Synthetic", category: "synthetic", texture: "Knotless Box Braid Wig", lengths: "16\"–30\"", price: "$25–$75", rating: 4.2, reviews: 890 },
@@ -554,7 +554,7 @@ shopLink: "https://www.amazon.com/stores/Specializingin100humanhaironlyNaturalva
     ],
   },
   {
-    id: 60, name: "Yummi Hair Extensions", logo: "YH", origin: "USA", tags: ["Premium", "Virgin Hair"],
+    id: 60, name: "YummY Hair Extensions", logo: "YH", origin: "USA", tags: ["Premium", "Virgin Hair"],
     website: "https://www.yummyextensions.com",
 shopLink: "https://www.yummyextensions.com/collections/all",
     products: [
@@ -957,7 +957,7 @@ shopLink: "https://www.headcovers.com/wigs-hair",
     ]
   },
   {
-    id: 103,
+    id: 102,
     name: "Lolly Hair",
     logo: "LH",
     origin: "China",
@@ -986,7 +986,7 @@ shopLink: "https://www.headcovers.com/wigs-hair",
     ]
   },
   {
-    id: 104,
+    id: 103,
     name: "Amanda Hair",
     logo: "AH",
     origin: "China",
@@ -1005,7 +1005,7 @@ shopLink: "https://www.headcovers.com/wigs-hair",
     ]
   },
   {
-    id: 105,
+    id: 104,
     name: "OQ Hair",
     logo: "OQ",
     origin: "China",
@@ -1024,7 +1024,7 @@ shopLink: "https://www.headcovers.com/wigs-hair",
     ]
   },
   {
-    id: 106,
+    id: 105,
     name: "MegaLook Hair",
     logo: "ML",
     origin: "China",
@@ -1039,6 +1039,95 @@ shopLink: "https://www.headcovers.com/wigs-hair",
         price: "$$$",
         rating: 4.7,
         reviews: 150
+      }
+    ]
+  },
+  {
+    id: 106,
+    name: "Dosso Beauty",
+    logo: "DB",
+    origin: "USA",
+    tags: ["Braiding Hair", "Non-Toxic", "Hypoallergenic"],
+    website: "https://www.dossobeauty.com",
+    shopLink: "https://www.dossobeauty.com/collections/all",
+    products: [
+      {
+        type: "Braiding Hair",
+        category: "braiding",
+        texture: "Hypoallergenic Braiding Hair",
+        lengths: "18\"–30\"",
+        price: "$25–$95",
+        rating: 4.6,
+        reviews: 1200
+      },
+      {
+        type: "Braiding Hair",
+        category: "braiding",
+        texture: "Pre-Stretched Braiding Hair",
+        lengths: "20\"–36\"",
+        price: "$18–$80",
+        rating: 4.5,
+        reviews: 980
+      }
+    ]
+  },
+  
+  {
+    id: 107,
+    name: "Rebundle",
+    logo: "RB",
+    origin: "USA",
+    tags: ["Plant-Based", "Braiding Hair", "Eco-Friendly"],
+    website: "https://rebundle.co",
+    shopLink: "https://rebundle.co/collections/all",
+    products: [
+      {
+        type: "Braiding Hair",
+        category: "braiding",
+        texture: "Plant-Based Braiding Hair",
+        lengths: "14\"–24\"",
+        price: "$28–$110",
+        rating: 4.7,
+        reviews: 1500
+      },
+      {
+        type: "Braiding Hair",
+        category: "braiding",
+        texture: "Biodegradable Braiding Hair",
+        lengths: "18\"–30\"",
+        price: "$35–$130",
+        rating: 4.6,
+        reviews: 1100
+      }
+    ]
+  },
+  
+  {
+    id: 108,
+    name: "Latched & Hooked",
+    logo: "LH",
+    origin: "USA",
+    tags: ["Crochet Hair", "Braiding Hair", "Natural Hair"],
+    website: "https://latchedandhooked.com",
+    shopLink: "https://latchedandhooked.com/collections/all",
+    products: [
+      {
+        type: "Crochet Hair",
+        category: "crochet",
+        texture: "Curly Crochet Hair",
+        lengths: "10\"–24\"",
+        price: "$30–$140",
+        rating: 4.5,
+        reviews: 1700
+      },
+      {
+        type: "Braiding Hair",
+        category: "braiding",
+        texture: "Protective Style Braiding Hair",
+        lengths: "14\"–28\"",
+        price: "$25–$95",
+        rating: 4.4,
+        reviews: 1300
       }
     ]
   },
