@@ -1046,14 +1046,33 @@ shopLink: "https://www.headcovers.com/wigs-hair",
 ];
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
-    name: "Amanda Hair",
-    discount: "Extra $100 OFF Premium Human Hair",
-    code: "Gold Wednesday Sale",
-    endDate: new Date("2026-05-28T23:59:59"),
-    link: "https://www.amandahair.com",
-    image: "https://www.amandahair.com/cdn/shop/files/logo.png",
-    description: "The Gold Wednesday Sale is live ✨ Save an extra $100 on premium human hair wigs, HD lace styles, bundles, and trending installs this week only."
-  };
+  title: "Gold Wednesday Sale ✨",
+  vendor: "Amanda Hair",
+  description: "Extra $100 OFF Premium Human Hair This Week",
+
+  deals: [
+    "🔥 Extra $100 OFF Premium Human Hair",
+    "💎 Luxury HD Lace & Glueless Wigs",
+    "✨ Trending Human Hair Styles",
+    "👑 High-Performing Gold Wednesday Deals",
+    "💖 Limited-Time Weekly Sale"
+  ],
+
+  discountCodes: [
+    "Gold Wednesday Sale"
+  ],
+
+  website: "https://www.amandahair.com",
+
+  links: [
+    {
+      label: "Human Hair Wigs",
+      url: "https://www.amandahair.com"
+    }
+  ],
+
+  endDate: new Date("2026-05-28T23:59:59")
+};
 
 // EXISTING CODE 👇
 const CATEGORY_CONFIG = {
