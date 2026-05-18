@@ -1165,9 +1165,59 @@ const DEAL_OF_THE_WEEK = {
 
 // EXISTING CODE 👇
 const CATEGORY_CONFIG = {
-  human:     { label: "100% Human",  color: "#2a6a2a", bg: "#d8ead8" },
-  synthetic: { label: "Synthetic",   color: "#2a5a8a", bg: "#d8e8f0" },
-  mixed:     { label: "Blend",       color: "#6a2a8a", bg: "#ead8f0" },
+  human: {
+    label: "100% Human",
+    color: "#2a6a2a",
+    bg: "#d8ead8"
+  },
+
+  synthetic: {
+    label: "Synthetic",
+    color: "#2a5a8a",
+    bg: "#d8e8f0"
+  },
+
+  mixed: {
+    label: "Blend",
+    color: "#6a2a8a",
+    bg: "#ead8f0"
+  },
+
+  braiding: {
+    label: "Braiding Hair",
+    color: "#8a5a2a",
+    bg: "#f3e2c8"
+  },
+
+  clipins: {
+    label: "Clip-Ins",
+    color: "#8a2a5a",
+    bg: "#f0d8e8"
+  },
+
+  crochet: {
+    label: "Crochet Hair",
+    color: "#2a8a6a",
+    bg: "#d8f0e8"
+  },
+
+  ponytails: {
+    label: "Ponytails",
+    color: "#8a6a2a",
+    bg: "#f0ead8"
+  },
+
+  bundles: {
+    label: "Bundles",
+    color: "#5a2a8a",
+    bg: "#e8d8f0"
+  },
+
+  wigs: {
+    label: "Wigs",
+    color: "#2a3a8a",
+    bg: "#d8def0"
+  }
 };
 // ADD THIS 👇
 function DealOfTheWeek() {
