@@ -2556,18 +2556,15 @@ borderRadius: "999px",
     gap: 14,
     marginBottom: 14
   }}>
-    <div>
-      <div style={{ fontSize: 12, fontWeight: 700, letterSpacing: 2, textTransform: "uppercase", color: "#7a6a55", marginBottom: 8 }}>
-        Weekly Vendor Picks
-      </div>
-      <h2 style={{ fontSize: isMobile ? 32 : 42, lineHeight: 1.1, fontWeight: 900, color: "#1f2e1f", margin: 0, fontFamily: "'Playfair Display', serif" }}>
-        🔥 Trending Right Now
-      </h2>
-    </div>
-    <div style={{ background: "#d8ead8", color: "#2a6a2a", padding: "8px 16px", borderRadius: 999, fontSize: 12, fontWeight: 700, whiteSpace: "nowrap" }}>
-      Updated Daily
+   <div>
+    <div style={{ fontWeight: 700, color: "#3a2818", marginBottom: 10, fontSize: 14 }}>🏆 Top Vendors This Week:</div>
+    <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+      {["ISEE Hair", "Arabella Hair", "UNice Hair", "Luvme Hair", "Alipearl Hair", "BGMgirl Hair", "Lolly Hair", "Asteria Hair"].map(vendor => (
+        <VendorPill key={vendor} name={vendor} onClick={() => setSearch(vendor)} />
+      ))}
     </div>
   </div>
+</div>
 
   <p style={{ color: "#5f5648", fontSize: isMobile ? 15 : 17, lineHeight: 1.7, marginBottom: 20, maxWidth: 760 }}>
     Most viewed, highest-rated, and viral hair vendors trending this week. 
@@ -2588,17 +2585,39 @@ borderRadius: "999px",
   <div>
     <div style={{ fontWeight: 700, color: "#3a2818", marginBottom: 10, fontSize: 14 }}>🏆 Top Vendors This Week:</div>
     <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-      {["ISEE Hair", "Arabella Hair", "UNice Hair", "Luvme Hair", "Alipearl Hair", "BGMgirl Hair", "Lolly Hair", "Asteria Hair"].map(vendor => (
-        <span key={vendor} style={{ background: "#d8ead8", color: "#2a6a2a", padding: "5px 12px", borderRadius: 20, fontSize: 12, fontWeight: 600, border: "1px solid #b8d8b8" }}>
-          ⭐ {vendor}
-        </span>
-      ))}
+    {["ISEE Hair", "Arabella Hair", "UNice Hair", "Luvme Hair", "Alipearl Hair", "BGMgirl Hair", "Lolly Hair", "Asteria Hair"].map(vendor => (
+  <VendorPill key={vendor} name={vendor} onClick={() => setSearch(vendor)} />
+))}. 
+  const [hovered, setHovered] = React.useState(false);
+  return (
+    <span
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onClick={onClick}
+      style={{
+        background: hovered ? "#2a6a2a" : "#d8ead8",
+        color: hovered ? "#ffffff" : "#2a6a2a",
+        padding: "5px 12px",
+        borderRadius: 20,
+        fontSize: 12,
+        fontWeight: 600,
+        border: "1px solid #b8d8b8",
+        cursor: "pointer",
+        transition: "all 0.2s ease",
+        display: "inline-block",
+        transform: hovered ? "scale(1.05)" : "scale(1)"
+      }}
+    >
+      ⭐ {name}
+    </span>
+  );
+})}
     </div>
   </div>
 </div>
 {/* Pagination */}
 {totalPages > 1 && (
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 12, margin: "16px 0", flexWrap: "wrap" }}>
+        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: 12, margin: "30", flexWrap: "wrap" }}>
           <button onClick={() => setCurrentPage(p => Math.max(1, p - 1))} disabled={currentPage === 1} style={{
             padding: "10px 20px", borderRadius: 30, border: "2px solid #4a8a4a",
             background: currentPage === 1 ? "#f0f5f0" : "#2a6a2a",
