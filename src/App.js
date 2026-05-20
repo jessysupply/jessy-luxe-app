@@ -1160,56 +1160,14 @@ shopLink: "https://www.headcovers.com/wigs-hair",
       }
     ]
   },
-  
-  {
-    id: 109,
-    name: "Heat Free Hair",
-    logo: "HF",
-    origin: "USA",
-    tags: ["Natural Hair", "Clip-Ins", "Textured Hair"],
-    website: "https://heatfreehair.com",
-    shopLink: "https://heatfreehair.com/collections/all",
-    products: [
-      {
-        type: "Clip-In Extensions",
-        category: "clipins",
-        texture: "Kinky Curly Clip-Ins",
-        lengths: "12\"–24\"",
-        price: "$90–$320",
-        rating: 4.7,
-        reviews: 2600
-      },
-      {
-        type: "Clip-In Extensions",
-        category: "clipins",
-        texture: "Coily Natural Clip-Ins",
-        lengths: "14\"–26\"",
-        price: "$110–$360",
-        rating: 4.6,
-        reviews: 2200
-      }
-    ]
-  },
   {
     id: 110,
     name: "BUWUS",
     logo: "BUW",
     origin: "USA",
-    tags: [
-      "Human Hair",
-      "HD Lace",
-      "Glueless Wigs",
-      "Bundles",
-      "Closures",
-      "Frontals",
-      "Curly Hair",
-      "Body Wave",
-      "Straight Hair",
-      "Beginner Friendly"
-    ],
+    tags: ["Human Hair", "HD Lace", "Glueless Wigs", "Bundles", "Closures", "Frontals"],
     website: "https://www.buwus.com",
     shopLink: "https://www.buwus.com/collections/all",
-  
     products: [
       {
         type: "Glueless Wig",
@@ -1240,7 +1198,7 @@ shopLink: "https://www.headcovers.com/wigs-hair",
       },
       {
         type: "Closure & Frontal",
-        category: "closures",
+        category: "frontals",
         texture: "Straight/Curly",
         lengths: "10\"–20\"",
         price: "$23–$131",
