@@ -1171,7 +1171,7 @@ shopLink: "https://www.headcovers.com/wigs-hair",
     products: [
       {
         type: "Glueless Wig",
-        category: "wigs",
+        category: "human",
         texture: "Straight",
         lengths: "10\"–28\"",
         price: "$85–$208",
@@ -1180,7 +1180,7 @@ shopLink: "https://www.headcovers.com/wigs-hair",
       },
       {
         type: "Bundles",
-        category: "bundles",
+        category: "human",
         texture: "Body Wave",
         lengths: "10\"–28\"",
         price: "$69–$141",
@@ -1189,7 +1189,7 @@ shopLink: "https://www.headcovers.com/wigs-hair",
       },
       {
         type: "HD Lace Wig",
-        category: "wigs",
+        category: "human",
         texture: "Curly",
         lengths: "18\"–24\"",
         price: "$147–$208",
@@ -1198,7 +1198,7 @@ shopLink: "https://www.headcovers.com/wigs-hair",
       },
       {
         type: "Closure & Frontal",
-        category: "frontals",
+        category: "human",
         texture: "Straight/Curly",
         lengths: "10\"–20\"",
         price: "$23–$131",
@@ -1207,7 +1207,6 @@ shopLink: "https://www.headcovers.com/wigs-hair",
       }
     ]
   },
-  
 ];
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
