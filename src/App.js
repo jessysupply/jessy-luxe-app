@@ -1190,6 +1190,62 @@ shopLink: "https://www.headcovers.com/wigs-hair",
       }
     ]
   },
+  {
+    id: "110",
+    name: "BUWUS",
+    logo: "BUW",
+    origin: "USA",
+    rating: 4.6,
+    reviews: 420,
+    website: "https://www.buwus.com/",
+    shopLink: "https://www.buwus.com/",
+    priceRange: "$$",
+    tags: [
+      "Human Hair",
+      "HD Lace",
+      "Glueless Wigs",
+      "Bundles",
+      "Closures",
+      "Frontals",
+      "Curly Hair",
+      "Body Wave",
+      "Straight Hair",
+      "Beginner Friendly"
+    ],
+    description:
+      "BUWUS offers affordable human hair wigs, bundles, HD lace products, and glueless wigs in multiple textures and styles with local pickup options in several U.S. cities.",
+  
+    products: [
+      {
+        type: "Glueless Wig",
+        texture: "Straight",
+        lengths: "10-28 inches",
+        price: "$85-$208",
+        rating: 4.7
+      },
+      {
+        type: "Bundles",
+        texture: "Body Wave",
+        lengths: "10-28 inches",
+        price: "$69-$141",
+        rating: 4.6
+      },
+      {
+        type: "HD Lace Wig",
+        texture: "Curly",
+        lengths: "18-24 inches",
+        price: "$147-$208",
+        rating: 4.8
+      },
+      {
+        type: "Closure & Frontal",
+        texture: "Straight/Curly",
+        lengths: "10-20 inches",
+        price: "$23-$131",
+        rating: 4.5
+      }
+    ]
+  }
   
 ];
 // ADD THIS 👇
