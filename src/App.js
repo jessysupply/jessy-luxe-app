@@ -1522,8 +1522,32 @@ function avgRating(products = []) {
   if (!Array.isArray(products) || products.length === 0) return 0;
   return products.reduce((sum, p) => sum + (p.rating || 0), 0) / products.length;
 }
+function VendorPill({ name, onClick }) {
+  const [hovered, setHovered] = React.useState(false);
+  return (
+    <span
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      onClick={onClick}
+      style={{
+        background: hovered ? "#2a6a2a" : "#d8ead8",
+        color: hovered ? "#ffffff" : "#2a6a2a",
+        padding: "5px 12px",
+        borderRadius: 20,
+        fontSize: 12,
+        fontWeight: 600,
+        border: "1px solid #b8d8b8",
+        cursor: "pointer",
+        transition: "all 0.2s ease",
+        display: "inline-block",
+        transform: hovered ? "scale(1.05)" : "scale(1)"
+      }}
+      >
+        ⭐ {name}
+      </span>
+    );
+  }
 function SupplierCard({ supplier, isExpanded, onToggle, onReviewClick, userReviews, favorites, onFavorite, isMobile, compareList = [], onCompare }) {
-  
 
   const myReviews = userReviews.filter(r => r.supplierId === supplier.id);
   const getBadge = () => {
@@ -2556,62 +2580,14 @@ borderRadius: "999px",
     gap: 14,
     marginBottom: 14
   }}>
-   <div>
-    <div style={{ fontWeight: 700, color: "#3a2818", marginBottom: 10, fontSize: 14 }}>🏆 Top Vendors This Week:</div>
-    <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-      {["ISEE Hair", "Arabella Hair", "UNice Hair", "Luvme Hair", "Alipearl Hair", "BGMgirl Hair", "Lolly Hair", "Asteria Hair"].map(vendor => (
-        <VendorPill key={vendor} name={vendor} onClick={() => setSearch(vendor)} />
-      ))}
-    </div>
-  </div>
-</div>
-
-  <p style={{ color: "#5f5648", fontSize: isMobile ? 15 : 17, lineHeight: 1.7, marginBottom: 20, maxWidth: 760 }}>
-    Most viewed, highest-rated, and viral hair vendors trending this week. 
-    Discover luxury wigs, bundles, braiding hair, and beginner-friendly installs loved by the community 👀✨
-  </p>
-
-  <div style={{ marginBottom: 20 }}>
-    <div style={{ fontWeight: 700, color: "#3a2818", marginBottom: 10, fontSize: 14 }}>🔎 What's Trending:</div>
-    <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-      {["Glueless Wigs", "HD Lace Wigs", "Pre-bleached Knots", "Beginner-friendly Installs"].map(tag => (
-        <span key={tag} style={{ background: "#f0e8d8", color: "#5a3a1a", padding: "5px 12px", borderRadius: 20, fontSize: 12, fontWeight: 600 }}>
-          {tag}
-        </span>
-      ))}
-    </div>
   </div>
 
   <div>
     <div style={{ fontWeight: 700, color: "#3a2818", marginBottom: 10, fontSize: 14 }}>🏆 Top Vendors This Week:</div>
     <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
-    {["ISEE Hair", "Arabella Hair", "UNice Hair", "Luvme Hair", "Alipearl Hair", "BGMgirl Hair", "Lolly Hair", "Asteria Hair"].map(vendor => (
-  <VendorPill key={vendor} name={vendor} onClick={() => setSearch(vendor)} />
-))}. 
-  const [hovered, setHovered] = React.useState(false);
-  return (
-    <span
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      onClick={onClick}
-      style={{
-        background: hovered ? "#2a6a2a" : "#d8ead8",
-        color: hovered ? "#ffffff" : "#2a6a2a",
-        padding: "5px 12px",
-        borderRadius: 20,
-        fontSize: 12,
-        fontWeight: 600,
-        border: "1px solid #b8d8b8",
-        cursor: "pointer",
-        transition: "all 0.2s ease",
-        display: "inline-block",
-        transform: hovered ? "scale(1.05)" : "scale(1)"
-      }}
-    >
-      ⭐ {name}
-    </span>
-  );
-})}
+      {["ISEE Hair", "Arabella Hair", "UNice Hair", "Luvme Hair", "Alipearl Hair", "BGMgirl Hair", "Lolly Hair", "Asteria Hair"].map(vendor => (
+        <VendorPill key={vendor} name={vendor} onClick={() => setSearch(vendor)} />
+      ))}
     </div>
   </div>
 </div>
