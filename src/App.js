@@ -1191,15 +1191,10 @@ shopLink: "https://www.headcovers.com/wigs-hair",
     ]
   },
   {
-    id: "110",
+    id: 110,
     name: "BUWUS",
     logo: "BUW",
     origin: "USA",
-    rating: 4.6,
-    reviews: 420,
-    website: "https://www.buwus.com/pages/buw-human-hair-store-business-hours",
-shopLink: "https://www.buwus.com/pages/buw-human-hair-store-business-hours",
-    priceRange: "$$",
     tags: [
       "Human Hair",
       "HD Lace",
@@ -1212,40 +1207,48 @@ shopLink: "https://www.buwus.com/pages/buw-human-hair-store-business-hours",
       "Straight Hair",
       "Beginner Friendly"
     ],
-    description:
-      "BUWUS offers affordable human hair wigs, bundles, HD lace products, and glueless wigs in multiple textures and styles with local pickup options in several U.S. cities.",
+    website: "https://www.buwus.com",
+    shopLink: "https://www.buwus.com/collections/all",
   
     products: [
       {
         type: "Glueless Wig",
+        category: "wigs",
         texture: "Straight",
-        lengths: "10-28 inches",
-        price: "$85-$208",
-        rating: 4.7
+        lengths: "10\"–28\"",
+        price: "$85–$208",
+        rating: 4.7,
+        reviews: 420
       },
       {
         type: "Bundles",
+        category: "bundles",
         texture: "Body Wave",
-        lengths: "10-28 inches",
-        price: "$69-$141",
-        rating: 4.6
+        lengths: "10\"–28\"",
+        price: "$69–$141",
+        rating: 4.6,
+        reviews: 315
       },
       {
         type: "HD Lace Wig",
+        category: "wigs",
         texture: "Curly",
-        lengths: "18-24 inches",
-        price: "$147-$208",
-        rating: 4.8
+        lengths: "18\"–24\"",
+        price: "$147–$208",
+        rating: 4.8,
+        reviews: 287
       },
       {
         type: "Closure & Frontal",
+        category: "closures",
         texture: "Straight/Curly",
-        lengths: "10-20 inches",
-        price: "$23-$131",
-        rating: 4.5
+        lengths: "10\"–20\"",
+        price: "$23–$131",
+        rating: 4.5,
+        reviews: 198
       }
     ]
-  }
+  },
   
 ];
 // ADD THIS 👇
