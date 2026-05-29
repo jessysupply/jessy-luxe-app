@@ -1211,132 +1211,30 @@ shopLink: "https://www.headcovers.com/wigs-hair",
 ];
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
-  title: "Gold Wednesday Sale ✨",
+  title: "Summer Sale ✨",
   vendor: "Amanda Hair",
   description: "Extra $100 OFF Premium Human Hair This Week",
 
   deals: [
-    "🔥 Extra $100 OFF Premium Human Hair",
-    "💎 Luxury HD Lace & Glueless Wigs",
-    "✨ Trending Human Hair Styles",
-    "👑 High-Performing Gold Wednesday Deals",
-    "💖 Limited-Time Weekly Sale"
+    "20% OFF All Orders — CODE: $20",
+    "$55 OFF Orders Over $229 — CODE: $55",
+    "$80 OFF Orders Over $289 — CODE: $80",
+    "$100 OFF Orders Over $369 — CODE: $100"
   ],
 
-  discountCodes: [
-    "Gold Wednesday Sale"
-  ],
+  discountCodes: ["$20", "$55", "$80", "$100"],
 
-  website: "https://www.amandahair.com",
+  website: "https://amandahairs.com/collections/bestselling-new-arrival-wig/products/glueless-burmese-kinky-curly-13x4-hd-transparent-full-lace-frontal-with-spanish-curl-human-hair-wig/?utm_source=awin&utm_medium=affiliate&utm_campaign=260521_new",
 
   links: [
     {
-      label: "Human Hair Wigs",
-      url: "https://www.amandahair.com"
+      label: "Shop Glueless Kinky Curly Wig",
+      url: "https://amandahairs.com/collections/bestselling-new-arrival-wig/products/glueless-burmese-kinky-curly-13x4-hd-transparent-full-lace-frontal-with-spanish-curl-human-hair-wig/?utm_source=awin&utm_medium=affiliate&utm_campaign=260521_new"
     }
   ],
 
-  endDate: new Date("2026-05-28T23:59:59")
+  endDate: new Date("2026-06-02T23:59:59")
 };
-
-// EXISTING CODE 👇
-const CATEGORY_CONFIG = {
-  human: {
-    label: "100% Human",
-    color: "#2a6a2a",
-    bg: "#d8ead8"
-  },
-
-  synthetic: {
-    label: "Synthetic",
-    color: "#2a5a8a",
-    bg: "#d8e8f0"
-  },
-
-  mixed: {
-    label: "Blend",
-    color: "#6a2a8a",
-    bg: "#ead8f0"
-  },
-
-  braiding: {
-    label: "Braiding Hair",
-    color: "#8a5a2a",
-    bg: "#f3e2c8"
-  },
-
-  clipins: {
-    label: "Clip-Ins",
-    color: "#8a2a5a",
-    bg: "#f0d8e8"
-  },
-
-  crochet: {
-    label: "Crochet Hair",
-    color: "#2a8a6a",
-    bg: "#d8f0e8"
-  },
-
-  ponytails: {
-    label: "Ponytails",
-    color: "#8a6a2a",
-    bg: "#f0ead8"
-  },
-
-  bundles: {
-    label: "Bundles",
-    color: "#5a2a8a",
-    bg: "#e8d8f0"
-  },
-
-  wigs: {
-    label: "Wigs",
-    color: "#2a3a8a",
-    bg: "#d8def0"
-  },
-};
-const TEXTURE_GUIDE = [
-  {
-    name: "Straight",
-    description: "Smooth sleek texture with little to no wave."
-  },
-  {
-    name: "Body Wave",
-    description: "Soft loose S-pattern waves. One of the most popular textures."
-  },
-  {
-    name: "Deep Wave",
-    description: "Defined deep curls with lots of volume and texture."
-  },
-  {
-    name: "Water Wave",
-    description: "Lightweight wet-look curls with a soft natural finish."
-  },
-  {
-    name: "Curly",
-    description: "Classic full curls with bounce and movement."
-  },
-  {
-    name: "Kinky Curly",
-    description: "Tighter curls that closely match natural textured hair."
-  },
-  {
-    name: "Yaki Straight",
-    description: "Straight texture designed to mimic relaxed natural hair."
-  },
-  {
-    name: "Bone Straight",
-    description: "Ultra sleek pin-straight texture with a silky finish."
-  },
-  {
-    name: "Loose Wave",
-    description: "Relaxed flowing waves with a soft glam appearance."
-  },
-  {
-    name: "Afro Kinky",
-    description: "Dense textured coils inspired by natural afro hair."
-  }
-];
 // ADD THIS 👇
 function DealOfTheWeek() {
   const deal = DEAL_OF_THE_WEEK;
