@@ -996,6 +996,7 @@ shopLink: "https://www.headcovers.com/wigs-hair",
     products: [
       {
         type: "Wig",
+        category: "human",
         texture: "Body Wave",
         lengths: "16-30 inches",
         price: "$$$",
