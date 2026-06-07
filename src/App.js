@@ -2598,7 +2598,10 @@ borderRadius: "999px",
         </div>
       )}
      
-      <div style={{ maxWidth: 600, margin: "4px auto 0", padding: "0 13px" }}>
+     <div style={{ maxWidth: 600, margin: "4px auto 0", padding: "0 13px" }}>
+    Content goes here
+  </div>
+);
         <div style={{ borderRadius: 12, background: "#f0f5f0", border: "1px solid #4a8a4a", padding: "14px" }}>
           {compareList.length >= 2 && (
         <div style={{
@@ -2628,46 +2631,52 @@ borderRadius: "999px",
           </div>
         </div>
       )}
-    <div style={{
-  display: "flex",
-  flexDirection: isMobile ? "column" : "row",
-  gap: 30,
-  alignItems: "flex-start"
-}}>
-  {/* Hair Type Guide */}
-  <div style={{ flex: 1 }}>
-    <div><span style={{ color: "#2a6a2a", fontWeight: 700 }}>● 100% Human</span><span style={{ marginLeft: 10 }}>— Virgin or Remy from a single donor. Most natural feel, longest lasting, highest cost.</span></div>
-    <div><span style={{ color: "#2a5a8a", fontWeight: 700 }}>● Synthetic</span><span style={{ marginLeft: 10 }}>— Man-made fibers. Budget-friendly, less heat-versatile, great for protective styles.</span></div>
-    <div><span style={{ color: "#6a2a8a", fontWeight: 700 }}>● Blend</span><span style={{ marginLeft: 10 }}>— Human & synthetic combined. Mid-range price/quality with a natural appearance.</span></div>
-    <div><span style={{ color: "#8a5a2a", fontWeight: 700 }}>● Braiding Hair</span><span style={{ marginLeft: 10 }}>— Hair designed for braids, twists, and protective styles. Available in synthetic, human, and plant-based options.</span></div>
-    <div><span style={{ color: "#8a2a5a", fontWeight: 700 }}>● Clip-Ins</span><span style={{ marginLeft: 10 }}>— Temporary extensions that clip into natural hair for instant length and volume.</span></div>
-    <div><span style={{ color: "#2a8a6a", fontWeight: 700 }}>● Crochet Hair</span><span style={{ marginLeft: 10 }}>— Pre-looped hair installed using a crochet method. Lightweight and great for protective styles.</span></div>
-    <div><span style={{ color: "#8a6a2a", fontWeight: 700 }}>● Ponytails</span><span style={{ marginLeft: 10 }}>— Quick attach hairpieces used to create fuller or longer ponytail styles instantly.</span></div>
-    <div><span style={{ color: "#5a2a8a", fontWeight: 700 }}>● Bundles</span><span style={{ marginLeft: 10 }}>— Loose human or synthetic hair wefts used for sew-ins, wigs, or custom installs.</span></div>
-    <div><span style={{ color: "#2a3a8a", fontWeight: 700 }}>● Wigs</span><span style={{ marginLeft: 10 }}>— Full hair units available in lace front, glueless, HD lace, and ready-to-wear styles.</span></div>
-    <div><span style={{ color: "#7a4b2a", fontWeight: 700 }}>● Weft Hair</span><span style={{ marginLeft: 10 }}>— Hair sewn onto a track used for sew-ins, custom wigs, and extension installs.</span></div>
-    <div><span style={{ color: "#2a7a6a", fontWeight: 700 }}>● Tape-In Extensions</span><span style={{ marginLeft: 10 }}>— Semi-permanent extensions attached with adhesive tape for a lightweight natural blend.</span></div>
-    <div><span style={{ color: "#7a2a5a", fontWeight: 700 }}>● Micro Bead Extensions</span><span style={{ marginLeft: 10 }}>— Individual extensions attached using tiny silicone-lined beads without glue or heat.</span></div>
-    <div><span style={{ color: "#5a2a7a", fontWeight: 700 }}>● Sheitel Wigs</span><span style={{ marginLeft: 10 }}>— Premium wigs traditionally worn by Orthodox Jewish women, often featuring high-end European human hair.</span></div>
-  </div>
+   {/* Hair Type Guide & Hair Care */}
+   <div style={{
+        display: "flex",
+        flexDirection: isMobile ? "column" : "row",
+        gap: 30,
+        alignItems: "flex-start",
+        padding: isMobile ? "16px" : "24px"
+      }}>
+        <div style={{ flex: 1 }}>
+          <div><span style={{ color: "#2a6a2a", fontWeight: 700 }}>● 100% Human</span><span style={{ marginLeft: 10 }}>— Virgin or Remy from a single donor. Most natural feel, longest lasting, highest cost.</span></div>
+          <div><span style={{ color: "#2a5a8a", fontWeight: 700 }}>● Synthetic</span><span style={{ marginLeft: 10 }}>— Man-made fibers. Budget-friendly, less heat-versatile, great for protective styles.</span></div>
+          <div><span style={{ color: "#6a2a8a", fontWeight: 700 }}>● Blend</span><span style={{ marginLeft: 10 }}>— Human & synthetic combined. Mid-range price/quality with a natural appearance.</span></div>
+          <div><span style={{ color: "#8a5a2a", fontWeight: 700 }}>● Braiding Hair</span><span style={{ marginLeft: 10 }}>— Hair designed for braids, twists, and protective styles. Available in synthetic, human, and plant-based options.</span></div>
+          <div><span style={{ color: "#8a2a5a", fontWeight: 700 }}>● Clip-Ins</span><span style={{ marginLeft: 10 }}>— Temporary extensions that clip into natural hair for instant length and volume.</span></div>
+          <div><span style={{ color: "#2a8a6a", fontWeight: 700 }}>● Crochet Hair</span><span style={{ marginLeft: 10 }}>— Pre-looped hair installed using a crochet method. Lightweight and great for protective styles.</span></div>
+          <div><span style={{ color: "#8a6a2a", fontWeight: 700 }}>● Ponytails</span><span style={{ marginLeft: 10 }}>— Quick attach hairpieces used to create fuller or longer ponytail styles instantly.</span></div>
+          <div><span style={{ color: "#5a2a8a", fontWeight: 700 }}>● Bundles</span><span style={{ marginLeft: 10 }}>— Loose human or synthetic hair wefts used for sew-ins, wigs, or custom installs.</span></div>
+          <div><span style={{ color: "#2a3a8a", fontWeight: 700 }}>● Wigs</span><span style={{ marginLeft: 10 }}>— Full hair units available in lace front, glueless, HD lace, and ready-to-wear styles.</span></div>
+          <div><span style={{ color: "#7a4b2a", fontWeight: 700 }}>● Weft Hair</span><span style={{ marginLeft: 10 }}>— Hair sewn onto a track used for sew-ins, custom wigs, and extension installs.</span></div>
+          <div><span style={{ color: "#2a7a6a", fontWeight: 700 }}>● Tape-In Extensions</span><span style={{ marginLeft: 10 }}>— Semi-permanent extensions attached with adhesive tape for a lightweight natural blend.</span></div>
+          <div><span style={{ color: "#7a2a5a", fontWeight: 700 }}>● Micro Bead Extensions</span><span style={{ marginLeft: 10 }}>— Individual extensions attached using tiny silicone-lined beads without glue or heat.</span></div>
+          <div><span style={{ color: "#5a2a7a", fontWeight: 700 }}>● Sheitel Wigs</span><span style={{ marginLeft: 10 }}>— Premium wigs traditionally worn by Orthodox Jewish women, often featuring high-end European human hair.</span></div>
+        </div>
+        <div style={{ maxWidth: 600, margin: "4px auto 0", padding: "0 13px" }}>
+  <h2>Best Hair Care Products for Weaves & Wigs</h2>
 
-  {/* Hair Care Products Image */}
-  <div style={{ flex: 1, textAlign: "center" }}>
-    <h2 style={{ fontSize: "24px", fontWeight: "900", color: "#1a3a1a", marginBottom: 16 }}>
-      💇🏽‍♀️ Best Hair Care Products for Weaves & Wigs
-    </h2>
-    <img
-      src="/best-hair-care-products.png"
-      alt="Best Hair Care Products"
-      style={{
-        width: "100%",
-        borderRadius: "12px",
-        boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
-      }}
-    />
- </div>
+  <img
+    src="/best-hair-care-products.png"
+    alt="Best Hair Care Products for Weaves and Wigs"
+    style={{
+      width: "100%",
+      borderRadius: "12px",
+      boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
+    }}
+  />
+
+<p>
+    Discover the best products to maintain your wigs, weaves, and extensions.
+  </p>
 </div>
-    </div>
+
+</div>
+
+</div>
+);
+
     {showQuiz && (
         <div style={{
           position: "fixed", inset: 0, zIndex: 99999,
@@ -2757,12 +2766,12 @@ borderRadius: "999px",
   <a href="https://www.tiktok.com/@vixen565" target="_blank" rel="noreferrer" style={{ color: "#2a6a2a", fontSize: 13, textDecoration: "none", fontWeight: 600 }}>TikTok</a>
   <a href="https://www.pinterest.com/jessyluxe303" target="_blank" rel="noreferrer" style={{ color: "#2a6a2a", fontSize: 13, textDecoration: "none", fontWeight: 600 }}>Pinterest</a>
   <a href="mailto:jessysupply@jessyluxebeauty.com" style={{ color: "#2a6a2a", fontSize: 13, textDecoration: "none", fontWeight: 600 }}>Email Us</a>
-</div>
+  </div>
         <p>© 2026 Jessy Luxe Beauty. All rights reserved.</p>
         <p style={{ marginTop: 8 }}>
           Built for the community · Not affiliated with any brand
         </p>
         </div>
     </div>
-  );
+    );
 }
