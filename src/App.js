@@ -2599,7 +2599,6 @@ borderRadius: "999px",
       )}
      
      <div style={{ maxWidth: 600, margin: "4px auto 0", padding: "0 13px" }}>
-    Content goes here
   </div>
 );
         <div style={{ borderRadius: 12, background: "#f0f5f0", border: "1px solid #4a8a4a", padding: "14px" }}>
