@@ -1211,30 +1211,24 @@ shopLink: "https://www.headcovers.com/wigs-hair",
 ];
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
-  title: "Summer Sale ✨",
-  vendor: "Amanda Hair",
-  description: "Extra $100 OFF Premium Human Hair This Week",
+  title: "Game Day Sale",
+  vendor: "Arabella Hair",
+  description: "Score big savings on premium wigs and bundles during Arabella Hair's limited-time Game Day Sale.",
+
+  endDate: new Date("2026-06-15T23:59:59"),
 
   deals: [
-    "20% OFF All Orders — CODE: $20",
-    "$55 OFF Orders Over $229 — CODE: $55",
-    "$80 OFF Orders Over $289 — CODE: $80",
-    "$100 OFF Orders Over $369 — CODE: $100"
+    "🏈 $40 OFF orders over $199",
+    "🏈 $65 OFF orders over $289",
+    "🏈 $100 OFF orders over $379",
+    "🎁 New Customers: $115 OFF + FREE Wig",
+    "🔥 Flash Sale: Up to 60% OFF"
   ],
 
-  discountCodes: ["$20", "$55", "$80", "$100"],
-
-  website: "https://amandahairs.com/collections/bestselling-new-arrival-wig/products/glueless-burmese-kinky-curly-13x4-hd-transparent-full-lace-frontal-with-spanish-curl-human-hair-wig/?utm_source=awin&utm_medium=affiliate&utm_campaign=260521_new",
-
-  links: [
-    {
-      label: "Shop Glueless Kinky Curly Wig",
-      url: "https://amandahairs.com/collections/bestselling-new-arrival-wig/products/glueless-burmese-kinky-curly-13x4-hd-transparent-full-lace-frontal-with-spanish-curl-human-hair-wig/?utm_source=awin&utm_medium=affiliate&utm_campaign=260521_new"
-    }
-  ],
-
-  endDate: new Date("2026-06-02T23:59:59")
+  buttonText: "Shop Arabella Hair",
+  link: "https://arabellahair.com/collections/all"
 };
+
 const CATEGORY_CONFIG = {
   human: {
     label: "100% Human",
