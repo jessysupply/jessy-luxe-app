@@ -155,8 +155,8 @@ amazonLink: "https://www.amazon.com/stores/UNICE/page/7C67BE80-C2EB-4DD5-8E25-CC
   {
     id: 16, name: "Luvme Hair", logo: "LV", origin: "China", tags: ["Glueless", "Human Hair"],
     website: "https://www.luvmehair.com",
-    shopLink: "https://www.luvmehair.com/collections/wigs",
-    products: [
+    shopLink: "https://www.amazon.com/stores/LuvmeHair/page/7C67BE80-C2EB-4DD5-8E25-CC8BBCB7C189?tag=jessyluxebeau-20",
+products: [
       { type: "100% Human", category: "human", texture: "Glueless Wig", lengths: "10\"–30\"", price: "$80–$300", rating: 4.5, reviews: 5200 },
       { type: "100% Human", category: "human", texture: "HD Lace Front", lengths: "12\"–26\"", price: "$90–$280", rating: 4.4, reviews: 4100 },
     ],
