@@ -1216,7 +1216,7 @@ const deal = {
   description:
     "Upgrade your look with premium human hair wigs from BGMGirl. Shop natural textures, glueless wigs, lace fronts, and beginner-friendly styles at discounted prices.",
 
-  endDate = new Date("2026-06-23T23:59:59"),
+  endDate: new Date("2026-06-23T23:59:59"),
 
   deals: [
     "💖 Up to 50% OFF Select Human Hair Wigs",
