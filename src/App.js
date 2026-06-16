@@ -1229,7 +1229,6 @@ const deal = {
   buttonText: "Shop BGMGirl",
   link: "https://bgmgirl.com"
 };
-
 const CATEGORY_CONFIG = {
   human: {
     label: "100% Human",
