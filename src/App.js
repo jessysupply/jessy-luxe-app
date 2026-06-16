@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
 
 const INITIAL_SUPPLIERS = [
@@ -1210,14 +1210,11 @@ shopLink: "https://www.headcovers.com/wigs-hair",
   },
 ];
 // ADD THIS 👇
-const deal = {
+const DEAL_OF_THE_WEEK = {
   title: "Luxury Human Hair Wigs on Sale",
   vendor: "BGMGirl",
-  description:
-    "Upgrade your look with premium human hair wigs from BGMGirl. Shop natural textures, glueless wigs, lace fronts, and beginner-friendly styles at discounted prices.",
-
+  description: "Upgrade your look with premium human hair wigs from BGMGirl. Shop natural textures, glueless wigs, lace fronts, and beginner-friendly styles at discounted prices.",
   endDate: new Date("2026-06-23T23:59:59"),
-
   deals: [
     "💖 Up to 50% OFF Select Human Hair Wigs",
     "🚚 Free Shipping on Eligible Orders",
@@ -1225,7 +1222,6 @@ const deal = {
     "✨ HD Lace, Glueless & Ready-to-Wear Styles",
     "🔥 Limited-Time Weekly Specials"
   ],
-
   buttonText: "Shop BGMGirl",
   link: "https://bgmgirl.com"
 };
@@ -1279,9 +1275,8 @@ const CATEGORY_CONFIG = {
 // ADD THIS 👇
 function DealOfTheWeek() {
   const deal = DEAL_OF_THE_WEEK;
-  const [timeLeft, setTimeLeft] = React.useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-
-  React.useEffect(() => {
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+  useEffect(() => {
     function calcTime() {
       const diff = deal.endDate - new Date();
 
