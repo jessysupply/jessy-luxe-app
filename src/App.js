@@ -1210,23 +1210,24 @@ shopLink: "https://www.headcovers.com/wigs-hair",
   },
 ];
 // ADD THIS 👇
-const DEAL_OF_THE_WEEK = {
-  title: "Game Day Sale",
-  vendor: "Arabella Hair",
-  description: "Score big savings on premium wigs and bundles during Arabella Hair's limited-time Game Day Sale.",
+const deal = {
+  title: "Luxury Human Hair Wigs on Sale",
+  vendor: "BGMGirl",
+  description:
+    "Upgrade your look with premium human hair wigs from BGMGirl. Shop natural textures, glueless wigs, lace fronts, and beginner-friendly styles at discounted prices.",
 
-  endDate: new Date("2026-06-15T23:59:59"),
+  endDate = new Date("2026-06-23T23:59:59"),
 
   deals: [
-    "🏈 $40 OFF orders over $199",
-    "🏈 $65 OFF orders over $289",
-    "🏈 $100 OFF orders over $379",
-    "🎁 New Customers: $115 OFF + FREE Wig",
-    "🔥 Flash Sale: Up to 60% OFF"
+    "💖 Up to 50% OFF Select Human Hair Wigs",
+    "🚚 Free Shipping on Eligible Orders",
+    "🎁 Extra Savings on Multi-Wig Purchases",
+    "✨ HD Lace, Glueless & Ready-to-Wear Styles",
+    "🔥 Limited-Time Weekly Specials"
   ],
 
-  buttonText: "Shop Arabella Hair",
-  link: "https://arabellahair.com/collections/all"
+  buttonText: "Shop BGMGirl",
+  link: "https://bgmgirl.com"
 };
 
 const CATEGORY_CONFIG = {
