@@ -1211,20 +1211,23 @@ shopLink: "https://www.headcovers.com/wigs-hair",
 ];
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
-  title: "Luxury Human Hair Wigs on Sale",
-  vendor: "BGMGirl",
-  description: "Upgrade your look with premium human hair wigs from BGMGirl. Shop natural textures, glueless wigs, lace fronts, and beginner-friendly styles at discounted prices.",
-  endDate: new Date("2026-06-23T23:59:59"),
+  title: "Award-Winning Hair Extensions",
+  vendor: "Milk + Blush",
+  description:
+    "Shop premium human hair extensions from Milk + Blush, including clip-ins, tape-ins, ponytails, wefts, nano tips, and professional extension options in a wide range of shades and lengths.",
+
   deals: [
-    "💖 Up to 50% OFF Select Human Hair Wigs",
-    "🚚 Free Shipping on Eligible Orders",
-    "🎁 Extra Savings on Multi-Wig Purchases",
-    "✨ HD Lace, Glueless & Ready-to-Wear Styles",
-    "🔥 Limited-Time Weekly Specials"
+    "✨ Up to 40% OFF Select Hair Extensions",
+    "💖 Sale Prices on Select Clip-Ins and Wefts",
+    "🎨 Free Online Shade-Matching Support",
+    "📏 Hair Lengths Available from 12 to 24 Inches",
+    "💳 Klarna Available on Eligible Purchases"
   ],
-  buttonText: "Shop BGMGirl",
-  link: "https://bgmgirl.com"
+
+  buttonText: "Shop Milk + Blush",
+  link: "https://www.milkandblush.com/collections/all"
 };
+
 const CATEGORY_CONFIG = {
   human: {
     label: "100% Human",
