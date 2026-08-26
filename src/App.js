@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 const isMobile = typeof window !== "undefined" && window.innerWidth <= 768;
 
 const INITIAL_SUPPLIERS = [
@@ -155,8 +155,8 @@ amazonLink: "https://www.amazon.com/stores/UNICE/page/7C67BE80-C2EB-4DD5-8E25-CC
   {
     id: 16, name: "Luvme Hair", logo: "LV", origin: "China", tags: ["Glueless", "Human Hair"],
     website: "https://www.luvmehair.com",
-    shopLink: "https://www.amazon.com/stores/LuvmeHair/page/7C67BE80-C2EB-4DD5-8E25-CC8BBCB7C189?tag=jessyluxebeau-20",
-products: [
+    shopLink: "https://www.luvmehair.com/collections/wigs",
+    products: [
       { type: "100% Human", category: "human", texture: "Glueless Wig", lengths: "10\"–30\"", price: "$80–$300", rating: 4.5, reviews: 5200 },
       { type: "100% Human", category: "human", texture: "HD Lace Front", lengths: "12\"–26\"", price: "$90–$280", rating: 4.4, reviews: 4100 },
     ],
@@ -1211,23 +1211,31 @@ shopLink: "https://www.headcovers.com/wigs-hair",
 ];
 // ADD THIS 👇
 const DEAL_OF_THE_WEEK = {
-  title: "Award-Winning Hair Extensions",
-  vendor: "Milk + Blush",
+  title: "Back-to-School Sale 🎓",
+  vendor: "BGMgirl Hair",
   description:
-    "Shop premium human hair extensions from Milk + Blush, including clip-ins, tape-ins, ponytails, wefts, nano tips, and professional extension options in a wide range of shades and lengths.",
+    "Save Up to 70% on Human Hair Wigs — Select Styles Start at $80",
 
   deals: [
-    "✨ Up to 40% OFF Select Hair Extensions",
-    "💖 Sale Prices on Select Clip-Ins and Wefts",
-    "🎨 Free Online Shade-Matching Support",
-    "📏 Hair Lengths Available from 12 to 24 Inches",
-    "💳 Klarna Available on Eligible Purchases"
+    "Up to 70% OFF Select Human Hair Wigs",
+    "Glueless Wigs Starting at $80",
+    "Half Wigs Starting at $76.50",
+    "Select Styles Ship Within 24 Hours",
   ],
 
-  buttonText: "Shop Milk + Blush",
-  link: "https://www.milkandblush.com/collections/all"
-};
+  discountCodes: [],
 
+  website: "https://www.bgmgirl.com",
+
+  links: [
+    {
+      label: "Shop the BGMgirl Back-to-School Sale",
+      url: "https://www.awin1.com/cread.php?awinmid=49209&awinaffid=2866481",
+    },
+  ],
+
+  endDate: new Date ("2026-09-02T23:59:59"),
+};
 const CATEGORY_CONFIG = {
   human: {
     label: "100% Human",
@@ -1278,8 +1286,9 @@ const CATEGORY_CONFIG = {
 // ADD THIS 👇
 function DealOfTheWeek() {
   const deal = DEAL_OF_THE_WEEK;
-  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
-  useEffect(() => {
+  const [timeLeft, setTimeLeft] = React.useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
+
+  React.useEffect(() => {
     function calcTime() {
       const diff = deal.endDate - new Date();
 
@@ -2591,6 +2600,7 @@ borderRadius: "999px",
       )}
      
      <div style={{ maxWidth: 600, margin: "4px auto 0", padding: "0 13px" }}>
+    Content goes here
   </div>
 );
         <div style={{ borderRadius: 12, background: "#f0f5f0", border: "1px solid #4a8a4a", padding: "14px" }}>
@@ -2622,51 +2632,7 @@ borderRadius: "999px",
           </div>
         </div>
       )}
-   {/* Hair Type Guide & Hair Care */}
-   <div style={{
-        display: "flex",
-        flexDirection: isMobile ? "column" : "row",
-        gap: 30,
-        alignItems: "flex-start",
-        padding: isMobile ? "16px" : "24px"
-      }}>
-        <div style={{ flex: 1 }}>
-          <div><span style={{ color: "#2a6a2a", fontWeight: 700 }}>● 100% Human</span><span style={{ marginLeft: 10 }}>— Virgin or Remy from a single donor. Most natural feel, longest lasting, highest cost.</span></div>
-          <div><span style={{ color: "#2a5a8a", fontWeight: 700 }}>● Synthetic</span><span style={{ marginLeft: 10 }}>— Man-made fibers. Budget-friendly, less heat-versatile, great for protective styles.</span></div>
-          <div><span style={{ color: "#6a2a8a", fontWeight: 700 }}>● Blend</span><span style={{ marginLeft: 10 }}>— Human & synthetic combined. Mid-range price/quality with a natural appearance.</span></div>
-          <div><span style={{ color: "#8a5a2a", fontWeight: 700 }}>● Braiding Hair</span><span style={{ marginLeft: 10 }}>— Hair designed for braids, twists, and protective styles. Available in synthetic, human, and plant-based options.</span></div>
-          <div><span style={{ color: "#8a2a5a", fontWeight: 700 }}>● Clip-Ins</span><span style={{ marginLeft: 10 }}>— Temporary extensions that clip into natural hair for instant length and volume.</span></div>
-          <div><span style={{ color: "#2a8a6a", fontWeight: 700 }}>● Crochet Hair</span><span style={{ marginLeft: 10 }}>— Pre-looped hair installed using a crochet method. Lightweight and great for protective styles.</span></div>
-          <div><span style={{ color: "#8a6a2a", fontWeight: 700 }}>● Ponytails</span><span style={{ marginLeft: 10 }}>— Quick attach hairpieces used to create fuller or longer ponytail styles instantly.</span></div>
-          <div><span style={{ color: "#5a2a8a", fontWeight: 700 }}>● Bundles</span><span style={{ marginLeft: 10 }}>— Loose human or synthetic hair wefts used for sew-ins, wigs, or custom installs.</span></div>
-          <div><span style={{ color: "#2a3a8a", fontWeight: 700 }}>● Wigs</span><span style={{ marginLeft: 10 }}>— Full hair units available in lace front, glueless, HD lace, and ready-to-wear styles.</span></div>
-          <div><span style={{ color: "#7a4b2a", fontWeight: 700 }}>● Weft Hair</span><span style={{ marginLeft: 10 }}>— Hair sewn onto a track used for sew-ins, custom wigs, and extension installs.</span></div>
-          <div><span style={{ color: "#2a7a6a", fontWeight: 700 }}>● Tape-In Extensions</span><span style={{ marginLeft: 10 }}>— Semi-permanent extensions attached with adhesive tape for a lightweight natural blend.</span></div>
-          <div><span style={{ color: "#7a2a5a", fontWeight: 700 }}>● Micro Bead Extensions</span><span style={{ marginLeft: 10 }}>— Individual extensions attached using tiny silicone-lined beads without glue or heat.</span></div>
-          <div><span style={{ color: "#5a2a7a", fontWeight: 700 }}>● Sheitel Wigs</span><span style={{ marginLeft: 10 }}>— Premium wigs traditionally worn by Orthodox Jewish women, often featuring high-end European human hair.</span></div>
-        </div>
-        <div style={{ maxWidth: 600, margin: "4px auto 0", padding: "0 13px" }}>
-  <h2>Best Hair Care Products for Weaves & Wigs</h2>
-
-  <img
-    src="/best-hair-care-products.png"
-    alt="Best Hair Care Products for Weaves and Wigs"
-    style={{
-      width: "100%",
-      borderRadius: "12px",
-      boxShadow: "0 4px 12px rgba(0,0,0,0.15)"
-    }}
-  />
-
-<p>
-    Discover the best products to maintain your wigs, weaves, and extensions.
-  </p>
-</div>
-
-</div>
-
-</div>
-);
+   
 
     {showQuiz && (
         <div style={{
@@ -2763,6 +2729,7 @@ borderRadius: "999px",
           Built for the community · Not affiliated with any brand
         </p>
         </div>
+    </div>
     </div>
     );
 }
